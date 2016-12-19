@@ -1,0 +1,90 @@
+{
+	 'mainnav':[ 
+		
+		{
+			'title':'About',
+			'name': 'about',
+			'url': '/about/',
+			'submenu': 'false'
+		},
+		{
+			'title':'Rooms',
+			'name': 'rooms',
+			'url': '/rooms/',
+			'submenu': 'false'
+		},
+		{
+			'title':'Offers',
+			'name': 'offers',
+			'url': '/offers/',
+			'submenu': 'false' 
+		},
+		{
+			'title':'Location',
+			'name': 'location',
+			'url': '/location/',
+			'submenu': 'false' 
+			
+		},
+		{
+			'title':'Dining',
+			'name': 'dining',
+			'url': '/dining/',
+			'submenu': 'false'
+		},
+		{
+			'title':'Gallery',
+			'name': 'gallery',
+			'url': '/gallery/',
+			'submenu': 'false' 
+		},
+		{
+			'title':'Events',
+			'name': 'events',
+			'url': '/events/',
+			'submenu': 'false' 
+		},
+		{
+			'title':'Contact',
+			'name': 'contact',
+			'url': '/contact/',
+			'submenu': 'false' 
+		}, 
+		
+		 
+	],
+	'footernav':[
+		{
+			'title':'Terms & Conditions',
+			'url':'/',
+			'name': 'terms',
+		},
+		{
+			'title':'Privacy Policy',
+			'url':'/',
+			'name': 'privacy',
+		},
+		{
+			'title':'Site Map',
+			'url':'/',
+			'name': 'sitemap',
+		}, 
+	],
+	'social':[
+		{
+			'title':'Linkedin',
+			'url':'https://www.linkedin.com/company/travel-trippe',
+			'class':'fa-linkedin'
+		},
+		{
+			'title':'Facebook',
+			'url':'https://www.facebook.com/traveltripper',
+			'class':'fa-facebook-square'
+		},
+		{
+			'title':'Twitter',
+			'url':'https://twitter.com/Travel_Tripper',
+			"class":"fa-twitter"
+		},
+	]
+}
