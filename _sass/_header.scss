@@ -12,9 +12,40 @@ h1,h2,h3,h4,h5,h6,p,ul {
 	line-height: normal;
 }
 h2 {
-	font-family: $heading;
+	font-family: $main-heading;
 	color: $heading;
-	font-size: 42px;
+	font-size: 26px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	line-height: 36px;
+	position: relative;
+	padding: 0 0 20px 0;
+		&:after {
+			content: "";
+			position: absolute;
+			background-color: $btn;
+			left: 0;
+			bottom: 0;
+			width: 40px;
+			height: 1px;
+		}
+		@media (min-width: $screen-sm-min){
+			font-size: 30px;
+			letter-spacing: 2px;
+			line-height: 43px;
+		}
+		@media (min-width: $screen-md-min){
+			font-size: 42px;
+			letter-spacing: 4px;
+			line-height: 53px;
+			padding: 0 0 30px 0;
+		}
+}
+p {
+	font-family: $main-font-regular;
+	font-size: 15px;
+	line-height: 25px;
+	color: $text-color;
 }
 a:hover,a:focus {
 	text-decoration: none;
