@@ -200,6 +200,13 @@
 	  .container-fluid{
 	  	  padding: 0px;
 	  	 .thumb  { 
+	  	 	transition: all 0.4s;
+	  	 	&:hover{
+		  	 	    	 img{
+		  	 	    	 	opacity: 0.8;
+		  	 	    	 	width: 100%;
+		  	 	    	 }
+		  	 	    }
 
 	  	     position:relative;  
 	  	     .caption { 
@@ -233,6 +240,8 @@
 		  	    img{
 		  	 	    position: relative;
 		  	 	    width: 100%;
+		  	 	     transition: all 0.4s;
+		  	 	    
 		  	       }
 	  	    } 
 	    }
