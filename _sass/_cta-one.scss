@@ -1,0 +1,54 @@
+.home-rooms {
+	
+	.carousel-control {
+		bottom: 0;
+		top: auto;
+		transform: none;
+		&.left {
+			left: 50%;
+			right: auto;
+			margin: 0 0 0 -50px;
+			background-color: #161515;	
+				&:hover {
+						background: $white;
+							.fa {
+								color: #161515;
+							}
+					}
+		}
+		&.right {
+			right: 50%;
+			left: auto;
+			margin: 0 -50px 0 0;
+			background-color: #161515;
+				&:hover {
+						background: $white;
+							.fa {
+								color: #161515;
+							}
+					}
+			&:after {
+					position: absolute;
+					content: "";
+					background-color: $white;
+					top: 15px;
+					bottom: 15px;
+					left: 0;
+					width: 1px;
+				}
+		}
+		.fa {
+				color: $white;
+			}
+	}
+	.-right {
+			padding: 0 15px 50px 15px;
+			
+			@media (min-width: $screen-md-min){
+				padding: 0 15px 0 20.173%;
+			}
+		
+	}
+	.-left {
+	}
+}

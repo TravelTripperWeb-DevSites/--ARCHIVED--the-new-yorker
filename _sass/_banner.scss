@@ -1,0 +1,114 @@
+.home-banner {
+	.container-fluid {
+		padding: 0;
+	}
+.banner-logo {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	transform: translateY(-50%);
+	width: 230px;
+		@media(min-width: $screen-sm-min){
+			width: 400px;
+		}
+		@media(min-width: $screen-md-min){
+			width: 500px;
+		}
+}
+.banner-overlay {
+	background-color: rgba(10,10,18,0.4);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+.carousel-inner {
+	.item {
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+.counter {
+		color: $white;
+		font-family: $main-font-regular;
+		width: 100px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		top: 50%;
+		margin: -53px 0 0 0;
+		text-align: center;
+		font-size: 14px;
+		letter-spacing: 2px;
+			@media (max-width: $screen-xs-max){
+			    bottom: 53px;
+    			top: auto;
+				margin:0;
+			}
+	}
+}
+
+.custom-carousel {
+.carousel-control {
+	top: 50%;
+	bottom: auto;
+	width: 50px;
+	height: 50px;
+	right: 0;
+	text-shadow: none;
+	transform: translateY(-50%);
+	background-color: $white;
+	opacity: 1;
+	padding: 10px 0;
+	transition: all 0.4s;
+		@media (max-width: $screen-xs-max){
+			    bottom: 0;
+    			top: auto;
+				transform: none;
+		}
+		
+		&.left {
+			background-image: none;
+			background-color: $white;
+			right: 50px;
+			left: auto;
+			&:hover {
+				background: $btn;
+					.fa {
+						color: $white;
+						}
+			}
+		}
+		&.right {
+			background-image: none;
+			background-color: $white;
+				&:hover {
+						background: $btn;
+							.fa {
+								color: $white;
+							}
+					}
+				&:after {
+					position: absolute;
+					content: "";
+					background-color: $btn;
+					top: 15px;
+					bottom: 15px;
+					left: 0;
+					width: 1px;
+				}
+		}
+	.fa {
+		color: $black;
+		transition: all 0.4s; 
+			&:hover {
+				color: $white;
+			}
+	}
+	
+}
+}

@@ -29,6 +29,8 @@ $heading: 			#0a0a12;
 $btn: 				#0a0a12;
 $bg: 				#d9d9d9;
 $menu: 				#000011;
+$text:              #101018;
+$grey-text:         #908e8e;
 
 $spacing-unit:     30px;
 
@@ -72,6 +74,8 @@ $phone-max: 479px;
 		"header",
 		"footer",
 		"layout",
+		"banner",
+		"welcome",
 		"gallery",
 		"rooms",
 		"contact",
@@ -79,7 +83,9 @@ $phone-max: 479px;
 		"jquery-ui", 
 		"datepicker", 
 		"booking-widget",
-		"date-picker"
+		"date-picker",
+		"home-map",
+		"home-rooms",
+		"two-col-container",
+		"cta-one"
 ;
-
-
