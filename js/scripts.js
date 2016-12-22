@@ -83,4 +83,29 @@ $('#home-banner').on('slid.bs.carousel', function () {
   var text = (currentIndex + 1) + " of " + total;
   $('.num').text(text);
 });
-	  
+
+$(document).ready(function(){
+	$('.owl-carousel.attractions-carousel').owlCarousel({
+		loop:true,
+		margin:40,
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1,
+				nav:true,
+				navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
+			},
+			600:{
+				items:3,
+				nav:false,
+				loop:true
+			},
+			1000:{
+				items:3,
+				nav:true,
+				navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+				loop:true
+			}
+		}
+	})
+});

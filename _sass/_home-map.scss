@@ -1,4 +1,5 @@
 /*Common Styles Here*/
+.no-gutters{ margin:0px; padding:0px;}
 @media (min-width: $screen-sm-min){
 	.two-col-wrap {
 		display: table;
@@ -69,10 +70,14 @@
 /*Mega Title*/
 
 h1{
-	&.mega-title{ font-family:$main-heading; color:$text; font-size:85px; letter-spacing:2px; text-align:center; text-transform:uppercase; padding:60px 0;}	
+	&.mega-title{ font-family:$main-heading; color:$text; font-size:85px; letter-spacing:2px; text-align:center; text-transform:uppercase; padding:60px 0;
+		@media (max-width: 767px){
+			font-size:52px; padding:20px 0;
+		}
+	}		
 }
 
-/*Attractions & Events*/
+/*Home Events*/
 
 .a-e{ text-align:center; background:url(../images/a-e-bg.jpg) no-repeat; background-size:cover; padding:50px 0;
 	h4{ font-family:$main-font-medium; font-size:32px; color:$text; letter-spacing:1px; text-transform:uppercase; padding:20px 0;}
@@ -91,6 +96,45 @@ h1{
 	}
 }
 
+/*Home Attractions*/
+
+.attractions-carousel{
+	.item{
+		h5{font-family:$main-font-bold; font-size:14px; text-transform:uppercase; letter-spacing:2px; color:$text; padding-top:25px;}
+		a{font-family:$main-font-regular; font-size:12px; letter-spacing:2px; color:$text; padding:10px 0; display:block;
+			i{ font-size:7px; padding-left:2px;}
+			&:hover{ opacity:0.6;}
+		}	
+	}
+	.owl-nav{
+		width: 95px;
+		margin: 0px auto; padding:30px 0 33px;
+		.owl-prev{ float:left; background:$black; color:$white; padding:12px 20px;
+			i{ font-size:20px;}
+			&:hover{ opacity:0.8;}
+		}	
+		.owl-next{ float:right; background:$black; color:$white;padding:12px 20px; position:relative;
+			&:after{
+				position: absolute;
+				content: "";
+				background-color: #ffffff;
+				top: 15px;
+				bottom: 15px;
+				left: 0;
+				width: 1px;	
+			}
+			i{ font-size:20px;}
+			&:hover{ opacity:0.8;}
+		}	
+	}	
+}
+
+/*Newsletter Signup*/
+
+.newsletter-signup{ 
+	background:$text;
+	h3{ color:#cdaf71; font-size:36px; text-transform:uppercase; font-family:$main-font-thin;}
+}
 
 /*Overwrites here*/
 .p-t-60{ padding-top:60px !important;}
