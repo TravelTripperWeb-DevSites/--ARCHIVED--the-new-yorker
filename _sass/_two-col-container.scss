@@ -13,11 +13,10 @@
             @media(min-width: $screen-md-min){
             	padding: 79px 95px 20px 95px;
             }
-            .link-wrapper{
-            	 margin: 7px 0px;
-
+             
+            .btn-holder{
+            	 padding: 0px;
             }
-            
             
    	   	    ul{
    	    	    list-style-type: none;
@@ -42,7 +41,13 @@
    	   }
    }
    &.padding80{
-   	 padding:80px 0px;
+   	 padding:30px 0px;
+   	 @media(min-width: $screen-xs-min){
+        padding:30px 0px;
+   	 }
+   	 @media(min-width: $screen-sm-min){
+        padding:80px 0px;
+   	 }
    }
    .margin22{
    	 margin:22px 0px;
