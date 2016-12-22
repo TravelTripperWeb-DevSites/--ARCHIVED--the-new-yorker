@@ -39,7 +39,7 @@
 	right: 0;
 	text-shadow: none;
 	transform: translateY(-50%);
-	background-color: #fff;
+	background-color: $white;
 	opacity: 1;
 	line-height: 49px;
 	transition: all 0.4s;
@@ -55,7 +55,7 @@
 			right: 50px;
 			left: auto;
 			&:hover {
-				background: $black;
+				background: $btn;
 					.fa {
 						color: $white;
 						}
@@ -65,7 +65,7 @@
 			background-image: none;
 			background-color: $white;
 				&:hover {
-						background: $black;
+						background: $btn;
 							.fa {
 								color: $white;
 							}
@@ -73,7 +73,7 @@
 				&:after {
 					position: absolute;
 					content: "";
-					background-color: $black;
+					background-color: $btn;
 					top: 15px;
 					bottom: 15px;
 					left: 0;

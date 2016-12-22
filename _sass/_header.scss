@@ -25,9 +25,16 @@ h2 {
 			position: absolute;
 			background-color: $btn;
 			left: 0;
+			right: 0;
 			bottom: 0;
 			width: 40px;
 			height: 1px;
+			margin: 0 auto;
+				@media (min-width: $screen-sm-min){
+					left: 0;
+					right:auto;
+					margin: 0;
+				}
 		}
 		@media (min-width: $screen-sm-min){
 			font-size: 30px;
