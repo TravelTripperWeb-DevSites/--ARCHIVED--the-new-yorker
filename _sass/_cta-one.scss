@@ -1,54 +1,40 @@
-.home-rooms {
-	
-	.carousel-control {
-		bottom: 0;
-		top: auto;
-		transform: none;
-		&.left {
-			left: 50%;
-			right: auto;
-			margin: 0 0 0 -50px;
-			background-color: #161515;	
-				&:hover {
-						background: $white;
-							.fa {
-								color: #161515;
-							}
-					}
+.cta-one {
+	text-align: center;
+	color: $white;
+	padding: 50px 0;
+	position: relative;
+		@media (min-width: $screen-md-min){
+			padding: 80px 0;
 		}
-		&.right {
-			right: 50%;
-			left: auto;
-			margin: 0 -50px 0 0;
-			background-color: #161515;
-				&:hover {
-						background: $white;
-							.fa {
-								color: #161515;
-							}
-					}
-			&:after {
-					position: absolute;
-					content: "";
-					background-color: $white;
-					top: 15px;
-					bottom: 15px;
-					left: 0;
-					width: 1px;
+		@media (min-width: $screen-md-min){
+			padding: 117px 0;
+		}
+		h4 {
+			font-family: $main-font-medium;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			font-size: 15px;
+		}
+		h3 {
+			font-family: $main-heading;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+			font-size: 85px;
+			padding: 50px 0;
+				@media (min-width: $screen-sm-min){
+					font-size: 50px;
+					padding: 80px 0;
+				}
+				@media (min-width: $screen-md-min){
+					font-size: 85px;
+					padding: 100px 0;
 				}
 		}
-		.fa {
-				color: $white;
-			}
-	}
-	.-right {
-			padding: 0 15px 50px 15px;
-			
-			@media (min-width: $screen-md-min){
-				padding: 0 15px 0 20.173%;
-			}
-		
-	}
-	.-left {
-	}
+		.cta-content {
+			position: relative;
+			z-index:2;
+		}
+		.btn-holder {
+			padding:0;
+		}
 }
