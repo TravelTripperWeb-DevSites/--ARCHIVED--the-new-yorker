@@ -1,29 +1,4 @@
-.home-banner {
-	.container-fluid {
-		padding: 0;
-	}
-.banner-logo {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	transform: translateY(-50%);
-	width: 300px;
-		@media(min-width: $screen-md-min){
-			width: 500px;
-		}
-}
-.banner-overlay {
-	background-color: rgba(10,10,18,0.4);
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-}
-.carousel-control {
-	top: auto;
-	bottom: auto;
-}
+.container {
+	max-width: 1320px;
+	width: auto;
 }
