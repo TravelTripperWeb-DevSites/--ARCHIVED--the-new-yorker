@@ -5,7 +5,7 @@ $(window).on('load scroll resize', function () {
 	var mwidth = $(window).width();
 
 	if(mwidth > 1240){
-	if(mscroll > 100){
+	if(mscroll > 121){
 		$(".header-wrapper").addClass("fixed-header-wrapper");
 		$("body").addClass("body-padd-sticky");
 	}
@@ -109,3 +109,12 @@ $(document).ready(function(){
 		}
 	})
 });
+
+ $(document).ready(function() {
+	 $(".menu-btn").click(function(){
+		 $(".main-menu").slideToggle(300);
+	 });
+	 $('#lightgallery').lightGallery({
+   		selector: '.item'
+		})
+ });
