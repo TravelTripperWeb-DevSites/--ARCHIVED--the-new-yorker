@@ -233,7 +233,7 @@
                	  	     }
                	  	     .btn-white{
                	  	     	     margin: 40px 0px;
-               	  	     	     
+               	  	     	     padding: 15px 30px;
 
                	  	     }
 		  	    }
@@ -252,18 +252,10 @@
 }
 
 .btn-white {
-    background-color: #fff;
-    letter-spacing: 0.25em;
-    padding: 10px 25px;
-    text-transform: uppercase;
-    font-family: "BrandonGrotesqueWeb-Regular"; 
-    font-size: 12px;
-    display: inline-block;
-    color: #000;
-    text-shadow: none;
-    transition: all 0.4s;
+    background-color: #fff !important; 
+    color: #000 !important;
     &:hover{
-    	 background: #000;
-    	 color: #fff;
+    	 background: #000 !important;
+    	 color: #fff !important;
     }
 }
