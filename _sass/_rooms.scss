@@ -23,9 +23,50 @@
 
     .page-title{
 
-    	padding:150px 0;
+    	padding:90px 0;
+    	position:relative;
+    	z-index:99;
+
+    	 @media(min-width: $screen-sm-min)
+
+    	 {
+
+    	 padding:150px 0;
+
+    	}
+
+    	
     }
 
+    h2{
+    	    font-size: 45px;
+    	    color:$white;
+    	    text-transform:uppercase;
+    	    line-height: 50px;
+
+    	    @media(min-width: $screen-sm-min)
+		{
+			font-size: 85px;
+			line-height: 70px;
+			
+			
+		}
+    }
+
+    p{
+    		color:$white;
+    		max-width: 500px;
+   			margin: 0px auto;
+
+   			 @media(max-width:767px)
+		{
+			
+			padding:0px 15px;
+			
+		}
+
+
+    }
 
 }
 
