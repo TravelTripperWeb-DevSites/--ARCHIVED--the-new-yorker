@@ -73,4 +73,14 @@ $(window).on('load resize', function () {
 	}
 	
 });  
+
+
+
+$('#home-banner').on('slid.bs.carousel', function () {
+  var carouselData = $(this).data('bs.carousel');
+  var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
+  var total = carouselData.$items.length;
+  var text = (currentIndex + 1) + " of " + total;
+  $('.num').text(text);
+});
 	  
