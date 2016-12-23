@@ -17,14 +17,6 @@
 			width: 500px;
 		}
 }
-.banner-overlay {
-	background-color: rgba(10,10,18,0.4);
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-}
 .carousel-inner {
 	.item {
 		background-size: cover;
@@ -111,4 +103,13 @@
 	}
 	
 }
+}
+
+.banner-overlay {
+	background-color: rgba(10,10,18,0.4);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
 }
