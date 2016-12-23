@@ -105,8 +105,12 @@ a:hover,a:focus {
 			}
 			.cal {
 				display: inline-block;
-				margin: 0 20px 0 0;
-				width: 20px;
+				margin: 0 10px 0 0;
+				width: 16px;
+					@media (min-width: $screen-sm-min){
+					    margin: 0 20px 0 0;
+						width: 20px;
+					}
 					img {
 						width: 100%;
 					}
@@ -125,13 +129,13 @@ a:hover,a:focus {
 		
 		@media (max-width: 1240px){
 					
-						padding: 29px 20px;
+						padding: 27px 20px;
 					
 		}
 		@media (max-width: 767px){
 		font-size: 10px;
 		letter-spacing: 1px;
-		padding: 19px 10px;
+		padding: 17px 10px;
 	}
 		&:hover {
 			background-color: $black;
@@ -162,7 +166,7 @@ a:hover,a:focus {
 	right: 0;
 	margin: 0 auto;
 	padding: 26px 0 0 0;
-	
+	background-color: $white;
 	@media (max-width: 1240px){
 		padding: 10px 0 0 24px;
 	}
@@ -211,9 +215,10 @@ a:hover,a:focus {
 					&.active{color: #3a9dc4;}
 					
 					@media (max-width: 1240px){
-						padding: 10px 10px;
+						padding: 10px 8px;
 						letter-spacing: 1px;
 						display: block;
+						font-size: 13px;
 					}
 						@media (max-width: 1023px){
 						padding: 20px 12px;
@@ -270,18 +275,10 @@ a:hover,a:focus {
 		width: 160px;
 	}
 	.booknow {
-		position: absolute;
-		right: 0;
-		top:-18px;
-		a{
-			padding: 29px 20px;
-		}
-		@media (max-width: 1240px){
-					top:-8px;
-				}
+		padding-top: 0; 
 	}
 	.main-menu {
-		padding: 20px 0 0 20px;
+		padding: 7px 0 0 20px;
 	}
 }
 
@@ -300,8 +297,8 @@ a:hover,a:focus {
 	position:relative;
 	cursor: pointer;
 	position: absolute;
-	right: 180px;
-	width: 40px;
+	right: 200px;
+	width: 32px;
 	height: 22px;
 	top: 28px;
 	z-index: 1;
@@ -311,7 +308,7 @@ a:hover,a:focus {
 	}
 	@media (max-width: 767px){
 		top:16px;
-		right:100px;
+		right:130px;
 	}
 }
 .menu-btn:after{
@@ -319,7 +316,7 @@ a:hover,a:focus {
 	position: absolute;
 	border-bottom: solid 2px #000;
 	border-top: solid 2px #000;
-	width: 40px;
+	width: 32px;
 	left:0;
 	height: 12px;
 	
@@ -328,7 +325,7 @@ a:hover,a:focus {
 	content:"";
 	position: absolute;
 	border-bottom: solid 2px #000;
-	width: 40px;
+	width: 32px;
 	left:0;
 	height: 22px;
 }

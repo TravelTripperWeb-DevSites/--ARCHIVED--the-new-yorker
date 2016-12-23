@@ -20,7 +20,16 @@
 			background-color: #404040;
 			color: $white;
 		}
+	&.btn-white {
+		background-color: $white;
+		color: $btn;
+			&:hover {
+				background-color: $btn;
+				color: $white;
+		}
+	}
 }
+
 .btn-holder {
 	padding: 30px 0 0 0;
 		@media (min-width: $screen-md-min){
