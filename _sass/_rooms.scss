@@ -194,6 +194,15 @@
     background-color:$bg;
     text-align:center;
 
+    @media(max-width:767px)
+
+         {
+
+            padding:35px 0;
+
+         }
+
+
     .container{
 
             max-width: 1020px;
@@ -206,6 +215,14 @@
         text-transform:uppercase;
         letter-spacing: .1em;
         padding-bottom:70px;
+
+         @media(max-width:767px)
+
+         {
+
+            padding-bottom:25px;
+
+         }
     }
 
     h5{
@@ -227,6 +244,11 @@
         position:relative;
         transition: all 0.4s;
 
+        @media(max-width:767px){
+
+            margin-bottom:20px;
+        }
+
         &:hover{
 
 
@@ -247,6 +269,11 @@
     }
     .btn-white{
             margin-top: 60px;
+
+             @media(max-width:767px){
+
+                    margin-top: 0px;
+             }
     }
 
 }

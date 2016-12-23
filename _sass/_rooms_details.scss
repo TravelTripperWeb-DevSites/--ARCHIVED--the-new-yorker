@@ -1,0 +1,29 @@
+.room-details{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+
+    .room-price{
+
+    }
+    .room-name{
+
+        font-family:$main-heading;
+        font-size:85px;
+        text-transform:uppercase;
+        color:$white;
+        background-image: url("/images/rooms/room-name-underline.png");
+        background-repeat: repeat-x;
+
+
+    }
+
+    .book-button{
+
+    }
+
+}
