@@ -5,7 +5,7 @@ $(window).on('load scroll resize', function () {
 	var mwidth = $(window).width();
 
 	if(mwidth > 1240){
-	if(mscroll > 100){
+	if(mscroll > 121){
 		$(".header-wrapper").addClass("fixed-header-wrapper");
 		$("body").addClass("body-padd-sticky");
 	}
@@ -46,7 +46,7 @@ function initMap() {
 		
 		
 		
-		var iconBase = 'http://master.thestewarthotel.sites.traveltripper.io/images/'; 
+		var iconBase = '/images/'; 
 		
         var marker = new google.maps.Marker({
           position: myLatLng,
@@ -61,6 +61,60 @@ function initMap() {
 $(window).on('load resize', function () {
 	var mheight = $(window).height();
 	var mwidth = $(window).width();
-	$(".home-banner .carousel-inner .item").height(mheight);
+	
+	if(mwidth > 300){
+		$(".home-banner .carousel-inner .item").height(mheight-50);
+	}
+	if(mwidth > 768){
+		$(".home-banner .carousel-inner .item").height(mheight-75);
+	}
+	if(mwidth > 1240){
+		$(".home-banner .carousel-inner .item").height(mheight-121);
+	}
+	
 });  
-	  
+
+
+
+$('#home-banner').on('slid.bs.carousel', function () {
+  var carouselData = $(this).data('bs.carousel');
+  var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
+  var total = carouselData.$items.length;
+  var text = (currentIndex + 1) + " of " + total;
+  $('.num').text(text);
+});
+
+$(document).ready(function(){
+	$('.owl-carousel.attractions-carousel').owlCarousel({
+		loop:true,
+		margin:40,
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1,
+				nav:true,
+				navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
+			},
+			600:{
+				items:3,
+				nav:false,
+				loop:true
+			},
+			1000:{
+				items:3,
+				nav:true,
+				navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+				loop:true
+			}
+		}
+	})
+});
+
+ $(document).ready(function() {
+	 $(".menu-btn").click(function(){
+		 $(".main-menu").slideToggle(300);
+	 });
+	 $('#lightgallery').lightGallery({
+   		selector: '.item'
+		})
+ });

@@ -1,0 +1,33 @@
+/*Inner Page common banner*/
+
+.inner-page-banner{
+	display:table;
+	background:$grey-bg;
+	height:424px;
+	color:$white;
+	text-align:center;
+	width:100%;
+	vertical-align:middle;
+	@media (max-width:499px){
+		height:370px;	
+	}
+	@media (min-width:500px) and (max-width:639px){
+		height:283px;	
+	}
+	@media (min-width:640px) and (max-width:768px){
+		height:260px;	
+	}
+	h1{
+		@extend .mega-title;
+		color:$white !important;
+		letter-spacing:8px !important;
+		padding:120px 0 20px !important;	
+		@media (max-width:768px){
+			padding-top:60px !important;
+		}
+	}
+	p{ color:$white; max-width:660px; margin:0 auto; padding:0 20px;}
+	&.location{
+		background:url(../images/location-banner.jpg) no-repeat; background-size:cover;
+	}
+}
