@@ -1,6 +1,7 @@
 /*Inner Page common banner*/
 
 .inner-page-banner{
+	position:relative;
 	display:table;
 	background:$grey-bg;
 	height:424px;
@@ -24,6 +25,7 @@
 		padding:120px 0 20px !important;	
 		@media (max-width:768px){
 			padding-top:60px !important;
+			font-size:42px !important;
 		}
 	}
 	p{ color:$white; max-width:660px; margin:0 auto; padding:0 20px;}
@@ -32,6 +34,17 @@
 	
 	&.location{
 		background:url(../images/location-banner.jpg) no-repeat; background-size:cover;
+	}
+	&.dining{
+		background:url(../images/dining-banner.jpg) no-repeat; background-size:cover;
+	}
+	.overlay{
+		position: absolute;
+		top: 0;
+		background: rgba(16,16,24,.75);
+		width: 100%;
+		height: 100%;
+		display: block;
 	}
 }
 
@@ -85,3 +98,28 @@
 /*Events & Happenings*/
 
 .offer-section{ img{ width:100%;}}
+
+/*Featured Attractions*/
+
+.featured-attractions{
+	.two-col-wrapper{
+		border-top:solid 1px #d9d9d9;
+		padding:50px 0px 70px;
+		h5{
+			font-family: "BrandonGrotesqueWeb-Bold";
+			font-size: 13px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #0a0a12;
+			letter-spacing: 1px;
+			
+		}
+		.content-box{
+			h5{ text-align:left; color:#1a87e9; padding-bottom:30px;
+				@media (max-width:768px){ text-align:center;}
+			}
+			p,i{ color:$grey-text;}
+			@media (max-width:768px){ text-align:center;}
+		}
+	}
+}
