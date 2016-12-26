@@ -77,7 +77,7 @@
         a{
             color:$menu;
             display: inline-block;
-            padding: 10px;
+            padding: 10px 0px;
 
              @media(max-width:767px){
 
@@ -221,10 +221,9 @@
                 p{
 
                     font-size:15px;
-                    
                     font-family:$main-font-regular;
                     color:$grey-text;
-
+                    
                 }
             }
         }
