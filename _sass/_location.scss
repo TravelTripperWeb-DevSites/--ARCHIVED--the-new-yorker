@@ -85,3 +85,24 @@
 /*Events & Happenings*/
 
 .offer-section{ img{ width:100%;}}
+
+/*Featured Attractions*/
+
+.featured-attractions{
+	.two-col-wrapper{
+		border-top:solid 1px #d9d9d9;
+		padding:50px 0px 70px;
+		h5{
+			font-family: "BrandonGrotesqueWeb-Bold";
+			font-size: 13px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #0a0a12;
+			letter-spacing: 1px;
+		}
+		.content-box{
+			h5{ text-align:left; color:#1a87e9; padding-bottom:30px;}
+			p,i{ color:$grey-text;}
+		}
+	}
+}
