@@ -70,10 +70,11 @@
 /*Mega Title*/
 
 h1{
-	&.mega-title{ font-family:$main-heading; color:$text; font-size:85px; letter-spacing:2px; text-align:center; text-transform:uppercase; padding:60px 0;
+	&.mega-title{ font-family:$main-heading; color:$text; font-size:85px; letter-spacing:2px; text-align:center; text-transform:uppercase; padding:60px 0 55px;
 		@media (max-width: 767px){
 			font-size:52px; padding:20px 0;
 		}
+		&.small-variant{ font-size:42px; letter-spacing:4px;}
 	}		
 }
 
@@ -165,4 +166,6 @@ h1{
 
 /*Overwrites here*/
 .p-t-60{ padding-top:60px !important;}
+.m-b-20{ margin-bottom:20px;}
+.m-t-0{ margin-top:0px;}
 .relavtive{ position:relative;}
