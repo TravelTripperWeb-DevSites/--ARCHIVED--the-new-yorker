@@ -32,15 +32,23 @@
 		width: 100%;
 	}
 	.content-area{
-		position: absolute;
 		top: 0px;
 		width: 100%;
 		height: 100%;
-		background: rgba(0,0,0,.3);
 		text-align: center;
-		padding: 28% 0 0 0;
+		padding: 32% 0;
+		background-size: cover;
+		.overlay{
+			background-color: rgba(0,0,0,.3);
+			position: absolute;
+			height: 100%;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 25% 0 0 0;
+		
 		h1{
-			color: #fff;
+			color: $white;
 			font-size: 36px;
 			letter-spacing: 3px;
 			text-transform: uppercase;
@@ -48,7 +56,7 @@
 			line-height: 40px;
 		}
 		h4{
-			color: #fff;
+			color: $white;
 			font-size: 16px;
 			letter-spacing: 3px;
 			text-transform: uppercase;
@@ -56,11 +64,38 @@
 			line-height: 24px;
 			padding: 10px 0 0 0;
 		}
+			}
 }
 }
 
 /* carousel css starts here */
 .landmark{
+	padding: 200px 0px 130px 0px !important;
+	 ol.carousel-indicators {
+		top: -70px;
+		text-align: left;
+		left: 43.8%;
+		bottom: auto;
+		 li{
+			width: auto;
+			height: auto;
+			text-align: center;
+			border: none;
+			background-color: transparent;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: $black;
+			text-indent: 0;
+			padding: 5px 4px;
+			font-size: 14px;
+			font-family: $main-font-bold;
+			border-radius: 0px;
+			  &.active{
+			 	border-bottom: 4px solid $heading;
+		 	  }
+		 }
+		
+	}
 	.content-box{
 		padding-top: 59px !important;
 			h2{
@@ -100,3 +135,43 @@
 	}
 }
 /* carousel css ends here */
+
+.rooms-rates{
+	.caption{
+		    padding-top: 15% !important;
+			height: auto !important;
+			top: 0 !important;
+			background-size: cover;
+			position: relative !important;
+			span{
+				color: $white;
+				font-family: $main-font-medium;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				border-bottom: 1px solid $white;
+				width: auto;
+				padding: 0 0 6px 0;
+					strong{
+						font-weight: normal;
+					}
+			}
+		h3{
+			padding: 110px 0 0 0;
+		}
+		.btn-common{
+			background-color: transparent !important;
+			color: $white !important;
+			font-size: 16px;
+			text-transform: inherit;
+			margin: 30px 0 50px;
+			&:after{
+				content: "+";
+				padding: 0 0 0 10px;
+			}
+		}
+		.cal-icon{
+			width: auto !important;
+			padding-bottom: 76px;
+		}
+	}
+}
