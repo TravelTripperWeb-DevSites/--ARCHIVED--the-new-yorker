@@ -1,7 +1,61 @@
 /*Dining page styles here*/
-
-.intro{
+.m-t--150{ margin-top:-150px;}
+.m-r-15{ margin-right:15px;}
+.dining{
+	.intro{
+		@media (max-width:768px){
+			h2{ margin-top:40px;}
+		}
+	}
 	.hours{
-		border:solid 1px #bfbfc1;	
-	}	
+			text-align:center;
+			border:solid 1px #bfbfc1; max-width:83%;
+			margin:80px 0 0;	
+			@media (max-width:768px){ margin:80px auto 0;}
+			h5 {
+				font-family: "BrandonGrotesqueWeb-Bold";
+				font-size: 14px;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				text-align:center;
+				color: #101018;
+				margin:-8px auto 0;
+				background:$bg;
+				padding: 0 10px;
+				width:165px;
+			}
+			p{ width:auto; max-width:none; color:$grey-text; padding:40px 0;}
+			ul{
+				padding:10px 0; border-top:solid 1px #bfbfc1; margin:0 auto;text-align:center; display:flex;
+				li{ list-style:none; float:left; padding:0px 2px; color:$grey-text; font-size:13px; width:28%;
+					a{ color:$grey-text; font-style:italic;}
+					span{ text-transform:uppercase; color:$text; font-family:$main-font-bold; font-style:normal;}
+					&.mail{ width:44%;}
+					&.full{ width:100%;}
+					&:before{ display:none;}
+				}	
+			}
+			
+		}	
+	&.discover{
+		.intro{
+			.img{ height:474px;}	
+		}
+		.hours{
+			max-width:100%; margin:100px 0 0;
+			ul{ padding:10px 0;}	
+			h5{ background:#e6e6e6;}
+		}	
+	}
+	&.cta-one{
+		.cta-content{
+			p{
+				color: #ffffff;
+				max-width: 660px;
+				margin: 0 auto;
+				padding: 0 20px 85px; max-width:450px;
+			}
+			h3{ padding:100px 0 35px;}	
+		}	
+	}
 }
