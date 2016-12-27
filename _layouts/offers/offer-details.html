@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="home-banner custom-carousel room-details-page">
+<section class="home-banner custom-carousel room-details-page offer-details-page">
   <div class="container-fluid">
     <div id="home-banner" class="carousel slide" data-ride="carousel">
   
@@ -10,42 +10,19 @@ layout: default
   <div class="carousel-inner" role="listbox">
     <div class="item active" style="background-image: url(/images/banner-1.jpg);">
     <div class="banner-overlay"></div>
-    <div class="room-details">
-    <div class="room-price">Tonight’s rate $ 429</div>
-    <div class="room-name">premium suite</div>
-    <a href="#" class="btn-common">Book This Suite</a>
+    <div class="room-details offer-details">
+    
+    <div class="room-name"><span> Business Premium Package</span></div>
+    <a href="#" class="btn-common">Book This Offer</a>
     </div>	
     </div>
-    <div class="item" style="background-image: url(/images/banner-1.jpg);">
-    <div class="banner-overlay"></div>
-    <div class="room-details">
-    <div class="room-price">Tonight’s rate $ 429</div>
-    <div class="room-name">premium suite</div>
-    <a href="#" class="btn-common">Book This Suite</a>
-    </div>	
-    </div>
-    <div class="item" style="background-image: url(/images/banner-1.jpg);">
-    <div class="banner-overlay"></div>
-    <div class="room-details">
-    <div class="room-price">Tonight’s rate $ 429</div>
-    <div class="room-name">premium suite</div>
-    <a href="#" class="btn-common">Book This Suite</a>
-    </div>	
-    </div>
-    <div class="item" style="background-image: url(/images/banner-1.jpg);">
-    <div class="banner-overlay"></div>
-    <div class="room-details">
-    <div class="room-price">Tonight’s rate $ 429</div>
-    <div class="room-name">premium suite</div>
-    <a href="#" class="btn-common">Book This Suite</a>
-    </div>	
-    </div>
+
   </div>
   
   
-  
+  <!--
 	<div class="counter"><span class="num">1 of 4</span></div>
-  <!-- Left and right controls -->
+ 
   <a class="left carousel-control" href="#home-banner" role="button" data-slide="prev">
     <i class="fa fa-angle-left" aria-hidden="true"></i>
     <span class="sr-only">Previous</span>
@@ -54,6 +31,7 @@ layout: default
     <i class="fa fa-angle-right" aria-hidden="true"></i>
     <span class="sr-only">Next</span>
   </a>
+  -->
 </div>
   </div>
 </section>
@@ -61,9 +39,9 @@ layout: default
  <div class="container-fluid rooms-navigation">
  <div class="row">
    <div class="col-sm-12">
-   <a href="view-all-rooms"> Room Name</a>
-   <a href="" class="prev-room"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> Previous Room</span></a>
-   <a href="" class="next-room"><span>Next Room</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt="">  </a>
+   <a href="view-all-rooms"> Back to Offer Listing</a>
+   <a href="" class="prev-room"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> Previous Offer</span></a>
+   <a href="" class="next-room"><span>Next Offer</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt="">  </a>
    
    
    </div>
@@ -73,42 +51,93 @@ layout: default
 
 </section>
 
-<section class="rooms-details-container">
+<section class="rooms-details-container offer-details-container">
    <div class="container-fluid ">
    <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-6">
        <div class="rooms-details">
       <div id="exTab1" class="container"> 
     <ul  class="nav">
       <li class="active"> <a  href="#1a" data-toggle="tab">Description</a> </li>
-      <li><a href="#2a" data-toggle="tab">Amenities</a> </li>
+      <li><a href="#2a" data-toggle="tab">Terms & Conditions</a> </li>
       
     </ul>
 
       <div class="tab-content clearfix">
         <div class="tab-pane active" id="1a">
-          <h3>luxury redefined</h3>
-          <p>With 550 square feet of space, the Premium Suite is our largest accommodations. Located above the 38th floor, these stunning, renovated suites offer views of New York’s Empire State Building or the Hudson River. </p>
+          <h3>Special Offer</h3>
+          <p>Our Business Premium Package features a host of benefits to help travelers
+recharge from the fatigue of short- or long-haul journeys and meetings. The
+package comes with complimentary breakfast for two as well as early check-in
+and late check-out.</p>
         </div>
         <div class="tab-pane" id="2a">
-           <h3>Amenities redefined</h3>
-          <p>Renovated suites offer views of New York’s Empire State Building or the Hudson River. With 550 square feet of space, the Premium Suite is our largest accommodations. Located above the 38th floor, these stunning, </p>
+           <h3>Terms & Conditions</h3>
+          <p>Our Business Premium Package features a host of benefits to help travelers
+recharge from the fatigue of short- or long-haul journeys and meetings. The
+package comes with complimentary breakfast for two as well as early check-in
+and late check-out.</p>
         </div>
         
       </div>
   </div>
        </div>
      </div>
-     </div>
-     <div class="row rooms-images">
-      <div class="col-sm-6">
-      <img src="/images/rooms/rooms-details-img1.jpg" class="img-responsive" alt="">
+     <div class="col-sm-6 rooms-bar">
+     <div class="booking-form"> 
+    <form method="get" action="" enctype="" class="">
+    
+      <div class="col-sm-6" >
+      <div class="form-group ">
+      <label>Arrival</label>
+      <input type="text" class="textfield hasDatepicker" placeholder="Arrival" id="od_arrival" name="arrival_date" autocomplete="off">
       </div>
-      <div class="col-sm-6">
-      <img src="/images/rooms/rooms-details-img1.jpg" class="img-responsive" alt="">
       </div>
+      
+      <div class="col-sm-6" >
+      <div class="form-group">
+      <label>Departure</label>
+      <input type="text" class="textfield hasDatepicker" placeholder="Departure" id="od_departure" name="departure_date" autocomplete="off">
+      </div>
+      </div>
+      <div class="col-sm-6" >
+      <div class="form-group">
+      <label>Adults</label>
 
+      <select class="select-dropdown" name="adults[]" id="adults">
+        <option value="1" selected="">1 Adult</option>
+        <option value="2">02 Adults</option>
+        <option value="3">03 Adults</option>
+        <option value="4">04 Adults</option>
+        <option value="5">05 Adults</option>
+        <option value="6">06 Adults</option>
+      </select>
+       </div>
+       </div>
+      <div class="col-sm-6" >
+      <div class="form-group">
+      <label>Children</label>
+
+
+      <select class="select-dropdown" name="children[]" id="children">
+        <option value="0" selected="">00 Children</option>
+        <option value="1">01 Children</option>
+        <option value="2">02 Children</option>
+        <option value="3">03 Children</option>
+        <option value="4">04 Children</option>
+        <option value="5">05 Children</option>
+      </select>
+
+      </div>
+    </div>
+    <div class="col-sm-12" >
+      <button type="submit" class="book-now">Book this offer now</button> 
+    </div>
+    </form>
+    </div>
      </div>
+     </div>
+     
     </div>
 
 </section>
