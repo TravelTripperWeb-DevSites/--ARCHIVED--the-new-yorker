@@ -121,5 +121,6 @@
 			p,i{ color:$grey-text;}
 			@media (max-width:768px){ text-align:center;}
 		}
+		&.landmark{ padding:50px 0px 70px !important;}
 	}
 }
