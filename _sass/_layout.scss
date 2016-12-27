@@ -36,3 +36,16 @@
 			padding: 55px 0 0 0;
 		}
 }
+a {
+	color: #0a0a12;
+	transition: all 0.4s;
+		&:hover {
+			color: $text-color;
+		}
+}
+.btn-spacing {
+	margin: 0 0 0 0;
+		@media (min-width: $screen-md-min){
+			margin: 0 20px 0 0;
+		}
+}

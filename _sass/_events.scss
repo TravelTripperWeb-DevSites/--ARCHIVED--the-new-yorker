@@ -1,0 +1,112 @@
+.inner-page-banner {
+	&.page-banner {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		position: relative;
+	}
+	.overlay{
+		position: absolute;
+		top: 0;
+		background: rgba(16,16,24,.75);
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index: 1;
+	}
+}
+.intro-wrap {
+		&.events {
+			background-color: transparent;
+				p {
+					&.black {
+						color: $heading;
+					}
+				}
+			
+		}
+	}
+.intro-bg {
+	background-position: right center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.events-wrap {
+	padding: 50px 0;
+		@media (min-width: $screen-sm-min){
+			padding: 69px 0;
+		}
+		.container {
+			max-width: 1114px;
+		}
+		.-left {
+			padding: 0 0 0 0;
+			@media (min-width: $screen-sm-min){
+				padding: 0 0 0 40px;
+			}
+			@media (min-width: $screen-md-min){
+				padding: 0 0 0 108px;
+			}
+		}
+		.-right {
+			padding: 0 0 50px 0;
+			@media (min-width: $screen-md-min){
+				padding: 0 15px 0 30px;
+			}
+			@media (min-width: $screen-lg-min){
+				padding: 0 15px 0 20.173%;
+			}
+		}
+		.carousel-control {
+		bottom: auto;
+		top: 0;
+		right:0;
+		left: auto;
+		transform: none;
+		&.left {
+			left: auto;
+			right: 50px;
+			margin: 0 0 0 -50px;
+			background-color: #161515;	
+				&:hover {
+						background: $white;
+							.fa {
+								color: #161515;
+							}
+					}
+		}
+		&.right {
+			right: 0;
+			left: auto;
+			margin: 0 0 0 0;
+			background-color: #161515;
+				&:hover {
+						background: $white;
+							.fa {
+								color: #161515;
+							}
+					}
+			&:after {
+					position: absolute;
+					content: "";
+					background-color: $white;
+					top: 15px;
+					bottom: 15px;
+					left: 0;
+					width: 1px;
+				}
+		}
+		.fa {
+				color: $white;
+			}
+	}
+}
+.events-cta {
+	h3 {
+		padding: 100px 0 10px 0;
+		color: #fff;
+	}
+	p {
+		color: #fff;
+	}
+}
