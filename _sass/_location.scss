@@ -3,7 +3,6 @@
 .inner-page-banner{
 	position:relative;
 	display:table;
-	background:$grey-bg;
 	height:424px;
 	color:$white;
 	text-align:center;
@@ -25,10 +24,10 @@
 		padding:120px 0 20px !important;	
 		@media (max-width:768px){
 			padding-top:60px !important;
-			font-size:42px !important;
+			font-size:32px !important;
 		}
 	}
-	p{ color:$white; max-width:660px; margin:0 auto; padding:0 20px;}
+	p{ color:$white; max-width:660px; margin:0 auto; padding:0 30px;}
 	
 	/*Individual Inner page Banner images here*/
 	
@@ -45,6 +44,7 @@
 		width: 100%;
 		height: 100%;
 		display: block;
+		z-index: 1;
 	}
 }
 
@@ -121,5 +121,10 @@
 			p,i{ color:$grey-text;}
 			@media (max-width:768px){ text-align:center;}
 		}
+		&.landmark{ padding:50px 0px 70px !important;}
 	}
+}
+.map-inner{ height:550px;}
+.full-map{
+	.map-inner{ height:500px;}
 }

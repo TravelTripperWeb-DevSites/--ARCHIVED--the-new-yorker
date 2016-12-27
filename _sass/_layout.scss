@@ -7,7 +7,7 @@
 }
 .btn-common {
 	background-color: $btn;
-    padding: 14px 16px;
+    padding: 16px 16px 12px;
     text-transform: uppercase;
     font-family: $main-font-regular;
     letter-spacing: 2px;
@@ -16,8 +16,9 @@
     color: $white;
     text-shadow: none;
     transition: all 0.4s;
+	text-align: center;
 		&:hover {
-			background-color: #404040;
+			background-color: rgba(10,10,18,0.6);
 			color: $white;
 		}
 	&.btn-white {
@@ -34,5 +35,26 @@
 	padding: 30px 0 0 0;
 		@media (min-width: $screen-md-min){
 			padding: 55px 0 0 0;
+		}
+}
+a {
+	color: #0a0a12;
+	transition: all 0.4s;
+		&:hover {
+			color: $text-color;
+		}
+}
+.btn-spacing {
+	margin: 0 0 0 0;
+		@media (min-width: $screen-md-min){
+			margin: 0 20px 0 0;
+		}
+}
+.btn-block {
+	display: block;
+	padding: 0 0 15px 0;
+		@media (min-width: 480px){
+			display: inline;
+			padding:0;
 		}
 }

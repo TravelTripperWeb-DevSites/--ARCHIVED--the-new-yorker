@@ -1,6 +1,12 @@
 /*Dining page styles here*/
 .m-t--150{ margin-top:-150px;}
 .m-r-15{ margin-right:15px;}
+.m-t-50{ margin-top:50px;}
+.max-895{ max-width:895px;}
+@media (max-width:768px){
+	.m-r-15{ margin-right:0px; margin-bottom:15px;}
+	
+}
 .dining{
 	.intro{
 		@media (max-width:768px){
@@ -28,7 +34,7 @@
 			ul{
 				padding:10px 0; border-top:solid 1px #bfbfc1; margin:0 auto;text-align:center; display:flex;
 				li{ list-style:none; float:left; padding:0px 2px; color:$grey-text; font-size:13px; width:28%;
-					a{ color:$grey-text; font-style:italic;}
+					a{ color:$grey-text; font-style:italic; word-wrap: break-word;}
 					span{ text-transform:uppercase; color:$text; font-family:$main-font-bold; font-style:normal;}
 					&.mail{ width:44%;}
 					&.full{ width:100%;}
@@ -45,6 +51,7 @@
 			max-width:100%; margin:100px 0 0;
 			ul{ padding:10px 0;}	
 			h5{ background:#e6e6e6;}
+			@media (max-width:768px){ margin:20px 0 0;}
 		}	
 	}
 	&.cta-one{
@@ -56,6 +63,21 @@
 				padding: 0 20px 85px; max-width:450px;
 			}
 			h3{ padding:100px 0 35px;}	
-		}	
+		}
+		.banner-overlay{ background-color:rgba(10, 10, 18, 0.2);}
+		.max-895{
+			.btn-common{
+				margin-bottom:10px;	
+			}
+		}
 	}
+}
+.inroom{ text-align:center; width:100%; background-size:cover; display: inline-block; background-color:#f4f4f4;
+	h2{ text-align:center; padding-top:104px;
+		@media (min-width:768px){
+			&:after{ left: calc(50% - 25px); right:inherit; margin:0 auto;}
+		}
+	}
+	p{ max-width:465px; margin:0 auto; padding:50px 30px 25px; color:$grey-text;}
+	.btn-holder{ margin-bottom:90px;}
 }
