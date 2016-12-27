@@ -1,18 +1,9 @@
 .inner-page-banner {
-	&.page-banner {
+	&.banner {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
 		position: relative;
-	}
-	.overlay{
-		position: absolute;
-		top: 0;
-		background: rgba(16,16,24,.75);
-		width: 100%;
-		height: 100%;
-		display: block;
-		z-index: 1;
 	}
 }
 .intro-wrap {
@@ -102,11 +93,119 @@
 	}
 }
 .events-cta {
+	.banner-overlay {
+		background-color: rgba(10, 10, 18, 0.2);
+	}
 	h3 {
-		padding: 100px 0 10px 0;
+		padding-bottom: 10px;
 		color: #fff;
 	}
 	p {
 		color: #fff;
+		padding: 0 0 50px 0;
+		@media (min-width: $screen-sm-min){
+			padding: 0 0 84px 0;
+		}
+		a {
+			color: $white;
+				&:hover {
+					color: $white;	
+				}
+		}
+	}
+}
+.dining {
+	&.discover {
+		&.events-content {
+			.intro {
+				.img {
+					max-width: 394px;
+					width: auto;
+					height: auto;
+						img {
+							width: 100%;
+						}
+				}
+			}
+		.content-box {
+			p {
+				padding-bottom: 30px;
+					&:last-child{
+						padding-bottom: 0;
+					}
+			}
+		}
+		.m-t--150 {
+			margin: 0;
+		}
+		#amenitiesCarousel {
+			margin-top: 0;
+				@media (min-width: $screen-md-min){
+					margin-top: -120px;
+				}
+		}
+		}
+	}
+}
+.cta-events {
+	.cta-events-img {
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		position: relative;
+		height: 300px;
+			@media (min-width: $screen-sm-min){
+				height: auto;
+			}
+	}
+	.-right {
+		padding-top: 50px;
+		padding-bottom: 50px;
+			@media (min-width: $screen-sm-min){
+				padding-top: 65px;
+				padding-bottom: 65px;
+			}
+	}
+	.-left {
+		
+		@media (max-width: $screen-xs-max){
+				position: absolute;
+				top: 50%;
+				left: 0;
+				right: 0;
+				transform: translateY(-50%);
+				margin: 0 auto;
+			}
+		.btn-holder {
+			text-align: center;
+			padding: 0;
+		}
+	}
+}
+.events-cta-2 {
+	&.cta-one {
+		background-position: top center;
+	}
+	h3 {
+		padding-bottom: 10px;
+		color: #fff;
+	}
+	p {
+		color: #fff;
+		padding: 0 0 50px 0;
+		@media (min-width: $screen-sm-min){
+			padding: 0 0 84px 0;
+			width: 60%;
+			margin: 0 auto;
+		}
+		@media (min-width: $screen-md-min){
+			width: 35%;
+		}
+		a {
+			color: $white;
+				&:hover {
+					color: $white;	
+				}
+		}
 	}
 }

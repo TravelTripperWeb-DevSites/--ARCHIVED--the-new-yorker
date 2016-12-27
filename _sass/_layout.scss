@@ -16,6 +16,7 @@
     color: $white;
     text-shadow: none;
     transition: all 0.4s;
+	text-align: center;
 		&:hover {
 			background-color: #404040;
 			color: $white;
@@ -47,5 +48,13 @@ a {
 	margin: 0 0 0 0;
 		@media (min-width: $screen-md-min){
 			margin: 0 20px 0 0;
+		}
+}
+.btn-block {
+	display: block;
+	padding: 0 0 15px 0;
+		@media (min-width: 480px){
+			display: inline;
+			padding:0;
 		}
 }

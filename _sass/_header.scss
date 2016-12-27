@@ -135,7 +135,7 @@ a:hover,a:focus {
 		@media (max-width: 767px){
 		font-size: 10px;
 		letter-spacing: 1px;
-		padding: 17px 10px;
+		padding: 16px 10px;
 	}
 		&:hover {
 			background-color: $black;
@@ -185,7 +185,7 @@ a:hover,a:focus {
 					padding: 0;
 					}
 					@media (max-width: 767px){
-						top: 52px;
+						top: 50px;
 					}
 	ul {
 		text-align: center;
@@ -212,7 +212,7 @@ a:hover,a:focus {
 					&:focus {
 						background:none;
 					}
-					&.active{color: #3a9dc4;}
+					&.active{color: $blue;}
 					
 					@media (max-width: 1240px){
 						padding: 10px 8px;
@@ -347,7 +347,7 @@ a:hover,a:focus {
 			padding-top: 77px;
 		}
 		@media (max-width:767px){
-			padding-top: 52px;
+			padding-top: 50px;
 		}
 }
 
