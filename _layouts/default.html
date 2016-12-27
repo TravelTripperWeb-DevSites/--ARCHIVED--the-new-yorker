@@ -8,5 +8,8 @@
         
     {% include scripts.html %}
     {% include footer.html %}
+    {% if page.map == true %}
+	{% include map.html %}
+{% endif %}
   </body>
 </html>

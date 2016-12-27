@@ -21,6 +21,9 @@
 			@media (min-width: $screen-lg-min){
 				max-width: 232px;
 			}
+			@media (max-width:768px){
+				padding-bottom: 50px;	
+			}
 				img {
 					width: 100%;
 				}
