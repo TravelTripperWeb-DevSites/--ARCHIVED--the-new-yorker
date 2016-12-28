@@ -1,3 +1,65 @@
+//Date Picker
+ $(document).ready(function() {
+$("#od_arrival").datepicker({
+            dateFormat: "yy-mm-dd",
+			altField  : '#arrival_date',
+			altFormat : 'yy-mm-dd',
+            minDate: 0,
+            onSelect: function (date) {
+                var date2 = $('#od_arrival').datepicker('getDate');
+                date2.setDate(date2.getDate() + 1);
+                $('#od_departure').datepicker('setDate', date2);
+                //sets minDate to dt1 date + 1
+                $('#od_departure').datepicker('option', 'minDate', date2);
+            }
+        });
+        $('#od_departure').datepicker({
+            dateFormat: "yy-mm-dd",
+			altField  : '#departure_dates',
+			altFormat : 'yy-mm-dd',
+            onClose: function () {
+                var dt1 = $('#v').datepicker('getDate');
+                console.log(dt1);
+                var dt2 = $('#od_departure').datepicker('getDate');
+                if (dt2 <= dt1) {
+                    var minDate = $('#od_departure').datepicker('option', 'minDate');
+                    $('#od_departure').datepicker('setDate', minDate);
+                }
+            }
+        });
+		$("#ui-datepicker-div").addClass("od-cal");
+
+
+		$("#arrival_date, .main-date, .main-date-1").datepicker({
+            dateFormat: "yy-mm-dd",
+			altField  : '#arrival_date',
+			altFormat : 'yy-mm-dd',
+            minDate: 0,
+            onSelect: function (date) {
+                var date2 = $('#arrival_date').datepicker('getDate');
+                date2.setDate(date2.getDate() + 1);
+                $('#departure_date').datepicker('setDate', date2);
+                //sets minDate to dt1 date + 1
+                $('#departure_date').datepicker('option', 'minDate', date2);
+            }
+        });
+        $('#departure_date, #departure_date_1, .alternate-date, .alternate-date-1').datepicker({
+            dateFormat: "yy-mm-dd",
+			altField  : '#departure_dates',
+			altFormat : 'yy-mm-dd',
+            onClose: function () {
+                var dt1 = $('#v').datepicker('getDate');
+                console.log(dt1);
+                var dt2 = $('#departure_date').datepicker('getDate');
+                if (dt2 <= dt1) {
+                    var minDate = $('#departure_date').datepicker('option', 'minDate');
+                    $('#departure_date').datepicker('setDate', minDate);
+                }
+            }
+        });
+
+         });
+
 $(window).on('load scroll resize', function () {
 
  	var mheight = $(window).height();
@@ -118,6 +180,7 @@ $(document).ready(function(){
    		selector: '.item'
 		})
  });
+ 
  
   $(document).ready(function() {
 	
