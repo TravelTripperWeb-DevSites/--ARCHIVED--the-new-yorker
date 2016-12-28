@@ -116,6 +116,7 @@
                    color:$white;
                    background: rgba(16, 16, 24, 0.3);
                     transition: all 0.4s;
+					min-height: 341px;
                     &:hover{
 
                         background: rgba(16, 16, 24, 0.5);
@@ -143,20 +144,31 @@
                         }
 
                         h3{
-                                font-size: 36px;
+                                font-size: 30px;
                                 font-family: $main-font-medium;
                                 text-transform: uppercase;
                                 line-height: 38px;
                                 letter-spacing: .05em;
                                 padding: 64px 10px 10px 27px;
-                                width: 81%;
+                                width: 95%;
                                 margin: 0 auto;
-
+									@media(min-width: $screen-md-min){
+										min-height: 188px;
+										width: 95%;
+									}
+								
+									@media(min-width: $screen-lg-min){
+										width: 81%;
+									}
                                  @media(min-width:1669px){
 
-                                    width: 54%;
+                                    width: 65%;
 
                                 }
+								@media(min-width: 1400px){
+									font-size: 36px;
+									min-height: auto;
+								}
 
 
                         }
