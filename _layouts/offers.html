@@ -7,80 +7,31 @@ layout: default
     <div class="page-banner" style="background-image:url(/images/rooms/rooms-banner.jpg);">
     <div class="page-title">
       <h2>Special Offers</h2>
-      <p>Whether you’re planning a business meeting or a romantic getaway, our Wyndham New Yorker Hotel is sure to have a deal that’s perfect for you. 
+      <p>Whether you’re planning a business meeting or a romantic getaway, our Wyndham New Yorker Hotel is sure to have a deal that’s perfect for you.
       </p>
     </div>
     </div>
   </div>
 </section>
 
-<section class="offers-container">
+<section class="offers-container" rt3-special-rates= "offers">
 <div class="container-fluid">
 		<div class="row">
-		<div class="col-sm-6">
+		<div class="col-sm-6" ng-repeat="offer in offers.special_rates">
 		<div class="offer-wrap">
-		<div class="offer-img" style="background-image:url(/images/offers/offer-img1.jpg);" > </div>
+		<div class="offer-img" style="background-image:url([[offer.lead_photo_url.yankee_large]]);" > </div>
 		<div class="offers-description">
-		<h4>Pay Three, Stay Free! </h4>
-		<p>Book four nights at a full price and receive the fourth night complimentary at check-in. Some Restrictions Apply...</p>
-		<a href="/offers/offer-details/" class="btn-common"> View offer </a>
-		</div>
-		</div>
-		</div>
-		<div class="col-sm-6">
-		<div class="offer-wrap">
-		<div class="offer-img" style="background-image:url(/images/offers/offer-img2.jpg);"> </div>
-		<div class="offers-description">
-		<h4>Pay Three, Stay Free! </h4>
-		<p>Book four nights at a full price and receive the fourth night complimentary at check-in. Some Restrictions Apply...</p>
-		<a href="/offers/offer-details/" class="btn-common"> View offer </a>
-		</div>
-		</div>
-		</div>
-		<div class="col-sm-6">
-		<div class="offer-wrap">
-		<div class="offer-img" style="background-image:url(/images/offers/offer-img3.jpg);"> </div>
-		<div class="offers-description">
-		<h4>Pay Three, Stay Free! </h4>
-		<p>Book four nights at a full price and receive the fourth night complimentary at check-in. Some Restrictions Apply...</p>
-		<a href="/offers/offer-details/" class="btn-common"> View offer </a>
-		</div>
-		</div>
-		</div>
-		<div class="col-sm-6">
-		<div class="offer-wrap">
-		<div class="offer-img" style="background-image:url(/images/offers/offer-img4.jpg);"> </div>
-		<div class="offers-description">
-		<h4>Pay Three, Stay Free! </h4>
-		<p>Book four nights at a full price and receive the fourth night complimentary at check-in. Some Restrictions Apply...</p>
-		<a href="/offers/offer-details/" class="btn-common"> View offer </a>
-		</div>
-		</div>
-		</div>
-		<div class="col-sm-6">
-		<div class="offer-wrap">
-		<div class="offer-img" style="background-image:url(/images/offers/offer-img5.jpg);"> </div>
-		<div class="offers-description">
-		<h4>Pay Three, Stay Free! </h4>
-		<p>Book four nights at a full price and receive the fourth night complimentary at check-in. Some Restrictions Apply...</p>
-		<a href="/offers/offer-details/" class="btn-common"> View offer </a>
-		</div>
-		</div>
-		</div>
-		<div class="col-sm-6">
-		<div class="offer-wrap">
-		<div class="offer-img" style="background-image:url(/images/offers/offer-img6.jpg);"> </div>
-		<div class="offers-description">
-		<h4>Pay Three, Stay Free! </h4>
-		<p>Book four nights at a full price and receive the fourth night complimentary at check-in. Some Restrictions Apply...</p>
-		<a href="/offers/offer-details/" class="btn-common"> View offer </a>
+		<h4>[[offer.rate_plan_name]]</h4>
+		<p>[[offer.short_description | limitTo: 90]][[offer.short_description.length > 170 ? '...' : '']]</p>
+		<a href="/offers/[[offer.rate_plan_name | formatNameForLink ]]/" class="btn-common"> View offer </a>
+
 		</div>
 		</div>
 		</div>
 
 		</div>
 
-</div>	
+</div>
 </section>
 
 {% include newsletter.html %}

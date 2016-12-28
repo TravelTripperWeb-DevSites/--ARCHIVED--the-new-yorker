@@ -105,36 +105,40 @@ function initMap() {
 		  scrollwheel: false,
 		  disableDefaultUI: true
         });
-		
-		
-		
-		var iconBase = '/images/'; 
-		
+
+
+
+		var iconBase = '/images/';
+
         var marker = new google.maps.Marker({
           position: myLatLng,
           map: map,
           title: 'Stewart Hotel',
 		  icon: iconBase + 'loc.png'
         });
-		
+
       }
-	  
-	 
+
+
 $(window).on('load resize', function () {
 	var mheight = $(window).height();
 	var mwidth = $(window).width();
-	
-	if(mwidth > 300){
-		$(".home-banner .carousel-inner .item").height(mheight-50);
-	}
-	if(mwidth > 768){
-		$(".home-banner .carousel-inner .item").height(mheight-75);
-	}
-	if(mwidth > 1240){
-		$(".home-banner .carousel-inner .item").height(mheight-121);
-	}
-	
-});  
+  setTimeout(function(){
+
+    if(mwidth > 300){
+  		$(".home-banner .carousel-inner .item").height(mheight-50);
+  	}
+  	if(mwidth > 768){
+  		$(".home-banner .carousel-inner .item").height(mheight-75);
+  	}
+  	if(mwidth > 1240){
+  		$(".home-banner .carousel-inner .item").height(mheight-121);
+  	}
+    $('#home-banner').carousel();
+  },2500);
+
+});
+
 
 
 
@@ -180,4 +184,3 @@ $(document).ready(function(){
    		selector: '.item'
 		})
  });
-

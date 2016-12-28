@@ -17,19 +17,25 @@
                 color:$white;
                 font-size:18px;
                 letter-spacing:0.1em;
+                a {
+                  color:$white;
+                  &:hover {
+                    opacity:.7;
+                  }
+                }
 
             }
             .room-name{
 
                 font-family:$main-heading;
-                
+
                 text-transform:uppercase;
                 color:$white;
                 letter-spacing:0.1em;
                 padding:40px 0px;
                 font-size:55px;
                 line-height: 75px;
-                
+
                 span{
                     border-bottom:4px solid $white;
 
@@ -37,14 +43,14 @@
 
                 @media(min-width: $screen-sm-min){
 
-                     font-size:85px;
+                     font-size:55px;
                      padding:100px 0px;
                      line-height: 120px;
 
-                     
+
                 }
 
-               
+
 
 
 
@@ -62,7 +68,7 @@
 .rooms-navigation-border{
 
     border-bottom:1px solid #bbbaba;
-    
+
 
     .rooms-navigation{
         max-width: 1180px;
@@ -85,11 +91,11 @@
              }
 
             &:hover{
-              color:$black;  
+              color:$black;
             }
         }
 
-       
+
 
     .prev-room{
         float: left;
@@ -126,7 +132,7 @@
              }
 
         }
-        
+
     }
 }
 
@@ -151,7 +157,7 @@
 
         border:1px solid #bbbaba;
         padding: 25px;
-        
+
          @media(min-width: $screen-sm-min){
             padding: 54px 50px 90px 68px;
          }
@@ -159,7 +165,7 @@
 
             background-color: transparent;
         }
-        .nav{   
+        .nav{
               text-align: center;
 
               @media(min-width: $screen-sm-min){
@@ -168,11 +174,11 @@
               }
 
                     li{
-                       display: inline-block !important; 
+                       display: inline-block !important;
                        position:relative;
                        margin: 0px 16px;
 
-                    
+
 
                        a{
 
@@ -188,23 +194,23 @@
 
                     li.active{
 
-                                   border-bottom: 4px solid #000;                           
+                                   border-bottom: 4px solid #000;
                        }
 
-               
+
         }
 
         .tab-content{
 
             .tab-pane{
-                
+
                 h3{
-                    
+
                     letter-spacing:0.1em;
                     font-family:$main-heading;
                     color:$heading;
                     text-transform: uppercase;
-                    
+
 
                     font-size:30px;
                     padding: 35px 0px 20px 0px;
@@ -218,16 +224,16 @@
 
                 }
 
-                p{
+                p, li{
 
                     font-size:15px;
                     font-family:$main-font-regular;
                     color:$grey-text;
-                    
+
                 }
             }
         }
-    
+
     }
     .rooms-images{
         padding:26px 0px;

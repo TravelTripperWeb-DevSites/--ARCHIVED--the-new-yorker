@@ -1,50 +1,30 @@
 ---
 layout: default
 ---
-
+<input type="hidden" id="roomId"  value="{{page.code}}" />
+<input type="hidden" id="roomList" value="[[ browser.roomsList ]]"   />
+<section ng-controller ="roomDetail" >
 <section class="home-banner custom-carousel room-details-page">
   <div class="container-fluid">
     <div id="home-banner" class="carousel slide" data-ride="carousel">
-  
+
    <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active" style="background-image: url(/images/banner-1.jpg);">
+  <div class="carousel-inner" role="listbox" >
+
+    <div class="item" ng-class="{'active': $index == 0}"  style="background-image: url([[photo.yankee_large]]);" ng-repeat ="photo in selectedRoom.photos" >
     <div class="banner-overlay"></div>
     <div class="room-details">
-    <div class="room-price">Tonight’s rate $ 429</div>
-    <div class="room-name"><span>premium suite </span></div>
-    <a href="#" class="btn-common">Book This Suite</a>
-    </div>	
+    <div class="room-price">Tonight’s rate <a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" >[[ selectedRoom.todayRate ]]</a></div>
+    <div class="room-name"><span>[[selectedRoom.name]]</span></div>
+    <a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" class="btn-common">Book This Suite</a>
     </div>
-    <div class="item" style="background-image: url(/images/banner-1.jpg);">
-    <div class="banner-overlay"></div>
-    <div class="room-details">
-    <div class="room-price">Tonight’s rate $ 429</div>
-    <div class="room-name"><span>premium suite </span></div>
-    <a href="#" class="btn-common">Book This Suite</a>
-    </div>	
-    </div>
-    <div class="item" style="background-image: url(/images/banner-1.jpg);">
-    <div class="banner-overlay"></div>
-    <div class="room-details">
-    <div class="room-price">Tonight’s rate $ 429</div>
-    <div class="room-name"><span>premium suite </span></div>
-    <a href="#" class="btn-common">Book This Suite</a>
-    </div>	
-    </div>
-    <div class="item" style="background-image: url(/images/banner-1.jpg);">
-    <div class="banner-overlay"></div>
-    <div class="room-details">
-    <div class="room-price">Tonight’s rate $ 429</div>
-    <div class="room-name"><span>premium suite </span></div>
-    <a href="#" class="btn-common">Book This Suite</a>
-    </div>	
-    </div>
+
   </div>
-  
-  
-  
-	<div class="counter"><span class="num">1 of 4</span></div>
+  </div>
+
+
+
+	<div class="counter"><span class="num">1 of [[selectedRoom.photos.length]]</span></div>
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#home-banner" role="button" data-slide="prev">
     <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -61,15 +41,15 @@ layout: default
  <div class="container-fluid rooms-navigation">
  <div class="row">
    <div class="col-sm-12">
-   <a href="view-all-rooms"> Room Name</a>
-   <a href="" class="prev-room"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> Previous Room</span></a>
-   <a href="" class="next-room"><span>Next Room</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt="">  </a>
-   
-   
+   <a href="view-all-rooms">[[selectedRoom.name]]</a>
+   <a href="/rooms/[[prevRoomName | formatNameForLink ]]/" class="prev-room" ng-show="prevRoomName"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> Previous Room</span></a>
+   <a href="/rooms/[[nextRoomName | formatNameForLink ]]/" class="next-room" ng-show="nextRoomName"><span>Next Room</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt="">  </a>
+
+
    </div>
  </div>
 
- </div> 
+ </div>
 
 </section>
 
@@ -78,41 +58,41 @@ layout: default
    <div class="row">
     <div class="col-sm-12">
        <div class="rooms-details">
-      <div id="exTab1" class="container"> 
+      <div id="exTab1" class="container">
     <ul  class="nav">
       <li class="active"> <a  href="#1a" data-toggle="tab">Description</a> </li>
       <li><a href="#2a" data-toggle="tab">Amenities</a> </li>
-      
+
     </ul>
 
       <div class="tab-content clearfix">
         <div class="tab-pane active" id="1a">
           <h3>luxury redefined</h3>
-          <p>With 550 square feet of space, the Premium Suite is our largest accommodations. Located above the 38th floor, these stunning, renovated suites offer views of New York’s Empire State Building or the Hudson River. </p>
+          <p>[[selectedRoom.description]]</p>
         </div>
         <div class="tab-pane" id="2a">
            <h3>Amenities redefined</h3>
-          <p>Renovated suites offer views of New York’s Empire State Building or the Hudson River. With 550 square feet of space, the Premium Suite is our largest accommodations. Located above the 38th floor, these stunning, </p>
+           <ul>
+               <li ng-repeat="amenity in selectedRoom.amenities">[[amenity]] </li>
+             </ul>
         </div>
-        
+
       </div>
   </div>
        </div>
      </div>
      </div>
      <div class="row rooms-images">
-      <div class="col-sm-6">
-      <img src="/images/rooms/rooms-details-img1.jpg" class="img-responsive" alt="">
+      <div class="col-sm-6" ng-repeat ="photo in selectedRoom.photos | limitTo:2" >
+      <img src="[[photo.yankee_large]]" class="img-responsive" alt="">
       </div>
-      <div class="col-sm-6">
-      <img src="/images/rooms/rooms-details-img1.jpg" class="img-responsive" alt="">
-      </div>
+
 
      </div>
     </div>
 
 </section>
-
+</section>
 
 {% include home-offers.html %}
 {% include newsletter.html %}
