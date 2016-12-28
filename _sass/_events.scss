@@ -209,3 +209,23 @@
 		}
 	}
 }
+#events-video {
+	.modal-dialog {
+		@media (min-width: $screen-sm-min){
+			width: 560px;
+		}
+		@media (min-width: $screen-md-min){
+			width: 800px;
+		}
+	}
+	iframe {
+		@media (min-width: $screen-sm-min){
+			width: 100%;
+			height: 315px;
+		}
+		@media (min-width: $screen-md-min){
+			width: 100%;
+			height: 450px;
+		}
+	}
+}

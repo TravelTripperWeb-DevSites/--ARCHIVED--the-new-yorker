@@ -180,10 +180,37 @@ $(document).ready(function(){
 	 $(".menu-btn").click(function(){
 		 $(".main-menu").slideToggle(300);
 	 });
-	 $('#lightgallery').lightGallery({
+	 $('#thenewyorkergallery').lightGallery({
    		selector: '.item'
 		})
  });
+
+
+ 
+ 
+  $(document).ready(function() {
+	
+	 
+	 
+	  $(".filter").on("click", function () {
+    var $this = $(this);
+    // if we click the active tab, do nothing
+    if (!$this.hasClass("active")) {
+      $(".filter").removeClass("active");
+      $this.addClass("active"); // set the active tab
+      var $filter = $this.data("rel"); // get the data-rel value from selected tab and set as filter
+      $filter == 'all' ? // if we select "view all", return to initial settings and show all
+        $(".fancybox").attr("data-fancybox-group", "gallery").not(":visible").fadeIn() 
+        : // otherwise
+        $(".fancybox").fadeOut(0).filter(function () { 
+          return $(this).data("filter") == $filter; // set data-filter value as the data-rel value of selected tab
+        }).attr("data-fancybox-group", $filter).fadeIn(1000); // set data-fancybox-group and show filtered elements
+    } // if
+  }); // on
+	 
+	 
+ });
+
 
 //Youtube  Welcome Video Embed
 
@@ -196,3 +223,16 @@ $('#link').click(function () {
 $('#welcomeVideo button').click(function () {
 	$('#welcomeVideo iframe').removeAttr('src');
 });
+
+//Youtube Events Video Embed
+
+$('#ev').click(function () {
+	var src = 'https://www.youtube.com/embed/qArdOdD63jk?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1';
+	$('#eventsVideo').modal('show');
+	$('#eventsVideo iframe').attr('src', src);
+});
+
+$('#eventsVideo button').click(function () {
+	$('#eventsVideo iframe').removeAttr('src');
+});
+
