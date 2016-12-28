@@ -69,7 +69,7 @@ Rt3Api.prototype.availableRooms = function(searchParams) {
 };
 
 
-Rt3Api.prototype.getAllAvailableRooms = function(searchParams) { console.log(sessionStorage.ip_add);
+Rt3Api.prototype.getAllAvailableRooms = function(searchParams) { 
     var path = '/hotels/rooms.json';
     var newParams = {};
     if(searchParams){
