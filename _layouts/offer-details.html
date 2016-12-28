@@ -16,7 +16,7 @@ layout: default
     <div class="room-details offer-details">
 
     <div class="room-name"><span ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></span></div>
-    <a href="[[offers.sRdetail.promo_url]]" class="btn-common" target="_blank">Book This Offer</a>
+    <a ng-href="[[offers.sRdetail.promo_url]]" class="btn-common" target="_blank">Book This Offer</a>
     </div>
     </div>
 
@@ -43,8 +43,8 @@ layout: default
  <div class="row">
    <div class="col-sm-12">
    <a href="/offers/">Back to Offer Listing</span></a>
-   <a ng-show="prevOfferName" href="/offers/#[[prevOfferName | formatNameForLink]]" class="prev-room"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> Previous Offer</span></a>
-   <a ng-show="nextOfferName" href="/offers/#[[nextOfferName | formatNameForLink]]" class="next-room"><span>Next Offer</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt="">  </a>
+   <a ng-show="prevOfferName" ng-click="reloadPage"  ng-href="/offer-details/#[[prevOfferName | formatNameForLink]]" class="prev-room"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> Previous Offer</span></a>
+   <a ng-show="nextOfferName" ng-click="reloadPage"  ng-href="/offer-details/#[[nextOfferName | formatNameForLink]]" class="next-room"><span>Next Offer</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt="">  </a>
 
 
    </div>
