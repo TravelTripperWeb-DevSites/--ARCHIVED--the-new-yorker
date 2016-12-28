@@ -5,8 +5,8 @@
       $interpolateProvider.endSymbol(']]');
     })
     .value('rt3api', new Rt3Api({
-      portalId: 'stewarthotel',
-      hotelId: 'NYCSTW',
+      portalId: 'newyorkerhotel',
+      hotelId: 'NYCNYR',
       defaultLocale: 'en',
       defaultCurrency: 'USD'
     }))
@@ -156,5 +156,27 @@
 
         }
       }
-    }]);
+    }])
+    .controller('offerDetail', ['$scope', 'rt3Search', 'rt3Browser','$timeout', function($scope, rt3Search, rt3Browser,$timeout) {
+        $timeout(function() {
+           var oList = JSON.parse($("#offerList").val());
+           var oId = $("#offerId").val();
+
+           for(var j= 0 ; j < oList.length ; j++){
+               if(oList[j].rate_plan_code.toLowerCase() == oId.toLowerCase()){
+                  // find previous and next rooms name
+                  if(j > 0){
+                     $scope.prevOfferName = oList[j-1].rate_plan_name;
+                  }
+
+                  if(j < oList.length -1){
+                     $scope.nextOfferName = oList[j+1].rate_plan_name;
+                  }
+                  break;
+               }
+           }
+
+        }, 2800);
+
+    }])
 })();

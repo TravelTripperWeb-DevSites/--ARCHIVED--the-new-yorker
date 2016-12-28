@@ -227,7 +227,7 @@ angular.module('rezTrip')
       this.thisDate = date.getFullYear() +'-'+ ('0' + (date.getMonth() + 1)).slice(-2) +'-'+ ('0' + date.getDate()).slice(-2);
 
 
-      if(this.searchParams || this.storageContainer) {console.log(sessionStorage.ip_add);
+      if(this.searchParams || this.storageContainer) {//console.log(sessionStorage.ip_add);
         rt3api.getAllAvailableRooms(this.searchParams || this.storageContainer).then(function(response) {
           $rootScope.$apply(function() {
             self.rooms = response.rooms;
