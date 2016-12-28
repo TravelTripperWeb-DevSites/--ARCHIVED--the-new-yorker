@@ -1,0 +1,130 @@
+/*Inner Page common banner*/
+
+.inner-page-banner{
+	position:relative;
+	display:table;
+	height:424px;
+	color:$white;
+	text-align:center;
+	width:100%;
+	vertical-align:middle;
+	@media (max-width:499px){
+		height:370px;	
+	}
+	@media (min-width:500px) and (max-width:639px){
+		height:283px;	
+	}
+	@media (min-width:640px) and (max-width:768px){
+		height:260px;	
+	}
+	h1{
+		@extend .mega-title;
+		color:$white !important;
+		letter-spacing:8px !important;
+		padding:120px 0 20px !important;	
+		@media (max-width:768px){
+			padding-top:60px !important;
+			font-size:32px !important;
+		}
+	}
+	p{ color:$white; max-width:660px; margin:0 auto; padding:0 30px;}
+	
+	/*Individual Inner page Banner images here*/
+	
+	&.location{
+		background:url(../images/location-banner.jpg) no-repeat; background-size:cover;
+	}
+	&.dining{
+		background:url(../images/dining-banner.jpg) no-repeat; background-size:cover;
+	}
+	.overlay{
+		position: absolute;
+		top: 0;
+		background: rgba(16,16,24,.75);
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index: 1;
+	}
+}
+
+/*Location page discover section*/
+
+.discover{
+	.content-box{
+		padding:30px 95px 20px 95px !important;
+		h5{font-family:$main-font-bold; font-size:14px; text-transform:uppercase; letter-spacing:2px; color:$text; padding:26px 0 8px;}
+		p{font-family:$main-font-regular; font-size:14px;color:$grey-text;
+			a{ color:$grey-text;}
+		}
+		.btn-holder{ padding:45px 0 0 0px !important;}
+		@media (min-width:769px) and (max-width:1024px){ padding: 30px 22px 10px 22px !important;}
+		@media (max-width:768px){ text-align:center; padding:30px 20px 20px 20px !important;}	
+	}
+	.intro{
+		.content{ width:80%; margin:50px auto 30px;
+			h2{ margin-top:20px;}
+			p{ margin-top:30px;color:$grey-text;
+				@media (max-width:768px){ text-align:center;}
+			}
+		}
+		.img{
+			width:328px;
+			height:295px;
+			margin:20px auto 70px;	
+			@media (max-width:768px){ margin:20px auto; width:90%; height:auto;}
+		}	
+	}
+}
+
+/*Location map section*/
+
+.full-map{ height:500px; width:94%; margin:0 3% 3%; position:relative;
+	.map-controls{
+		position:absolute; z-index:3;
+		width:540px;bottom:0px; left:calc(50% - 272px);
+		li{ list-style:none; float:left; background:#161515; height:63px; width:66px; margin-left:1px;
+			a{ padding:0px;
+				img{ width:100%;}
+			}
+			&:hover{ opacity:0.8;}
+			@media (max-width:768px){ width:12.15%; height:auto;}
+		}
+		@media (max-width:768px){ width:100%; left:0px;}	
+	}
+	.help-text{ position:absolute; background:$white; color:$grey-text; padding:15px 20px 8px; right:0px; bottom:0px; font-style:italic;}
+}
+
+/*Events & Happenings*/
+
+.offer-section{ img{ width:100%;}}
+
+/*Featured Attractions*/
+
+.featured-attractions{
+	.two-col-wrapper{
+		border-top:solid 1px #d9d9d9;
+		padding:50px 0px 70px;
+		h5{
+			font-family: "BrandonGrotesqueWeb-Bold";
+			font-size: 13px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #0a0a12;
+			letter-spacing: 1px;
+			
+		}
+		.content-box{
+			h5{ text-align:left; color:#1a87e9; padding-bottom:30px;
+				@media (max-width:768px){ text-align:center;}
+			}
+			p,i{ color:$grey-text;}
+			@media (max-width:768px){ text-align:center;}
+		}
+		&.landmark{ padding:50px 0px 70px !important;}
+	}
+}
+.map-inner{ height:550px;}
+.full-map{
+	.map-inner{ height:500px;}
+}

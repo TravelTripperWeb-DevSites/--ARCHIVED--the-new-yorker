@@ -1,0 +1,261 @@
+.two-col-wrapper{
+   .container{
+   	   max-width: 1155px;
+   	   width: 100%;
+   	   .content-box{
+   	   	    padding: 10px 10px;
+   	   	    @media(min-width: $screen-xs-min){
+            	padding: 19px 15px 10px 15px;
+            }
+            @media(min-width: $screen-sm-min){
+            	padding: 30px 22px 10px 22px;
+            }
+            @media(min-width: $screen-md-min){
+            	padding: 79px 95px 20px 95px;
+            }
+             
+            .btn-holder{
+            	 margin: 0px 0px;
+            	 padding:15px 5px;
+            	 @media(max-width: $screen-sm-min){
+		            	 	text-align: center;
+		            	 }
+            	 .btn-common{
+            	 	padding: 14px 21px;
+            	 	
+            	 	@media(min-width: $screen-xs-min){ 
+            	 		letter-spacing: 0.2em;
+            	     }
+            	 }
+            }
+            
+   	   	    ul{
+   	    	    list-style-type: none;
+   	    	    padding: 10px 0px;
+   	    	    @media(min-width: $screen-sm-min){
+   	    	    	padding: 10px 0px;
+   	    	    }
+   	    	    @media(min-width: $screen-md-min){
+   	    	    	padding: 39px 2px;
+   	    	    }
+                letter-spacing: 0.05em;
+   	    	    li{  
+   	    	    	 line-height: 26px;
+   	    	    	 display: block;
+   	    	    	 &:before {
+						  content: '\2022';
+						  font-size: 14px;
+						  padding-right: 10px;
+						}
+   	    	    }
+   	   	    }
+   	   }
+   	      	   .content-box-left{
+   	      	   	    padding: 10px 10px;
+   	      	   	    @media(min-width: $screen-xs-min){
+   	               	padding: 19px 15px 10px 15px;
+   	               }
+   	               @media(min-width: $screen-sm-min){
+   	               	padding: 30px 22px 10px 22px;
+   	               }
+   	               @media(min-width: $screen-md-min){
+   	               	padding: 54px 35px;
+   	               }
+   	                p{
+   	                	text-align: center;
+   	                	@media(min-width: $screen-sm-min){
+   	                		text-align: left;
+                        }
+   	                	 letter-spacing: 0.01em; 
+   	                	padding: 42px 5px; 
+   	                }
+
+   	               .btn-holder{
+		            	 margin: 0px 0px;
+		            	 padding:17px 5px;
+		            	 @media(max-width: $screen-sm-min){
+		            	 	text-align: center;
+		            	 }
+		            	 .btn-common{
+		            	 	padding: 14px 21px;
+		            	 	letter-spacing: 0.2em;
+		            	 }
+		            }
+   	               
+   	      	   	    ul{
+   	      	    	    list-style-type: none;
+   	      	    	    padding: 10px 0px;
+   	      	    	    @media(min-width: $screen-sm-min){
+   	      	    	    	padding: 10px 0px;
+   	      	    	    }
+   	      	    	    @media(min-width: $screen-md-min){
+   	      	    	    	padding: 39px 2px;
+   	      	    	    }
+   	                   letter-spacing: 0.05em;
+   	      	    	    li{  
+   	      	    	    	 line-height: 26px;
+   	      	    	    	 display: block;
+   	      	    	    	 &:before {
+   	   						  content: '\2022';
+   	   						  font-size: 14px;
+   	   						  padding-right: 10px;
+   	   						}
+   	      	    	    }
+   	      	   	    }
+
+   	      	   }
+   	      	   .img-5{
+   	      	   	 padding:0px;
+   	      	   	 @media(min-width: $screen-xs-min){
+   	      	   	 	padding: 13px 10px 10px 49px;
+   	      	   	 }
+   	             @media(min-width: $screen-sm-min){
+   	      	   	    padding: 13px 10px 10px 49px;
+   	      	      }
+
+   	      	   }
+   }
+   &.padding80{
+   	 padding:30px 0px;
+   	 @media(min-width: $screen-xs-min){
+        padding:30px 0px;
+   	 }
+   	 @media(min-width: $screen-sm-min){
+        padding: 80px 0px 72px 0px;
+   	 }
+   }
+   .margin40{
+		   	 	margin: 0px;
+		   	 	width: 100%;
+		   	 	@media(min-width: $screen-xs-min){
+		   	 		margin: 0px;
+		   	 		width: 100%;
+		   	 	}
+		   	 	@media(min-width: $screen-sm-min){
+		   	 		margin: 45px -6px 27px 20px;
+                    width: auto;
+		   	 	}
+		   	 }
+   .margin22{
+   	 margin:22px 0px;
+   	 @media(min-width: $screen-xs-min){
+   	 	margin:22px;
+   	 }
+   	 
+   	 
+   }
+   .no-shadow{
+   	   .carousel-control{
+   	   	  height: auto;
+          background: #161515;
+          opacity: 0.9;
+          &:hover{
+          	opacity: 1;
+          }
+          img{
+          	padding: 20px;
+          }
+   	   	  &.left{
+   	   	  	 background-image: none;
+   	   	  	 background: #161515;
+             width: 52px;
+             height: 46px;
+
+   	   	  }
+   	   	  &.right{
+   	   	  	 background-image: none;
+   	   	  	 background: #161515;
+   	   	  	 width: 50px;
+   	   	  	 height: 46px;
+   	   	  	 left: 52px;
+   	   	  	 &::before {
+   	   	  	 	     content: '';
+   	   	  	 	     border-left: 1px solid #fff;
+   	   	  	 	     position: absolute;
+   	   	  	 	     height: 50%;
+   	   	  	 	     left: 0;
+   	   	  	 	     top: 25%;
+   	   	  	 }
+   	   	  }
+   	   }
+   }
+
+}
+.grey_bg{ 
+      background-color: #d9d9d9;
+}
+.white_bg{ 
+      background-color: #d9d9d9;
+}
+.cover{
+	   background-repeat: no-repeat;
+       background-position: center center; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.offers-wrapper{
+	  .container-fluid{
+	  	  padding: 0px;
+	  	 .thumb  { 
+	  	 	transition: all 0.4s;
+	  	 	&:hover{
+		  	 	    	 img{
+		  	 	    	 	opacity: 0.8;
+		  	 	    	 	width: 100%;
+		  	 	    	 }
+		  	 	    }
+
+	  	     position:relative;  
+	  	     .caption { 
+
+		  	     position:absolute;
+		  	     top: calc( 50% - 60px);  
+		  	     right:0; 
+		  	     width:100%;
+		  	     height:60px;  
+		  	     text-align:center; 
+		  	     z-index:2;
+                 	 	h3{
+               	  	     	font-family: $main-font-medium;  
+               	  	     	color: #fff !important;
+               	  	     	text-transform: uppercase; 
+               	  	     	max-width: 250px;
+               	  	     	margin: auto;
+               	  	     	text-align: center;
+               	  	     	line-height: 40px;
+               	  	     	font-size: 20px;
+               	  	     	@media(min-width: $screen-xs-min){
+               	  	     		font-size: 40px;
+               	  	     	}
+               	  	     }
+               	  	     .btn-white{
+               	  	     	     margin: 40px 0px;
+               	  	     	     padding: 15px 30px;
+
+               	  	     }
+		  	    }
+		  	    img{
+		  	 	    position: relative;
+		  	 	    width: 100%;
+		  	 	     transition: all 0.4s;
+		  	 	    
+		  	       }
+	  	    } 
+	    }
+	  .no-padding-margin{
+	  	 padding: 0px;
+	  	 margin: 0px;
+	  }
+}
+
+.btn-white {
+    background-color: #fff !important; 
+    color: #000 !important;
+    &:hover{
+    	 background: #000 !important;
+    	 color: #fff !important;
+    }
+}

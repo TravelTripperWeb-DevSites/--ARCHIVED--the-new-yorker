@@ -1,0 +1,18 @@
+<section class="offer-section">
+
+	<h4>Exclusive Offers</h4>
+
+	<div class="container" rt3-special-rates= "offers">
+	<div  class="row">
+	<div class="col-sm-6 col-md-3" ng-repeat = "offer in offers.special_rates | limitTo :4">
+		<img ng-src="[[offer.lead_photo_url.yankee_large]]" alt="">
+		<h5 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h5>
+		<a ng-href="/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]"  class="view-offer">View Offer +</a>
+	</div>
+
+
+	</div>
+	</div>
+	<a href="/offers/" class="btn-common btn-white">View All Offers</a>
+
+</section>

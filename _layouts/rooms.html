@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<section>
+  <div class="container-fluid no-padding">
+    <div class="page-banner" style="background-image:url(/images/rooms/rooms-banner.jpg);">
+    <div class="page-title">
+      <h2>rooms & Suites</h2>
+      <p>The accommodations at The New Yorker provide a relaxing, Art Deco-inspired sanctuary amidst the energy of Midtown Manhattan.
+      </p>
+    </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid rooms-list-container" >
+	<div class="row">
+	<div class="col-sm-6  col-md-4" ng-repeat ="room in browser.roomsList">
+  	<div class="room-item" style="background-image:url([[room.photos[0].yankee_large]]);">
+
+    	<div class="room-details">
+      	<div class="price"><span ng-hide="room.todayRate == 'CHECK AVAILABILITY'">from </span><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><span>[[ room.todayRate ]]</span></a></div>
+      	<h3>[[room.name]]</h3>
+      	<a class="view-rooms" ng-href="/room-details/#[[room.name | formatNameForLink]]">View Room +</a>
+      	<a class="book-now" ng-href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><img src="/images/calendar-blue.svg" alt=""></a>
+      	</div>
+  	</div>
+	</div>
+
+	</div>
+
+</section>
+
+{% include exclusive-offer.html %}
+{% include newsletter.html %}
+{% include twitter-instagram.html %}

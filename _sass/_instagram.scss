@@ -1,0 +1,22 @@
+/*Instagram Feed*/
+.instagram-feed{
+	h3{ font-family: $main-font-medium; text-align:center; padding:35px 0 15px; font-size:26px; color:$btn; letter-spacing: 4px;
+		@media (min-width: $screen-md-min){
+			font-size:30px; 
+		}
+		@media (min-width: $screen-md-min){
+			font-size:36px; 
+		}
+	}
+	h5{ font-family: $main-font-bold; font-size: 13px; text-align:center; text-transform:uppercase; color:$btn; padding-bottom:30px; letter-spacing:1px;
+		@media (min-width: $screen-md-min){
+			font-size:14px; 
+		}
+	}
+	ul{
+		margin-top:50px;
+		li{ list-style:none; float:left; width:20%;
+			img{width:100%;}
+		}	
+	}
+}

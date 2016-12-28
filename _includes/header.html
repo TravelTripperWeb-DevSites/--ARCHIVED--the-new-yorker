@@ -1,0 +1,15 @@
+<nav class="header-wrapper">
+  <div class="container-fluid">
+    <div class="logo"> <a href="/"><img src="/images/the-new-yorker-logo.svg" alt="The New Yorker"/></a> </div>
+    <div class="main-menu">
+      <ul class="nav">
+      {% for items in site.data.navigation.mainnav %}
+     	<li {% if items.submenu == "true" %} class="dropdown" {% endif %}><a href="{{ items.url }}" {% if items.name == page.pagename %} class="active" {% endif %} {% if items.submenu == "true" %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}>{{ items.title }}</a> 
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="menu-btn"></div>
+    <div class="booknow"> <a href="javascript:void(0);" show-booking-widget><span class="cal"><img src="/images/calendar.svg" alt=""/></span>Book Now</a> </div>
+  </div>
+</nav>

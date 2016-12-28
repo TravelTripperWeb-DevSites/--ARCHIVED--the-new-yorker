@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
-  <body>
-    <div>
-      
+  {% include head.html %}
+  <body ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser">
+   	{% include header.html %}
+
         {{ content }}
-      
-    </div>
+
+    {% include scripts.html %}
+    {% include footer.html %}
+
+    {% if page.map == true %}
+	{% include map.html %}
+{% endif %}
+
+    {% include booking-widget.html %}
+
   </body>
 </html>
