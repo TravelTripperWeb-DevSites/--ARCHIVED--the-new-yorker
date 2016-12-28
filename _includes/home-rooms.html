@@ -11,16 +11,14 @@
             <div class="col-sm-7 no-padding">
             	<div class="-left">
                 	<div id="home-room-banner" class="carousel slide" data-ride="carousel">
-  
+
                        <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
-                        <div class="item active"><img src="/images/home-room-1.jpg"></div>
-                        <div class="item"><img src="/images/home-room-1.jpg"></div>
-                        <div class="item"><img src="/images/home-room-1.jpg"></div>
-                        <div class="item"><img src="/images/home-room-1.jpg"></div>
+                        <div class="item" ng-class="{'active': $index == 0}"  ng-repeat ="room in browser.roomsList"><img ng-src="[[room.photos[0].yankee_large]]"></div>
+
                       </div>
-                      
-                      
+
+
                       <!-- Left and right controls -->
                       <a class="left carousel-control" href="#home-room-banner" role="button" data-slide="prev">
                         <i class="fa fa-angle-left" aria-hidden="true"></i>

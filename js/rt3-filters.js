@@ -49,6 +49,7 @@ angular.module('rezTrip')
         retString = retString.replace(/^\s\s*/, '').replace(/\s\s*$/, ''); // replace leading and trailing spaces
         retString = retString.replace('%', 'percent');
         retString = retString.replace(/[^A-Z0-9]+/ig, "-");
+        retString = retString.replace(/^--s*/, '').replace(/--*$/, ''); // replace leading and trailing hyphen
         return (!value) ? '' : retString;
     };
 });
