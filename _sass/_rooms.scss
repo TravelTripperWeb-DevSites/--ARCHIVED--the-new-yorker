@@ -25,7 +25,7 @@
 
     	padding:90px 0;
     	position:relative;
-    	z-index:99;
+    	z-index:4;
 
     	 @media(min-width: $screen-sm-min)
 
@@ -73,8 +73,28 @@
 
 .rooms-list-container{
 
+    margin-top:1px;
+
     .col-sm-6, .col-md-4{
-            padding: 1px;
+
+             padding: 0 1px 1px 0;
+
+
+            
+    }
+
+    
+    .col-md-4:nth-child(3), .col-md-4:nth-child(6), .col-md-4:nth-child(9), .col-md-4:nth-child(12) , .col-md-4:nth-child(15)
+    
+    {
+        padding: 0 0px 1px 0;
+
+        @media(min-width: $screen-sm-min){
+
+             padding: 0 1px 1px 0;
+
+        }
+       
     }
 
     .room-item{

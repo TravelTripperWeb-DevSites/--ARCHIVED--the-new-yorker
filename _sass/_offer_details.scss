@@ -60,6 +60,7 @@
         font-weight: normal;
         color:$heading;
         width:100%;
+        border-radius: 0px;
         
            
     }
@@ -157,12 +158,23 @@
 
              .nav{
 
-                text-align: left !important;
+                 text-align: center !important;
+
+                 @media(min-width: $screen-sm-min){
+
+                    text-align: left !important;
+                 }
+                
 
                     li{
 
 
-                            margin: 0 32px 0 0;
+                            margin: 0 0 10px 0;
+
+                            @media(min-width: $screen-xs-min){
+
+                                margin: 0 32px 0 0;
+                             }
 
                             a{
 
