@@ -46,6 +46,7 @@
 			left: 0;
 			width: 100%;
 			padding: 25% 0 0 0;
+			@media (max-width:768px){ padding:5% 10% 0;}
 		
 		h1{
 			color: $white;
@@ -54,6 +55,7 @@
 			text-transform: uppercase;
 			font-family: $main-font-medium;
 			line-height: 40px;
+			@media (max-width:768px){ font-size:24px;}
 		}
 		h4{
 			color: $white;
@@ -63,6 +65,19 @@
 			font-family: $main-font-regular;
 			line-height: 24px;
 			padding: 10px 0 0 0;
+			@media (max-width:768px){ font-size:12px;}
+		}
+		a{
+			color: #ffffff;
+			padding: 5px 15px 5px;
+			border: solid 1px #ffffff;
+			margin: 30px auto 0;
+			display: inline-block;
+			i{
+				font-size: 24px;
+			}
+			&:hover{ opacity:0.6;}
+			@media (max-width:768px){ margin-top:15px;}
 		}
 			}
 }
@@ -70,6 +85,14 @@
 
 /* carousel css starts here */
 .landmark{
+	&.taber{
+		li{ margin:0 25px;
+			&:first-child{ margin-left:0px;}
+			&:last-child{ margin-right:0px;}
+			@media (max-width:768px){ margin:0px;}
+		}
+		@media (max-width:768px){ padding:120px 0 0px !important;}	
+	}
 	padding: 200px 0px 130px 0px !important;
 	 ol.carousel-indicators {
 		top: -70px;
@@ -86,14 +109,16 @@
 			letter-spacing: 2px;
 			color: $black;
 			text-indent: 0;
-			padding: 5px 4px;
+			padding: 5px 0px;
 			font-size: 14px;
 			font-family: $main-font-bold;
 			border-radius: 0px;
-			  &.active{
-			 	border-bottom: 4px solid $heading;
-		 	  }
+			&.active{
+				border-bottom: 4px solid $heading;
+			}
+			@media (max-width:768px){ width:100%;}
 		 }
+		 @media (max-width:768px){left:50%;}
 		
 	}
 	.content-box{
