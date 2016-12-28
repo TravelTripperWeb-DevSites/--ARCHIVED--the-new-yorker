@@ -1,0 +1,207 @@
+.offer-details-page{
+
+    .offer-details{
+
+
+             @media(min-width: $screen-sm-min){
+
+                max-width: 1000px;
+             }
+            
+    }
+}
+
+
+.booking-form{
+
+        max-width:none;
+        overflow: hidden;
+        float: none;
+        padding: 30px 14px;
+
+        @media(min-width: $screen-sm-min){
+                                          max-width:470px;
+                                           float: right;
+
+                                    } 
+
+        .col-sm-6, .col-sm-12{
+
+            padding:0px;
+
+        }
+        .col-sm-12{
+               padding-right: 8px; 
+        }
+
+        .form-group{
+                padding-right: 8px;
+        }
+            ::-webkit-input-placeholder {
+             font-size: 13px;
+             color:$heading
+            }
+            :-moz-placeholder { /* older Firefox*/
+             font-size: 13px;
+             color:$heading
+            }
+            ::-moz-placeholder { /* Firefox 19+ */ 
+             font-size: 13px;
+             color:$heading
+            } 
+            :-ms-input-placeholder { 
+             font-size: 13px;
+             color:$heading
+            }
+    label, input, .select-dropdown{
+
+        font-family:$main-font-medium;
+        font-size:13px;
+        font-weight: normal;
+        color:$heading;
+        width:100%;
+        
+           
+    }
+
+    label{
+
+           display:block; 
+           text-transform: uppercase;
+           letter-spacing: 3px;
+           padding-left:10px;
+
+       
+
+
+    }
+
+    input{
+
+        padding:20px 24px;
+        letter-spacing: 1px;
+    }
+
+    .book-now{
+
+    background-color: #1a87e9;
+    padding: 20px 16px;
+    text-transform: uppercase;
+    font-family: $main-font-regular;
+    letter-spacing: 2px;
+    font-size: 12px;
+    display: inline-block;
+    color: #ffffff;
+    text-shadow: none;
+    transition: all 0.4s;
+    border:none;
+    width:100%;
+    margin-right: 8px;
+
+    &:hover{
+        background-color: #404040;
+    }
+
+    }
+    .select-dropdown{
+        padding:20px 24px;
+        letter-spacing: 1px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background: url(/images/drop-down-arrow.png) no-repeat 94% center;
+
+         @media(min-width: $screen-sm-min){
+
+        background: url(/images/drop-down-arrow.png) no-repeat 85% center;
+
+         }
+    }
+
+
+
+}
+
+
+
+
+
+.offer-details-container {
+
+        max-width: 1105px;
+
+        .rooms-details {
+
+                padding: 0px;
+                border:none;
+
+            .tab-content {
+                
+                .tab-pane {
+
+                            h3{
+                                    padding: 25px 0px;
+                                    @media(min-width: $screen-sm-min){
+                                         padding: 50px 0px;
+                                    } 
+                                  }
+
+                            p{
+                                max-width:none;
+                                @media(min-width: $screen-sm-min){
+                                          max-width:470px;
+                                    } 
+
+                            }
+                }
+            }                    
+
+             .nav{
+
+                 text-align: center !important;
+
+                 @media(min-width: $screen-sm-min){
+
+                    text-align: left !important;
+                 }
+                
+
+                    li{
+
+
+                            margin: 0 0 10px 0;
+
+                            @media(min-width: $screen-xs-min){
+
+                                margin: 0 32px 0 0;
+                             }
+
+                            a{
+
+                                padding: 0px 0px 7px 0px;
+                            }
+
+                    }
+          
+
+             }
+            
+        }
+     
+    }
+
+
+
+.rooms-bar{
+
+        border-left: none;
+
+     @media(min-width: $screen-sm-min){
+
+        border-left: 1px solid #dfdfdf;
+
+        
+     }
+}
+
+
+ 
