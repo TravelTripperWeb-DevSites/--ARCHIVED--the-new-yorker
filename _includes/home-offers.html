@@ -6,7 +6,7 @@
      	                         <div class="caption">
      	                             <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
 
-     	                             <a href="/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common btn-white" rel="tooltip" title="View This Offer">View Offer</a>
+     	                             <a ng-href="/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common btn-white" rel="tooltip" title="View This Offer">View Offer</a>
      	                         </div>
 
      	                     </div>
