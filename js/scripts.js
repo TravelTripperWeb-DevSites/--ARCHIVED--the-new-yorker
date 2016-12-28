@@ -224,3 +224,15 @@ $('#welcomeVideo button').click(function () {
 	$('#welcomeVideo iframe').removeAttr('src');
 });
 
+//Youtube Events Video Embed
+
+$('#ev').click(function () {
+	var src = 'https://www.youtube.com/embed/qArdOdD63jk?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1';
+	$('#eventsVideo').modal('show');
+	$('#eventsVideo iframe').attr('src', src);
+});
+
+$('#eventsVideo button').click(function () {
+	$('#eventsVideo iframe').removeAttr('src');
+});
+
