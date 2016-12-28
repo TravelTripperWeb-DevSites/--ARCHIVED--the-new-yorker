@@ -1,38 +1,16 @@
 <section class="offers-wrapper">
-     <div class="container-fluid">
-     	      <div class="col-sm-4 no-padding-margin">
+     <div class="container-fluid" rt3-special-rates= "offers">
+     	      <div class="col-sm-4 no-padding-margin" ng-repeat="offer in offers.special_rates | limitTo: 3">
      	                   <div class="thumb">
-     	                        <img src="/images/offers/romance.jpg" alt="...">
+     	                        <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt="...">
      	                         <div class="caption">
-     	                             <h3>romance package</h3>
+     	                             <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
 
-     	                             <a href="/offers/romance-package/" class="btn-common btn-white" rel="tooltip" title="View This Offer">View Offer</a>
+     	                             <a href="/offers/[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common btn-white" rel="tooltip" title="View This Offer">View Offer</a>
      	                         </div>
 
      	                     </div>
      	      </div>
-     	      <div class="col-sm-4 no-padding-margin">
-     	             	<div class="thumb">
-     	             	<img src="/images/offers/queen-room.jpg" alt="...">
-     	                         <div class="caption">
-     	                             <h3>business package</h3>
 
-
-     	                             <a href="/offers/business-premium-package/" class="btn-common btn-white" rel="tooltip" title="View This Offer">View Offer</a>
-     	                         </div>
-
-     	                     </div>
-     	      </div>
-     	      <div class="col-sm-4 no-padding-margin">
-     	              	<div class="thumb">
-     	              	 <img src="/images/offers/nyc.jpg" alt="...">
-     	                         <div class="caption">
-     	                             <h3>empire package</h3>
-
-     	                             <a href="/offers/empire-package/" class="btn-common btn-white" rel="tooltip" title="View This Offer">View Offer</a>
-     	                         </div>
-
-     	                     </div>
-     	      </div>
      </div>
 </section>

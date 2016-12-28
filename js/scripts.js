@@ -45,7 +45,7 @@ $("#od_arrival").datepicker({
         });
         $('#departure_date, #departure_date_1, .alternate-date, .alternate-date-1').datepicker({
             dateFormat: "yy-mm-dd",
-			altField  : '#departure_dates',
+			altField  : '#departure_date',
 			altFormat : 'yy-mm-dd',
             onClose: function () {
                 var dt1 = $('#v').datepicker('getDate');

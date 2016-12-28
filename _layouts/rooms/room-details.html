@@ -41,9 +41,9 @@ layout: default
  <div class="container-fluid rooms-navigation">
  <div class="row">
    <div class="col-sm-12">
-   <a href="view-all-rooms">[[selectedRoom.name]]</a>
-   <a href="/rooms/[[prevRoomName | formatNameForLink ]]/" class="prev-room" ng-show="prevRoomName"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> Previous Room</span></a>
-   <a href="/rooms/[[nextRoomName | formatNameForLink ]]/" class="next-room" ng-show="nextRoomName"><span>Next Room</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt="">  </a>
+   <a href="/rooms">Back to Room Listing</a>
+   <a href="/rooms/[[prevRoomName | formatNameForLink ]]" class="prev-room" ng-show="prevRoomName"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> Previous Room</span></a>
+   <a href="/rooms/[[nextRoomName | formatNameForLink ]]" class="next-room" ng-show="nextRoomName"><span>Next Room</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt="">  </a>
 
 
    </div>

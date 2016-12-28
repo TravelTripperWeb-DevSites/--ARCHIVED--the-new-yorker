@@ -13,7 +13,7 @@ function getIp(data){
 
 <script src="/js/lightgallery.js"></script>
 <script src="/js/lg-fullscreen.js"></script>
-<script src="/js/lg-thumbnail.js"></script> 
+<script src="/js/lg-thumbnail.js"></script>
 <script src="/js/jquery.mousewheel.min.js"></script>
 <script src="/js/owl.carousel.js"></script>
 
@@ -29,45 +29,11 @@ function getIp(data){
 <script src="/js/rt3-filters.js"></script>
 <script src="/js/scripts.js"></script>
 <script>
-	$(document).ready(function($) {
-		$(".main-date-1, .main-date-2").datepicker({
-					dateFormat: "yy-mm-dd",
-					altField  : '.main-date-1',
-					altFormat : 'yy-mm-dd',
-					minDate: 0,
-					onSelect: function (date) {
-						var date2 = $('.main-date-1').datepicker('getDate');
-						//date2.setDate(date2.getDate() + 1);
-						$('.main-date-1').datepicker('setDate', date2);
-						//sets minDate to dt1 date + 1
-						$('.alternate-date-1').datepicker('option', 'minDate', date2);
-					}
-				});
-		$('.alternate-date-1, .alternate-date-2').datepicker({
-					dateFormat: "yy-mm-dd",
-					altField  : '.alternate-date-1',
-					altFormat : 'yy-mm-dd',
-					onClose: function () {
-						var dt1 = $('#v').datepicker('getDate');
-						console.log(dt1);
-						var dt2 = $('.alternate-date-1').datepicker('getDate');
-						if (dt2 <= dt1) {
-							var minDate = $('.alternate-date-1').datepicker('option', 'minDate');
-							$('.alternate-date-1').datepicker('setDate', minDate);
-						}
-					}
-				})
-	});
-
+	
 </script>
 
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhHFECOi5fIKwXHJOuxHe47CrmdiTFkto&callback=initMap"></script>
 
-<script src="/js/isInViewport.min.js" type="text/javascript"></script> 
-<script src="/js/css3-animate-it.js" type="text/javascript"></script> 
-
-
-
-
-
+<script src="/js/isInViewport.min.js" type="text/javascript"></script>
+<script src="/js/css3-animate-it.js" type="text/javascript"></script>
