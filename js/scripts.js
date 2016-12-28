@@ -232,7 +232,30 @@ $('#ev').click(function () {
 	$('#eventsVideo iframe').attr('src', src);
 });
 
-$('#eventsVideo button').click(function () {
+//Youtube Gallery Video Embed
+
+$('#gal-1').click(function () {
+	var src = 'https://www.youtube.com/embed/glmandgZiBY?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1';
+	$('#galleryVideo-1').modal('show');
+	$('#galleryVideo-1 iframe').attr('src', src);
+});
+$('#gal-2').click(function () {
+	var src = 'https://www.youtube.com/embed/qArdOdD63jk?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1';
+	$('#galleryVideo-2').modal('show');
+	$('#galleryVideo-2 iframe').attr('src', src);
+});
+$('#gal-3').click(function () {
+	var src = 'https://www.youtube.com/embed/xrBfrXM_vxY?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1';
+	$('#galleryVideo-3').modal('show');
+	$('#galleryVideo-3 iframe').attr('src', src);
+});
+$('#gal-4').click(function () {
+	var src = 'https://www.youtube.com/embed/xrBfrXM_vxY?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1';
+	$('#galleryVideo-4').modal('show');
+	$('#galleryVideo-4 iframe').attr('src', src);
+});
+
+$('#eventsVideo .close').click(function () {
 	$('#eventsVideo iframe').removeAttr('src');
 });
 

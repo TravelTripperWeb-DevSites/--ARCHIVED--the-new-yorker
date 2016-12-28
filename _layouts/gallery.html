@@ -21,7 +21,8 @@ layout: default
           <li><a href="javascript:;" data-rel="videos" class="filter">Videos</a></li>
         </ul>
       </div>
-      <div class="container gallery-wrap" id="thenewyorkergallery">
+      <div class="container gallery-wrap">
+      <div id="thenewyorkergallery">
       <div class="fancybox" data-filter="hotel">
       	<h3>The Hotel</h3>
         <ul class="row">        
@@ -133,32 +134,35 @@ layout: default
           </li> 
         </ul>
         </div>
-        <div class="fancybox" data-filter="videos">
+        </div>
+    </div>
+    
+    <div class="fancybox" data-filter="videos">
         <h3>Videos</h3>
         <ul class="row">        
           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/33.jpg"><img src="/images/gallery/thumb/33.jpg" class="img-responsive"/>
-            <a href="#"><img src="/images/play-icon.svg" class="play-icon"></a>
+            <div class="item"><img src="/images/gallery/thumb/33.jpg" class="img-responsive"/>
+            <a href="#" id="gal-1"><img src="/images/play-icon.svg" class="play-icon"></a>
             </div>
           </li>
            <li class="col-md-3 col-sm-4">
             <div class="item" data-src="/images/gallery/large/34.jpg"><img src="/images/gallery/thumb/34.jpg" class="img-responsive"/>
-            <a href="#"><img src="/images/play-icon.svg" class="play-icon"></a>
+            <a href="#" id="gal-2"><img src="/images/play-icon.svg" class="play-icon"></a>
             </div>
           </li>
            <li class="col-md-3 col-sm-4">
             <div class="item" data-src="/images/gallery/large/35.jpg"><img src="/images/gallery/thumb/35.jpg" class="img-responsive"/>
-            <a href="#"><img src="/images/play-icon.svg" class="play-icon"></a>
+            <a href="#" id="gal-3"><img src="/images/play-icon.svg" class="play-icon"></a>
             </div>
           </li>
            <li class="col-md-3 col-sm-4">
             <div class="item" data-src="/images/gallery/large/36.jpg"><img src="/images/gallery/thumb/36.jpg" class="img-responsive"/>
-            <a href="#"><img src="/images/play-icon.svg" class="play-icon"></a>
+            <a href="#" id="gal-4"><img src="/images/play-icon.svg" class="play-icon"></a>
             </div>
           </li>
         </ul>
       </div>
-    </div>
+      
     <!--<div class="btn-holder text-center"><a href="javascript:void(0);" class="button-common">load more images</a></div>-->
   </div>
   <!--/gallery wrap --> 
@@ -166,5 +170,55 @@ layout: default
 {% include newsletter.html %}
 {% include twitter-instagram.html %}
 
+<!--Youtube video--> 
+<div class="modal fade full-screen" id="galleryVideo-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+      	<div class="embed-responsive embed-responsive-16by9">
+       		<iframe class="embed-responsive-item"  frameborder="0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<div class="modal fade full-screen" id="galleryVideo-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+      	<div class="embed-responsive embed-responsive-16by9">
+       		<iframe class="embed-responsive-item"  frameborder="0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<div class="modal fade full-screen" id="galleryVideo-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+      	<div class="embed-responsive embed-responsive-16by9">
+       		<iframe class="embed-responsive-item"  frameborder="0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade full-screen" id="galleryVideo-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+      	<div class="embed-responsive embed-responsive-16by9">
+       		<iframe class="embed-responsive-item"  frameborder="0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
