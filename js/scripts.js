@@ -114,7 +114,7 @@ $(document).ready(function(){
 	 $(".menu-btn").click(function(){
 		 $(".main-menu").slideToggle(300);
 	 });
-	 $('#lightgallery').lightGallery({
+	 $('#thenewyorkergallery').lightGallery({
    		selector: '.item'
 		})
  });
