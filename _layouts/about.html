@@ -12,7 +12,7 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
      <div class="container">
      	  <div class="row">
      	      <div class="col-sm-6">
-     	      	   <div id="amenitiesCarousel" class="carousel slide no-shadow margin22" data-ride="carousel"> 
+     	      	   <div id="amenitiesCarousel" class="carousel slide no-shadow margin22" data-ride="carousel">
 
      	      	     <!-- Wrapper for slides -->
      	      	     <div class="carousel-inner" role="listbox">
@@ -23,7 +23,7 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
      	      	       <div class="item">
      	      	          <img src="/images/about/nyhotel-front.jpg" alt="front view">
      	      	       </div>
- 
+
      	      	     </div>
 
      	      	     <!-- Left and right controls -->
@@ -31,7 +31,7 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
      	      	       <img src="/images/amenities/arrow-left.png">
      	      	     </a>
      	      	     <a class="right carousel-control" href="#amenitiesCarousel" role="button" data-slide="next">
-     	      	       <img src="/images/amenities/arrow-right.png"> 
+     	      	       <img src="/images/amenities/arrow-right.png">
      	      	     </a>
      	      	   </div>
      	      </div>
@@ -45,7 +45,7 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
      	      	   </div>
      	      </div>
      	  </div>
-     </div> 
+     </div>
 </div>
 <div class="two-cal-wraper-full">
 	<div class="col-sm-6 no-padding">
@@ -68,13 +68,13 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
 <div class="clearfix"></div>
 <div class="two-col-wrapper padding80 white_bg cover landmark" style="background-image: url('/images/about/landmark-bg.jpg');">
    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-   
+
    <!-- Indicators -->
 	  <ol class="carousel-indicators">
 		<li data-target="#carousel-example-generic" data-slide-to="0" class="active">Our Past</li>
 	  </ol>
-	
-   
+
+
    <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
@@ -87,7 +87,7 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
 							   private power plant, installed in the hotel’s sub basements.</p>
 
 <p>The Big Band era of the early 1930s ushered in the first heyday of the New Yorker, as guests affected by the Great Depression visited the hotel to forget their troubles, if only for a short while. </p>
-		     	      	   
+
      	      	   </div>
      	      </div>
      	      <div class="col-sm-5">
@@ -109,84 +109,27 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
     <span class="sr-only">Next</span>
   </a>
 </div>
-</div> 
+</div>
 
 <section class="offers-wrapper rooms-rates">
-     <div class="container-fluid"> 
-     	      <div class="col-sm-4 no-padding-margin">
+     <div class="container-fluid">
+     	      <div class="col-sm-4 no-padding-margin" ng-repeat ="room in browser.roomsList | limitTo: 3">
      	                   <div class="thumb">
-     	                        <div class="caption" style="background-image: url(/images/about/room1.jpg);">
-    	                             <span>Tonight’s rate $ <strong>219</strong></span>
-     	                             <h3>Metro<br>View Queen</h3>
-     	                              <a href="" class="btn-common" rel="tooltip" title="View This Offer">View Room</a>
-     	                              <div class="clearfix"></div> 
-     	                             <a href="#"><img class="cal-icon" src="../images/about/calendar-icon.jpg" alt="Calendar" /></a>
+     	                        <div class="caption" style="background-image: url([[room.photos[0].yankee_large]]);">
+    	                             <span>Tonight’s rate $ <strong><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><span>[[ room.todayRate ]]</span></a></strong></span>
+     	                             <h3>[[room.name]]</h3>
+     	                              <a href="/rooms/#[[room.name | formatNameForLink]]" class="btn-common" rel="tooltip" title="View This Offer">View Room</a>
+     	                              <div class="clearfix"></div>
+     	                             <a ng-href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><img class="cal-icon" src="../images/about/calendar-icon.jpg" alt="Calendar" /></a>
      	                         </div>
-     	                         
+
      	                     </div>
      	      </div>
-     	      <div class="col-sm-4 no-padding-margin">
-     	                   <div class="thumb">
-     	                         <div class="caption" style="background-image: url(/images/about/room2.jpg);">
-    	                             <span>Tonight’s rate $ <strong>219</strong></span>
-     	                             <h3>NY Queen<br>Suite</h3>
-     	                              <a href="" class="btn-common" rel="tooltip" title="View This Offer">View Suite</a>
-     	                              <div class="clearfix"></div> 
-     	                             <a href="#"><img class="cal-icon" src="../images/about/calendar-icon.jpg" alt="Calendar" /></a>
-     	                         </div>
-     	                         
-     	                     </div>
-     	      </div>
-     	       <div class="col-sm-4 no-padding-margin">
-     	                   <div class="thumb">
-     	                         <div class="caption" style="background-image: url(/images/about/room3.jpg);">
-    	                             <span>Tonight’s rate $ <strong>219</strong></span>
-     	                             <h3>Executive<br>Queen</h3>
-     	                              <a href="" class="btn-common" rel="tooltip" title="View This Offer">View Room</a>
-     	                              <div class="clearfix"></div> 
-     	                             <a href="#"><img class="cal-icon" src="../images/about/calendar-icon.jpg" alt="Calendar" /></a>
-     	                         </div>
-     	                         
-     	                     </div>
-     	      </div>
-     </div> 
+
+     </div>
 </section>
-<section class="offer-section">
-	
-	<h4>Exclusive Offers</h4>
-
-	<div class="container">
-	<div  class="row">
-	<div class="col-sm-6 col-md-3">
-		<img src="/images/rooms/offer1.jpg" alt="">
-		<h5>PAY 3, STAY FREE!</h5>
-		<a href="#"  class="view-offer">View Offer +</a>
-	</div>
-	<div class="col-sm-6 col-md-3">
-		<img src="/images/rooms/offer2.jpg" alt="">
-		<h5>BREAKFAST FOR A DOLLAR</h5>
-		<a href="#" class="view-offer">View Offer +</a>
-	</div>
-	<div class="col-sm-6 col-md-3">
-		<img src="/images/rooms/offer3.jpg" alt="">
-		<h5>SUITE DEAL</h5>
-		<a href="#" class="view-offer">View Offer +</a>
-	</div>
-	<div class="col-sm-6 col-md-3">
-		<img src="/images/rooms/offer4.jpg" alt="">
-		<h5>EMPIRE PACKAGE</h5>
-		<a href="#" class="view-offer">View Offer +</a>
-	</div>
-
-	</div>
-	</div>
-	<a href="#" class="btn-common btn-white">View All Offers</a>
-
-</section>
+{% include exclusive-offer.html %}
 
 
 {% include newsletter.html %}
 {% include twitter-instagram.html %}
-
-
-

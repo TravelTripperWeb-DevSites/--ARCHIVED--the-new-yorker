@@ -23,7 +23,7 @@ layout: default
 		<div class="offers-description">
 		<h4 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h4>
 		<p>[[offer.short_description | limitTo: 90]][[offer.short_description.length > 170 ? '...' : '']]</p>
-		<a href="/offers/[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common"> View offer </a>
+		<a ng-href="/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common"> View offer </a>
 
 		</div>
 		</div>
