@@ -67,14 +67,21 @@
         }
       };
     }])
-    .controller('roomDetail', ['$scope', 'rt3Search', 'rt3Browser','$timeout', function($scope, rt3Search, rt3Browser,$timeout) {
+    .controller('roomDetail', ['$scope', 'rt3Search', 'rt3Browser','$timeout','$filter', function($scope, rt3Search, rt3Browser,$timeout, $filter) {
+        window.onhashchange = function() {
+          window.location.reload();
+        }
+        $scope.reloadPage = function(){window.location.reload();}
         $timeout(function() {
            var roomsList = JSON.parse($("#roomList").val());
-           var roomId = $("#roomId").val();
-           var roomSizeSqm;
+           var roomId = window.location.hash.substr(1); //$("#roomId").val();
+           var roomSizeSqm, tmpName;
            var roomSizeSqft;
            for(var j= 0 ; j < roomsList.length ; j++){
-               if(roomsList[j].code.toLowerCase() == roomId.toLowerCase()){
+             rName = $filter('formatNameForLink')(roomId);
+             tmpName = $filter('formatNameForLink')(roomsList[j].name);
+
+               if(rName == tmpName ){
                   // find room size for diff size units
 
                   if(roomsList[j].room_size_units == 'sqft'){
@@ -157,13 +164,19 @@
         }
       }
     }])
-    .controller('offerDetail', ['$scope', 'rt3Search', 'rt3Browser','$timeout', function($scope, rt3Search, rt3Browser,$timeout) {
+    .controller('offerDetail', ['$scope', 'rt3Search', 'rt3Browser','$timeout','$filter', function($scope, rt3Search, rt3Browser,$timeout,$filter) {
+      window.onhashchange = function() {
+        window.location.reload();
+      }
+        $scope.reloadPage = function(){$window.location.reload();}
         $timeout(function() {
            var oList = JSON.parse($("#offerList").val());
-           var oId = $("#offerId").val();
-
+           var oName = window.location.hash.substr(1); //$("#offerId").val();
+           var tmpName;
            for(var j= 0 ; j < oList.length ; j++){
-               if(oList[j].rate_plan_code.toLowerCase() == oId.toLowerCase()){
+                oName = $filter ('formatNameForLink')(oName);
+                tmpName = $filter ('formatNameForLink')(oList[j].rate_plan_name);
+               if(tmpName == oName){
                   // find previous and next rooms name
                   if(j > 0){
                      $scope.prevOfferName = oList[j-1].rate_plan_name;
@@ -177,6 +190,8 @@
            }
 
         }, 2800);
+
+        
 
     }])
 })();

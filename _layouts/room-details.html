@@ -42,8 +42,8 @@ layout: default
  <div class="row">
    <div class="col-sm-12">
    <a href="/rooms">Back to Room Listing</a>
-   <a href="/rooms/[[prevRoomName | formatNameForLink ]]" class="prev-room" ng-show="prevRoomName"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> Previous Room</span></a>
-   <a href="/rooms/[[nextRoomName | formatNameForLink ]]" class="next-room" ng-show="nextRoomName"><span>Next Room</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt="">  </a>
+   <a ng-href="/room-details/#[[prevRoomName | formatNameForLink ]]" ng-click="reloadPage" class="prev-room" ng-show="prevRoomName"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> Previous Room</span></a>
+   <a ng-href="/room-details/#[[nextRoomName | formatNameForLink ]]" ng-click="reloadPage" class="next-room" ng-show="nextRoomName"><span>Next Room</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt="">  </a>
 
 
    </div>
