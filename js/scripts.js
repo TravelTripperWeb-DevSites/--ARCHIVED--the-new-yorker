@@ -184,3 +184,15 @@ $(document).ready(function(){
    		selector: '.item'
 		})
  });
+
+//Youtube  Welcome Video Embed
+
+$('#link').click(function () {
+	var src = 'https://www.youtube.com/embed/xrBfrXM_vxY?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1';
+	$('#welcomeVideo').modal('show');
+	$('#welcomeVideo iframe').attr('src', src);
+});
+
+$('#welcomeVideo button').click(function () {
+	$('#welcomeVideo iframe').removeAttr('src');
+});
