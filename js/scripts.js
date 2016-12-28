@@ -255,7 +255,7 @@ $('#gal-4').click(function () {
 	$('#galleryVideo-4 iframe').attr('src', src);
 });
 
-$('#eventsVideo .close').click(function () {
-	$('#eventsVideo iframe').removeAttr('src');
+$('.modal .close').click(function () {
+	$('.modal iframe').removeAttr('src');
 });
 
