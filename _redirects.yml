@@ -1,0 +1,35 @@
+---
+- default-en.html: ''
+- newsletter-en.html: ''
+- contact/area-guide-en.html: location/
+- en/meetings/specials: offers/
+- en/media: ''
+- en/hotel-policy: about/
+- dining-en.html: dining/
+- en/gallery: gallery/
+- en/accommodation: rooms/
+- en/contact/: about/
+- en/meetings/manhattan-center: events/
+- en/special-offers: offers/
+- en/best-rate: offers/
+- about-en.html: about/
+- en/dining: dining/
+- accommodation-en.html: rooms/
+- meetings/default-en.html: events/
+- en/guest-reviews: rooms/
+- en/meetings/: events/
+- en/meetings/social-events: events/
+- services-en.html: rooms/
+- en/Queen%20Suite: rooms/
+- sitemap-en.html: ''
+- en/terms: ''
+- en/contact/events-calendar: ''
+- en/services: offers/
+- en/Metro%20Queen: rooms/
+- en/about: about/
+- en/contact/area-guide.html: location/
+- terms-en.html: ''
+- en/meetings/meetings-rfp: events/
+- en/privacy: ''
+- meetings/manhattan-center-en.html: events/
+
