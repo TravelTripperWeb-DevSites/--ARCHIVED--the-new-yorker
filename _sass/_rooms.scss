@@ -101,6 +101,8 @@
         position:relative;
         text-align:center;
 		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 
 
                 .overlay{
@@ -161,15 +163,13 @@
 									@media(min-width: $screen-lg-min){
 										width: 81%;
 									}
-                                 @media(min-width:1669px){
-
-                                    width: 70%;
-
-                                }
+                                
 								@media(min-width: 1400px){
-									font-size: 36px;
+									font-size: 32px;
 									min-height: auto;
+									width: 80%;
 								}
+								
 
 
                         }
@@ -180,7 +180,7 @@
                             padding: 5px 0px;
                             font-family:$main-font-regular;
                             font-size:16px;
-                            margin-bottom: 40px;
+                            margin-bottom: 70px;
                             position:relative;
                             letter-spacing:.1em;
 
@@ -209,6 +209,11 @@
                             margin: 0 auto;
                             padding: 12px 15px;
                             transition: all 0.4s;
+							position: absolute;
+							bottom:0;
+							left: 0;
+							right:0;
+							margin: 0 auto;
 
                             &:hover{
 
