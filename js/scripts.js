@@ -115,28 +115,7 @@ $(window).on('load scroll resize', function () {
     	interval: false
 	});
 
-function initMap() {
-        var myLatLng = {lat: 40.749129, lng: -73.991691};
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
-          center: new google.maps.LatLng(40.749129, -73.991691),
-		  scrollwheel: false,
-		  disableDefaultUI: true
-        });
-
-
-
-		var iconBase = '/images/';
-
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'Stewart Hotel',
-		  icon: iconBase + 'loc.png'
-        });
-
-      }
 
 
 
