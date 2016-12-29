@@ -147,7 +147,7 @@
                         }
 
                         h3{
-                                font-size: 30px;
+                                font-size: 26px;
                                 font-family: $main-font-medium;
                                 text-transform: uppercase;
                                 line-height: 38px;
@@ -161,7 +161,8 @@
 									}
 								
 									@media(min-width: $screen-lg-min){
-										width: 81%;
+										width: 90%;
+										font-size: 32px;
 									}
                                 
 								@media(min-width: 1400px){
