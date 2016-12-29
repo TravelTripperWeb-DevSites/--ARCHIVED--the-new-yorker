@@ -1,3 +1,22 @@
+$(window).on('load resize', function () {
+	var mheight = $(window).height();
+	var mwidth = $(window).width();
+  setTimeout(function(){
+
+    if(mwidth > 300){
+  		$(".home-banner .carousel-inner .item").height(mheight-50);
+  	}
+  	if(mwidth > 768){
+  		$(".home-banner .carousel-inner .item").height(mheight-75);
+  	}
+  	if(mwidth > 1240){
+  		$(".home-banner .carousel-inner .item").height(mheight-121);
+  	}
+    $('#home-banner').carousel();
+  },2500);
+
+});
+
 //Date Picker
  $(document).ready(function() {
 $("#od_arrival").datepicker({
@@ -120,24 +139,7 @@ function initMap() {
       }
 
 
-$(window).on('load resize', function () {
-	var mheight = $(window).height();
-	var mwidth = $(window).width();
-  setTimeout(function(){
 
-    if(mwidth > 300){
-  		$(".home-banner .carousel-inner .item").height(mheight-50);
-  	}
-  	if(mwidth > 768){
-  		$(".home-banner .carousel-inner .item").height(mheight-75);
-  	}
-  	if(mwidth > 1240){
-  		$(".home-banner .carousel-inner .item").height(mheight-121);
-  	}
-    $('#home-banner').carousel();
-  },2500);
-
-});
 
 
 
@@ -235,7 +237,7 @@ $('#ev').click(function () {
 //Youtube Gallery Video Embed
 
 $('#gal-1').click(function () {
-	var src = 'https://www.youtube.com/embed/glmandgZiBY?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1';
+	var src = 'https://www.youtube.com/embed/xrBfrXM_vxY?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1';
 	$('#galleryVideo-1').modal('show');
 	$('#galleryVideo-1 iframe').attr('src', src);
 });
@@ -243,16 +245,6 @@ $('#gal-2').click(function () {
 	var src = 'https://www.youtube.com/embed/qArdOdD63jk?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1';
 	$('#galleryVideo-2').modal('show');
 	$('#galleryVideo-2 iframe').attr('src', src);
-});
-$('#gal-3').click(function () {
-	var src = 'https://www.youtube.com/embed/xrBfrXM_vxY?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1';
-	$('#galleryVideo-3').modal('show');
-	$('#galleryVideo-3 iframe').attr('src', src);
-});
-$('#gal-4').click(function () {
-	var src = 'https://www.youtube.com/embed/xrBfrXM_vxY?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1';
-	$('#galleryVideo-4').modal('show');
-	$('#galleryVideo-4 iframe').attr('src', src);
 });
 
 $('.modal .close').click(function () {
