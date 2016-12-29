@@ -222,12 +222,12 @@
                	  	     	font-family: $main-font-medium;  
                	  	     	color: #fff !important;
                	  	     	text-transform: uppercase; 
-               	  	     	max-width: 250px;
+               	  	     	max-width: 300px;
                	  	     	margin: auto;
                	  	     	text-align: center;
                	  	     	line-height: 40px;
                	  	     	font-size: 20px;
-               	  	     	@media(min-width: $screen-xs-min){
+               	  	     	@media(min-width: $screen-md-min){
                	  	     		font-size: 40px;
                	  	     	}
                	  	     }
