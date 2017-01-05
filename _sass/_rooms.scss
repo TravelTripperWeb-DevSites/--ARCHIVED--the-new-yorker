@@ -100,6 +100,9 @@
     .room-item{
         position:relative;
         text-align:center;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 
 
                 .overlay{
@@ -116,6 +119,7 @@
                    color:$white;
                    background: rgba(16, 16, 24, 0.3);
                     transition: all 0.4s;
+					min-height: 341px;
                     &:hover{
 
                         background: rgba(16, 16, 24, 0.5);
@@ -143,20 +147,29 @@
                         }
 
                         h3{
-                                font-size: 36px;
+                                font-size: 26px;
                                 font-family: $main-font-medium;
                                 text-transform: uppercase;
                                 line-height: 38px;
                                 letter-spacing: .05em;
                                 padding: 64px 10px 10px 27px;
-                                width: 81%;
+                                width: 95%;
                                 margin: 0 auto;
-
-                                 @media(min-width:1669px){
-
-                                    width: 54%;
-
-                                }
+									@media(min-width: $screen-md-min){
+										min-height: 188px;
+										width: 95%;
+									}
+								
+									@media(min-width: $screen-lg-min){
+										width: 90%;
+										font-size: 32px;
+									}
+                                
+								@media(min-width: 1400px){
+									font-size: 32px;
+									min-height: auto;
+								}
+								
 
 
                         }
@@ -167,7 +180,7 @@
                             padding: 5px 0px;
                             font-family:$main-font-regular;
                             font-size:16px;
-                            margin-bottom: 40px;
+                            margin-bottom: 70px;
                             position:relative;
                             letter-spacing:.1em;
 
@@ -196,6 +209,11 @@
                             margin: 0 auto;
                             padding: 12px 15px;
                             transition: all 0.4s;
+							position: absolute;
+							bottom:0;
+							left: 0;
+							right:0;
+							margin: 0 auto;
 
                             &:hover{
 
