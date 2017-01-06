@@ -45,6 +45,12 @@
 			'submenu': 'false' 
 		},
 		{
+			'title':'Attractions',
+			'name': 'attractions',
+			'url': '/attractions/',
+			'submenu': 'false' 
+		},
+		{
 			'title':'Contact',
 			'name': 'contact',
 			'url': 'mailto:reservations@nyhotel.com',

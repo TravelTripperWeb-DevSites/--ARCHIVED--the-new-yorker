@@ -10,11 +10,11 @@ layout: default
 </section>
 
 {% for attractions in site.data._models.attractions %}
-<section class="models events">
+<section class="models attractions-listing">
       <div class="container">
         <div class="two-col-wrap">
           <div class="row no-gutters">
-          	<div class="col-sm-6 sp-img"> <img src="{{attractions.attractions_image.url}}" alt=""></div>
+          	<div class="col-sm-6 sp-img"> <img src="{{attractions.attraction_image.url}}" alt=""></div>
           	<div class="col-sm-6 sp-content">
               <h2>{{attractions.title}}</h2>
               <p>{{attractions.short_description}}</p>
@@ -23,7 +23,7 @@ layout: default
           </div>
         </div>
       </div>
-    </section>
+</section>
 {% endfor %}
 {% include newsletter.html %}
 {% include twitter-instagram.html %}
