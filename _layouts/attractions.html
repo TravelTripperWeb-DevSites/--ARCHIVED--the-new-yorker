@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<section>
+  <div class="container-fluid no-padding">
+    <div class="page-banner location-banner" style="background-image: url(/images/gates/events-banner.jpg)">
+      {% region banner-text %}
+      <!--<div class="banner-btn"><a href="#" class="button-common">Download Map</a><a href="#" class="button-common">Download Fact Sheet</a></div>-->
+    </div>
+  </div>
+</section>
+
+{% for events in site.data._models.events %}
+<section class="models events">
+      <div class="container">
+        <div class="two-col-wrap">
+          <div class="row no-gutters">
+          	<div class="col-sm-6 sp-img"> <img src="{{events.event_image.url}}" alt=""></div>
+          	<div class="col-sm-6 sp-content">
+              <h2>{{events.title}}</h2>
+              <ul>
+              	<li>{{events.start_date  |  date: "%B %d, %Y"}} - {{events.end_date  |  date: "%B %d, %Y"}}</li>
+                <li>{{events.time}}</li>
+              </ul>
+    		  <div class="btn-holder"><a href="{{events.url_friendly_name}}" class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endfor %}
+    
+        
+    
+
