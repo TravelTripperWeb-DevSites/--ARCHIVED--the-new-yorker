@@ -219,6 +219,8 @@ a:hover,a:focus {
 						letter-spacing: 1px;
 						display: block;
 						font-size: 13px;
+						
+						
 					}
 						@media (max-width: 1023px){
 						padding: 20px 12px;
@@ -238,6 +240,9 @@ a:hover,a:focus {
 				}
 				ul{
 					&.dropdown-menu{
+						
+						text-align:left !important;
+						
 						@media (max-width: 768px){
 							width:100%;
 						}	
