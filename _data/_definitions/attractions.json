@@ -13,4 +13,4 @@
 "detailpage_description":
 	{"type":"text","required":true},
 "attraction_image":
-	{"type":"image","required":true}
+	{"type":"image","required":true}}

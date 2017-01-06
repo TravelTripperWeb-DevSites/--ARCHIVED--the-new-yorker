@@ -5,37 +5,27 @@ layout: default
 {% assign attractions = page %}
 {% assign model = page %}
 
-<section>
-  <div class="container-fluid no-padding">
-    <div class="page-banner location-banner" style="background-image: url(/images/gates/attractions-banner.jpg)">
-      <h1 class="page-title"></h1>
-      <!--<div class="banner-btn"><a href="#" class="button-common">Download Map</a><a href="#" class="button-common">Download Fact Sheet</a></div>--> 
-    </div>
-  </div>
-</section>
 <!--Banner here-->
-<section class="inner-page-banner banner" style="background-image:url(/images/events/events-banner.jpg);">
+<!--<section class="inner-page-banner banner" style="background-image:url(/images/attractions-banner.jpg);">
 	<div class="overlay">
-        <h1>{{attractions.title}}</h1>
-        <p>Hosting a meeting, conference, or corporate gathering? We offer you an unparalleled location steps from Penn Station, 23,000 square feet of impeccably appointed event space, and a full range of event planning and catering services.</p>
+        <h1>Attractions</h1>
+        <p>{{attractions.short_description}}</p>
     </div>
-</section>
+</section>-->
 <section class="location-tabs event-details">
   <div class=" container no-padding ">
     <div class="content-container">
       <div class="col-sm-6 no-padding">
         <div class="desc">
         	<h2>{{attractions.title}}</h2>
-            <h3><span class="date-label">Date</span>{{attractions.start_date  |  date: "%B %d, %Y"}} - {{attractions.end_date  |  date: "%B %d, %Y"}}</h3>
-            <h3><span class="date-label">Time</span>{{attractions.time}}</h3>
-			<div class="venue">
-            	<span class="date-label">Venue</span>{{attractions.venue}}
-            </div>
+            <p>{{attractions.detailpage_description}}</p>
             <div class="website"><span class="date-label">Website</span><a href="{{attractions.website_url}}">{{attractions.website_url}}</a></div>
         </div>
       </div>
-      <div class="col-sm-6 no-padding tabs-img" style="background-image: url({{attractions.event_image.url}})">   
+      <div class="col-sm-6 no-padding tabs-img" style="background-image: url({{attractions.attraction_image.url}})">   
       </div>
     </div>
   </div>
 </section>
+{% include newsletter.html %}
+{% include twitter-instagram.html %}
