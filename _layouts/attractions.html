@@ -9,20 +9,19 @@ layout: default
     </div>
 </section>
 {% assign attractions = site.data._models.attractions | sort : 'sort_order' %}
-<!--{% for attractions in site.data._models.attractions | sort : 'sort_order' %}-->
-{% for attractions in attractions %}
+{% for a in attractions %}
 <section class="intro-wrap cta-events attractions-listing">
 	<div class="container">
         <div class="intro">
-            <div class="col-sm-5 no-padding cta-events-img" style="background-image: url({{attractions.attraction_image.url}})">
+            <div class="col-sm-5 no-padding cta-events-img" style="background-image: url({{a.attraction_image.url}})">
             	<div class="-left">
-                	<div class="btn-holder"><a href="{{attractions.url_friendly_name}}" class="btn-common">View this Attraction</a></div>
+                	<div class="btn-holder"><a href="{{a.url_friendly_name}}" class="btn-common">View this Attraction</a></div>
                 </div>
             </div>
             <div class="col-sm-7 no-padding">
                 <div class="-right">
-                   <h2>{{attractions.title}}</h2>
-                    <p>{{attractions.short_description}}</p>
+                   <h2>{{a.title}}</h2>
+                    <p>{{a.short_description}}</p>
                </div>
           </div>
         </div>

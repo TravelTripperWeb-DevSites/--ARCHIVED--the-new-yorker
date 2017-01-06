@@ -15,6 +15,6 @@
 "sub_title":
 	{"type":"text","required":true},
 "sort_order":
-    {"type": "integer","required": true},
+    {"type": "integer"},
 "attraction_image":
 	{"type":"image","required":true}}
