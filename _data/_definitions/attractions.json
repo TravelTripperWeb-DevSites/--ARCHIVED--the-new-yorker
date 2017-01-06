@@ -1,0 +1,20 @@
+{"title":
+	{"required":true},
+"seo_title":
+	{"required":true},
+"seo_description":
+	{"type":"text","required":true},
+"url_friendly_name":
+	{"type":"url_slug","required":true},
+"website_url":
+	{"type":"text"},
+"short_description":
+	{"type":"text","required":true},
+"detailpage_description":
+	{"type":"text","required":true},
+"sub_title":
+	{"type":"text","required":true},
+"sort_order":
+    {"type": "integer","required":true},
+"attraction_image":
+	{"type":"image","required":true}}

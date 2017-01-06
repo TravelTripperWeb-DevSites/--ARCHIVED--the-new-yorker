@@ -14,12 +14,14 @@
     .offer-wrap{
 
         padding:15px;
-
+		height:630px;
         @media(min-width: $screen-sm-min){
 
                 padding:37px;
         }
-
+		@media(max-width: 768px){
+			height:auto;
+		}
         .offer-img{
 
             height:342px;
