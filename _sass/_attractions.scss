@@ -1,0 +1,21 @@
+/*Attractions here*/
+
+.attractions-listing{
+	padding:15px 0; background:none;
+	border-bottom:solid 1px #ececec;
+}
+.inner-page-banner{
+	&.detail{
+		height:324px;
+		h1{top: 50%; margin:auto; left:0; right:0;
+    transform: translateY(-50%);
+    position: absolute; padding:0 20px !important;}
+	}
+}
+.offer-section{
+	&.other-attractions{ background:#fff;
+		.equal{
+			div{ height:300px;}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+{% assign attractions = page %}
+{% assign model = page %}
+
+<section class="inner-page-banner banner detail" style="background-image:url(/images/attractions-banner.jpg);">
+	<div class="overlay">
+        <h1>{{attractions.title}}</h1>
+    </div>
+</section>
+<!--Attraction Detail Block-->
+<section class="intro-wrap home-rooms custom-carousel dining">
+	<div class="container-fluid">
+        <div class="intro">
+          	<div class="col-sm-7 no-padding">
+            	<div class="-left">
+                	<div id="home-room-banner" class="carousel slide" data-ride="carousel">
+  					  <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active"><img src="{{attractions.attraction_image.url}}"></div>
+                      </div>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 no-padding">
+                <div class="-right">
+                   <h2>{{attractions.sub_title}}</h2>
+                   <p>{{attractions.detailpage_description}}</p>
+                   <div class="btn-holder"><a href="{{attractions.website_url}}" target="_blank" class="btn-common">Visit Attraction's Website</a></div>
+                </div>
+          </div>
+        </div>
+    </div>
+</section>
+<section class="a-e">
+	<div class="container">
+    	<div class="row no-gutters">
+        	<div class="col-md-12">
+            	<h4>Other Attractions</h4>
+                <div class="owl-carousel attractions-carousel">
+                {% for attractions in site.data._models.attractions %}
+                      <div class="item">
+                        <img src="{{attractions.attraction_image.url}}" alt=""/> 
+                        <h5>{{attractions.title}}</h5>
+                        <a href="/attractions/{{attractions.url_friendly_name}}">View Attraction <i class="fa fa-plus"></i></a>
+                      </div>
+                {% endfor %}
+                </div>
+              <div class="btn-holder">
+                  <a class="btn-common btn-white" href="/attractions/">View All Attractions</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include newsletter.html %}
+{% include twitter-instagram.html %}
