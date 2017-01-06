@@ -10,19 +10,22 @@ layout: default
 </section>
 
 {% for attractions in site.data._models.attractions %}
-<section class="models attractions-listing">
-      <div class="container">
-        <div class="two-col-wrap">
-          <div class="row no-gutters">
-          	<div class="col-sm-6 sp-img"> <img src="{{attractions.attraction_image.url}}" alt=""></div>
-          	<div class="col-sm-6 sp-content">
-              <h2>{{attractions.title}}</h2>
-              <p>{{attractions.short_description}}</p>
-    		  <div class="btn-holder"><a href="{{attractions.url_friendly_name}}" class="button-common btn-blue">View this Attraction<i class="fa fa-play"></i></a></div>
+<section class="intro-wrap cta-events attractions-listing">
+	<div class="container">
+        <div class="intro">
+            <div class="col-sm-5 no-padding cta-events-img" style="background-image: url({{attractions.attraction_image.url}})">
+            	<div class="-left">
+                	<div class="btn-holder"><a href="{{attractions.url_friendly_name}}" class="btn-common">View this Attraction</a></div>
+                </div>
             </div>
+            <div class="col-sm-7 no-padding">
+                <div class="-right">
+                   <h2>{{attractions.title}}</h2>
+                    <p>{{attractions.short_description}}</p>
+               </div>
           </div>
         </div>
-      </div>
+    </div>
 </section>
 {% endfor %}
 {% include newsletter.html %}
