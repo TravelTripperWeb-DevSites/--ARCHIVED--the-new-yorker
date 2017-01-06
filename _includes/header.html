@@ -4,7 +4,14 @@
     <div class="main-menu">
       <ul class="nav">
       {% for items in site.data.navigation.mainnav %}
-     	<li {% if items.submenu == "true" %} class="dropdown" {% endif %}><a href="{{ items.url }}" {% if items.name == page.pagename %} class="active" {% endif %} {% if items.submenu == "true" %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}>{{ items.title }}</a> 
+     	<li {% if items.submenu == "true" %} class="dropdown" {% endif %}><a href="{{ items.url }}" {% if items.name == page.pagename %} class="active" {% endif %} {% if items.submenu == "true" %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}>{{ items.title }}</a>
+        {% if items.submenu == "true" %}
+        <ul class="dropdown-menu">
+            {% for dropdown in items.subitems %}
+                <li><a href="{{ dropdown.url }}">{{ dropdown.title }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %} 
         </li>
         {% endfor %}
       </ul>
