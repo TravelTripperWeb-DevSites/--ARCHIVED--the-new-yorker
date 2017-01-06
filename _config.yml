@@ -16,7 +16,7 @@ default_lang: 'en'
 languages: ['en']
 
 exclude: ['sitemap.json']
-empty_array: []
+
 booking_widget_url: https://newyorkerhotel.reztrip.com/mobile
 
 page_gen:

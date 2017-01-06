@@ -1,16 +1,15 @@
 ---
 layout: default
 ---
-<section>
-  <div class="container-fluid no-padding">
-    <div class="page-banner location-banner" style="background-image: url(/images/gates/events-banner.jpg)">
-      {% region banner-text %}
-      <!--<div class="banner-btn"><a href="#" class="button-common">Download Map</a><a href="#" class="button-common">Download Fact Sheet</a></div>-->
+<!--Banner here-->
+<section class="inner-page-banner banner" style="background-image:url(/images/attractions-banner.jpg);">
+	<div class="overlay">
+        <h1>Attractions</h1>
+        <p>Hosting a meeting, conference, or corporate gathering? We offer you an unparalleled location steps from Penn Station, 23,000 square feet of impeccably appointed event space, and a full range of event planning and catering services.</p>
     </div>
-  </div>
 </section>
 
-{% for events in site.data._models.attractions %}
+{% for attractions in site.data._models.attractions %}
 <section class="models events">
       <div class="container">
         <div class="two-col-wrap">
@@ -22,7 +21,7 @@ layout: default
               	<li>{{attractions.start_date  |  date: "%B %d, %Y"}} - {{attractions.end_date  |  date: "%B %d, %Y"}}</li>
                 <li>{{attractions.time}}</li>
               </ul>
-    		  <div class="btn-holder"><a href="{{attractions.url_friendly_name}}" class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
+    		  <div class="btn-holder"><a href="{{attractions.url_friendly_name}}" class="button-common btn-blue">View this Attraction<i class="fa fa-play"></i></a></div>
             </div>
           </div>
         </div>

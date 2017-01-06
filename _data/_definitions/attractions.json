@@ -6,17 +6,11 @@
 	{"type":"text","required":true},
 "url_friendly_name":
 	{"type":"url_slug"},
-"start_date":
-	{"type":"date","required":true},
-"end_date":
-	{"type":"date"},
-"time":
-	{"type":"text","required":true},
 "website_url":
 	{"type":"text"},
 "short_description":
-	{},
-"event_image":
-	{"type":"image","required":true},
-"venue":
-	{"type":"richtext","required":true,"hint":"Write the detailed venue details"}}
+	{"type":"text","required":true},
+"detailpage_description":
+	{"type":"text","required":true},
+"attraction_image":
+	{"type":"image","required":true}
