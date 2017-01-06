@@ -29,32 +29,53 @@
         	<div class="col-md-12">
             	<h4>Attractions</h4>
                 <div class="owl-carousel attractions-carousel">
+                {% for attractions in site.data._models.attractions %}
+                      <div class="item">
+                        <img src="{{attractions.attraction_image.url}}" alt=""/> 
+                        <h5>{{attractions.title}}</h5>
+                        <a href="/attractions/{{attractions.url_friendly_name}}">View Attraction <i class="fa fa-plus"></i></a>
+                      </div>
+                {% endfor %}
+                </div>
+              <div class="btn-holder">
+                  <a class="btn-common" href="/attractions/">View All Attractions</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--<section class="a-e">
+	<div class="container">
+    	<div class="row no-gutters">
+        	<div class="col-md-12">
+            	<h4>Attractions</h4>
+                <div class="owl-carousel attractions-carousel">
                       <div class="item">
                         <img src="../images/home-owl/01.jpg" alt=""/> 
                         <h5>Empire State Building</h5>
-                        <!--<a href="#">Read More <i class="fa fa-plus"></i></a>-->
+                        <a href="#">Read More <i class="fa fa-plus"></i></a>
                       </div>
                       <div class="item">
                         <img src="../images/home-owl/02.jpg" alt=""/> 
                         <h5>Madison Square Garden</h5>
-                        <!--<a href="#">Read More <i class="fa fa-plus"></i></a>-->
+                        <a href="#">Read More <i class="fa fa-plus"></i></a>
                       </div>
                       <div class="item">
                         <img src="../images/home-owl/03.jpg" alt=""/> 
                         <h5>Times Square</h5>
-                        <!--<a href="#">Read More <i class="fa fa-plus"></i></a>-->
+                        <a href="#">Read More <i class="fa fa-plus"></i></a>
                       </div>
-                      <!--<div class="item">
+                      <div class="item">
                         <img src="../images/home-owl/04.jpg" alt=""/> 
                         <h5>Other Attraction</h5>
                         <a href="#">Read More <i class="fa fa-plus"></i></a>
-                      </div>-->
+                      </div>
                 </div>
-              <!--<div class="btn-holder">
+              <div class="btn-holder">
                   <a class="btn-common btn-white" href="#">Discover More</a>
-              </div>-->
+              </div>
             </div>
-            <!--<div class="col-md-4">
+            <div class="col-md-4">
             	<h4>Events</h4>
                 <ul>
                 	<li>
@@ -81,7 +102,7 @@
                 <div class="btn-holder">
                     <a class="btn-common btn-white" href="#">Discover More</a>
                 </div>
-            </div>-->
+            </div>
         </div>
     </div>
-</section>
+</section>-->
