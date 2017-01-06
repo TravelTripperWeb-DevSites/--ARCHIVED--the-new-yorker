@@ -14,13 +14,10 @@ layout: default
       <div class="container">
         <div class="two-col-wrap">
           <div class="row no-gutters">
-          	<div class="col-sm-6 sp-img"> <img src="{{attractions.event_image.url}}" alt=""></div>
+          	<div class="col-sm-6 sp-img"> <img src="{{attractions.attractions_image.url}}" alt=""></div>
           	<div class="col-sm-6 sp-content">
               <h2>{{attractions.title}}</h2>
-              <ul>
-              	<li>{{attractions.start_date  |  date: "%B %d, %Y"}} - {{attractions.end_date  |  date: "%B %d, %Y"}}</li>
-                <li>{{attractions.time}}</li>
-              </ul>
+              <p>{{attractions.short_description}}</p>
     		  <div class="btn-holder"><a href="{{attractions.url_friendly_name}}" class="button-common btn-blue">View this Attraction<i class="fa fa-play"></i></a></div>
             </div>
           </div>
