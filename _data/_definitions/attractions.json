@@ -14,5 +14,7 @@
 	{"type":"text","required":true},
 "sub_title":
 	{"type":"text","required":true},
+"sort_order":
+    {"type": "integer","required":true},
 "attraction_image":
 	{"type":"image","required":true}}
