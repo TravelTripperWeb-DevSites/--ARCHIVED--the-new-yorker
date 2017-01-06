@@ -10,25 +10,27 @@ layout: default
   </div>
 </section>
 
-{% for events in site.data._models.events %}
+{% for events in site.data._models.attractions %}
 <section class="models events">
       <div class="container">
         <div class="two-col-wrap">
           <div class="row no-gutters">
-          	<div class="col-sm-6 sp-img"> <img src="{{events.event_image.url}}" alt=""></div>
+          	<div class="col-sm-6 sp-img"> <img src="{{attractions.event_image.url}}" alt=""></div>
           	<div class="col-sm-6 sp-content">
-              <h2>{{events.title}}</h2>
+              <h2>{{attractions.title}}</h2>
               <ul>
-              	<li>{{events.start_date  |  date: "%B %d, %Y"}} - {{events.end_date  |  date: "%B %d, %Y"}}</li>
-                <li>{{events.time}}</li>
+              	<li>{{attractions.start_date  |  date: "%B %d, %Y"}} - {{attractions.end_date  |  date: "%B %d, %Y"}}</li>
+                <li>{{attractions.time}}</li>
               </ul>
-    		  <div class="btn-holder"><a href="{{events.url_friendly_name}}" class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
+    		  <div class="btn-holder"><a href="{{attractions.url_friendly_name}}" class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 {% endfor %}
+
+
     
         
     
