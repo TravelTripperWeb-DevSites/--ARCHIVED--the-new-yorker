@@ -1,5 +1,11 @@
 /*Attractions here*/
 
 .attractions-listing{
-	padding:15px 0;
+	padding:15px 0; background:none;
+	border-bottom:solid 1px #ececec;
+}
+.inner-page-banner{
+	&.detail{
+		height:324px;
+	}
 }

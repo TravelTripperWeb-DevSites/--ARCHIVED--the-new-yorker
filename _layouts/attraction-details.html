@@ -4,20 +4,38 @@ layout: default
 
 {% assign attractions = page %}
 {% assign model = page %}
-<section class="location-tabs event-details">
-  <div class="container no-padding ">
-    <div class="content-container">
-      <div class="col-sm-6 no-padding">
-        <div class="desc">
-        	<h2>{{attractions.title}}</h2>
-            <p>{{attractions.detailpage_description}}</p>
-            <div class="website"><span class="date-label">Website</span><a href="{{attractions.website_url}}">{{attractions.website_url}}</a></div>
-        </div>
-      </div>
-      <div class="col-sm-6 no-padding tabs-img" style="background-image: url({{attractions.attraction_image.url}})">   
-      </div>
+
+<section class="inner-page-banner banner detail" style="background-image:url(/images/attractions-banner.jpg);">
+	<div class="overlay">
+        <h1>{{attractions.title}}</h1>
     </div>
-  </div>
+</section>
+
+
+<!--Attraction Detail Block-->
+<section class="intro-wrap home-rooms custom-carousel dining">
+	<div class="container-fluid">
+        <div class="intro">
+          	<div class="col-sm-7 no-padding">
+            	<div class="-left">
+                	<div id="home-room-banner" class="carousel slide" data-ride="carousel">
+  					  <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active"><img src="{{attractions.attraction_image.url}}"></div>
+                      </div>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 no-padding">
+                <div class="-right">
+                   <h2>{{attractions.sub_title}}</h2>
+                   <p>{{attractions.detailpage_description}}</p>
+                   <div class="btn-holder"><a href="{{attractions.website_url}}" target="_blank" class="btn-common">Visit Attraction's Website</a></div>
+                </div>
+          </div>
+        </div>
+    </div>
 </section>
 {% include newsletter.html %}
 {% include twitter-instagram.html %}
