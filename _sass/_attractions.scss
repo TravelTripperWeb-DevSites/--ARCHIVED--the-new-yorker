@@ -19,3 +19,11 @@
 		}
 	}
 }
+.landmark{
+	&.featured{
+		.btn-holder{
+			padding:0px !important;
+			a{background:#0a0a12 !important;}
+		}
+	}
+}
