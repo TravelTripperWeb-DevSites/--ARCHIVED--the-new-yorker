@@ -22,7 +22,7 @@ layout: default
         </div>
         <div class="col-sm-5 no-padding">
         	<div class="-right">
-            	<h3>featured blog posts</h3>
+            	<h3>Most recent blog posts</h3>
                 {% assign blog = site.data._models.blog | sort : 'date'%}
 				{% for a in blog limit:10 %}
                 <div class="fe-item">
