@@ -21,7 +21,17 @@ layout: default
             </div>
         </div>
         <div class="col-sm-5 no-padding">
-        	<div class="-right"></div>
+        	<div class="-right">
+            	<h3>featured blog posts</h3>
+                {% assign blog = site.data._models.blog | sort : 'date'%}
+				{% for a in blog limit:10 %}
+                <div class="fe-item">
+            	<p><a href="{{a.url_friendly_name}}"><img src="{{a.blogimage.url}}" alt=""/></a></p>
+                <p><a href="{{a.url_friendly_name}}">{{a.title}}</a></p>
+                </div>
+                {% endfor %}
+                <div class="btn-holder"><a href="/blog/" class="btn-common">See all blog postings</a></div>
+            </div>
         </div>
     </div>
 </section>
