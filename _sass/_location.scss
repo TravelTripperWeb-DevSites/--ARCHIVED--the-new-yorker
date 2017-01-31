@@ -46,6 +46,9 @@
 		display: block;
 		z-index: 1;
 	}
+	&.overlay-lite{
+		background: rgba(16,16,24,.3);
+	}
 }
 
 /*Location page discover section*/

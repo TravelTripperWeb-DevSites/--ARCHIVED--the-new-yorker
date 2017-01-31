@@ -1,0 +1,59 @@
+---
+layout: default
+title: Blog | The New Yorker, A Wyndham Hotel
+excerpt: Experience The New Yorker Hotel, a boutique hotel in New York. Book your stay at our Midtown Manhattan Hotel & start your New York getaway.
+---
+
+<!--Banner here-->
+<section class="inner-page-banner banner" style="background-image:url(/images/blog/blog-banner.jpg);">
+	<div class="overlay overlay-lite">
+        <h1>Blog</h1>
+        <p>The New Yorker, A Wyndham Hotel's picture-perfect location in Midtown West, just moments from the Jacob Javits Center and Penn Station, puts some of the city’s most remarkable attractions right at your doorstep.</p>
+    </div>
+</section>
+
+{% for post in data_paginator.posts | sort : 'date'%}
+<section class="intro-wrap cta-events attractions-listing">
+	<div class="container">
+        <div class="intro">
+            <div class="col-sm-5 no-padding cta-events-img" style="background-image: url({{post.blogimage.url}})">
+            	<div class="-left">
+                	<div class="btn-holder"><a href="{{post.url_friendly_name}}" class="btn-common">View this Blog</a></div>
+                </div>
+            </div>
+            <div class="col-sm-7 no-padding">
+                <div class="-right -right-blog">
+                   <h2>{{post.title}}</h2>
+                   	<div class="date-holder">{{post.date | date: "%B %d, %Y"}}</div>
+                    {{post.short_description}}
+                    <div class="btn-holder"><a href="{{post.url_friendly_name}}" class="btn-common">Read More</a></div>
+               </div>
+          </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+
+<div class="pagination-wrapper">
+<div class="pagination"> 
+ <p><span class="page_number">Page: {{ data_paginator.page }} of {{ data_paginator.total_pages }}</span></p>
+<ul class="pagination">
+
+  {% if data_paginator.previous_page %}
+    <li><a href="{{ data_paginator.previous_page_path }}" class="previous">Previous</a></li>
+  {% else %}
+    <li><span class="previous">Previous</span></li>
+  {% endif %}
+   
+  {% if data_paginator.next_page %}
+    <li><a href="{{ data_paginator.next_page_path }}" class="next">Next</a></li>
+  {% else %}
+    <li><span class="next ">Next</span></li>
+  {% endif %}
+  </ul>
+
+</div>
+</div>
+
+{% include newsletter.html %}
+{% include twitter-instagram.html %}
