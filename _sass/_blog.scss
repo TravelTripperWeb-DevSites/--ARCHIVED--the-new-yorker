@@ -64,7 +64,7 @@
 
 .blog-details {
 	color: #000;
-	padding: 50px 0 0 0;
+	padding: 50px 0 20px 0;
 	text-align: center;
 		@media (min-width: $screen-sm-min){
 			text-align: left;
@@ -117,6 +117,9 @@
 			img {
 				width: 100%;
 			}
+		}
+		.btn-holder {
+			padding: 0 0 30px 0;
 		}
 	.date-holder {
 		padding: 0 0 30px 0;

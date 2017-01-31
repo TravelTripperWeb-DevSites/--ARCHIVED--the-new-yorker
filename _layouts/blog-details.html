@@ -6,7 +6,7 @@ layout: default
 <!--Banner here-->
 <section class="inner-page-banner banner detail" style="background-image:url(/images/blog/blog-details-banner.jpg);">
 	<div class="overlay overlay-lite">
-        <h1>Blog Title</h1>
+        <h1>Blog</h1>
     </div>
 </section>
 
@@ -17,6 +17,7 @@ layout: default
             	<h1>{{blog.title}}</h1>
               <div class="date-holder">{{blog.date  |  date: "%B %d, %Y"}}</div>
                 {{blog.more_content}}
+                <div class="btn-holder"><a href="/blog/" class="btn-common">See all blog postings</a></div>
             </div>
         </div>
         <div class="col-sm-5 no-padding">
