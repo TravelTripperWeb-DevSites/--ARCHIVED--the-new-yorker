@@ -77,6 +77,28 @@
 	}
 }
 
+/*Parking section*/
+
+.parking{ width:80%; margin:50px auto 30px;
+			h2{ margin-top:20px;
+			&:after {
+			    left: 0;
+			    right: 0;
+			    margin: auto;
+			    }
+			}
+			
+			ul{
+				margin-left:15px;
+				}
+			li{
+				margin-top:16px;color:$grey-text;
+				padding-left:10px;
+				line-height:24px;
+				
+			}
+		}
+
 /*Location map section*/
 
 .full-map{ height:500px; width:94%; margin:0 3% 3%; position:relative;
