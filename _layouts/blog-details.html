@@ -23,8 +23,8 @@ layout: default
         <div class="col-sm-5 no-padding">
         	<div class="-right">
             	<h3>Most recent blog posts</h3>
-                {% assign blog = site.data._models.blog | sort : 'date'%}
-				{% for a in blog limit:10 %}
+                {% assign blog = site.data._models.blog %}
+				{% for a in blog limit:10  | sort : 'date' %}
                 <div class="fe-item">
             	<p><a href="/blog/{{a.url_friendly_name}}"><img src="{{a.blogimage.url}}" alt=""/></a></p>
                 <p><a href="/blog/{{a.url_friendly_name}}">{{a.title}}</a></p>
