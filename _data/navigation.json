@@ -48,6 +48,12 @@
 			'submenu': 'false' 
 		},
 		{
+			'title':'Blog',
+			'name': 'blog',
+			'url': '/blog/',
+			'submenu': 'false' 
+		},
+		{
 			'title':'Contact',
 			'name': 'contact',
 			'url': 'mailto:reservations@nyhotel.com',

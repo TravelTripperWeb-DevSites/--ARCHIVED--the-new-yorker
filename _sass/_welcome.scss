@@ -51,7 +51,19 @@
 						max-width: 73%;
 					}
 			}
+		&.-right-blog {
+		@media (min-width: $screen-md-min){
+				padding-left: 10%;
+			}
+			h2 {
+				@media (min-width: $screen-md-min){
+					font-size: 32px;
+					line-height: 45px;
+				}
+			}
+		}
 	}
+	
 	.intro {
 		display: table;
 		width: 100%;
