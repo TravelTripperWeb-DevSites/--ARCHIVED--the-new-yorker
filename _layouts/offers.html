@@ -28,7 +28,7 @@ layout: default
           <div class="offer-img" style="background-image:url([[offer.lead_photo_url.yankee_large]]);" > </div>
           <div class="offers-description adjustHeight">
             <h4 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h4>
-            <p><span ng-bind-html="offer.short_description | limitTo: 170  | renderHTMLCorrectly "></span><span>[[offer.short_description.length > 170 ? '...' : '']]</span></p>
+            <div class="offerDesc"><span ng-bind-html="offer.short_description | limitTo: 120  | renderHTMLCorrectly "></span><span>[[offer.short_description.length > 120 ? '...' : '']]</span></div>
             <a ng-href="/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common"> View offer </a> </div>
         </div>
       </div>

@@ -189,6 +189,25 @@ $(document).ready(function(){
     } // if
   }); // on
 
+  setTimeout(function(){
+
+
+        var allDescDiv = $('.offerDesc');
+        var biggestHeight = 0;
+        var ht
+
+          allDescDiv.each(function(){
+              ht = $(this).height();
+              if(ht > biggestHeight){
+
+                  biggestHeight = ht ;
+              }
+          });
+
+          allDescDiv.height(biggestHeight);
+
+          
+    },2500);
 
  });
 
