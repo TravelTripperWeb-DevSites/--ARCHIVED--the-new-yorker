@@ -15,14 +15,7 @@ layout: default
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6">
-        <div class="offer-wrap">
-          <div class="offer-img" style="background-image:url(/images/attractions/broadway.jpg);"> </div>
-          <div class="offers-description">
-            <h4>Discounted Broadway Shows</h4>
-            <p>Broadway Shows include Wicked, Jersey Boys and more..</p>
-            <a href="http://newyorkerhotel.reservenewyorkcity.com/" target="_blank" class="btn-common"> View offer </a></div>
-        </div>
-      </div>
+
       <div class="col-sm-6" ng-repeat="offer in offers.special_rates">
         <div class="offer-wrap">
           <div class="offer-img" style="background-image:url([[offer.lead_photo_url.yankee_large]]);" > </div>
@@ -34,6 +27,14 @@ layout: default
       </div>
     </div>
   </div>
+            <div class="offer-wrap">
+          <div class="offer-img" style="background-image:url(/images/attractions/broadway.jpg);"> </div>
+          <div class="offers-description">
+            <h4>Discounted Broadway Shows</h4>
+            <p>Broadway Shows include Wicked, Jersey Boys and more..</p>
+            <a href="http://newyorkerhotel.reservenewyorkcity.com/" target="_blank" class="btn-common"> View offer </a></div>
+        </div>
+      </div>
 </section>
 {% include newsletter.html %}
 {% include twitter-instagram.html %}
