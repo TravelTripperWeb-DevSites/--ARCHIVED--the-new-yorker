@@ -71,7 +71,21 @@
 		}
 	}
 }
-
+.exclusive-trans {
+	padding-top:0; 
+	.content {
+		margin: 0;
+		padding: 0 0 50px 0;
+			@media (min-width: $screen-sm-min){
+				padding: 0 0 0 0;
+			}
+	}
+	.ex-trans {
+		img {
+			width: 100%;
+		}
+	}
+}
 /*Mega Title*/
 
 h1{
