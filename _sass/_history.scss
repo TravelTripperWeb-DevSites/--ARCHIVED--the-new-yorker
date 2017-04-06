@@ -166,8 +166,9 @@ $timeline-container-width:100%;
     &__title {
       color: #fff;
       font-size: 46px;
-      font-family: $content-font;
+      font-family: $heading-font;
       font-weight: normal;
+      text-align: center;
       margin: 0;
     }
     &__subtitle {
