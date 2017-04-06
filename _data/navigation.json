@@ -23,7 +23,10 @@
 			'title':'Location',
 			'name': 'location',
 			'url': '/location/',
-			'submenu': 'false' 
+			'submenu': 'true' ,
+			'subitems': [
+				{'title':'Attractions','name': 'attractions','url': '/attractions/'}
+			] 
 			
 		},
 		{
@@ -45,9 +48,15 @@
 			'submenu': 'false' 
 		},
 		{
+			'title':'Blog',
+			'name': 'blog',
+			'url': '/blog/',
+			'submenu': 'false' 
+		},
+		{
 			'title':'Contact',
 			'name': 'contact',
-			'url': '/contact/',
+			'url': 'mailto:reservations@nyhotel.com',
 			'submenu': 'false' 
 		}, 
 		

@@ -1,0 +1,324 @@
+.no-padding {
+    padding: 0;
+}
+
+.page-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    text-align: center;
+
+    &:after{
+    	content: "";
+    	display: block;
+    	position: absolute;
+    	background-color: rgba(16, 16, 24, 0.75);
+    	top:0px;
+    	left:0px;
+    	width:100%;
+    	height: 100%;
+
+    }
+
+    .page-title{
+
+    	padding:90px 0;
+    	position:relative;
+    	z-index:4;
+
+    	 @media(min-width: $screen-sm-min)
+
+    	 {
+
+    	 padding:150px 0;
+
+    	}
+
+
+    }
+
+    h2{
+    	    font-size: 45px;
+    	    color:$white;
+    	    text-transform:uppercase;
+    	    line-height: 50px;
+            text-align:center;
+
+    	    @media(min-width: $screen-sm-min)
+		{
+			font-size: 85px;
+			line-height: 70px;
+
+
+		}
+    }
+
+    p{
+    		color:$white;
+    		max-width: 500px;
+   			margin: 0px auto;
+
+   			 @media(max-width:767px)
+		{
+
+			padding:0px 15px;
+
+		}
+
+
+    }
+
+}
+
+.rooms-list-container{
+
+    margin-top:1px;
+
+    .col-sm-6, .col-md-4{
+
+             padding: 0 1px 1px 0;
+
+
+            
+    }
+
+    
+    .col-md-4:nth-child(3), .col-md-4:nth-child(6), .col-md-4:nth-child(9), .col-md-4:nth-child(12) , .col-md-4:nth-child(15)
+    
+    {
+        padding: 0 0px 1px 0;
+
+        @media(min-width: $screen-sm-min){
+
+             padding: 0 1px 1px 0;
+
+        }
+       
+    }
+
+    .room-item{
+        position:relative;
+        text-align:center;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+
+                .overlay{
+                    position:absolute;
+                    width:100%;
+                    height:100%;
+
+
+
+                }
+
+                .room-details{
+                   position: relative;
+                   color:$white;
+                   background: rgba(16, 16, 24, 0.3);
+                    transition: all 0.4s;
+					min-height: 341px;
+                    &:hover{
+
+                        background: rgba(16, 16, 24, 0.5);
+                        transition: all 0.4s;
+                     }
+
+
+                        .price{
+                            letter-spacing: .1em;
+                            font-size:15px;
+                            font-family:$main-font-medium;
+                            padding: 5px 0px;
+                            text-transform:uppercase;
+                            border-bottom:1px solid #fff;
+                            display: inline-block;
+                            margin-top: 40px;
+
+                            a {
+                              color:$white;
+                              &:hover {
+                                opacity: .7;
+                              }
+                            }
+
+                        }
+
+                        h3{
+                                font-size: 26px;
+                                font-family: $main-font-medium;
+                                text-transform: uppercase;
+                                line-height: 38px;
+                                letter-spacing: .05em;
+                                padding: 64px 10px 10px 27px;
+                                width: 95%;
+                                margin: 0 auto;
+									@media(min-width: $screen-md-min){
+										min-height: 188px;
+										width: 95%;
+									}
+								
+									@media(min-width: $screen-lg-min){
+										width: 90%;
+										font-size: 32px;
+									}
+                                
+								@media(min-width: 1400px){
+									font-size: 32px;
+									min-height: auto;
+								}
+								
+
+
+                        }
+
+                        .view-rooms{
+                            display:inline-block;
+                            color:$white;
+                            padding: 5px 0px;
+                            font-family:$main-font-regular;
+                            font-size:16px;
+                            margin-bottom: 70px;
+                            position:relative;
+                            letter-spacing:.1em;
+
+                            &:hover{
+
+                                &:after{
+                                    content:"";
+                                    position: absolute;
+                                    bottom: 0px;
+                                    width: 100%;
+                                    background: #fff;
+                                    height: 1px;
+                                    left: 0px;
+
+                                }
+                            }
+
+                        }
+
+                        .book-now{
+
+                            display: block;
+                            width: 50px;
+                            height: 45px;
+                            background-color: $white;
+                            margin: 0 auto;
+                            padding: 12px 15px;
+                            transition: all 0.4s;
+							position: absolute;
+							bottom:0;
+							left: 0;
+							right:0;
+							margin: 0 auto;
+
+                            &:hover{
+
+                                    background-color: #e8e8e8;
+                                    transition: all 0.4s;
+                            }
+
+                            img{
+
+                                width: 21px;
+                                height: 23px;
+                            }
+
+                        }
+
+                }
+    }
+}
+
+.offer-section{
+
+    padding:87px 0 64px 0;
+    background-color:$bg;
+    text-align:center;
+
+    @media(max-width:767px)
+
+         {
+
+            padding:35px 0;
+
+         }
+
+
+    .container{
+
+            max-width: 1020px;
+
+    }
+
+    h4{
+        font-family:$main-heading;
+        font-size:42px;
+        text-transform:uppercase;
+        letter-spacing: .1em;
+        padding-bottom:70px;
+
+         @media(max-width:767px)
+
+         {
+
+            padding-bottom:25px;
+
+         }
+    }
+
+    h5{
+
+         font-family:$main-font-bold;
+        font-size:14px;
+        text-transform:uppercase;
+        letter-spacing: .1em;
+        padding: 23px 0px 3px 0px;
+        color:#161515;
+    }
+    .view-offer{
+        font-family:$main-font-regular;
+        font-size:12px;
+        padding:5px 0px;
+        color:#161515;
+        letter-spacing: .2em;
+        display: inline-block;
+        position:relative;
+        transition: all 0.4s;
+
+        @media(max-width:767px){
+
+            margin-bottom:20px;
+        }
+
+        &:hover{
+
+
+
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        bottom: 0px;
+                        width: 100%;
+                        background: #161515;
+                        height: 1px;
+                        left: 0px;
+
+
+                     }
+              }
+
+    }
+    .btn-white{
+            margin-top: 60px;
+
+             @media(max-width:767px){
+
+                    margin-top: 0px;
+             }
+    }
+
+}

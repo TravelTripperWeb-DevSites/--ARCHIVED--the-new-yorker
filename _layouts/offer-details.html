@@ -1,0 +1,147 @@
+---
+layout: default
+---
+
+<section data-offer-code ="{{page.code}}"  rt3-special-rates= "offers" >
+  <input type="hidden" id="offerId"  value="{{page.code}}" />
+  <input type="hidden" id="offerList" value="[[ offers.special_rates ]]"   />
+<section class="home-banner custom-carousel room-details-page offer-details-page">
+  <div class="container-fluid">
+    <div id="home-banner" class="carousel slide" data-ride="carousel">
+
+   <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active" style="background-image: url([[offers.sRdetail.lead_photo_url.yankee_large]]);">
+    <div class="banner-overlay"></div>
+    <div class="room-details offer-details">
+
+    <div class="room-name"><span ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></span></div>
+    <a ng-href="[[offers.sRdetail.promo_url]]" class="btn-common" target="_blank">Book This Offer</a>
+    </div>
+    </div>
+
+  </div>
+
+
+  <!--
+	<div class="counter"><span class="num">1 of 4</span></div>
+
+  <a class="left carousel-control" href="#home-banner" role="button" data-slide="prev">
+    <i class="fa fa-angle-left" aria-hidden="true"></i>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#home-banner" role="button" data-slide="next">
+    <i class="fa fa-angle-right" aria-hidden="true"></i>
+    <span class="sr-only">Next</span>
+  </a>
+  -->
+</div>
+  </div>
+</section>
+<section class="rooms-navigation-border" ng-controller="offerDetail">
+ <div class="container-fluid rooms-navigation">
+ <div class="row">
+   <div class="col-sm-12">
+   <a href="/offers/">Back to Offer Listing</span></a>
+   <a ng-show="prevOfferName" ng-click="reloadPage"  ng-href="/offer-details/#[[prevOfferName | formatNameForLink]]" class="prev-room"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> Previous Offer</span></a>
+   <a ng-show="nextOfferName" ng-click="reloadPage"  ng-href="/offer-details/#[[nextOfferName | formatNameForLink]]" class="next-room"><span>Next Offer</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt="">  </a>
+
+
+   </div>
+ </div>
+
+ </div>
+
+</section>
+
+<section class="rooms-details-container offer-details-container">
+   <div class="container-fluid ">
+   <div class="row">
+    <div class="col-sm-6">
+       <div class="rooms-details">
+      <div id="exTab1" class="container">
+    <ul  class="nav">
+      <li class="active"> <a  href="#1a" data-toggle="tab">Description</a> </li>
+      <li><a href="#2a" data-toggle="tab">Terms & Conditions</a> </li>
+
+    </ul>
+
+      <div class="tab-content clearfix">
+        <div class="tab-pane active" id="1a">
+          <h3>Special Offer</h3>
+          <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
+        </div>
+        <div class="tab-pane" id="2a">
+           <h3>Terms & Conditions</h3>
+           <li ng-repeat="terms in offers.sRdetail.policy_description " ng-bind-html="terms | replaceNewline | renderHTMLCorrectly">[[terms]]</li>
+
+        </div>
+
+      </div>
+  </div>
+       </div>
+     </div>
+     <div class="col-sm-6 rooms-bar">
+     <div class="booking-form">
+    <form method="get" action="{{site.data.config.reztripUrl}}search?" enctype="multipart/form-data" target="_blank">
+
+      <div class="col-sm-6" >
+      <div class="form-group ">
+      <label>Arrival</label>
+      <input type="text" class="textfield " placeholder="Arrival" id="od_arrival" name="arrival_date" autocomplete="off">
+      </div>
+      </div>
+
+      <div class="col-sm-6" >
+      <div class="form-group">
+      <label>Departure</label>
+      <input type="text" class="textfield" placeholder="Departure" id="od_departure" name="departure_date" autocomplete="off">
+      </div>
+      </div>
+      <div class="col-sm-6" >
+      <div class="form-group">
+      <label>Adults</label>
+
+      <select class="select-dropdown" name="adults[]" id="adults">
+        <option value="1" selected="">1 Adult</option>
+        <option value="2">2 Adults</option>
+        <option value="3">3 Adults</option>
+        <option value="4">4 Adults</option>
+        <option value="5">5 Adults</option>
+        <option value="6">6 Adults</option>
+      </select>
+       </div>
+       </div>
+      <div class="col-sm-6" >
+      <div class="form-group">
+      <label>Children</label>
+
+
+      <select class="select-dropdown" name="children[]" id="children">
+        <option value="0" selected="">0 Children</option>
+        <option value="1">1 Children</option>
+        <option value="2">2 Children</option>
+        <option value="3">3 Children</option>
+        <option value="4">4 Children</option>
+        <option value="5">5 Children</option>
+      </select>
+
+      </div>
+    </div>
+    <div class="col-sm-12" >
+      <input type="hidden" name="rate_code" value="[[offers.sRdetail.rate_plan_code]]">
+      <button type="submit" class="book-now">Book this offer now</button>
+    </div>
+    </form>
+    </div>
+     </div>
+     </div>
+
+    </div>
+
+</section>
+</section>
+
+{% include home-offers.html %}
+{% include newsletter.html %}
+{% include twitter-instagram.html %}
