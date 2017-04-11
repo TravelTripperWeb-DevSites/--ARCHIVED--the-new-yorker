@@ -38,9 +38,15 @@ $timeline-container-width:100%;
        height: 0px !important;
      }
   }
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   margin: 0 auto;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
   flex-direction: column;
   max-width: $timeline-width;
   position: relative;
@@ -84,6 +90,8 @@ $timeline-container-width:100%;
     transition: .5s;
     box-sizing: border-box;
     width: calc(50% - 40px);
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     position: relative;
     transform: translateY(-80px);
