@@ -32,6 +32,12 @@ $heading-font: "Poiret One";
 $timeline-width:700px;
 $timeline-container-width:100%;
 .timeline {
+  h2{
+     &:after{
+       background-color: none !important;
+       height: 0px !important;
+     }
+  }
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
