@@ -5,7 +5,11 @@
 			'title':'About',
 			'name': 'about',
 			'url': '/about/',
-			'submenu': 'false'
+			'submenu': 'true' ,
+			'subitems': [
+				{'title':'Overview','name': 'about','url': '/about/'},
+				{'title':'History','name': 'history','url': '/history/'}
+			] 
 		},
 		{
 			'title':'Rooms',

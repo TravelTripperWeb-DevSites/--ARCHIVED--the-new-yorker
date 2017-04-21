@@ -70,6 +70,36 @@
     ],
     [
       {
+        "title": "Weekend Getaway Packages at The New Yorker",
+        "file": "blog11.json"
+      }
+    ],
+    [
+      {
+        "title": "Our Favorite Dishes at Tick Tock Diner",
+        "file": "blog12.json"
+      }
+    ],
+    [
+      {
+        "title": "The NACAC New York National College Fair",
+        "file": "blog13.json"
+      }
+    ],
+    [
+      {
+        "title": "The International Vision Expo East",
+        "file": "blog14.json"
+      }
+    ],
+    [
+      {
+        "title": "The Military History of The New Yorker",
+        "file": "blog15.json"
+      }
+    ],
+    [
+      {
         "title": "The North American International Toy Fair 2017",
         "file": "blog4.json"
       }
@@ -98,5 +128,8 @@
         "file": "blog9.json"
       }
     ]
+  ],
+  "simple": [
+
   ]
 }
