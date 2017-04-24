@@ -8,6 +8,9 @@
 			a{ color:$grey-text;}
 		}
 	}
+	.btn-holder{ padding:45px 0 0 0px !important;}
+		@media (min-width:769px) and (max-width:1024px){ padding: 30px 22px 10px 22px !important;}
+		@media (max-width:768px){ text-align:center; padding:30px 20px 20px 20px !important;}	
 	.intro{
 		.content{ width:80%; margin:50px auto 30px;
 			h2{ margin-top:50px;}
