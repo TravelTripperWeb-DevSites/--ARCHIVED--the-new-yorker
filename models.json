@@ -2,7 +2,7 @@
   "attractions": [
     [
       {
-        "title": "MACYΓÇÖS HERALD SQUARE",
+        "title": "MACY’S HERALD SQUARE",
         "file": "attraction1.json"
       }
     ],
@@ -96,6 +96,12 @@
       {
         "title": "The Military History of The New Yorker",
         "file": "blog15.json"
+      }
+    ],
+    [
+      {
+        "title": "5 of the Most Famous Art Deco Buildings in New York City",
+        "file": "blog16.json"
       }
     ],
     [
