@@ -60,7 +60,7 @@
 		{
 			'title':'Contact',
 			'name': 'contact',
-			'url': 'mailto:reservations@nyhotel.com',
+			'url': '/contact/',
 			'submenu': 'false' 
 		}, 
 		
