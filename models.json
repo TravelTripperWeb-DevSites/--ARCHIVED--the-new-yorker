@@ -2,7 +2,7 @@
   "attractions": [
     [
       {
-        "title": "MACY’S HERALD SQUARE",
+        "title": "MACYΓÇÖS HERALD SQUARE",
         "file": "attraction1.json"
       }
     ],
@@ -102,6 +102,12 @@
       {
         "title": "5 of the Most Famous Art Deco Buildings in New York City",
         "file": "blog16.json"
+      }
+    ],
+    [
+      {
+        "title": "Rainy Days in New York City",
+        "file": "blog17.json"
       }
     ],
     [
