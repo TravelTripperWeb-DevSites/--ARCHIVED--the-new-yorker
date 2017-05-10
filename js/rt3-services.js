@@ -143,7 +143,7 @@ angular.module('rezTrip')
     }
   }])
 
-  .service('rt3Browser', ['$rootScope', '$q', 'rt3api', 'rt3Search', function($rootScope, $q, rt3api, rt3Search) {
+  .service('rt3Browser', ['$rootScope', '$q', 'rt3api', 'rt3Search','$timeout', function($rootScope, $q, rt3api, rt3Search,$timeout) {
     function Browser() {
       this.loaded = false;
       this.roomsTonight=[];
@@ -165,6 +165,14 @@ angular.module('rezTrip')
 
        var self = this;
        self.isRate= true;
+       //fetch rooms in reztrip listing order
+       rt3api.getAllRooms().then(function(response) {
+         $rootScope.$apply(function() {
+           self.orderedRooms = response.rooms;
+
+
+         });
+       });
 
        rt3api.getAllAvailableRooms().then(function(response) {
         $rootScope.$applyAsync(function() {
@@ -206,8 +214,20 @@ angular.module('rezTrip')
             //console.log(self.tonightErrors);
             self.loaded = true;
 
-          });
 
+
+          });
+          $timeout(function () {
+             var orderedRooms = self.orderedRooms;
+             orderedRooms = orderedRooms.map(function(element){
+                 return element.code;
+             })
+             var currentRooms = self.roomsList;
+             self.roomsList.sort(function(a,b){
+               return orderedRooms.indexOf(a.code) - orderedRooms.indexOf(b.code) ;
+             });
+             
+          },1000);
       });
 
     }
@@ -353,6 +373,7 @@ angular.module('rezTrip')
       self.params = $.extend(searchParams, roomId);
 
       $q.when(rt3api.getAllRooms()).then(function(response) {
+        self.allRooms = response.rooms;
         $.each(response.rooms, function(key, value) {
           if(value.code == self.params.room_id) {
             angular.extend(self, value);
