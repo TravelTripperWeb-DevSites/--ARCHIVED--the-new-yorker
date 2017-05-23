@@ -2,7 +2,7 @@
   "attractions": [
     [
       {
-        "title": "MACYΓÇÖS HERALD SQUARE",
+        "title": "MACY’S HERALD SQUARE",
         "file": "attraction1.json"
       }
     ],
@@ -108,6 +108,18 @@
       {
         "title": "Rainy Days in New York City",
         "file": "blog17.json"
+      }
+    ],
+    [
+      {
+        "title": "Our Favorite Broadway Shows at Discounted Rates",
+        "file": "blog18.json"
+      }
+    ],
+    [
+      {
+        "title": "Trattoria Bianca: The Perfect Meal in Midtown",
+        "file": "blog19.json"
       }
     ],
     [
