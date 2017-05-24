@@ -93,7 +93,6 @@
 - checkout/route/from/2013-11-25/to/2013-11-26/roomid/NQ3/adults/1/children/0/rooms/1/ratePlanCode/LXTW/: rooms/
 - checkout/route/from/2013-12-29/to/2013-12-30/roomid/NDD1/adults/1/children/0/rooms/1/ratePlanCode/LXTW/: rooms/
 - condor/modules/socialToolbar/javascript/javascript.social: index.html
-- contact: contact/
 - contact/default-en.html: contact/
 - contact/events-calendar-en.html: contact/
 - contacts.html: contact/
