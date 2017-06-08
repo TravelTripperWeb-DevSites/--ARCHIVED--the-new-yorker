@@ -1,7 +1,7 @@
 {
   "attractions": [
     {
-      "title": "MACY’S HERALD SQUARE",
+      "title": "MACYÔÇÖS HERALD SQUARE",
       "file": "attraction1.json"
     },
     {
@@ -85,6 +85,14 @@
     {
       "title": "The Taste of Times Square",
       "file": "blog20.json"
+    },
+    {
+      "title": "Fleet Week in New York City",
+      "file": "blog21.json"
+    },
+    {
+      "title": "A Brief History of the New YorkerÔÇÖs Past",
+      "file": "blog22.json"
     },
     {
       "title": "The North American International Toy Fair 2017",

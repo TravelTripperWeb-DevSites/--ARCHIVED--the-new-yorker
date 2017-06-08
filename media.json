@@ -477,5 +477,57 @@
     "height": 512,
     "description": "",
     "git_file_name": "_assets/image_data/site-assets_426_558_2836_media_2017-05-12-125627_Vision-expo-east-resize.jpeg.json"
+  },
+  {
+    "name": "the-new-yorker-history-1",
+    "file_name": "the-new-yorker-history-1.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/426_558_3466/media/2017-06-06-022758/the-new-yorker-history-1.jpg",
+    "date_added": "2017-06-06-022759",
+    "tags": "",
+    "file_size": 326091.0,
+    "width": 1000,
+    "height": 795,
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_426_558_3466_media_2017-06-06-022758_the-new-yorker-history-1.jpg.json"
+  },
+  {
+    "name": "the-new-yorker-history-2",
+    "file_name": "the-new-yorker-history-2.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/426_558_3466/media/2017-06-06-022759/the-new-yorker-history-2.jpg",
+    "date_added": "2017-06-06-022800",
+    "tags": "",
+    "file_size": 308705.0,
+    "width": 1000,
+    "height": 795,
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_426_558_3466_media_2017-06-06-022759_the-new-yorker-history-2.jpg.json"
+  },
+  {
+    "name": "the-new-yorker-history-3",
+    "file_name": "the-new-yorker-history-3.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/426_558_3466/media/2017-06-06-104647/the-new-yorker-history-3.jpg",
+    "date_added": "2017-06-06-104647",
+    "tags": "",
+    "file_size": 250842.0,
+    "width": 900,
+    "height": 1120,
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_426_558_3466_media_2017-06-06-104647_the-new-yorker-history-3.jpg.json"
+  },
+  {
+    "name": "the-new-yorker-history-4",
+    "file_name": "the-new-yorker-history-4.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/426_558_3466/media/2017-06-06-104648/the-new-yorker-history-4.jpg",
+    "date_added": "2017-06-06-104648",
+    "tags": "",
+    "file_size": 194998.0,
+    "width": 900,
+    "height": 1216,
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_426_558_3466_media_2017-06-06-104648_the-new-yorker-history-4.jpg.json"
   }
 ]
