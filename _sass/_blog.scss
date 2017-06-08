@@ -163,4 +163,18 @@
 							}
 		}
 }
-		
+h6{
+	top: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    padding: 0 20px !important;
+    color: white;
+    letter-spacing: 8px;
+    font-size: 85px;
+    text-align: center;
+    font-family: "Poiret One";
+    text-transform: uppercase;
+}
