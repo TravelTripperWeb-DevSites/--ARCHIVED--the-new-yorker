@@ -356,4 +356,38 @@ a:hover,a:focus {
 		}
 }
 
+h1{
+    font-size: 42px;
+    letter-spacing: 4px;
+    padding: 0 0 30px 0;
+    line-height: 53px;
+    text-align: left;
+    font-family: "Poiret One";
+    color: #0a0a12;
+    position: relative;
+    text-transform: uppercase;
+	&:after {
+			content: "";
+			position: absolute;
+			background-color: $btn;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 40px;
+			height: 1px;
+			margin: 0 auto;
+				@media (min-width: $screen-sm-min){
+					left: 0;
+					right:auto;
+					margin: 0;
+				}
+		}
+}
 
+.mega-title1{
+	  
+	   	font-size: 85px !important;
+	   	letter-spacing: 2px !important;
+
+	   }
+	  
