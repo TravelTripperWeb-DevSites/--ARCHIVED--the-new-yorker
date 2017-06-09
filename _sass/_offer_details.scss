@@ -146,7 +146,7 @@
                                     } 
                                   }
 
-                            p{
+                             p{
                                 max-width:none;
                                 @media(min-width: $screen-sm-min){
                                           max-width:470px;
@@ -203,6 +203,18 @@
         
      }
 }
+h1{
 
+                font-size: 43px;
+                letter-spacing: 0.1em;
+                font-family: "Poiret One";
+                color: #0a0a12;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 50px 0px;
 
- 
+                &:after{
+                    width:0px !important;
+                }
+             
+    }
