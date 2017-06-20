@@ -1,0 +1,6 @@
+[
+  {
+    "_template": "html",
+    "content": "<div class=\"row no-gutters\">\n<div class=\"col-sm-12\">\n<div class=\"parking\">\n<h2 class=\"text-center\">Parking at the new yorker hotel</h2>\n<p>&nbsp;If you're travelling with a vehicle then you'll want to hear about the parking facilities available near our New Yorker Hotel!</p>\n<ul>\n<li>ICON parking located at 1 Penn Plaza (34th street between 7th and 8th avenue). Rates are calculated per 24 hours, with no in and out privileges. On the day of departure the vehicle must be retrieved at the exact time it was dropped off to avoid incurring additional charges.</li>\n<li>Valet Parking is $60.00 for a sedan and $70.00 for an SUV</li>\n<li>Self-parking is $40.00 for a sedan and $50.00 for an SUV</li>\n</ul>\n</div>\n</div>\n</div>"
+  }
+]
