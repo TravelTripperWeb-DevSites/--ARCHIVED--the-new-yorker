@@ -238,10 +238,13 @@
       ]
     }
   },
-  "__REGIONS__": null,
+  "__REGIONS__": [
+    "hotels-near-me.html/discover_bigapple_content.json",
+    "hotels-near-me.html/parking_content.json"
+  ],
   "__SETTINGS__": [
     "config",
     "navigation"
   ],
-  "__SHA__": "bf21a76c7f903a20c0ebf09eaddcc0a0a9a6c853"
+  "__SHA__": "40ca3d213511796873c2fbab106633b55a603f04"
 }
