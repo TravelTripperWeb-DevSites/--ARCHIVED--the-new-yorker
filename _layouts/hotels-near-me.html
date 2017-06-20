@@ -29,6 +29,24 @@ seo-description:
             </div>
             {% endregionblock %}
         </div>
+        {% regionblock welcome_manhattan_content %}
+<h1 class="mega-title small-variant">Welcome to the heart of Manhattan</h1>
+{% endregionblock %}
+<section class="full-map">
+    <div class="map-inner" id="map"></div>
+    <!--Yet to implement below code-->
+    <!--<ul class="map-controls">
+        <li><a href="#"><img src="../images/location/nav-icons/res.png" alt=""/></a></li>
+           <li><a href="#"><img src="../images/location/nav-icons/bar.png" alt=""/></a></li>
+           <li><a href="#"><img src="../images/location/nav-icons/coffee.png" alt=""/></a></li>
+           <li><a href="#"><img src="../images/location/nav-icons/sites.png" alt=""/></a></li>
+           <li><a href="#"><img src="../images/location/nav-icons/exh.png" alt=""/></a></li>
+           <li><a href="#"><img src="../images/location/nav-icons/mta.png" alt=""/></a></li>
+           <li><a href="#"><img src="../images/location/nav-icons/train.png" alt=""/></a></li>
+           <li><a href="#"><img src="../images/location/nav-icons/plane.png" alt=""/></a></li>
+        </ul>
+        <div class="help-text">Click on icons to view sites</div>-->
+</section>
         <div class="container">
         {% regionblock parking_content %}
             <div class="row no-gutters">
@@ -88,24 +106,6 @@ seo-description:
         {% endregionblock %}
         </div>
     </div>
-</section>
-{% regionblock welcome_manhattan_content %}
-<h1 class="mega-title small-variant">Welcome to the heart of Manhattan</h1>
-{% endregionblock %}
-<section class="full-map">
-    <div class="map-inner" id="map"></div>
-    <!--Yet to implement below code-->
-    <!--<ul class="map-controls">
-        <li><a href="#"><img src="../images/location/nav-icons/res.png" alt=""/></a></li>
-           <li><a href="#"><img src="../images/location/nav-icons/bar.png" alt=""/></a></li>
-           <li><a href="#"><img src="../images/location/nav-icons/coffee.png" alt=""/></a></li>
-           <li><a href="#"><img src="../images/location/nav-icons/sites.png" alt=""/></a></li>
-           <li><a href="#"><img src="../images/location/nav-icons/exh.png" alt=""/></a></li>
-           <li><a href="#"><img src="../images/location/nav-icons/mta.png" alt=""/></a></li>
-           <li><a href="#"><img src="../images/location/nav-icons/train.png" alt=""/></a></li>
-           <li><a href="#"><img src="../images/location/nav-icons/plane.png" alt=""/></a></li>
-        </ul>
-        <div class="help-text">Click on icons to view sites</div>-->
 </section>
 
 {% include newsletter.html %}
