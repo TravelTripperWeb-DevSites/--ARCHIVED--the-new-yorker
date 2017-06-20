@@ -13,25 +13,23 @@ seo-description:
 <section class="discover">
     <div class="two-col-wrapper padding80 white_bg cover" style="background-image: url('/images/hotels-near-me/03.jpg');">
         <div class="container intro">
+            {% regionblock discover_bigapple_content %}
             <div class="row no-gutters">
-             {% regionblock discover_bigapple_content %}
                 <div class="col-sm-6">
                     <div class="content">
                         <h2>Discover<br>The big Apple</h2>
                         <p>New York is one of the world’s most famous cities – full of countless things to see, do and experience. The New Yorker, A Wyndham Hotel's picture-perfect location in Midtown West, just moments from the Jacob Javits Center and Penn Station, puts some of the city’s most remarkable attractions right at your doorstep.</p>
                     </div>
                 </div>
-            {% endregionblock %}
-            {% regionblock bigapple_img_content %}
                 <div class="col-sm-6">
                     <div class="img"><img src="../images/hotels-near-me/02.jpg" alt="" class="img-responsive"/></div>
                 </div>
-            {% endregionblock %}
             </div>
+            {% endregionblock %}
         </div>
         <div class="container">
+        {% regionblock parking_content %}
             <div class="row no-gutters">
-            {% regionblock parking_content %}
                 <div class="col-sm-12">
                     <div class="parking">
                         <h2 class="text-center">Parking</h2>
@@ -43,12 +41,12 @@ seo-description:
                         </ul>
                     </div>
                 </div>
-            {% endregionblock %}
             </div>
+        {% endregionblock %}
         </div>
         <div class="container">
+        {% regionblock img_address_content %}
             <div class="row no-gutters">
-            {% regionblock address_img_content %}
                 <div class="col-sm-6 no-gutters">
                     <div id="amenitiesCarousel" class="carousel slide no-shadow margin22" data-ride="carousel">
                         <!-- Wrapper for slides -->
@@ -69,8 +67,6 @@ seo-description:
                             </a>-->
                     </div>
                 </div>
-                {% endregionblock %}
-                {% regionblock address_content %}
                 <div class="col-sm-6">
                     <div class="content-box">
                         <h2 class="m-b-20"></h2>
@@ -86,8 +82,8 @@ seo-description:
                         </div>
                     </div>
                 </div>
-                {% endregionblock %}
             </div>
+        {% endregionblock %}
         </div>
     </div>
 </section>
