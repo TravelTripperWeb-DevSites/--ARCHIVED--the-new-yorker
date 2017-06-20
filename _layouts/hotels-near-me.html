@@ -154,13 +154,15 @@ seo-description:
 <section class="cta-one" style="background-image:url(/images/location-cta.jpg)">
     <div class="container">
         <div class="banner-overlay"></div>
-        {% regionblock hotels_cta_content %}
         <div class="cta-content">
+        {% regionblock hotels_cta_content %}
             <h4>Discover NY from our legendary hotel</h4>
             <h3>An Art Deco icon</h3>
+            {% endregionblock %}
+            {% regionblock button_cta_content %}
             <div class="btn-holder"><a href="/rooms/" class="btn-common btn-white">View Our Rooms</a></div>
+            {% endregionblock %}
         </div>
-        {% endregionblock %}
     </div>
 </section>
 <!--<section class="offer-section">
