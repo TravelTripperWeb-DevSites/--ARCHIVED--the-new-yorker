@@ -8,7 +8,8 @@
 			'submenu': 'true' ,
 			'subitems': [
 				{'title':'Overview','name': 'about','url': '/about/'},
-				{'title':'History','name': 'history','url': '/history/'}
+				{'title':'History','name': 'history','url': '/history/'},
+				{'title':'Amenities','name': 'Amenities','url': '/amenities/'}
 			] 
 		},
 		{

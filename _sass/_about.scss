@@ -79,6 +79,31 @@
 			&:hover{ opacity:0.6;}
 			@media (max-width:768px){ margin-top:15px;}
 		}
+			&.aminites-services{
+				padding: 15% 0 0 0;
+				
+				h2{
+					text-align:center;
+					color: #ffffff;
+					&:after{
+					left:0;
+					right:0;
+					margin:auto;
+					background-color:#ffffff;
+					}
+				}
+				p{
+					 color: #ffffff;
+					 max-width:80%;
+					 margin:10px auto;
+
+					}
+				a{
+				 margin: 5px auto 0;
+				 border:none;
+				 padding: 5px 15px 0px;
+				}
+			}
 			}
 }
 }

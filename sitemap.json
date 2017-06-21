@@ -135,6 +135,19 @@
         }
       ]
     },
+    "amenities": {
+      "__PAGES__": [
+        {
+          "label": "The New Yorker, A Wyndham Hotel | Midtown Manhattan Hotel",
+          "published": true,
+          "locales": {
+            "en": "/amenities/"
+          },
+          "data_source": null,
+          "source_path": "amenities.html"
+        }
+      ]
+    },
     "dining": {
       "__PAGES__": [
         {
@@ -239,12 +252,17 @@
     }
   },
   "__REGIONS__": [
+    "hotels-near-me.html/hotels_nyc_content.json",
     "hotels-near-me.html/discover_bigapple_content.json",
-    "hotels-near-me.html/parking_content.json"
+    "hotels-near-me.html/parking_content.json",
+    "hotels-near-me.html/img_address_content.json",
+    "hotels-near-me.html/welcome_manhattan_content.json",
+    "hotels-near-me.html/hotels_cta_content.json",
+    "hotels-near-me.html/button_cta_content.json"
   ],
   "__SETTINGS__": [
     "config",
     "navigation"
   ],
-  "__SHA__": "40ca3d213511796873c2fbab106633b55a603f04"
+  "__SHA__": "ce63501b038bf320057475de82cb9a47a41442d8"
 }
