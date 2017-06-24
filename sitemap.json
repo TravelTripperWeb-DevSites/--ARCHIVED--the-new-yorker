@@ -239,12 +239,15 @@
     }
   },
   "__REGIONS__": [
+    "hotels-near-me.html/hotels_nyc_content.json",
     "hotels-near-me.html/discover_bigapple_content.json",
-    "hotels-near-me.html/parking_content.json"
+    "hotels-near-me.html/welcome_manhattan_content.json",
+    "hotels-near-me.html/parking_content.json",
+    "hotels-near-me.html/img_address_content.json"
   ],
   "__SETTINGS__": [
     "config",
     "navigation"
   ],
-  "__SHA__": "40ca3d213511796873c2fbab106633b55a603f04"
+  "__SHA__": "3205d9c4e027918f43e34f175acc37ee0d47dd30"
 }

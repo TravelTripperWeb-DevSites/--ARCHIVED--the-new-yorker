@@ -1,7 +1,7 @@
 {
   "attractions": [
     {
-      "title": "MACYΓÇÖS HERALD SQUARE",
+      "title": "MACY’S HERALD SQUARE",
       "file": "attraction1.json"
     },
     {
@@ -91,12 +91,16 @@
       "file": "blog21.json"
     },
     {
-      "title": "A Brief History of the New YorkerΓÇÖs Past",
+      "title": "A Brief History of the New Yorker’s Past",
       "file": "blog22.json"
     },
     {
       "title": "Your Summer Day Trip Guide to Williamsburg",
       "file": "blog23.json"
+    },
+    {
+      "title": "5 Rooftop Bars to Visit This Summer in NYC",
+      "file": "blog24.json"
     },
     {
       "title": "The North American International Toy Fair 2017",
