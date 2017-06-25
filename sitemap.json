@@ -21,7 +21,7 @@
     "attractions": {
       "__PAGES__": [
         {
-          "label": "Hotel Near Jacob Javits Center | The New Yorker Attractions",
+          "label": "The New Yorker Attractions",
           "published": true,
           "locales": {
             "en": "/attractions/"
@@ -35,7 +35,7 @@
       "blog-details": {
         "__PAGES__": [
           {
-            "label": "Blog | The New Yorker, A Wyndham Hotel",
+            "label": "Blog",
             "published": true,
             "locales": {
               "en": "/blog/blog-details/"
@@ -47,7 +47,7 @@
       },
       "__PAGES__": [
         {
-          "label": "News and Events in New York | The New Yorker Hotel Blog",
+          "label": "News and Events in New York",
           "published": true,
           "locales": {
             "en": "/blog/"
@@ -60,7 +60,7 @@
     "contact": {
       "__PAGES__": [
         {
-          "label": "The New Yorker, A Wyndham Hotel | Midtown Manhattan Hotel",
+          "label": "The New Yorker, A Wyndham Hotel",
           "published": true,
           "locales": {
             "en": "/contact/"
@@ -73,7 +73,7 @@
     "offer-details": {
       "__PAGES__": [
         {
-          "label": "Midtown Manhattan Hotel Packages | Manhattan Hotel Specials",
+          "label": "Midtown Manhattan Hotel Packages",
           "published": true,
           "locales": {
             "en": "/offer-details/"
@@ -86,7 +86,7 @@
     "offers": {
       "__PAGES__": [
         {
-          "label": "Midtown Manhattan Hotel Packages | Manhattan Hotel Specials",
+          "label": "Midtown Manhattan Hotel Packages",
           "published": true,
           "locales": {
             "en": "/offers/"
@@ -99,7 +99,7 @@
     "room-details": {
       "__PAGES__": [
         {
-          "label": "Hotel Rooms & Suites in New York | New York City Suites",
+          "label": "Hotel Rooms & Suites in New York",
           "published": true,
           "locales": {
             "en": "/room-details/"
@@ -112,7 +112,7 @@
     "rooms": {
       "__PAGES__": [
         {
-          "label": "Hotel Rooms & Suites in New York | New York City Suites",
+          "label": "Hotel Rooms & Suites in New York",
           "published": true,
           "locales": {
             "en": "/rooms/"
@@ -125,7 +125,7 @@
     "about": {
       "__PAGES__": [
         {
-          "label": "Art Deco Hotel in New York | History of The New Yorker Hotel",
+          "label": "History of The New Yorker Hotel",
           "published": true,
           "locales": {
             "en": "/about/"
@@ -138,7 +138,7 @@
     "dining": {
       "__PAGES__": [
         {
-          "label": "Tick Tock Diner | Trattoria Bianca | Manhattan Restaurants",
+          "label": "Tick Tock Diner | Trattoria Bianca",
           "published": true,
           "locales": {
             "en": "/dining/"
@@ -151,7 +151,7 @@
     "events": {
       "__PAGES__": [
         {
-          "label": "The New Yorker Meeting Rooms | Event Space in Manhattan",
+          "label": "The New Yorker Meeting Rooms",
           "published": true,
           "locales": {
             "en": "/events/"
@@ -164,7 +164,7 @@
     "gallery": {
       "__PAGES__": [
         {
-          "label": "New York Hotel Pictures | Gallery | New Yorker, Manhattan",
+          "label": "New York Hotel Pictures",
           "published": true,
           "locales": {
             "en": "/gallery/"
@@ -177,7 +177,7 @@
     "history": {
       "__PAGES__": [
         {
-          "label": "The New Yorker, A Wyndham Hotel | Midtown Manhattan Hotel",
+          "label": "The New Yorker, A Wyndham Hotel",
           "published": true,
           "locales": {
             "en": "/history/"
@@ -190,7 +190,7 @@
     "hotels-near-me": {
       "__PAGES__": [
         {
-          "label": "Hotels Near Me | New Yorker Hotel in New York City",
+          "label": "Hotels Near Me",
           "published": true,
           "locales": {
             "en": "/hotels-near-me/"
@@ -202,7 +202,7 @@
     },
     "__PAGES__": [
       {
-        "label": "The New Yorker, A Wyndham Hotel | Midtown Manhattan Hotel",
+        "label": "The New Yorker, A Wyndham Hotel",
         "published": true,
         "locales": {
           "en": "/"
@@ -214,7 +214,7 @@
     "location": {
       "__PAGES__": [
         {
-          "label": "Hotels Near Penn Station NYC | Midtown Manhattan Hotel",
+          "label": "Hotels Near Penn Station NYC",
           "published": true,
           "locales": {
             "en": "/location/"
@@ -227,7 +227,7 @@
     "thankyou": {
       "__PAGES__": [
         {
-          "label": "Thank You | The New Yorker",
+          "label": "Thank You",
           "published": true,
           "locales": {
             "en": "/thankyou/"
@@ -239,12 +239,19 @@
     }
   },
   "__REGIONS__": [
+    "hotels-near-me.html/hotels_nyc_content.json",
     "hotels-near-me.html/discover_bigapple_content.json",
-    "hotels-near-me.html/parking_content.json"
+    "hotels-near-me.html/parking_content.json",
+    "hotels-near-me.html/img_address_content.json",
+    "hotels-near-me.html/welcome_manhattan_content.json",
+    "hotels-near-me.html/hotels_cta_content.json",
+    "hotels-near-me.html/button_cta_content.json"
   ],
   "__SETTINGS__": [
+    "authors",
+    "social",
     "config",
     "navigation"
   ],
-  "__SHA__": "40ca3d213511796873c2fbab106633b55a603f04"
+  "__SHA__": "e400db55cdf41f7f2772416bba505711e57ce3b9"
 }
