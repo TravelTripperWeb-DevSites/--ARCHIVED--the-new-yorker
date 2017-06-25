@@ -1,55 +1,58 @@
 <head>
   <meta charset="utf-8">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MZGV8GK');</script>
+  <!-- End Google Tag Manager -->
+
+  {% include seo.html %}
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <script>
+    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  </script>
 
-
-    <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.meta_title %}{{ page.meta_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{% if page.seo_description %}{{ page.seo_description }}{% elsif page.meta_description %}{{ page.meta_description }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-
-  
-  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-  
-  <link rel="apple-touch-icon" sizes="57x57" href="/fav-icon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/fav-icon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/fav-icon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/fav-icon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/fav-icon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/fav-icon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/fav-icon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/fav-icon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/fav-icon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/fav-icon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/fav-icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/fav-icon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/fav-icon/favicon-16x16.png">
-<link rel="manifest" href="/fav-icon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/fav-icon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-
-<link rel="stylesheet" href="/css/owl.carousel.css" >
-  <link rel="stylesheet" href="/css/owl.theme.css" >
-  <link rel="stylesheet" href="/css/owl.transitions.css" >
-  <link rel="stylesheet" href="{{ "/css/animations.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/lightgallery.css" | prepend: site.baseurl }}">
-   <link rel="stylesheet" href="{{ "/css/owl.carousel.css" | prepend: site.baseurl }}">
-  
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/font-awesome.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="https://www.newyorkerhotel.com{{ page.url }}" />
   <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="/css/all.css">
   <!--<![endif]-->
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MZGV8GK');</script>
-<!-- End Google Tag Manager -->
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One">
+  <link rel="stylesheet" href="{{ '/css/main.css' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/css/owl.carousel.css' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/css/owl.theme.css' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/css/owl.transitions.css' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/css/animations.css' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/css/lightgallery.css' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/css/font-awesome.css' | absolute_url }}">
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="/fav-icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/fav-icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/fav-icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/fav-icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/fav-icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/fav-icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/fav-icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/fav-icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/fav-icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/fav-icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/fav-icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/fav-icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/fav-icon/favicon-16x16.png">
+  <link rel="manifest" href="/fav-icon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/fav-icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-<script id="gtsgig-boot" data-hotel-id="newyorkerhotel" src="https://widgets.gtsgig.com/boot.js" async defer></script>
-<script>(function(){ var v = document.createElement('script'); var s = document.getElementsByTagName('script')[0]; v.src = '//io.voyat.com/v.js'; v.async = true; s.parentNode.insertBefore(v, s); })();</script>
+  <meta http-equiv="cleartype" content="on">
+
+  <script id="gtsgig-boot" data-hotel-id="newyorkerhotel" src="https://widgets.gtsgig.com/boot.js" async defer></script>
+  <script>(function(){ var v = document.createElement('script'); var s = document.getElementsByTagName('script')[0]; v.src = '//io.voyat.com/v.js'; v.async = true; s.parentNode.insertBefore(v, s); })();</script>
 </head>
