@@ -18,10 +18,11 @@
 		h2{padding:26px 0 8px; font-size: 42px; letter-spacing: 4px; line-height: 53px;}
 		h5{font-family:$main-font-bold; font-size:14px; text-transform:uppercase; letter-spacing:2px; color:$text;}
 		p{font-family:$main-font-regular; font-size:14px; color:$white; padding-top:20px;
+		letter-spacing:2px;
 			a{ color:$black;}
 		}
 		h3{
-		text-transform:normal;
+		text-transform:none;
 		}
 	}
 	.btn-holder{ padding:45px 0 0 0px !important;}
