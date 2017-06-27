@@ -13,12 +13,15 @@
 	
 }
 .discover{
-	.content-box{
+	.content-box-info{
 		padding:20px !important;
 		h2{padding:26px 0 8px; font-size: 42px; letter-spacing: 4px; line-height: 53px;}
 		h5{font-family:$main-font-bold; font-size:14px; text-transform:uppercase; letter-spacing:2px; color:$text;}
-		p{font-family:$main-font-regular; font-size:14px;color:$grey-text;
-			a{ color:$grey-text;}
+		p{font-family:$main-font-regular; font-size:14px; color:$white; padding-top:20px;
+			a{ color:$black;}
+		}
+		h3{
+		text-transform:normal;
 		}
 	}
 	.btn-holder{ padding:45px 0 0 0px !important;}
@@ -27,7 +30,7 @@
 	.intro{
 		.content{ width:80%; margin:50px auto 30px;
 			h2{ margin-top:50px;}
-			p{ margin-top:30px;color:$grey-text;
+			p{ margin-top:30px;color:$white;
 			@media (max-width:768px){ text-align:center;}
 			}
 		}
@@ -154,4 +157,5 @@
 	.btn-common{
 		border:none;
 	}
+
 }
