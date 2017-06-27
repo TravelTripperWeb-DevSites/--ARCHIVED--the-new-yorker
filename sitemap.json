@@ -258,11 +258,12 @@
     "hotels-near-me.html/img_address_content.json",
     "hotels-near-me.html/welcome_manhattan_content.json",
     "hotels-near-me.html/hotels_cta_content.json",
-    "hotels-near-me.html/button_cta_content.json"
+    "hotels-near-me.html/button_cta_content.json",
+    "contact/index.html/inquiries.json"
   ],
   "__SETTINGS__": [
     "config",
     "navigation"
   ],
-  "__SHA__": "2907c5d9ab216b958d9a95a994896827280729e3"
+  "__SHA__": "74279e02d95ab22c216f9941031acbb614eaa1fa"
 }

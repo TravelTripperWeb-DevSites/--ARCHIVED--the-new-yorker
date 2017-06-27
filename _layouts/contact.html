@@ -8,14 +8,16 @@ layout: default
    </div>
 </section>
 <section class="discover">
-   <div class="two-col-wrapper white_bg cover" style="background-image: url('/images/location/03.jpg');">
+   <div class="two-col-wrapper white_bg cover" style="background-image: url('/images/location/03-black.jpg');">
       <div class="container intro">
          <div class="col-sm-12">
             <div class="content-box-info">
-            <h3 class="text-center">CONTACT DETAILS <br>
+            
+            {% regionblock inquiries %} 
             <p class="text-center">
             For inquiries, please call the Sales Office at<br> <a  href="tel:212-971-0101">(212) 971 0101</a> <br>or fill out the form below.</p>
-            </h3>
+            {% endregionblock %} 
+
                <!-- <h5>Services/ Amenities</h5>
                <p>Coffee makers are available upon request.</p>
                <p>Refrigerators are available upon request for a minimal fee.</p>
