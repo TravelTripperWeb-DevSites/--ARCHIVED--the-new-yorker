@@ -254,11 +254,9 @@
   "__REGIONS__": [
     "hotels-near-me.html/hotels_nyc_content.json",
     "hotels-near-me.html/discover_bigapple_content.json",
+    "hotels-near-me.html/welcome_manhattan_content.json",
     "hotels-near-me.html/parking_content.json",
     "hotels-near-me.html/img_address_content.json",
-    "hotels-near-me.html/welcome_manhattan_content.json",
-    "hotels-near-me.html/hotels_cta_content.json",
-    "hotels-near-me.html/button_cta_content.json",
     "contact/index.html/inquiries.json"
   ],
   "__SETTINGS__": [
@@ -267,6 +265,5 @@
     "config",
     "navigation"
   ],
-  "__SHA__": "247784ef415af8d8ed9ccb1b6ad160dbff28e909"
-
+  "__SHA__": "a9410d80b1ce10f045e6ab4476639b511cff1ef2"
 }
