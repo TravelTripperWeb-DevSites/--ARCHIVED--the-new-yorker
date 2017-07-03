@@ -13,12 +13,21 @@
 	
 }
 .discover{
-	.content-box{
+	.content-box-info{
 		padding:20px !important;
 		h2{padding:26px 0 8px; font-size: 42px; letter-spacing: 4px; line-height: 53px;}
 		h5{font-family:$main-font-bold; font-size:14px; text-transform:uppercase; letter-spacing:2px; color:$text;}
-		p{font-family:$main-font-regular; font-size:14px;color:$grey-text;
-			a{ color:$grey-text;}
+		p{font-family:$main-font-regular; font-size:15px; color:$white; padding:20px 0px;
+		letter-spacing:1px; 
+			a{ color:$white;
+
+			&:hover{
+			    text-decoration: underline;
+			 }
+			}
+		}
+		h3{
+		text-transform:none;
 		}
 	}
 	.btn-holder{ padding:45px 0 0 0px !important;}
@@ -27,7 +36,7 @@
 	.intro{
 		.content{ width:80%; margin:50px auto 30px;
 			h2{ margin-top:50px;}
-			p{ margin-top:30px;color:$grey-text;
+			p{ margin-top:30px;color:$white;
 			@media (max-width:768px){ text-align:center;}
 			}
 		}
@@ -38,4 +47,121 @@
 			@media (max-width:768px){ margin:20px auto; width:90%; height:auto;}
 		}	
 	}
+}
+
+
+.contact-form {
+	max-width:700px;
+	margin:auto;
+		.right-space {
+			padding-right: 8px;
+			 @media(max-width: 767px) {
+			 padding-right: 0px;
+			}
+		}
+		.left-space {
+			padding-left: 8px;
+			 @media(max-width: 767px) {
+			 padding-left: 0px;
+			}
+		}
+		.form-control {
+		 	
+		 border-color: #ccc;
+		 border-radius: 0px;
+		 border-width:1.5px;
+
+		 height: 58px;
+		 box-shadow: none;
+		 color:#1f4552;
+		 font-weight: 400;
+		 letter-spacing: 1px;
+		 font-size: 16px;
+		 @media(max-width: 767px) {
+		 height: 48px;
+		 font-size: 14px;
+		 font-weight: 400;
+		}
+		 &:focus {
+		 box-shadow: none;
+		 border-color: $blue;
+		 &::-webkit-input-placeholder {
+		 text-transform: uppercase;
+		 font-size:12px;
+		font-style: normal;
+		color: $grey-text;
+		}
+		 &:-moz-placeholder { /* Firefox 18- */
+		 text-transform: uppercase;
+		 font-size:12px;
+		font-style: normal;
+		color: $grey-text;
+		}
+		 &::-moz-placeholder {  /* Firefox 19+ */
+		 text-transform: uppercase;
+		 font-size:12px;
+		font-style: normal;
+		color: $grey-text;
+		}
+		 &:-ms-input-placeholder {
+		 text-transform: uppercase;
+		 font-size:12px;
+		font-style: normal;
+		color: $grey-text;
+		}
+		}
+		 &::-webkit-input-placeholder {
+		 text-transform: uppercase;
+		 font-size:12px;
+		font-style: normal;
+		color: $grey-text;
+		}
+		 &:-moz-placeholder { /* Firefox 18- */
+		 text-transform: uppercase;
+		 font-size:12px;
+		font-style: normal;
+		color: $grey-text;
+		}
+		 &::-moz-placeholder {  /* Firefox 19+ */
+		 text-transform: uppercase;
+		 font-size:12px;
+		font-style: normal;
+		color: $grey-text;
+		}
+		 &:-ms-input-placeholder {
+		 text-transform: uppercase;
+		 font-size:12px;
+		font-style: normal;
+		color:$grey-text;
+		}
+		}
+
+		textarea.form-control {
+			resize: none;
+			height: 200px;
+		 @media(max-width: 767px) {
+		 height: 100px;
+		}
+		 &.m-textarea {
+		 height: 130px;
+		 @media(max-width: 767px) {
+		 height: 100px;
+		}
+		}
+		}
+		.checkbox {
+			padding: 0 0 10px 0;
+		 @media(max-width: 767px) {
+		 padding: 0 0 10px 0;
+		}
+		label {
+			font-size: 12px;
+			line-height: 22px;
+			letter-spacing: 1px;
+		}
+		}
+	.btn-common{
+		border:none;
+	}
+
 }
