@@ -1,0 +1,15 @@
+# Social Sharing
+twitter:
+  username               : WyndhamNYH
+facebook:
+  username               : newyorkerhotel
+  app_id                 :
+  publisher              : 
+og_image                 : https://www.newyorkerhotel.com/images/banner-4.jpg
+                           
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links                  : # An array of links to social media profiles
