@@ -84,55 +84,55 @@
 		}
 		 &:focus {
 		 box-shadow: none;
-		 border-color: #1f4552;
+		 border-color: $grey-text;
 		 &::-webkit-input-placeholder {
 		 text-transform: uppercase;
 		 font-size:12px;
 		font-style: normal;
-		color: #d9d9d9;
+		color: $grey-text;
 		}
 		 &:-moz-placeholder { /* Firefox 18- */
 		 text-transform: uppercase;
 		 font-size:12px;
 		font-style: normal;
-		color: #d9d9d9;
+		color: $grey-text;
 		}
 		 &::-moz-placeholder {  /* Firefox 19+ */
 		 text-transform: uppercase;
 		 font-size:12px;
 		font-style: normal;
-		color: #d9d9d9;
+		color: $grey-text;
 		}
 		 &:-ms-input-placeholder {
 		 text-transform: uppercase;
 		 font-size:12px;
 		font-style: normal;
-		color: #d9d9d9;
+		color: $grey-text;
 		}
 		}
 		 &::-webkit-input-placeholder {
 		 text-transform: uppercase;
 		 font-size:12px;
 		font-style: normal;
-		color: #d9d9d9;
+		color: $grey-text;
 		}
 		 &:-moz-placeholder { /* Firefox 18- */
 		 text-transform: uppercase;
 		 font-size:12px;
 		font-style: normal;
-		color: #d9d9d9;
+		color: $grey-text;
 		}
 		 &::-moz-placeholder {  /* Firefox 19+ */
 		 text-transform: uppercase;
 		 font-size:12px;
 		font-style: normal;
-		color: #d9d9d9;
+		color: $grey-text;
 		}
 		 &:-ms-input-placeholder {
 		 text-transform: uppercase;
 		 font-size:12px;
 		font-style: normal;
-		color: #d9d9d9;
+		color:$grey-text;
 		}
 		}
 
