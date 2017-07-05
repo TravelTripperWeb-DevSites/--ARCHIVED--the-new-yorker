@@ -237,6 +237,19 @@
         }
       ]
     },
+    "remarketing-offer": {
+      "__PAGES__": [
+        {
+          "label": "remarketing-offer",
+          "published": true,
+          "locales": {
+            "en": "/remarketing-offer/"
+          },
+          "data_source": null,
+          "source_path": "remarketing-offer.html"
+        }
+      ]
+    },
     "thankyou": {
       "__PAGES__": [
         {
@@ -265,5 +278,5 @@
     "config",
     "navigation"
   ],
-  "__SHA__": "a9410d80b1ce10f045e6ab4476639b511cff1ef2"
+  "__SHA__": "7bc30cccda1bd0cb8e4c7c1a51c45799e465a2c1"
 }
