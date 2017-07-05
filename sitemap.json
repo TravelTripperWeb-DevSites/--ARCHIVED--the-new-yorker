@@ -240,7 +240,7 @@
     "remarketing-offer": {
       "__PAGES__": [
         {
-          "label": "remarketing-offer",
+          "label": "Book Now and Save 27%",
           "published": true,
           "locales": {
             "en": "/remarketing-offer/"
@@ -278,5 +278,5 @@
     "config",
     "navigation"
   ],
-  "__SHA__": "7bc30cccda1bd0cb8e4c7c1a51c45799e465a2c1"
+  "__SHA__": "67567011cb3a658030802f4553c4dd11c22f36bb"
 }
