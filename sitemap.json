@@ -237,6 +237,19 @@
         }
       ]
     },
+    "remarketing-offer": {
+      "__PAGES__": [
+        {
+          "label": "Book Now and Save 27%",
+          "published": true,
+          "locales": {
+            "en": "/remarketing-offer/"
+          },
+          "data_source": null,
+          "source_path": "remarketing-offer.html"
+        }
+      ]
+    },
     "thankyou": {
       "__PAGES__": [
         {
@@ -265,5 +278,5 @@
     "config",
     "navigation"
   ],
-  "__SHA__": "a9410d80b1ce10f045e6ab4476639b511cff1ef2"
+  "__SHA__": "67567011cb3a658030802f4553c4dd11c22f36bb"
 }
