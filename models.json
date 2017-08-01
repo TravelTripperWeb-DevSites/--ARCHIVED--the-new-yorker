@@ -1,7 +1,7 @@
 {
   "attractions": [
     {
-      "title": "MACYÔÇÖS HERALD SQUARE",
+      "title": "MACYΓÇÖS HERALD SQUARE",
       "file": "attraction1.json"
     },
     {
@@ -91,7 +91,7 @@
       "file": "blog21.json"
     },
     {
-      "title": "A Brief History of the New YorkerÔÇÖs Past",
+      "title": "A Brief History of the New YorkerΓÇÖs Past",
       "file": "blog22.json"
     },
     {
@@ -105,6 +105,18 @@
     {
       "title": "5 Things to Do This July 4th in NYC",
       "file": "blog25.json"
+    },
+    {
+      "title": "The Top Festivals This Summer in NYC",
+      "file": "blog26.json"
+    },
+    {
+      "title": "The Best Ice Cream Shops in NYC",
+      "file": "blog27.json"
+    },
+    {
+      "title": "The Top Festivals This Summer in NYC, August Edition",
+      "file": "blog28.json"
     },
     {
       "title": "The North American International Toy Fair 2017",
