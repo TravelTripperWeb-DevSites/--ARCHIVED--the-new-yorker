@@ -178,3 +178,10 @@ h6{
     font-family: "Poiret One";
     text-transform: uppercase;
 }
+.blogtitlelink{
+	display: inline-block;
+	&:hover{
+		opacity:0.7;
+		color:#57575b;
+	}
+}
