@@ -24,7 +24,9 @@ pagename: blog
             </div>
             <div class="col-sm-7 no-padding">
                 <div class="-right -right-blog">
-                   <h2>{{post.title}}</h2>
+                   <a class="blogtitlelink" href="/blog/{{post.url_friendly_name}}">
+                    <h2>{{post.title}}</h2>
+                   </a>
                    	<div class="date-holder">{{post.date | date: "%B %d, %Y"}}</div>
                     {{post.short_description}}
                     <div class="btn-holder"><a href="/blog/{{post.url_friendly_name}}" class="btn-common">Read More</a></div>
