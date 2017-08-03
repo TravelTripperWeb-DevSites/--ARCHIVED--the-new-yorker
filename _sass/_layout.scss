@@ -58,3 +58,39 @@ a {
 			padding:0;
 		}
 }
+/*Page Not Found*/
+.pagenotfound{
+	.overlay{
+		h1{
+			line-height: 100px;
+		}
+	}
+}
+.nopage{
+	h4{
+		padding: 25px;
+	}
+	h2.sitemap{
+		padding-top: 0px;
+	}
+	.sitemap-pagenotfound{
+		background-color: $bg;
+		max-width: 300px;
+		margin: 40px auto;
+		.sitemaplist{
+			margin: 30px;
+			ul{
+				text-align: left;
+				margin-left: 50px;
+				li{
+					list-style-type: disc;
+					padding: 8px;
+	    			text-transform: uppercase;
+				}
+				ul{
+					margin-left: 15px;
+				}
+			}
+		}
+	}
+}
