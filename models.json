@@ -1,7 +1,7 @@
 {
   "attractions": [
     {
-      "title": "MACYΓÇÖS HERALD SQUARE",
+      "title": "MACY’S HERALD SQUARE",
       "file": "attraction1.json"
     },
     {
@@ -91,7 +91,7 @@
       "file": "blog21.json"
     },
     {
-      "title": "A Brief History of the New YorkerΓÇÖs Past",
+      "title": "A Brief History of the New Yorker’s Past",
       "file": "blog22.json"
     },
     {
@@ -117,6 +117,10 @@
     {
       "title": "The Top Festivals This Summer in NYC, August Edition",
       "file": "blog28.json"
+    },
+    {
+      "title": "5 Ways to Beat the Heat in NYC",
+      "file": "blog29.json"
     },
     {
       "title": "The North American International Toy Fair 2017",
