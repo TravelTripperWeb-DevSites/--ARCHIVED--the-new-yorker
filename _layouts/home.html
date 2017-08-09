@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section class="home-banner custom-carousel">
+<section class="home-banner custom-carousel" rt3-recent-bookings="recentBookings"  ng-cloak>
   <div class="container-fluid">
     <div id="home-banner" class="carousel slide carousel-fade" data-ride="carousel">
   
@@ -10,11 +10,14 @@ layout: default
     <div class="item active" style="background-image: url(/images/banner-4.jpg); height:650px;"></div>
     <div class="item" style="background-image: url(/images/banner-2.jpg);"></div>
     <div class="item" style="background-image: url(/images/banner-3.jpg);"></div>
-    <div class="item" style="background-image: url(/images/banner-1.jpg);></div>
+    <div class="item" style="background-image: url(/images/banner-1.jpg);"></div>
   </div>
   
   <div class="banner-overlay"></div>
   <div class="banner-logo"><a href="/"><img src="/images/the-new-yorker-logo-white.svg" alt="The New Yorker"/></a></div>
+  <div class="caption-price"> 
+    <div class="price-holder" ng-show="recentBookings.totalBookings > 40"><span>[[ recentBookings.totalBookings ]]</span> People booked our hotel in the last 2 days</div> 
+  </div>
 	<div class="counter"><span class="num">1 of 4</span></div>
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#home-banner" role="button" data-slide="prev">
@@ -27,6 +30,7 @@ layout: default
   </a>
 </div>
   </div>
+
 </section>
 
 {% include welcome.html %}
