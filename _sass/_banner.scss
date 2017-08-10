@@ -176,16 +176,23 @@
 			font-size: 14px;
 	}
 
-	span{
+	.recentBookingNo {
 		color: $brand-color;
 		font-size: 30px;
 		vertical-align:middle;
 		padding-right: 18px;
+		margin-top: 9px;
+    	display: inline-block;
 
 		@media (max-width: 1023px){
 		    font-size: 25px;
 			padding-right: 8px;
 		}
+	}
+	.recentBookingText {
+		vertical-align: middle;
+    	display: inline-block;
+    	padding-top: 5px;
 	}
 	@media(max-width:768px){
 		&.tonight{
