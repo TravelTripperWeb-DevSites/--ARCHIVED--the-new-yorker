@@ -145,3 +145,58 @@
 	bottom: 0;
 	top: 0;
 }
+
+
+.caption-price {
+	position: absolute;
+	top: 75%;
+	z-index:100;
+	left: 0;
+	right:0;
+	text-align:center;
+	text-transform: none;
+	@media(max-width:768px){
+		bottom:70%;
+	}
+
+}
+.price-holder{
+	padding: 1px 20px;
+	color: $black;
+	font-size: 15px;
+	background-color: $background-color;
+	vertical-align:middle;
+	font-family: $main-font-regular;
+	letter-spacing: 1px;
+	display:inline-block;
+	margin-right: -2px;
+	
+	@media (max-width: 1023px){
+		    padding: 6px 10px;
+			font-size: 14px;
+	}
+
+	.recentBookingNo {
+		color: $brand-color;
+		font-size: 30px;
+		vertical-align:middle;
+		padding-right: 18px;
+		margin-top: 9px;
+    	display: inline-block;
+
+		@media (max-width: 1023px){
+		    font-size: 25px;
+			padding-right: 8px;
+		}
+	}
+	.recentBookingText {
+		vertical-align: middle;
+    	display: inline-block;
+    	padding-top: 5px;
+	}
+	@media(max-width:768px){
+		&.tonight{
+			margin-top:1px;
+		}
+	}
+}
