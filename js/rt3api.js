@@ -182,8 +182,8 @@ Rt3Api.prototype.getRateShopping = function(searchParams) {
        locale: this.config.defaultLocale,
        currency: this.config.defaultCurrency,
        popular_only: false,
-       num_rates_display: 5,
-       client_ip: '64.78.249.12',
+       num_rates_display: 15,
+       client_ip: sessionStorage.ip_add,
        lowest_rate: null,
        search_lowest: true
     };
@@ -290,6 +290,78 @@ Rt3Api.prototype.getBrgInfo = function(searchParams) {
 
     return defered;
 };
+
+Rt3Api.prototype.getOTARates = function (params){
+  var searchParams ,
+      startDate,
+      endDate,
+
+      retResponse={},
+      reztripRate,
+      brg ={},
+      brgFound;
+var defered = $.Deferred();
+  //return new Promise(function(resolve, reject){
+    var now = new Date();
+    var day = ("0" + now.getDate()).slice(-2);
+    var month = ("0" + (now.getMonth() + 1)).slice(-2);
+    var startDate = now.getFullYear() + "-" + (month) + "-" + (day);
+
+    var nextDay;
+    nextDay = new Date(startDate);
+    var tomarrow=new Date(nextDay.setDate(nextDay.getDate() + 1));
+    var endDate=tomarrow.toISOString().slice(0,10);
+
+    searchParams = {
+      arrival_date    : startDate ,
+      departure_date  : endDate
+    };
+
+    if(params){
+      searchParams = $.extend(searchParams, params);
+    }
+
+    this.getRateShopping(searchParams).then(function(response) {
+        var errors = response.error_info;
+        if(errors && errors.error_details.length > 0){
+           defered.reject(errors);
+
+        }else{
+            if(response.show_brg ){
+            //  retResponse.otaRates    = response.rates;"$"+Math.round(roomRate);
+
+              reztripRate = "$"+Math.round(response.discounted_rate);
+
+              response.rates.forEach(function(ota){
+                brg[ota.provider] = ota.rate;
+              });
+
+              brgFound = response.rates.length > 0 ? true : false;
+              retResponse = {
+                'reztripRate' : reztripRate,
+                'brg' : brg,
+                'brgFound' : brgFound
+              }
+              defered.resolve(retResponse);
+            //  return defered;
+            }else{
+              retResponse = { "error_info": {"error_details" : [
+                                                        {"error_type"    : "NOT_ALLOWED",
+                                                        "error_messgae" : "BRG rates are not allowed to display."
+                                                      }]
+                                             }
+                            };
+              defered.reject(retResponse);
+            //  return defered;
+            }
+
+        }
+    });
+    return defered;
+  //});
+
+}
+
 
 Rt3Api.prototype.recentBookings = function(timeCutOffMinutes) {
     var path = '/ext/recentBookings';
