@@ -4,12 +4,9 @@ email: reservations@nyhotel.com
 description: > # this means to ignore newlines until "baseurl:"
   Experience The New Yorker Hotel, a boutique hotel in New York. Book your stay at our Midtown Manhattan Hotel & start your New York getaway.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "reservations@nyhotel.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://www.newyorkerhotel.com/" # the base hostname & protocol for your site
 
 permalink: pretty
-port: 8080
 default_lang: 'en'
 languages: ['en']
 
