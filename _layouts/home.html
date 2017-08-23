@@ -15,8 +15,25 @@ layout: default
   
   <div class="banner-overlay"></div>
   <div class="banner-logo"><a href="/"><img src="/images/the-new-yorker-logo-white.svg" alt="The New Yorker"/></a></div>
-  <div class="caption-price"> 
-    <div class="price-holder" ng-show="recentBookings.totalBookings > 20"><span class="recentBookingNo">[[ recentBookings.totalBookings ]]</span><span class="recentBookingText">People booked our hotel in the last 2 days</span></div> 
+  <div class="caption-price" style="display:none"> 
+    <span class="price-holder" ng-show="recentBookings.totalBookings > 5"><span class="recentBookingNo">[[ recentBookings.totalBookings ]]</span><span class="recentBookingText">People booked our hotel in the last 2 days</span></span><span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="#" class="homeTonightRate" ><span class="recentBookingNo">[[ browser.toNightsRate ]]</span></a><span class="recentBookingText">Tonight’s Rate</span></span>
+  </div>
+  <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
+                       <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
+    <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
+      <div class="boxes">
+        <div class="tonight-rate ">
+        <p>Best Price Available</p>
+        <h4>Tonight's Rate <a href="#" class="homeTonightRate" ><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
+        </div>
+        <div class="ota-list" >
+          <ul>
+          <li ng-repeat = "(key, value) in browser.otaRates.brg">[[key]] <span>$[[value]]</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </div>
 	<div class="counter"><span class="num">1 of 4</span></div>
   <!-- Left and right controls -->

@@ -76,7 +76,12 @@ $("#od_arrival").datepicker({
                 }
             }
         });
-
+            setTimeout(function(){
+              $(".price-wrap1, .caption-price").css("display","block");
+            },4500);
+            $(".homeTonightRate").on("click", function () {
+                $(".booking-widget form").submit();
+            });
          });
 
 $(window).on('load scroll resize', function () {
