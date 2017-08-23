@@ -1,6 +1,74 @@
 ---
-layout: home
+layout: default
 title: The New Yorker, A Wyndham Hotel
 excerpt: Experience The New Yorker Hotel, a boutique hotel in New York. Book your stay at our Midtown Manhattan Hotel & start your New York getaway.
 map: true
 ---
+
+<section class="home-banner custom-carousel" rt3-recent-bookings="recentBookings" ng-cloak>
+  <div class="container-fluid">
+    <div id="home-banner" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+        <!-- <div class="item active" style="background-image: url(/images/banner-4.jpg); height:650px;"></div> -->
+        <!-- <div class="item" style="background-image: url(/images/banner-2.jpg);"></div> -->
+        {% assign slides = site.data._models.homepage_slider | sort: "sort_order" %}
+        {% for slide in slides %}
+          <div class="item{% if forloop.first == true %} active{% endif %}" style="background-image: url('{{ slide.image.url }}');">
+            <div class="offer-details">
+              <div class="offer-title"><span>{{ slide.title }}</span></div>
+              {% if slide.sub-title %}<div class="offer-sub-title">{{ slide.sub-title }}</div>{% endif %}
+              <a href="{{ slide.button-url }}" class="btn-common">{{ slide.button-text }}</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="banner-overlay"></div>
+
+      <!-- <div class="banner-logo">
+        <a href="/"><img src="/images/the-new-yorker-logo-white.svg" alt="The New Yorker"></a>
+      </div> -->
+
+      <div class="caption-price" style="display:none">
+        <span class="price-holder" ng-show="recentBookings.totalBookings > 5"><span class="recentBookingNo">[[ recentBookings.totalBookings ]]</span><span class="recentBookingText">People booked our hotel in the last 2 days</span></span>
+        <span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="#" class="homeTonightRate" ><span class="recentBookingNo">[[ browser.toNightsRate ]]</span></a><span class="recentBookingText">Tonight's Rate</span></span>
+      </div>
+
+      <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
+        <div class="best-rate-ota" ng-show="browser.otaRates.brgFound">
+          <div class="boxes">
+
+            <div class="tonight-rate ">
+              <p>Best Price Available</p>
+              <h4>Tonight's Rate <a href="#" class="homeTonightRate" ><span class="price">[[ browser.otaRates.reztripRate ]]</span></a></h4>
+            </div>
+
+            <div class="ota-list">
+              <ul>
+                <li ng-repeat="(key, value) in browser.otaRates.brg">[[ key ]] <span>$[[ value ]]</span></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="counter"><span class="num">1 of {% for slide in slides %}{% if forloop.first %}{{ forloop.length }}{% endif %}{% endfor %}</span></div>
+
+      <a class="left carousel-control" href="#home-banner" role="button" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="sr-only">Previous</span></a>
+      <a class="right carousel-control" href="#home-banner" role="button" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i><span class="sr-only">Next</span></a>
+
+    </div>
+  </div>
+</section>
+
+{% include welcome.html %}
+{% include home-rooms.html %}
+{% include cta-one.html %}
+{% include world-class.html %}
+{% include home-offers.html %}
+{% include home-map.html %}
+{% include attractions-events.html %}
+{% include newsletter.html %}
+{% include twitter-instagram.html %}
