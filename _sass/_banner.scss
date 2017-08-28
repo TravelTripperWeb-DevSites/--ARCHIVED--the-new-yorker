@@ -29,24 +29,27 @@
   }
 
   .offer-details {
-    position: absolute;
-    right: 0;
-    bottom: 235px;
-    left: 0;
+    // position: absolute;
+    // right: 0;
+    // bottom: 235px;
+    // left: 0;
     // position: absolute;
     // top: 50%;
     // right: 0;
     // left: 0;
+    position: relative;
+    top: 50%;
     max-width: 638px;
     margin: 0 auto;
     text-align: center;
-    // transform: translateY(-50%);
+    transform: translateY(-50%);
     @media (min-width: 768px) {
       max-width: 100%;
     }
 
     .offer-title {
-      padding: 74px 0 20px;
+      // padding: 74px 0 20px;
+      padding-bottom: 20px;
       font-family: 'Poiret One';
       font-size: 30px;
       line-height: 45px;
@@ -54,7 +57,7 @@
       text-transform: uppercase;
       color: #fff;
       @media (min-width: 768px) {
-        padding: 100px 0 20px;
+        // padding: 100px 0 20px;
         font-size: 55px;
         line-height: 120px;
       }
@@ -200,17 +203,15 @@
 
 .caption-price {
   position: absolute;
-  bottom: 136px;
-  // z-index: 100;
-  left: 0;
+  // bottom: 136px;
   right: 0;
+  bottom: 40px;
+  left: 0;
   text-align: center;
   text-transform: none;
-  @media(max-width:768px) {
-
-    bottom: 147px;
-  }
-
+  // @media(max-width: 768px) {
+  //   bottom: 147px;
+  // }
 }
 
 .price-holder {
@@ -254,31 +255,32 @@
 }
 
 .price-wrap1 {
-  position: absolute;
-  right: 0;
-  bottom: 27px;
-  left: 0;
-  margin: 0 auto;
   font-family: $main-font-regular;
+  background-color: $brand-color;
+  // position: absolute;
+  // right: 0;
+  // bottom: 27px;
+  // left: 0;
+  // margin: 0 auto;
   // z-index: 100;
-  @media (max-width: 768px) {
-    bottom: 0;
-  }
+  // @media (max-width: 768px) {
+  //   bottom: 0;
+  // }
 
   .best-rate-ota {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
     max-width: 600px;
     width: 100%;
-    min-height: 80px;
+    // min-height: 80px;
 
-    left: calc(50% - 300px);
-    display: table;
-    background: rgba(255,255,255,255);
+    // left: calc(50% - 300px);
+    // display: table;
+    // background: rgba(255,255,255,255);
     margin: 0 auto;
-    @media(max-width: $screen-sm-min) {
-      width: 100%;
-      bottom: 0;
-    }
+    // @media(max-width: $screen-sm-min) {
+    //   width: 100%;
+    //   bottom: 0;
+    // }
 
     .boxes {
       position: relative;
@@ -292,7 +294,7 @@
 
         p {
           font-size: 12px;
-          color: $grey-text;
+          color: $white;
           line-height: 16px;
           margin: 0;
           padding: 0;
@@ -303,64 +305,66 @@
         }
 
         h4 {
-          font-size: 18px;
-          line-height: 30px;
           margin: 0;
           padding: 0;
+          font-size: 18px;
+          line-height: 30px;
           text-align: left;
-          color: $black;
+          color: $white;
+          @media(max-width: 350px) {
+            line-height: 20px;
+          }
 
           .price {
-            color: $brand-color;
-            font-size: 30px;
             float: right;
-            @media(max-width:350px) {
+            font-size: 30px;
+            color: $white;
+            @media(max-width: 350px) {
               display: inline-block;
               float: none;
               margin-top: 10px;
             }
           }
-          @media(max-width:350px) {
-            line-height: 20px;
-          }
+
         }
+
       }
 
       .ota-list {
         float: right;
         width: 61.7%;
-        padding: 10px 20px;
         min-height: 80px;
+        padding: 10px 20px;
         border-left: 1px solid $bg;
 
         ul {
           width: 100%;
-          list-style-type: none;
           padding: 0;
+          list-style-type: none;
 
           li {
-
-            width: 45%;
-            padding: 0 10px 0 0;
-            margin: 2px;
             display: inline-block;
-            font-size: 16px;
+            width: 45%;
+            // padding: 0 10px 0 0;
+            margin: 2px;
+            padding: 0;
             border-bottom: 1px solid $bg;
+            font-size: 16px;
             color: #000;
 
             span {
-              text-decoration: line-through;
-              color: $brand-color;
               padding-left: 4px;
+              text-decoration: line-through;
+              color: $white;
             }
 
             &:nth-child(even) {
               margin-left: 20px;
-              @media(max-width:768px) {
+              @media(max-width: 768px) {
                 margin: 0;
               }
             }
-            @media(max-width:768px) {
+            @media(max-width: 768px) {
               width: inherit;
             }
           }
