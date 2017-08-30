@@ -386,8 +386,12 @@ h1{
 
 .mega-title1{
 	  
-	   	font-size: 85px !important;
+	   	
 	   	letter-spacing: 2px !important;
+
+	   	@media (min-width: $screen-md-min){
+            font-size: 85px !important;
+	   	}
 
 	   }
 	  

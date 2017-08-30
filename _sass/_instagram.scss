@@ -15,8 +15,29 @@
 	}
 	ul{
 		margin-top:50px;
-		li{ list-style:none; float:left; width:20%;
-			img{width:100%;}
+		li{ list-style:none; float:left; width:50%;
+			@media (min-width: $screen-sm-min){
+				list-style:none; float:left; width:20%;
+		    } 
+			figure{
+				height: 180px;
+				overflow: hidden;
+				vertical-align: middle;
+				background-color: $grey-bg;
+				width: 100%;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
+				@media (min-width: $screen-sm-min){
+					height: 200px;
+				}
+				@media (min-width: $screen-md-min){
+					height: 260px;
+				}
+				@media (min-width: $screen-lg-min){
+					height: 360px;
+				}
+			}
 		}	
 	}
 }
