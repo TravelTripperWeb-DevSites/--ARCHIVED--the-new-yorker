@@ -17,6 +17,31 @@ $(window).on('load resize', function () {
 
 });
 
+ // get instagram feed
+$(window).on("load",function(e){
+    var instaurl = 'https://api.instagram.com/v1/users/331110964/media/recent/?access_token=331110964.1677ed0.1bc4e07a0f72439484e74bac4f7508b8&callback=?';
+     $.ajax({
+        url: instaurl,
+        dataType: "jsonp",
+        success: function (response) {  
+          setTimeout(function(){
+          $.each(response.data, function(i, item) { 
+              if($(window).width() >= 767){
+                 if(i>4) return false;
+              }else{
+                if(i>3) return false;
+              }
+              
+              $('<li><a href="'+item.link+'" target="_blank"><figure style="background-image:url('+item.images.standard_resolution.url+');"> </figure></a></li>').appendTo('.instafeed');
+              //$('.t-feeds').find('.photolist'+i).html('<a href="'+item.link+'" target="_blank"><img src="'+item.images.standard_resolution.url+'" class="img-respond"/><span class="insta-icon"><img src="/images/gates/location/instagram.png" alt=""/></span><div class="insta-overlay"><div class="overlay-con"><img src="/images/gates/location/instagram.png"><span>Follow Us <br> on Instagram</span></div></div></a>');
+          });
+          $('.instagram-feed').slideDown('slow');
+        },1000);
+        }
+      }); 
+});
+
+
 //Date Picker
  $(document).ready(function() {
 $("#od_arrival").datepicker({
