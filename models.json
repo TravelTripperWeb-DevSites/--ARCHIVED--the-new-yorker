@@ -1,8 +1,8 @@
 {
   "attractions": [
     {
-      "name": "MACY’S HERALD SQUARE",
-      "title": "MACY’S HERALD SQUARE",
+      "name": "MACYΓÇÖS HERALD SQUARE",
+      "title": "MACYΓÇÖS HERALD SQUARE",
       "file": "attraction1.json"
     },
     {
@@ -113,8 +113,8 @@
       "file": "blog21.json"
     },
     {
-      "name": "A Brief History of the New Yorker’s Past",
-      "title": "A Brief History of the New Yorker’s Past",
+      "name": "A Brief History of the New YorkerΓÇÖs Past",
+      "title": "A Brief History of the New YorkerΓÇÖs Past",
       "file": "blog22.json"
     },
     {
@@ -166,6 +166,11 @@
       "name": "5 Famous Guests at The New Yorker",
       "title": "5 Famous Guests at The New Yorker",
       "file": "blog32.json"
+    },
+    {
+      "name": "The Secret New York - Hidden Gems in New York City, Part 2",
+      "title": "The Secret New York - Hidden Gems in New York City, Part 2",
+      "file": "blog33.json"
     },
     {
       "name": "The North American International Toy Fair 2017",
