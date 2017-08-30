@@ -20,7 +20,7 @@
 				list-style:none; float:left; width:20%;
 		    } 
 			figure{
-				height: 180px;
+				height: 170px;
 				overflow: hidden;
 				vertical-align: middle;
 				background-color: $grey-bg;
@@ -32,9 +32,12 @@
 					height: 200px;
 				}
 				@media (min-width: $screen-md-min){
-					height: 260px;
+					height: 240px;
 				}
 				@media (min-width: $screen-lg-min){
+					height: 280px;
+				}
+				@media (min-width: 1600px){
 					height: 360px;
 				}
 			}

@@ -36,7 +36,7 @@ $(window).on("load",function(e){
               //$('.t-feeds').find('.photolist'+i).html('<a href="'+item.link+'" target="_blank"><img src="'+item.images.standard_resolution.url+'" class="img-respond"/><span class="insta-icon"><img src="/images/gates/location/instagram.png" alt=""/></span><div class="insta-overlay"><div class="overlay-con"><img src="/images/gates/location/instagram.png"><span>Follow Us <br> on Instagram</span></div></div></a>');
           });
           $('.instagram-feed').slideDown('slow');
-        },1500);
+        },1000);
         }
       }); 
 });
