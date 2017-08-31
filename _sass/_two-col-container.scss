@@ -253,7 +253,7 @@
     &.home-page-offers{
       h3{
           @media(min-width: $screen-md-min){
-            min-height: 120px;
+            min-height: 120px !important;
           }
       }
     }
