@@ -1,8 +1,8 @@
 {
   "attractions": [
     {
-      "name": "MACYÔÇÖS HERALD SQUARE",
-      "title": "MACYÔÇÖS HERALD SQUARE",
+      "name": "MACYΓÇÖS HERALD SQUARE",
+      "title": "MACYΓÇÖS HERALD SQUARE",
       "file": "attraction1.json"
     },
     {
@@ -113,8 +113,8 @@
       "file": "blog21.json"
     },
     {
-      "name": "A Brief History of the New YorkerÔÇÖs Past",
-      "title": "A Brief History of the New YorkerÔÇÖs Past",
+      "name": "A Brief History of the New YorkerΓÇÖs Past",
+      "title": "A Brief History of the New YorkerΓÇÖs Past",
       "file": "blog22.json"
     },
     {
@@ -171,6 +171,11 @@
       "name": "The Secret New York - Hidden Gems in New York City, Part 2",
       "title": "The Secret New York - Hidden Gems in New York City, Part 2",
       "file": "blog33.json"
+    },
+    {
+      "name": "NYC Tourist Traps to Avoid",
+      "title": "NYC Tourist Traps to Avoid",
+      "file": "blog34.json"
     },
     {
       "name": "The North American International Toy Fair 2017",
