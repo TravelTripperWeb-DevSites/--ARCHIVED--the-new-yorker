@@ -14,7 +14,7 @@
     .offer-wrap{
 
         padding:15px;
-		height:630px;
+		/*height:630px;*/
         @media(min-width: $screen-sm-min){
 
                 padding:37px;
@@ -49,7 +49,8 @@
 
              @media(min-width: $screen-sm-min){
 
-              font-size:30px;
+              font-size: 30px;
+              min-height: 80px;
             }
 
 
@@ -74,5 +75,15 @@
 
         }
         
+    }
+}
+@media only screen and (max-width: 900px) and (min-width: 768px){
+.offers-description{
+        .btn-common{
+            &.btn-book{
+                margin-top: 10px !important;
+                display: block !important;
+            }
+        }
     }
 }
