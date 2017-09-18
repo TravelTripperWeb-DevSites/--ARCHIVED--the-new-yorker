@@ -52,7 +52,15 @@
 }
 
 /*Location page discover section*/
-
+@media only screen and (max-width: 1200px) and (min-width: 769px) { 
+    		.discover{
+    		.intro{
+    			.content{
+    				min-height: 580px !important;
+    			}
+    		}
+		}
+	}
 .discover{
 	.content-box{
 		padding:30px 95px 20px 95px !important;
@@ -65,12 +73,13 @@
 		@media (max-width:768px){ text-align:center; padding:30px 20px 20px 20px !important;}	
 	}
 	.intro{
-		.content{ width:80%; margin:50px auto 30px; min-height: 585px;
+		.content{ width:80%; margin:50px auto 30px;
 			h2{ margin-top:20px;}
 			p{ margin-top:30px;color:$grey-text;
 				@media (max-width:768px){ text-align:center;}
 			}
 		}
+		
 		.img{
 			width:328px;
 			height:295px;
