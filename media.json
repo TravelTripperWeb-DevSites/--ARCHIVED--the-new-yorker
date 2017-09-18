@@ -696,6 +696,24 @@
     "git_file_name": "_assets/image_data/site-assets_426_558_5638_media_2017-07-28-021949_summer-festivals-nyc-august.jpg.json"
   },
   {
+    "name": "nyc-trap",
+    "file_name": "nyc-trap.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/426_558_5738/media/2017-09-08-003619/nyc-trap.jpg",
+    "date_added": "2017-09-08 00:36:20",
+    "tags": "",
+    "file_size": 426259.0,
+    "width": 1000,
+    "height": 667,
+    "description": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/426_558_5738/media/2017-09-08-003619/large_nyc-trap.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/426_558_5738/media/2017-09-08-003619/medium_nyc-trap.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/426_558_5738/media/2017-09-08-003619/small_nyc-trap.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_5738/media/2017-09-08-003619/xsmall_nyc-trap.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_5738/media/2017-09-08-003619/thumb_nyc-trap.jpg",
+    "git_file_name": "_assets/image_data/site-assets_426_558_5738_media_2017-09-08-003619_nyc-trap.jpg.json"
+  },
+  {
     "name": "ways-to-beat-the-heat-in-nyc",
     "file_name": "ways-to-beat-the-heat-in-nyc.jpg",
     "file_type": "image/jpeg",
