@@ -256,7 +256,7 @@
 
 .price-wrap1 {
   font-family: $main-font-regular;
-  background-color: $brand-color;
+  background-color: $btn;
   // position: absolute;
   // right: 0;
   // bottom: 27px;
@@ -284,22 +284,24 @@
 
     .boxes {
       position: relative;
+      display: flex;
+      align-items: center;
 
       .tonight-rate {
-        height: 100%;
-        width: 38%;
-        min-height: 80px;
-        padding: 10px 20px;
         float: left;
+        width: 38%;
+        height: 100%;
+        // min-height: 80px;
+        padding: 10px 20px;
 
         p {
-          font-size: 12px;
-          color: $white;
-          line-height: 16px;
           margin: 0;
           padding: 0;
+          font-size: 12px;
+          line-height: 16px;
+          color: $white;
           text-align: left;
-          @media(max-width:350px) {
+          @media(max-width: 350px) {
             display: none;
           }
         }
@@ -319,7 +321,7 @@
             float: right;
             font-size: 30px;
             color: $white;
-            @media(max-width: 350px) {
+            @media(max-width: 650px) {
               display: inline-block;
               float: none;
               margin-top: 10px;
@@ -348,9 +350,9 @@
             // padding: 0 10px 0 0;
             margin: 2px;
             padding: 0;
-            border-bottom: 1px solid $bg;
             font-size: 16px;
-            color: #000;
+            color: $bg;
+            border-bottom: 1px solid $bg;
 
             span {
               padding-left: 4px;
