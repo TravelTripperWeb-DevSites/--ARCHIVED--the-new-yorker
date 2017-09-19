@@ -6,7 +6,7 @@ module Jekyll
     def initialize(site, source, redirect_to)
       @site = site
       @redirect_to = redirect_to.to_s.gsub(/^\//,'')
-      
+      @redirect_to =  @redirect_to.start_with?("http") ? @redirect_to : "/#{@redirect_to}"
       @name = source.to_s.gsub(/^\/+/,'')
       self.process(@name)
       @content = contents
@@ -24,18 +24,20 @@ module Jekyll
     
     def contents
       contents =<<END
+
 <html>
   <head>
-    <noscript><meta http-equiv="refresh" content="0; url=/#{@redirect_to}" /></noscript>
-    <link rel="canonical" href="/#{@redirect_to}" />    
+    <noscript><meta http-equiv="refresh" content="0;" url="#{@redirect_to}" /></noscript>
+    <link rel="canonical" href="#{@redirect_to}" />
   </head>
   <body>
     <span style="display:none;">Redirecting from #{@name} to #{@redirect_to}</span>
     <!-- Redirect in JavaScript with meta refresh fallback above in noscript -->
-     <script>
-       var destination = '/#{@redirect_to}';
-       window.location.href = destination + (window.location.search || '') + (window.location.hash || '');
-     </script>
+ <script>
+      var destination = '#{@redirect_to}';
+        window.location.href = destination + (window.location.search || '') + (window.location.hash || '');
+
+</script>
   </body>
 </html>    
 END

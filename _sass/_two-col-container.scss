@@ -227,6 +227,7 @@
                	  	     	text-align: center;
                	  	     	line-height: 40px;
                	  	     	font-size: 20px;
+                          min-height: 230px;
                	  	     	@media(min-width: $screen-md-min){
                	  	     		font-size: 40px;
                	  	     	}
@@ -249,6 +250,13 @@
 	  	 padding: 0px;
 	  	 margin: 0px;
 	  }
+    &.home-page-offers{
+      h3{
+          @media(min-width: $screen-md-min){
+            min-height: 120px !important;
+          }
+      }
+    }
 }
 
 .btn-white {
