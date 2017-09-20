@@ -7,7 +7,9 @@ layout: default
         <p>Whether you’re planning a business meeting or a romantic getaway, The New Yorker is sure to have a deal that’s perfect for you. </p>
     </div>
 </section>
-<section class="offers-container" rt3-special-rates= "offers">
+<section class="offers-container" data-offer-code ="{{page.code}}" rt3-special-rates= "offers" >
+  <input type="hidden" id="offerId"  value="{{page.code}}" />
+  <input type="hidden" id="offerList" value="[[ offers.special_rates ]]"   />
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6" ng-repeat="offer in offers.special_rates">
@@ -16,7 +18,9 @@ layout: default
           <div class="offers-description adjustHeight">
             <h4 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h4>
             <div class="offerDesc"><span ng-bind-html="offer.short_description | limitTo: 120  | renderHTMLCorrectly "></span><span>[[offer.short_description.length > 120 ? '...' : '']]</span></div>
-            <a ng-href="/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common"> View offer </a> </div>
+            <a ng-href="/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common btn-book"> View offer </a>
+             <a ng-href="[[offer.promo_url]]" class="btn-common btn-book" target="_blank">Book Now</a>
+            </div>
         </div>
       </div>
         <div class="col-sm-6">
@@ -25,7 +29,9 @@ layout: default
           <div class="offers-description">
             <h4>Discounted Broadway Shows</h4>
             <p>Broadway Shows include Wicked, Jersey Boys and more..</p>
-            <a href="http://newyorkerhotel.reservenewyorkcity.com/" target="_blank" class="btn-common"> View offer </a></div>
+            <a href="http://newyorkerhotel.reservenewyorkcity.com/" target="_blank" class="btn-common btn-book"> View offer </a>
+            <a href="http://newyorkerhotel.reservenewyorkcity.com/" title="Book Now" class="btn-common btn-book"> Book Now </a>
+          </div>
         </div>
       </div>
   </div>
