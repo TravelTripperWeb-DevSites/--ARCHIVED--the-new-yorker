@@ -1,0 +1,14 @@
+/*
+   Vertical Center (Includes IE9)
+   ========================================================================== */
+
+@mixin vertical-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.vertical-center {
+  @include vertical-center;
+}
