@@ -1,6 +1,4 @@
-$(window).on(' resize', function() {
-    adjustHomeBannerHeight();
-});
+
 
  // get instagram feed
 $(window).on("load",function(e){
@@ -108,8 +106,11 @@ $(document).ready(function() {
       }
 
         $('#home-banner').carousel();
-      
+
   }
+  $(window).on(' resize', function() {
+      adjustHomeBannerHeight();
+  });
 });
 
 $(window).on('load scroll resize', function() {
