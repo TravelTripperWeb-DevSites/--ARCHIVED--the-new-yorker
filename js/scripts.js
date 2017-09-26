@@ -1,18 +1,5 @@
-$(window).on('load resize', function() {
-  var mheight = $(window).height();
-  var mwidth = $(window).width();
-  setTimeout(function() {
-    if (mwidth > 300) {
-      $(".home-banner .carousel-inner .item").height(mheight - 50);
-    }
-    if (mwidth > 768) {
-      $(".home-banner .carousel-inner .item").height(mheight - 75);
-    }
-    if (mwidth > 1240) {
-      $(".home-banner .carousel-inner .item").height(mheight - 121);
-    }
-    $('#home-banner').carousel();
-  }, 2500);
+$(window).on(' resize', function() {
+    adjustHomeBannerHeight();
 });
 
  // get instagram feed
@@ -21,27 +8,29 @@ $(window).on("load",function(e){
      $.ajax({
         url: instaurl,
         dataType: "jsonp",
-        success: function (response) {  
+        success: function (response) {
           setTimeout(function(){
-          $.each(response.data, function(i, item) { 
+          $.each(response.data, function(i, item) {
               if($(window).width() >= 767){
                  if(i>4) return false;
               }else{
                 if(i>3) return false;
               }
-              
+
               $('<li><a href="'+item.link+'" target="_blank"><figure style="background-image:url('+item.images.standard_resolution.url+');"> </figure></a></li>').appendTo('.instafeed');
               //$('.t-feeds').find('.photolist'+i).html('<a href="'+item.link+'" target="_blank"><img src="'+item.images.standard_resolution.url+'" class="img-respond"/><span class="insta-icon"><img src="/images/gates/location/instagram.png" alt=""/></span><div class="insta-overlay"><div class="overlay-con"><img src="/images/gates/location/instagram.png"><span>Follow Us <br> on Instagram</span></div></div></a>');
           });
           $('.instagram-feed').slideDown('slow');
         },1000);
         }
-      }); 
+      });
 });
 
 
 //Date Picker
 $(document).ready(function() {
+   adjustHomeBannerHeight();
+
   $("#od_arrival").datepicker({
     dateFormat: "yy-mm-dd",
     altField: '#arrival_date',
@@ -104,6 +93,23 @@ $(document).ready(function() {
   $(".homeTonightRate").click(function() {
     $(".booking-widget form").submit();
   });
+
+  function adjustHomeBannerHeight(){
+      var mheight = $(window).height();
+      var mwidth = $(window).width();
+      if (mwidth > 300) {
+        $(".home-banner .carousel-inner .item").height(mheight - 50);
+      }
+      if (mwidth > 768) {
+        $(".home-banner .carousel-inner .item").height(mheight - 75);
+      }
+      if (mwidth > 1240) {
+        $(".home-banner .carousel-inner .item").height(mheight - 121);
+      }
+
+        $('#home-banner').carousel();
+      
+  }
 });
 
 $(window).on('load scroll resize', function() {
