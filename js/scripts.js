@@ -104,8 +104,10 @@ $(document).ready(function() {
       if (mwidth > 1240) {
         $(".home-banner .carousel-inner .item").height(mheight - 121);
       }
+      setTimeout(function(){
+          $('#home-banner').carousel();
+      },2500);
 
-        $('#home-banner').carousel();
 
   }
   $(window).on(' resize', function() {
