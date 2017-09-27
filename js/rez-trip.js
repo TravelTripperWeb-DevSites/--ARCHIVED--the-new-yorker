@@ -164,13 +164,14 @@
         }
       }
     }])
-    .controller('offerDetail', ['$scope', 'rt3Search', 'rt3Browser','$timeout','$filter', function($scope, rt3Search, rt3Browser,$timeout,$filter) {
+    .controller('offerDetail', ['$scope', 'rt3SpecialRates', 'rt3Browser','$timeout','$filter','$q', function($scope, rt3SpecialRates, rt3Browser,$timeout,$filter, $q) {
       window.onhashchange = function() {
         window.location.reload();
       }
+        var test = rt3SpecialRates;
         $scope.reloadPage = function(){$window.location.reload();}
-        $timeout(function() {
-           var oList = JSON.parse($("#offerList").val());
+        $q.when(rt3SpecialRates.ready).then(function(response){
+           var oList = rt3SpecialRates.special_rates;
            var oName = window.location.hash.substr(1); //$("#offerId").val();
            var tmpName;
            for(var j= 0 ; j < oList.length ; j++){
@@ -188,9 +189,7 @@
                   break;
                }
            }
-
-        }, 2800);
-
+        })
 
 
     }])
