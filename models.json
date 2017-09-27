@@ -173,6 +173,16 @@
       "file": "blog33.json"
     },
     {
+      "name": "NYC Tourist Traps to Avoid",
+      "title": "NYC Tourist Traps to Avoid",
+      "file": "blog34.json"
+    },
+    {
+      "name": "Fall in New York City",
+      "title": "Fall in New York City",
+      "file": "blog35.json"
+    },
+    {
       "name": "The North American International Toy Fair 2017",
       "title": "The North American International Toy Fair 2017",
       "file": "blog4.json"
@@ -196,6 +206,23 @@
       "name": "March Madness & More at Madison Square Garden",
       "title": "March Madness & More at Madison Square Garden",
       "file": "blog9.json"
+    }
+  ],
+  "homepage_slider": [
+    {
+      "name": "New Yorker Exclusive",
+      "title": "New Yorker Exclusive",
+      "file": "homepage_slider1.json"
+    },
+    {
+      "name": "Pay Now, Save 10%",
+      "title": "Pay Now, Save 10%",
+      "file": "homepage_slider2.json"
+    },
+    {
+      "name": "Breakfast For a Dollar",
+      "title": "Breakfast For a Dollar",
+      "file": "homepage_slider3.json"
     }
   ],
   "simple": [

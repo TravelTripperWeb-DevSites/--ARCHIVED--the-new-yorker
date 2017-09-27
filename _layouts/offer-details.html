@@ -3,15 +3,13 @@ layout: default
 ---
 
 <section data-offer-code ="{{page.code}}"  rt3-special-rates= "offers" >
-  <input type="hidden" id="offerId"  value="{{page.code}}" />
-  <input type="hidden" id="offerList" value="[[ offers.special_rates ]]"   />
 <section class="home-banner custom-carousel room-details-page offer-details-page">
   <div class="container-fluid">
-    <div id="home-banner" class="carousel slide" data-ride="carousel">
+    <div id="home-banner" class="carousel slide offerPageBanner" data-ride="carousel">
 
    <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active" style="background-image: url([[offers.sRdetail.lead_photo_url.yankee_large]]);">
+    <div class="item active" ng-style="{'background-image': 'url('+offers.sRdetail.lead_photo_url.yankee_large+')'}">
     <div class="banner-overlay"></div>
     <div class="room-details offer-details">
 

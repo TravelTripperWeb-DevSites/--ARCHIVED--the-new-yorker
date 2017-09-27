@@ -4,7 +4,7 @@
     <div class="booking-widget_close">&times;</div>
     <h3 class="booking-widget_title">Your Booking</h3>
   </div>
-  <form action="{{site.data.config.reztripUrl}}search?" method="get">
+  <form action="{{site.data.config.reztripUrl}}search?" method="get" target="_blank">
     <input type="text" name="arrival_date" value="[[search.params.arrival_date | date:'yyyy-MM-dd']]">
     <input type="text" name="departure_date" value="[[search.params.departure_date | date:'yyyy-MM-dd']]" >
     <select name="adults[]" id="adults" ng-model="browser.params.adults">

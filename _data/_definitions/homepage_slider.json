@@ -1,0 +1,30 @@
+{
+  "title": {
+    "required": true,
+    "type": "text",
+    "label": "Title"
+  },
+  "sub-title": {
+    "type": "text",
+    "label": "Sub Title"
+  },
+  "image": {
+    "required": true,
+    "type": "image",
+    "label": "Upload Image"
+  },
+  "button-text": {
+    "required": true,
+    "type": "text",
+    "label": "Button Text"
+  },
+  "button-url": {
+    "required": true,
+    "type": "text",
+    "label": "Link URL"
+  },
+  "sort_order": {
+    "type": "integer",
+    "required": true
+  }
+}

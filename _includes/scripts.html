@@ -17,7 +17,6 @@ function getIp(data){
 <script src="/js/jquery.mousewheel.min.js"></script>
 <script src="/js/owl.carousel.js"></script>
 
-<script src="/js/booking-widget.js"></script>
 <script src="/js/angular.min.js"></script>
 <script src="/js/jquery-ui.min.js"></script>
 <script src="/js/rt3api.js"></script>
@@ -28,8 +27,23 @@ function getIp(data){
 <script src="/js/rt3-filters.js"></script>
 <script src="/js/scripts.js"></script>
 <script src="/js/utm-tracking.js"></script>
+<script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
+  <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
+
+  <script>
+
+    TTWeb.Config.configure({
+      hotelId: 'NYCNYR', //'orwhatever your values are',
+      portalId: 'newyorkerhotel',
+      defaultTimezone: 'America/New_York', // timezone of site
+      ipAddress: sessionStorage.ip_add,
+      defaultCurrency: 'USD',
+      //rootPath: 'https://rt3api-prd-ase.ttaws.com' // include this line only if site is on asian server i.e elite and cristalhospitality
+    });
 
 
-
-
-
+    $("[show-booking-widget]").bookingWidget({
+         showRateCalendar: true,
+         showOfferCode: true
+    });
+  </script>

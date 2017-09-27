@@ -188,12 +188,12 @@ angular.module('rezTrip')
             {
                 var roomRate;
                 var todayRate ={};
-                this.isRate = false;
+                self.isRate = false;
                 angular.forEach(self.roomsList, function(room, key ){
                     roomRate= room.min_discounted_average_price[0] || room.min_average_price[0];
-                    if(room.min_average_price[0] != null && !this.isRate){
+                    if(room.min_average_price[0] != null && !self.isRate){
 
-                       this.isRate = true;
+                       self.isRate = true;
                        self.toNightsRate = "$"+Math.round(roomRate);
 
                     }
@@ -213,21 +213,41 @@ angular.module('rezTrip')
 
             //console.log(self.tonightErrors);
             self.loaded = true;
+            angular.extend(self , {'otaRates' : {'brgFound' : false}});
+            $q.when(rt3api.getOTARates()).then(function(response){
+                if(response.brgFound ){
+                  if(Object.keys){
 
+                      var len, lastKey;
+
+                      while(Object.keys(response.brg).length > 4){
+                         len = Object.keys(response.brg).length;
+                         lastKey =  Object.keys(response.brg)[len-1];
+                         delete response.brg[lastKey];
+                      }
+
+                  }
+
+                }
+                angular.extend(self , {'otaRates' : response});
+            }, function(response){
+                angular.extend(self , {'otaRates' : {'brgFound' : false}});
+            });
 
 
           });
           $timeout(function () {
              var orderedRooms = self.orderedRooms;
-             orderedRooms = orderedRooms.map(function(element){
-                 return element.code;
-             })
-             var currentRooms = self.roomsList;
-             self.roomsList.sort(function(a,b){
-               return orderedRooms.indexOf(a.code) - orderedRooms.indexOf(b.code) ;
-             });
-             
-          },1000);
+             if(orderedRooms){
+                orderedRooms = orderedRooms.map(function(element){
+                    return element.code;
+                })
+                var currentRooms = self.roomsList;
+                self.roomsList.sort(function(a,b){
+                  return orderedRooms.indexOf(a.code) - orderedRooms.indexOf(b.code) ;
+                });
+             }
+         },2000);
       });
 
     }

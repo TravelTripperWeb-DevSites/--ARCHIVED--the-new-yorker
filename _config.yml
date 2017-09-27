@@ -1,34 +1,28 @@
- # Site settings
+# Site settings
 title: The New Yorker, A Wyndham Hotel | Midtown Manhattan Hotel
 email: reservations@nyhotel.com
-description: > # this means to ignore newlines until "baseurl:"
-  Experience The New Yorker Hotel, a boutique hotel in New York. Book your stay at our Midtown Manhattan Hotel & start your New York getaway.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.newyorkerhotel.com" # the base hostname & protocol for your site
+description: Experience The New Yorker Hotel, a boutique hotel in New York. Book your stay at our Midtown Manhattan Hotel & start your New York getaway.
+url: https://www.newyorkerhotel.com
+booking_widget_url: https://newyorkerhotel.reztrip.com/mobile
 
+# Build settings
 permalink: pretty
-default_lang: 'en'
-languages: ['en']
-
-exclude: ['sitemap.json']
-
+markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
 
+# Language settings
+default_lang: 'en'
+languages: ['en']
 
-booking_widget_url: https://newyorkerhotel.reztrip.com/mobile
-
-data_paginate: 
+data_paginate:
   per_page: 5
   data: 'blog'
   path: 'blog/page:num'
   pagination_template: 'blog/index.html'
   sort_field: 'date'
   sort_reverse: true
-
-#paginate_path: "/page:num/"
-markdown: kramdown 
 
 page_gen:
   - data: 'attractions'
@@ -37,3 +31,7 @@ page_gen:
   - data: 'blog'
     template: 'blog-details'
     dir: 'blog'
+
+# File Handling
+# include: [_pages]
+exclude: [lib, config.rb, .sass-cache, Capfile, config, log, Rakefile, Rakefile.rb, tmp, Gemfile, Gemfile.lock, README.md, LICENSE.md, node_modules, gulpfile.js, package.json, media.json, models.json, sitemap.json]
