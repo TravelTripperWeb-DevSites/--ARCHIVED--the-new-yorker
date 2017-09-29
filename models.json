@@ -1,8 +1,8 @@
 {
   "attractions": [
     {
-      "name": "MACY’S HERALD SQUARE",
-      "title": "MACY’S HERALD SQUARE",
+      "name": "MACYΓÇÖS HERALD SQUARE",
+      "title": "MACYΓÇÖS HERALD SQUARE",
       "file": "attraction1.json"
     },
     {
@@ -113,8 +113,8 @@
       "file": "blog21.json"
     },
     {
-      "name": "A Brief History of the New Yorker’s Past",
-      "title": "A Brief History of the New Yorker’s Past",
+      "name": "A Brief History of the New YorkerΓÇÖs Past",
+      "title": "A Brief History of the New YorkerΓÇÖs Past",
       "file": "blog22.json"
     },
     {
@@ -181,6 +181,11 @@
       "name": "Fall in New York City",
       "title": "Fall in New York City",
       "file": "blog35.json"
+    },
+    {
+      "name": "Best Tacos in NYC",
+      "title": "Best Tacos in NYC",
+      "file": "blog36.json"
     },
     {
       "name": "The North American International Toy Fair 2017",
