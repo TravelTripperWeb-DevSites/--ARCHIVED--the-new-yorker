@@ -1,8 +1,4 @@
 
-
-
-
-
 (function($){
     // Give the URL parameters variable names
     var u_source = getParameterByName('utm_source');
@@ -13,69 +9,86 @@
 
     // Set the cookies
     if(u_source != "" ) {
-        createCookie('utm_source', u_source);
+        sessionStorage.utm_source = u_source;
+        //createCookie('utm_source', u_source);
     }
     if(u_medium != "") {
-        createCookie('utm_medium', u_medium);
+        sessionStorage.utm_medium = u_medium;
     }
     if(u_campaign !="") {
-        createCookie('utm_campaign', u_campaign);
+        sessionStorage.utm_campaign =  u_campaign;
+    }
+    if(u_term !="") {
+        sessionStorage.utm_term = u_term;
+    }
+    if(u_content !="") {
+        sessionStorage.utm_content =  u_content;
     }
 
+    // pass utm params if anchor url is reztrip.com
     $(document).on("click", "a", function(){
-        var source = readCookie('utm_source');
-        var medium = readCookie('utm_medium');
-        var campaign = readCookie('utm_campaign');
+        var source = sessionStorage.utm_source;
+        var medium = sessionStorage.utm_medium;
+        var campaign = sessionStorage.utm_campaign;
+        var term = sessionStorage.utm_term;
+        var content = sessionStorage.utm_content;
 
-        if(source != null || source != ''){
-            var this_href = $(this).attr("href");
-            if(this_href.indexOf('newyorkerhotel.reztrip.com') != -1){
-                this_href = this_href + '&utm_source='+source+ '&utm_medium='+medium+ '&utm_campaign='+campaign;
-                $(this).attr('href',this_href);
-            }
+        var this_href = $(this).attr("href");
+        if(source != null && source != ''){
+            this_href = this_href + '&utm_source='+source;
+        }
+        if(medium != null && medium != '') {
+            this_href = this_href + '&utm_medium='+medium;
+        }
+        if(campaign != null && campaign != ''){
+            this_href = this_href + '&utm_campaign='+campaign;
+        }
+        if(term != null && term != ''){
+            this_href = this_href + '&utm_term='+term;
+        }
+        if(content != null && content != ''){
+            this_href = this_href + '&utm_content='+content;
+        }
+
+        if(this_href.indexOf('newyorkerhotel.reztrip.com') != -1){
+
+            $(this).attr('href',this_href);
         }
 
 
+
     })
+    // pass utm params on form submission;
     $(document).on('submit', 'form', function(){
-        var source = readCookie('utm_source');
-        var medium = readCookie('utm_medium');
-        var campaign = readCookie('utm_campaign');
-        if(source != null || source != ''){
-            var $utmEl = $("<input type='hidden' name='utm_source' value='" + source + "'><input type='hidden' name='utm_medium' value='" + medium + "'><input type='hidden' name='utm_campaign' value='" + campaign + "'>");
-            $(this).prepend($utmEl);
+        var source = sessionStorage.utm_source;
+        var medium = sessionStorage.utm_medium;
+        var campaign = sessionStorage.utm_campaign;
+        var term = sessionStorage.utm_term;
+        var content = sessionStorage.utm_content;
+        var utmEl;
+
+        if(source != null && source != ''){
+            utmEl = "<input type='hidden' name='utm_source' value='" + source + "'>";
+        }
+        if(medium != null && medium != '') {
+            utmEl = utmEl + "<input type='hidden' name='utm_medium' value='" + medium + "'>";
+        }
+        if(campaign != null && campaign != ''){
+            utmEl = utmEl + "<input type='hidden' name='utm_campaign' value='" + campaign + "'>";
+        }
+        if(term != null && term != ''){
+            utmEl = utmEl + "<input type='hidden' name='utm_term' value='" + term + "'>";
+        }
+        if(content != null && content != ''){
+            utmEl = utmEl + "<input type='hidden' name='utm_content' value='" + content + "'>";
+        }
+        if(utmEl != ''){
+            utmEl = $(utmEl);
+            $(this).prepend(utmEl);
         }
     });
 
     // Parse the URL
-    function getParameterByName(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-            results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-    }
-    function createCookie(name,value,days) {
-        var expires = "";
-        if (days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days*24*60*60*1000));
-            expires = "; expires=" + date.toUTCString();
-        }
-        document.cookie = name + "=" + value + expires + "; path=/";
-    }
-
-    function readCookie(name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for(var i=0;i < ca.length;i++) {
-            var c = ca[i];
-            while (c.charAt(0)==' ') c = c.substring(1,c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-        }
-        return null;
-    }
-
-     // Parse the URL
     function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),

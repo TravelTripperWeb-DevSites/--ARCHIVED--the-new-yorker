@@ -107,7 +107,7 @@ $(document).ready(function() {
 
       setTimeout(function(){
           $('#home-banner').carousel();
-      },2800);
+      },2500);
 
   }
   $(window).on(' resize', function() {
