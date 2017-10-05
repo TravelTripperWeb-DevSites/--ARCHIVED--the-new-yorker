@@ -60,6 +60,7 @@
     })
     // pass utm params on form submission;
     $(document).on('submit', 'form', function(){
+        var this_action = $(this).attr("action");
         var source = sessionStorage.utm_source;
         var medium = sessionStorage.utm_medium;
         var campaign = sessionStorage.utm_campaign;
@@ -82,7 +83,7 @@
         if(content != null && content != ''){
             utmEl = utmEl + "<input type='hidden' name='utm_content' value='" + content + "'>";
         }
-        if(utmEl != ''){
+        if(utmEl != '' && this_action.indexOf('newyorkerhotel.reztrip.com') != -1){
             utmEl = $(utmEl);
             $(this).prepend(utmEl);
         }

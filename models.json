@@ -1,8 +1,8 @@
 {
   "attractions": [
     {
-      "name": "MACYΓÇÖS HERALD SQUARE",
-      "title": "MACYΓÇÖS HERALD SQUARE",
+      "name": "MACY’S HERALD SQUARE",
+      "title": "MACY’S HERALD SQUARE",
       "file": "attraction1.json"
     },
     {
@@ -113,8 +113,8 @@
       "file": "blog21.json"
     },
     {
-      "name": "A Brief History of the New YorkerΓÇÖs Past",
-      "title": "A Brief History of the New YorkerΓÇÖs Past",
+      "name": "A Brief History of the New Yorker’s Past",
+      "title": "A Brief History of the New Yorker’s Past",
       "file": "blog22.json"
     },
     {
