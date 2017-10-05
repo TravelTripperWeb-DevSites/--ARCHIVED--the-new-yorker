@@ -238,15 +238,16 @@ angular.module('rezTrip')
           });
           $timeout(function () {
              var orderedRooms = self.orderedRooms;
-             orderedRooms = orderedRooms.map(function(element){
-                 return element.code;
-             })
-             var currentRooms = self.roomsList;
-             self.roomsList.sort(function(a,b){
-               return orderedRooms.indexOf(a.code) - orderedRooms.indexOf(b.code) ;
-             });
-             
-          },1000);
+             if(orderedRooms){
+                orderedRooms = orderedRooms.map(function(element){
+                    return element.code;
+                })
+                var currentRooms = self.roomsList;
+                self.roomsList.sort(function(a,b){
+                  return orderedRooms.indexOf(a.code) - orderedRooms.indexOf(b.code) ;
+                });
+             }
+         },2000);
       });
 
     }
