@@ -84,9 +84,7 @@
 {% if page.blogimage %}
   <meta property="og:image" content="{{ page.blogimage.url }}">
 {% elsif site.data.social.og_image %}
-  {% if page.pagename != 'rooms' and page.pagename != 'offers' %}
-    <meta property="og:image" content="{% if site.data.social.og_image contains "://" %}{{ site.data.social.og_image }}{% else %}{{ site.data.social.og_image | absolute_url }}{% endif %}">
-    {% endif %}
+    <meta property="og:image" content="{% if site.data.social.og_image contains "://" %}{{ site.data.social.og_image }}{% else %}{{ site.data.social.og_image | absolute_url }}{% endif %}">  
 {% endif %}
 
 {% if page.date %}
