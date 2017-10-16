@@ -32,27 +32,33 @@
         var campaign = sessionStorage.utm_campaign;
         var term = sessionStorage.utm_term;
         var content = sessionStorage.utm_content;
+        var currentUrl = window.location.origin;
 
         var this_href = $(this).attr("href");
-        if(source != null && source != ''){
-            this_href = this_href + '&utm_source='+source;
+
+        if(this_href.indexOf('?') != -1 )
+            this_href = this_href +"&";
+        else
+            this_href = this_href +"?";
+
+        if(source != null && source != '' && this_href.indexOf('utm_source') == -1){
+            this_href = this_href + 'utm_source='+source+'&';
         }
-        if(medium != null && medium != '') {
-            this_href = this_href + '&utm_medium='+medium;
+        if(medium != null && medium != '' && this_href.indexOf('utm_medium') == -1) {
+            this_href = this_href + 'utm_medium='+medium+'&';
         }
-        if(campaign != null && campaign != ''){
-            this_href = this_href + '&utm_campaign='+campaign;
+        if(campaign != null && campaign != '' && this_href.indexOf('utm_campaign') == -1){
+            this_href = this_href + 'utm_campaign='+campaign+'&';
         }
-        if(term != null && term != ''){
-            this_href = this_href + '&utm_term='+term;
+        if(term != null && term != '' && this_href.indexOf('utm_term') == -1){
+            this_href = this_href + 'utm_term='+term+'&';
         }
-        if(content != null && content != ''){
-            this_href = this_href + '&utm_content='+content;
+        if(content != null && content != '' && this_href.indexOf('utm_content') == -1){
+            this_href = this_href + 'utm_content='+content;
         }
 
-        if(this_href.indexOf('newyorkerhotel.reztrip.com') != -1){
-
-            $(this).attr('href',this_href);
+        if(this.href.indexOf(currentUrl) == -1){
+           $(this).attr('href',this_href);
         }
 
 
@@ -66,24 +72,24 @@
         var campaign = sessionStorage.utm_campaign;
         var term = sessionStorage.utm_term;
         var content = sessionStorage.utm_content;
-        var utmEl;
+        var utmEl='';
 
-        if(source != null && source != ''){
+        if(source != null && source != '' && $("input[name='utm_source']").length ==0 ){
             utmEl = "<input type='hidden' name='utm_source' value='" + escape(source) + "'>";
         }
-        if(medium != null && medium != '') {
+        if(medium != null && medium != '' && $("input[name='utm_medium']").length ==0) {
             utmEl = utmEl + "<input type='hidden' name='utm_medium' value='" + escape(medium) + "'>";
         }
-        if(campaign != null && campaign != ''){
+        if(campaign != null && campaign != '' && $("input[name='utm_campaign']").length ==0){
             utmEl = utmEl + "<input type='hidden' name='utm_campaign' value='" + escape(campaign) + "'>";
         }
-        if(term != null && term != ''){
+        if(term != null && term != '' && $("input[name='utm_term']").length ==0){
             utmEl = utmEl + "<input type='hidden' name='utm_term' value='" + escape(term) + "'>";
         }
-        if(content != null && content != ''){
+        if(content != null && content != '' && $("input[name='utm_content']").length ==0){
             utmEl = utmEl + "<input type='hidden' name='utm_content' value='" + escape(content) + "'>";
         }
-        if(utmEl != '' && this_action.indexOf('newyorkerhotel.reztrip.com') != -1){
+        if(utmEl != '' ){
             utmEl = $(utmEl);
             $(this).prepend(utmEl);
         }
