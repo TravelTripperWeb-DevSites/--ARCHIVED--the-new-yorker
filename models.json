@@ -1,8 +1,8 @@
 {
   "attractions": [
     {
-      "name": "MACY’S HERALD SQUARE",
-      "title": "MACY’S HERALD SQUARE",
+      "name": "MACYΓÇÖS HERALD SQUARE",
+      "title": "MACYΓÇÖS HERALD SQUARE",
       "file": "attraction1.json"
     },
     {
@@ -113,8 +113,8 @@
       "file": "blog21.json"
     },
     {
-      "name": "A Brief History of the New Yorker’s Past",
-      "title": "A Brief History of the New Yorker’s Past",
+      "name": "A Brief History of the New YorkerΓÇÖs Past",
+      "title": "A Brief History of the New YorkerΓÇÖs Past",
       "file": "blog22.json"
     },
     {
@@ -188,6 +188,11 @@
       "file": "blog36.json"
     },
     {
+      "name": "Weird NYC: The Weirdest Places That You Can Only Find in NYC",
+      "title": "Weird NYC: The Weirdest Places That You Can Only Find in NYC",
+      "file": "blog37.json"
+    },
+    {
       "name": "The North American International Toy Fair 2017",
       "title": "The North American International Toy Fair 2017",
       "file": "blog4.json"
@@ -212,6 +217,9 @@
       "title": "March Madness & More at Madison Square Garden",
       "file": "blog9.json"
     }
+  ],
+  "gallery": [
+
   ],
   "homepage_slider": [
     {
