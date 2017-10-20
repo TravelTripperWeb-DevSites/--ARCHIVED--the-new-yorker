@@ -1,6 +1,6 @@
 (function() {
   angular
-    .module('rezTrip', ['ui.date'], function($interpolateProvider) {
+    .module('rezTrip', ['ui.date','updateMeta'], function($interpolateProvider) {
       $interpolateProvider.startSymbol('[[');
       $interpolateProvider.endSymbol(']]');
     })
@@ -80,7 +80,8 @@
            for(var j= 0 ; j < roomsList.length ; j++){
              rName = $filter('formatNameForLink')(roomId);
              tmpName = $filter('formatNameForLink')(roomsList[j].name);
-
+             $scope.dynamicMeta = "Initial value";
+              $scope.dynamicTitle = "Initial dynamic value";
                if(rName == tmpName ){
                   // find room size for diff size units
 
