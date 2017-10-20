@@ -135,6 +135,7 @@
 </head>
 
 <body ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser">
+    <input type="hidden" id="rezlang" value="fr">
     <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZGV8GK" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
@@ -333,7 +334,7 @@
                             <li> Incroyables vues de New York depuis le salon Sky Lounge </li>
                         </ul>
                         <div class="btn-holder">
-                            <a class="btn-common" href="/gallery/"> Afficher la galerie de photos</a>
+                            <a class="btn-common" href="/fr/gallery/"> Afficher la galerie de photos</a>
                         </div>
                     </div>
                 </div>
@@ -348,7 +349,7 @@
                         <h2>Icône de l'Art déco <br> de New York</h2>
                         <p>Construit en 1929, à l’apogée de l’âge d’or du jazz, le New Yorker, hôtel de la chaîne Wyndham, éblouit depuis des générations ses visiteurs avec sa décoration de style Art déco, son exceptionnel service et son superbe emplacement dans le quartier Midtown West.</p>
                         <div class="btn-holder">
-                            <a class="btn-common" href="/about/"> Découvrez notre histoire</a>
+                            <a class="btn-common" href="/fr/about/"> Découvrez notre histoire</a>
                         </div>
                     </div>
                 </div>
@@ -373,7 +374,7 @@
                     <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt="...">
                     <div class="caption">
                         <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
-                        <a ng-href="/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common btn-white" rel="tooltip" title="Afficher cette offre">Afficher l’offre</a>
+                        <a ng-href="/fr/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common btn-white" rel="tooltip" title="Afficher cette offre">Afficher l’offre</a>
                     </div>
                 </div>
             </div>

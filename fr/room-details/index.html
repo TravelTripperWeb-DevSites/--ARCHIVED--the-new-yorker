@@ -176,7 +176,7 @@
 
 
   <body ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser">
-
+  <input type="hidden" id="rezlang" value="fr">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZGV8GK"
     height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
@@ -243,7 +243,7 @@
  <div class="container-fluid rooms-navigation">
  <div class="row">
    <div class="col-sm-12">
-   <a href="/fr/rooms">Retour à la liste des chambres</a> <a ng-href="/room-details/#[[prevRoomName | formatNameForLink ]]" ng-click="reloadPage" class="prev-room" ng-show="prevRoomName"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> Chambre précédente</span></a> <a ng-href="/room-details/#[[nextRoomName | formatNameForLink ]]" ng-click="reloadPage" class="next-room" ng-show="nextRoomName"><span>Chambre suivante</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt=""> </a>
+   <a href="/fr/rooms">Retour à la liste des chambres</a> <a ng-href="/fr/room-details/#[[prevRoomName | formatNameForLink ]]" ng-click="reloadPage" class="prev-room" ng-show="prevRoomName"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> Chambre précédente</span></a> <a ng-href="/fr/room-details/#[[nextRoomName | formatNameForLink ]]" ng-click="reloadPage" class="next-room" ng-show="nextRoomName"><span>Chambre suivante</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt=""> </a>
 
 
    </div>
@@ -302,7 +302,7 @@
      	                         <div class="caption">
      	                             <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
 
-     	                             <a ng-href="/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common btn-white" rel="tooltip" title="Afficher cette offre">Afficher l’offre</a>
+     	                             <a ng-href="/fr/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common btn-white" rel="tooltip" title="Afficher cette offre">Afficher l’offre</a>
      	                         </div>
 
      	                     </div>
