@@ -3,7 +3,22 @@ layout: default
 ---
 <input type="hidden" id="roomId"  value="{{page.code}}" />
 <input type="hidden" id="roomList" value="[[ browser.roomsList ]]"   />
+ 
+
+
 <section ng-controller ="roomDetail" >
+
+
+<!-- seo angular -->
+ 
+  <update-meta name="description" content="[[selectedRoom.description]]"></update-meta>
+  <update-meta property="og:title" content="[[selectedRoom.name]]"></update-meta>
+  <update-meta property="og:description" content="[[selectedRoom.description]]"></update-meta>
+  <update-title title="[[selectedRoom.name]]"></update-title>
+  <update-meta itemprop="description" content="[[selectedRoom.description]]"></update-meta>
+  <update-meta property="og:url" content="https://www.newyorkerhotel.com/room-details/#[[selectedRoom.name | formatNameForLink]]"> 
+
+
 <section class="home-banner custom-carousel room-details-page">
   <div class="container-fluid">
     <div id="home-banner" class="carousel slide carousel-fade" data-ride="carousel">
