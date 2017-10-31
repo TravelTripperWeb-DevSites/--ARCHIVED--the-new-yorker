@@ -106,8 +106,20 @@ $(document).ready(function() {
       }
       setTimeout(function(){
           $('#home-banner').carousel();
-      },2500);
 
+      },2500);
+      setTimeout(function(){
+          //for room detail page banner
+          if (mwidth > 300) {
+            $(".room-details-page .carousel-inner .item").height(mheight - 50);
+          }
+          if (mwidth > 768) {
+            $(".room-details-page .carousel-inner .item").height(mheight - 75);
+          }
+          if (mwidth > 1240) {
+            $(".room-details-page .carousel-inner .item").height(mheight - 121);
+          }
+      },2900);
 
   }
   $(window).on(' resize', function() {
