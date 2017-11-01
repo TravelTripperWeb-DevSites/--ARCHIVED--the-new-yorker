@@ -125,6 +125,39 @@ $(document).ready(function() {
   $(window).on(' resize', function() {
       adjustHomeBannerHeight();
   });
+
+  //to add locale while submitting booking widget form
+  $(document).on('submit', 'form', function(){
+      var this_action = $(this).attr("action");
+
+      var localeEl='';
+      var locale = $('#rezlang').val() || 'en';
+      if(this_action && this_action.indexOf('https://newyorkerhotel.reztrip.com/') != -1 && $(".ttweb-booking-widget input[name='locale']").length ==0){
+
+          localeEl = localeEl + "<input type='hidden' name='locale' value='" + locale + "'>";
+      }
+      if(localeEl != '' ){
+          localeEl = $(localeEl);
+          $(this).prepend(localeEl);
+      }
+  });
+  $(document).on("click", "a", function(){
+
+        var this_href = $(this).attr("href");
+        var locale = $('#rezlang').val() || 'en';
+
+        if(this_href && this.href.indexOf('https://newyorkerhotel.reztrip.com/calendar') != -1 && this_href.indexOf('locale') == -1){
+           if(this_href.indexOf('?') != -1 )
+               this_href = this_href +"&";
+           else
+               this_href = this_href +"?";
+           this_href = this_href + 'locale='+locale;
+           $(this).attr('href',this_href);
+        }
+
+
+
+    })
 });
 
 $(window).on('load scroll resize', function() {
