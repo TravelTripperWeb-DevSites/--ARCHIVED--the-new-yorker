@@ -1,0 +1,53 @@
+	
+	<p class="social-wrapper">
+		<span> Share: </span> 
+		<ul class="social-share">
+		    <li>
+		        <a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{ page.url }}&title={{blog.title}}&description={{ blog.blog_post | strip_html | truncatewords: 20 | remove: '<p>' | remove: '</p>'}}&caption=Triumph Hotels&picture={{blog.image.url}}" class="fa fa-facebook" title="Share on Facebook" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" ></a>
+		    </li>
+		    <li>
+		        <a href="https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ page.title }} {{site.url}}{{ page.url }}" class="fa fa-twitter" title="Share on Twitter" ></a>
+		    </li>
+		    <li>
+		        <a href="https://plus.google.com/share?url={{site.url}}{{ page.url }}" class="fa fa-google-plus" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" >
+		            
+		        </a>
+		    </li>
+		    <li>
+		    	{% assign title = blog.title | replace: "'", "" %}
+
+		        <a href="javascript:void(0)" class="fa fa-pinterest-p" title="Share on Pinterest" onClick="pinterestShare('{{blog.image.url}}', '{{title}}');"  ></a>
+
+		    </li>
+		</ul>
+	</p>
+
+	<script type="text/javascript">
+		function pinterestShare(img, desc){
+            window.open("//www.pinterest.com/pin/create/button/"+
+            "?url="+window.location.href+
+            "&media="+img+
+            "&description="+desc, "pinIt","toolbar=no, scrollbars=no, resizable=no, top=0, right=0");
+            return false;        
+		}
+	</script>
+
+
+
+
+
+	<!-- <section>
+  <h4>Share on </h4>
+caption=[caption]&description=[description]&u=[website]&picture=[image-url]
+
+  <a href="https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ page.title }} {{ page.url | absolute_url }}" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url={{ page.url | absolute_url }}" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section> -->
+
+
+
