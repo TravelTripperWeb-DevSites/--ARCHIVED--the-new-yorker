@@ -19,6 +19,14 @@ pagename: about
               <div class="date-holder">{{blog.date  |  date: "%B %d, %Y"}}</div>
                 {{blog.more_content}}
                 <div class="btn-holder"><a href="/blog/" class="btn-common">See all blog posts</a></div>
+                <div class="col-xs-12 share-links">
+              <h4>Share on </h4>
+                        <a  href="https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ post.title }} {{site.url}}{{ page.url }}" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
+
+                       <a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{ page.url }}&title={{blog.title}}&description={{ blog.blog_post | strip_html | truncatewords: 20 | remove: '<p>' | remove: '</p>'}}&caption=Triumph Hotels&picture={{blog.image.url}}" class="fa fa-facebook" title="Share on Facebook" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" ></a>
+
+                        <a href="https://plus.google.com/share?url={{site.url}}{{ page.url }}" class="fa fa-google-plus" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" ></a>
+            </div>
             </div>
         </div>
         <div class="col-sm-5 no-padding">
@@ -32,6 +40,7 @@ pagename: about
                 </div>
                 {% endfor %}
                 <div class="btn-holder"><a href="/blog/" class="btn-common">See all blog posts</a></div>
+            </div>
             </div>
         </div>
     </div>
