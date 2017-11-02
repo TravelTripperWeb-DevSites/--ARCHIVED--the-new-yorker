@@ -1,8 +1,8 @@
 {
   "attractions": [
     {
-      "name": "MACYΓÇÖS HERALD SQUARE",
-      "title": "MACYΓÇÖS HERALD SQUARE",
+      "name": "MACYÔÇÖS HERALD SQUARE",
+      "title": "MACYÔÇÖS HERALD SQUARE",
       "file": "attraction1.json"
     },
     {
@@ -113,8 +113,8 @@
       "file": "blog21.json"
     },
     {
-      "name": "A Brief History of the New YorkerΓÇÖs Past",
-      "title": "A Brief History of the New YorkerΓÇÖs Past",
+      "name": "A Brief History of the New YorkerÔÇÖs Past",
+      "title": "A Brief History of the New YorkerÔÇÖs Past",
       "file": "blog22.json"
     },
     {
@@ -211,6 +211,11 @@
       "name": "Celebrating Halloween In NYC",
       "title": "Celebrating Halloween In NYC",
       "file": "blog40.json"
+    },
+    {
+      "name": "5 Unique Things To Do In NYC",
+      "title": "5 Unique Things To Do In NYC",
+      "file": "blog41.json"
     },
     {
       "name": "The Westminster Kennel Club Dog Show",

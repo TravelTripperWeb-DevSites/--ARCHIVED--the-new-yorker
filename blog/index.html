@@ -29,7 +29,17 @@ pagename: blog
                    </a>
                    	<div class="date-holder">{{post.date | date: "%B %d, %Y"}}</div>
                     {{post.short_description}}
-                    <div class="btn-holder"><a href="/blog/{{post.url_friendly_name}}/" class="btn-common">Read More</a></div>
+                    <div class="btn-holder"><a href="/blog/{{post.url_friendly_name}}/" class="btn-common">Read More</a> 
+                   <!--    <div class="share-links">
+                        <h4>Share on </h4>
+                        <a  href="https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ post.title }} {{site.url}}/blog/{{post.url_friendly_name}}/" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
+
+                        <a href="https://www.facebook.com/sharer/sharer.php?s=100&p[title]={{blog.title}}&p[url]={{site.url}}/blog/{{post.url_friendly_name}}/&p[summary]={{ post.short_description | strip_html | truncatewords: 20 | remove: '<p>' | remove: '</p>'}}&p[images][0]={{post.blogimage.url}}" class="fa fa-facebook" title="Share on Facebook" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" ></a>
+
+                        <a href="https://plus.google.com/share?url={{site.url}}/blog/{{post.url_friendly_name}}/" class="fa fa-google-plus" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" ></a>
+ 
+                    </div> -->
+                    </div> 
                </div>
           </div>
         </div>
