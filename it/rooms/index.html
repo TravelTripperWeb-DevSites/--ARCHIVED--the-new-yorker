@@ -50,20 +50,20 @@
   <meta name="twitter:description" content="Rilassati nelle nostre lussuose camere e suite a New York. L'hotel New Yorker offre numerose sistemazioni caratterizzate da dettagli di lusso e viste sul centro di Manhattan.">
   <meta name="twitter:url" content="https://www.newyorkerhotel.com/rooms/">
   <meta name="twitter:card" content="summary">
-  
-  
+
+
   <meta name="twitter:image" content="https://www.newyorkerhotel.com/images/banner-4.jpg">
-  
 
-  
+
+
     <meta name="twitter:creator" content="@WyndhamNYH">
-  
 
 
 
-  
 
-  
+
+
+
 
 
 
@@ -133,7 +133,7 @@
   <script id="gtsgig-boot" data-hotel-id="newyorkerhotel" src="https://widgets.gtsgig.com/boot.js" async defer></script>
   <script>(function(){ var v = document.createElement('script'); var s = document.getElementsByTagName('script')[0]; v.src = '//io.voyat.com/v.js'; v.async = true; s.parentNode.insertBefore(v, s); })();</script>
 
-  
+
 
 <!--Product Pixel-->
 <!-- Sojern Master Pixel Tag cp_v1_js, Pixel Version: 1 -->
@@ -174,11 +174,11 @@
   <div class="container-fluid">
     <div class="logo"> <a href="/it/"><img src="/images/the-new-yorker-logo.svg" alt="Il New Yorker"/></a> </div>
     <div class="main-menu">
-      <ul class="nav">        
+      <ul class="nav">
         <li ><a href="/it/rooms/">Camere</a></li>
         <li ><a href="/it/offers/">Offerte</a></li>
-        <li ><a href="/it/location/">Ubicazione</a></li>        
-        <li ><a href="/it/gallery/">Galleria</a></li>  
+        <li ><a href="/it/location/">Ubicazione</a></li>
+        <li ><a href="/it/gallery/">Galleria</a></li>
         <li ><a href="/it/contact/">Contatti</a></li>
       </ul>
     </div>
@@ -205,10 +205,10 @@
   	<div class="room-item" style="background-image:url([[room.photos[0].yankee_large]]);">
 
     	<div class="room-details">
-      	<div class="price"><span ng-hide="room.todayRate == 'CHECK AVAILABILITY'">da </span><a href="https://newyorkerhotel.reztrip.com/search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><span>[[ room.todayRate ]]</span></a></div>
+      	<div class="price"><span ng-hide="room.todayRate == 'CHECK AVAILABILITY'">da </span><a href="https://newyorkerhotel.reztrip.com/search?locale=it&selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><span>[[ room.todayRate ]]</span></a></div>
       	<h3 style="color: #ffffff;">[[room.name]]</h3>
-		<a class="view-rooms" ng-href="/it/room-details/#[[room.name | formatNameForLink]]">Visualizza camera +</a> 
-		<a class="book-now" ng-href="https://newyorkerhotel.reztrip.com/search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><img src="/images/calendar-blue.svg" alt=""></a>
+		<a class="view-rooms" ng-href="/it/room-details/#[[room.name | formatNameForLink]]">Visualizza camera +</a>
+		<a class="book-now" ng-href="https://newyorkerhotel.reztrip.com/search?locale=it&selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><img src="/images/calendar-blue.svg" alt=""></a>
       	</div>
   	</div>
 	</div>
@@ -251,7 +251,7 @@
                     <button class="btn btn-default" id="input_2" type="submit" ><img src="/images/arrow-right.png" width="26" height="21" alt=""/></button>
                   </span>
                 </div><!-- /input-group -->
-                
+
              </form>
             </div>
         </div>
@@ -263,7 +263,7 @@
     <h3><a href="https://www.instagram.com/explore/tags/newyorkerhotel/" target="_blank">#newyorkerhotel</a></h3>
     <h5><a href="https://www.instagram.com/newyorkerhotel/" target="_blank">Il nostro profilo Instagram</a></h5>
       <ul class="instafeed">
-         
+
       </ul>
   </div>
 </div>
@@ -289,7 +289,7 @@ function getIp(data){
 <script src="/js/lg-thumbnail.js"></script>
 <script src="/js/jquery.mousewheel.min.js"></script>
 <script src="/js/owl.carousel.js"></script>
- 
+
 <script src="/js/angular.min.js"></script>
 <script src="/js/jquery-ui.min.js"></script>
 <script src="/js/rt3api.js"></script>
@@ -299,11 +299,12 @@ function getIp(data){
 <script src="/js/rt3-directives.js"></script>
 <script src="/js/rt3-filters.js"></script>
 <script src="/js/scripts.js"></script>
+<script src="/js/utm-tracking.js"></script>
 <script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
   <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
 
   <script >
-   
+
     TTWeb.Config.configure({
       hotelId: 'NYCNYR', //'orwhatever your values are',
       portalId: 'newyorkerhotel',
@@ -312,11 +313,11 @@ function getIp(data){
       defaultCurrency: 'USD',
       //rootPath: 'https://rt3api-prd-ase.ttaws.com' // include this line only if site is on asian server i.e elite and cristalhospitality
     });
-    
+
 
     $("[show-booking-widget]").bookingWidget({
          showRateCalendar: true,
-         showOfferCode: true          
+         showOfferCode: true
     });
   </script>
 
@@ -334,14 +335,14 @@ function getIp(data){
         	<div class="address">
             	<h3>Contatti</h3>
                 <p>
-                	<a href="https://goo.gl/maps/m7a6UQKkgcH2" target="_blank"> 
-					<span>8ª strada e 34ª strada n. 481</span> 
-					<span>New York, NY 10001</span> 
-					<span>(212) 971 0101</span> 
+                	<a href="https://goo.gl/maps/m7a6UQKkgcH2" target="_blank">
+					<span>8ª strada e 34ª strada n. 481</span>
+					<span>New York, NY 10001</span>
+					<span>(212) 971 0101</span>
 					</a>
                  </p>
                 <p>
-				<span><a href="mailto:reservations@nyhotel.com">reservations@nyhotel.com</a></span> 
+				<span><a href="mailto:reservations@nyhotel.com">reservations@nyhotel.com</a></span>
 				<span><a href="mailto:guestservices@nyhotel.com">guestservices@nyhotel.com</a></span>
                 </p>
             </div>
@@ -361,9 +362,9 @@ function getIp(data){
         <div class="col-md-3 col-sm-6 no-padding">
         	<div class="social extra-padding">
             	<h3>Seguici</h3>
-            	<a href="https://www.facebook.com/newyorkerhotel" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
-				<a href="https://twitter.com/WyndhamNYH" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
-				<a href="https://www.instagram.com/newyorkerhotel/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+            	<a href="https://www.facebook.com/newyorkerhotel" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/WyndhamNYH" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/newyorkerhotel/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 				<a href="https://www.youtube.com/channel/UCXDFDBPGBkC07HOxL7ISQLQ" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
             </div>
         </div>
@@ -371,9 +372,9 @@ function getIp(data){
 </footer>
 
 
-    
 
-   
+
+
 
   </body>
 
