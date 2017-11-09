@@ -20,7 +20,7 @@
   "__ROOT__": {
     "__PAGES__": [
       {
-        "label": "The New Yorker, A Wyndham Hotel",
+        "label": "The New Yorker, A Wyndham Hotel | Midtown Manhattan Hotel",
         "published": true,
         "locales": {
           "en": "/"
@@ -33,7 +33,7 @@
     "attractions": {
       "__PAGES__": [
         {
-          "label": "The New Yorker Attractions",
+          "label": "Hotel Near Jacob Javits Center | The New Yorker Attractions",
           "published": true,
           "locales": {
             "en": "/attractions/"
@@ -47,7 +47,7 @@
     "blog": {
       "__PAGES__": [
         {
-          "label": "News and Events in New York",
+          "label": "News and Events in New York | The New Yorker Hotel Blog",
           "published": true,
           "locales": {
             "en": "/blog/"
@@ -103,7 +103,7 @@
     "offers": {
       "__PAGES__": [
         {
-          "label": "Midtown Manhattan Hotel Packages",
+          "label": "Midtown Manhattan Hotel Packages | Manhattan Hotel Specials",
           "published": true,
           "locales": {
             "en": "/offers/"
@@ -131,7 +131,7 @@
     "rooms": {
       "__PAGES__": [
         {
-          "label": "Hotel Rooms & Suites in New York",
+          "label": "Hotel Rooms & Suites in New York | New York City Suites",
           "published": true,
           "locales": {
             "en": "/rooms/"
@@ -145,7 +145,7 @@
     "about": {
       "__PAGES__": [
         {
-          "label": "History of The New Yorker Hotel",
+          "label": "Art Deco Hotel in New York | History of The New Yorker Hotel",
           "published": true,
           "locales": {
             "en": "/about/"
@@ -173,7 +173,7 @@
     "dining": {
       "__PAGES__": [
         {
-          "label": "Tick Tock Diner | Trattoria Bianca",
+          "label": "Tick Tock Diner | Trattoria Bianca | Manhattan Restaurants",
           "published": true,
           "locales": {
             "en": "/dining/"
@@ -187,7 +187,7 @@
     "events": {
       "__PAGES__": [
         {
-          "label": "The New Yorker Meeting Rooms",
+          "label": "The New Yorker Meeting Rooms | Event Space in Manhattan",
           "published": true,
           "locales": {
             "en": "/events/"
@@ -201,7 +201,7 @@
     "gallery": {
       "__PAGES__": [
         {
-          "label": "New York Hotel Pictures",
+          "label": "New York Hotel Pictures | Gallery | New Yorker, Manhattan",
           "published": true,
           "locales": {
             "en": "/gallery/"
@@ -229,7 +229,7 @@
     "hotels-near-me": {
       "__PAGES__": [
         {
-          "label": "Hotels Near Me",
+          "label": "Hotels Near Me | New Yorker Hotel in New York City",
           "published": true,
           "locales": {
             "en": "/hotels-near-me/"
@@ -243,7 +243,7 @@
     "location": {
       "__PAGES__": [
         {
-          "label": "Hotels Near Penn Station NYC",
+          "label": "Hotels Near Penn Station NYC | Midtown Manhattan Hotel",
           "published": true,
           "locales": {
             "en": "/location/"
@@ -312,5 +312,5 @@
     "config",
     "navigation"
   ],
-  "__SHA__": "d4bd37f6682da659a4d53a5bf29100da2fddd82c"
+  "__SHA__": "f7d4debbe9d3bbf0ee0602374b2307506d500e8d"
 }

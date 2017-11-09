@@ -25,9 +25,14 @@ $(window).on("load",function(e){
 });
 
 
+
 //Date Picker
 $(document).ready(function() {
    adjustHomeBannerHeight();
+  
+
+  console.log(window.location.href);
+
 
   $("#od_arrival").datepicker({
     dateFormat: "yy-mm-dd",
