@@ -206,7 +206,7 @@
 
     	<div class="room-details">
       	<div class="price"><span ng-hide="room.todayRate == 'CHECK AVAILABILITY'">da </span><a href="https://newyorkerhotel.reztrip.com/search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><span>[[ room.todayRate ]]</span></a></div>
-      	<h3 style="color: #ffffff;">[[room.name]]</h3>
+      	<h3 style="color: #ffffff; font-size:16px;">[[room.name]]</h3>
 		<a class="view-rooms" ng-href="/it/room-details/#[[room.name | formatNameForLink]]">Visualizza camera +</a> 
 		<a class="book-now" ng-href="https://newyorkerhotel.reztrip.com/search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><img src="/images/calendar-blue.svg" alt=""></a>
       	</div>
