@@ -25,9 +25,14 @@ $(window).on("load",function(e){
 });
 
 
+
 //Date Picker
 $(document).ready(function() {
    adjustHomeBannerHeight();
+  
+
+  console.log(window.location.href);
+
 
   $("#od_arrival").datepicker({
     dateFormat: "yy-mm-dd",
@@ -106,13 +111,58 @@ $(document).ready(function() {
       }
       setTimeout(function(){
           $('#home-banner').carousel();
-      },2500);
 
+      },2500);
+      setTimeout(function(){
+          //for room detail page banner
+          if (mwidth > 300) {
+            $(".room-details-page .carousel-inner .item").height(mheight - 50);
+          }
+          if (mwidth > 768) {
+            $(".room-details-page .carousel-inner .item").height(mheight - 75);
+          }
+          if (mwidth > 1240) {
+            $(".room-details-page .carousel-inner .item").height(mheight - 121);
+          }
+      },2900);
 
   }
   $(window).on(' resize', function() {
       adjustHomeBannerHeight();
   });
+
+  //to add locale while submitting booking widget form
+  $(document).on('submit', 'form', function(){
+      var this_action = $(this).attr("action");
+
+      var localeEl='';
+      var locale = $('#rezlang').val() || 'en';
+      if(this_action && this_action.indexOf('https://newyorkerhotel.reztrip.com/') != -1 && $(".ttweb-booking-widget input[name='locale']").length ==0){
+
+          localeEl = localeEl + "<input type='hidden' name='locale' value='" + locale + "'>";
+      }
+      if(localeEl != '' ){
+          localeEl = $(localeEl);
+          $(this).prepend(localeEl);
+      }
+  });
+  $(document).on("click", "a", function(){
+
+        var this_href = $(this).attr("href");
+        var locale = $('#rezlang').val() || 'en';
+
+        if(this_href && this.href.indexOf('https://newyorkerhotel.reztrip.com/calendar') != -1 && this_href.indexOf('locale') == -1){
+           if(this_href.indexOf('?') != -1 )
+               this_href = this_href +"&";
+           else
+               this_href = this_href +"?";
+           this_href = this_href + 'locale='+locale;
+           $(this).attr('href',this_href);
+        }
+
+
+
+    })
 });
 
 $(window).on('load scroll resize', function() {
