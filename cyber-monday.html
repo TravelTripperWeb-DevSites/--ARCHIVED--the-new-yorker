@@ -1,0 +1,89 @@
+---
+layout: default
+title: Cyber Monday
+---
+
+<section class="landing home-banner custom-carousel room-details-page offer-details-page">
+  <div class="container-fluid">
+    <div id="home-banner" class="carousel slide offerPageBanner" data-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active" style="background-image: url('/images/cyber-monday-banner.jpg');">
+
+          {% include countdown-timer.html %}
+
+          <!-- <div class="banner-overlay"></div> -->
+
+          <div class="room-details offer-details">
+            <div class="room-name">
+              {% regionblock page_title, type:header %}
+                <h1>Cyber Monday Savings<br>The Countdown Begins</h1>
+              {% endregionblock %}
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="rooms-details-container offer-details-container">
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="rooms-details">
+          <div id="exTab1" class="container">
+
+            <ul class="nav">
+              <li class="active"><a href="#1a" data-toggle="tab">Description</a></li>
+              <li><a href="#2a" data-toggle="tab">Terms & Conditions</a></li>
+            </ul>
+
+            <div class="tab-content clearfix">
+
+              <div class="tab-pane active" id="1a">
+                {% regionblock offer_title, type:header %}
+                  <h1>Special Offer</h1>
+                {% endregionblock %}
+                {% regionblock offer_content, type:text %}
+                  <p>Get excited for this price drop! This holiday season, we are celebrating with a big sale. Enjoy an exclusive, website-only, discount of up to 40% off your entire stay. Stay 2 nights or more from now until September 2018 and save big.</p>
+                  <p><b>Black outs and restrictions apply</b></p>
+                  <li>Minimum stay of 2 nights or more</li>
+                  <li>Reservations are non-refundable and non-cancellable</li>
+                {% endregionblock %}
+              </div>
+
+              <div class="tab-pane" id="2a">
+                {% regionblock terms_title, type:header %}
+                  <h3>Terms & Conditions</h3>
+                {% endregionblock %}
+                {% regionblock terms_content, type:text %}
+                  <ul>
+                    <li>Payment is due at time of booking and is non-refundable & non-cancellable.</li>
+                    <li>A refundable security deposit of USD 45 per night will be applicable at check in time.</li>
+                    <li>The hotel is completely <strong>non-smoking</strong>, and a penalty will apply if any smoking occurs.</li>
+                    <li>Facility Fee: USD $29.00 plus sales tax per accommodation per night, which provides guests with the following services and added value offerings:</li>
+                      <ul>
+                        <li>Premium High Speed In Room Internet Access</li>
+                        <li>Long Distance &amp; International In Room Calling</li>
+                        <li>Business Center Access</li>
+                        <li>State of the Art Fitness Center Access</li>
+                      </ul>
+                    <li>Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination.</li>
+                  </ul>
+                {% endregionblock %}
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include newsletter.html %}
+{% include twitter-instagram.html %}
