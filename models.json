@@ -1,8 +1,8 @@
 {
   "attractions": [
     {
-      "name": "MACYÔÇÖS HERALD SQUARE",
-      "title": "MACYÔÇÖS HERALD SQUARE",
+      "name": "MACYΓÇÖS HERALD SQUARE",
+      "title": "MACYΓÇÖS HERALD SQUARE",
       "file": "attraction1.json"
     },
     {
@@ -113,8 +113,8 @@
       "file": "blog21.json"
     },
     {
-      "name": "A Brief History of the New YorkerÔÇÖs Past",
-      "title": "A Brief History of the New YorkerÔÇÖs Past",
+      "name": "A Brief History of the New YorkerΓÇÖs Past",
+      "title": "A Brief History of the New YorkerΓÇÖs Past",
       "file": "blog22.json"
     },
     {
@@ -193,11 +193,6 @@
       "file": "blog37.json"
     },
     {
-      "name": "Fall in New York City-copy",
-      "title": "Fall in New York City-copy",
-      "file": "blog38.json"
-    },
-    {
       "name": "Must-See Museum Exhibits For Fall and Winter In NYC",
       "title": "Must-See Museum Exhibits For Fall and Winter In NYC",
       "file": "blog39.json"
@@ -216,6 +211,16 @@
       "name": "5 Unique Things To Do In NYC",
       "title": "5 Unique Things To Do In NYC",
       "file": "blog41.json"
+    },
+    {
+      "name": "Fun Facts About The New Yorker Hotel: Part 1",
+      "title": "Fun Facts About The New Yorker Hotel: Part 1",
+      "file": "blog42.json"
+    },
+    {
+      "name": "Macy's Thanksgiving Day Parade",
+      "title": "Macy's Thanksgiving Day Parade",
+      "file": "blog43.json"
     },
     {
       "name": "The Westminster Kennel Club Dog Show",
