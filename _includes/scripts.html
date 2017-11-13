@@ -1,13 +1,12 @@
 <script>
-function getIp(data){
-   sessionStorage.ip_add =  data.ip;
-}
+  function getIp(data) {
+    sessionStorage.ip_add = data.ip;
+  }
 </script>
 <script src="https://api.ipify.org?format=jsonp&callback=getIp"></script>
 
 <script src="/js/jquery-1.11.1.js"></script>
-
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
+<!-- <script src="/js/jquery-3.1.1.min.js"></script> -->
 
 <script src="/js/bootstrap.min.js"></script>
 
@@ -19,32 +18,58 @@ function getIp(data){
 
 <script src="/js/angular.min.js"></script>
 <script src="/js/jquery-ui.min.js"></script>
-<!-- <script src="/js/update-meta.min.js"></script>  -->
-<script src="/js/rt3api.js"></script>
 <script src="/js/ui-date.js"></script>
+<script src="/js/scripts.js"></script>
+<script src="/js/utm-tracking.js"></script>
+
 <script src="/js/rez-trip.js"></script>
 <script src="/js/rt3-services.js"></script>
 <script src="/js/rt3-directives.js"></script>
 <script src="/js/rt3-filters.js"></script>
-<script src="/js/scripts.js"></script>
-<script src="/js/utm-tracking.js"></script>
 <script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
-  <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
+<script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
 
+<script>
+  TTWeb.Config.configure({
+    hotelId: 'NYCNYR', // or whatever your values are,
+    portalId: 'newyorkerhotel',
+    defaultTimezone: 'America/New_York', // timezone of site
+    ipAddress: sessionStorage.ip_add,
+    defaultCurrency: 'USD',
+    //rootPath: 'https://rt3api-prd-ase.ttaws.com' // include this line only if site is on asian server i.e elite and cristalhospitality
+  });
+
+  $("[show-booking-widget]").bookingWidget({
+    showRateCalendar: true,
+    showOfferCode: true
+  });
+</script>
+
+{% if page.url == '/cyber-monday/' %}
+  <script src="/js/moment.min.js"></script>
+  <script src="/js/moment-timezone-with-data.min.js"></script>
+  <script src="/js/jquery.countdown.min.js"></script>
+  <script src="/js/flipclock.min.js"></script>
   <script>
+    $(document).ready(function() {
 
-    TTWeb.Config.configure({
-      hotelId: 'NYCNYR', //'orwhatever your values are',
-      portalId: 'newyorkerhotel',
-      defaultTimezone: 'America/New_York', // timezone of site
-      ipAddress: sessionStorage.ip_add,
-      defaultCurrency: 'USD',
-      //rootPath: 'https://rt3api-prd-ase.ttaws.com' // include this line only if site is on asian server i.e elite and cristalhospitality
-    });
+      var endDate = moment.tz("{{ site.data.countdown-timer.datetime }}", "{{ site.data.countdown-timer.timezone }}");
 
+    	// $('#clock-timer').countdown(endDate.toDate(), function(event) {
+      //  var daysClock = '<div class="timer-cell"><span>Days</span>' + event.strftime('%D') + '</div>';
+      // 	var hoursClock = '<div class="timer-cell"><span>Hours</span>' + event.strftime('%H') + '</div>';
+      // 	var minsClock = '<div class="timer-cell"><span>Minutes</span>' + event.strftime('%M') + '</div>';
+      // 	var secsClock = '<div class="timer-cell"><span>Seconds</span>' + event.strftime('%S')+ '</div>';
+      //   // $(this).html(daysClock+hoursClock+minsClock+secsClock);
+    	// });
 
-    $("[show-booking-widget]").bookingWidget({
-         showRateCalendar: true,
-         showOfferCode: true
+      // console.log("Value of 'endDate' is: " + endDate);
+
+      var clock = $('#clock-timer').FlipClock({
+        clockFace: 'DailyCounter',
+        countdown: true
+      });
+
     });
   </script>
+{% endif %}
