@@ -1,0 +1,54 @@
+.landing h1 {
+  font-size: 20px;
+  color: #fff;
+  @media (min-width: $screen-sm-min) {
+    font-size: 43px;
+  }
+}
+
+.flip-clock-wrapper {
+  max-width: 620px;
+  margin: 1em auto;
+  padding-top: 140px;
+  zoom: .5;
+  -moz-transform: scale(.5);
+  @media (min-width: $screen-sm-min) {
+    zoom: 1;
+    -moz-transform: scale(1);
+  }
+}
+
+.flip-clock-divider .flip-clock-label {
+  font-size: 20px;
+  color: #fff;
+}
+
+.flip-clock-divider.days .flip-clock-label {
+  right: -94px;
+}
+
+.flip-clock-divider.hours .flip-clock-label {
+  right: -97px;
+}
+
+.flip-clock-divider.minutes .flip-clock-label {
+  right: -106px;
+}
+
+.flip-clock-divider.seconds .flip-clock-label {
+  right: -111px;
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+}
+
+.flip-clock-dot {
+  display: none;
+  background-color: #fff;
+  @media (min-width: $screen-sm-min) {
+    display: block;
+  }
+}
