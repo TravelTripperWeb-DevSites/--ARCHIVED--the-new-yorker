@@ -47,14 +47,32 @@ title: Cyber Monday
 
               <div class="tab-pane active" id="1a">
                 {% regionblock offer_title, type:header %}
-                  <h1>Special Offer</h1>
+                  <h3>Special Offer</h3>
                 {% endregionblock %}
-                {% regionblock offer_content, type:text %}
-                  <p>Get excited for this price drop! This holiday season, we are celebrating with a big sale. Enjoy an exclusive, website-only, discount of up to 40% off your entire stay. Stay 2 nights or more from now until September 2018 and save big.</p>
-                  <p><b>Black outs and restrictions apply</b></p>
-                  <li>Minimum stay of 2 nights or more</li>
-                  <li>Reservations are non-refundable and non-cancellable</li>
-                {% endregionblock %}
+
+                <div class="row">
+
+                  <div class="col-md-6">
+
+                    {% regionblock offer_content, type:text %}
+                    <p>Get excited for this price drop! This holiday season, we are celebrating with a big sale. Enjoy an exclusive, website-only, discount of up to 40% off your entire stay. Stay 2 nights or more from now until September 2018 and save big.</p>
+                    <p><b>Black outs and restrictions apply</b></p>
+                    <li>Minimum stay of 2 nights or more</li>
+                    <li>Reservations are non-refundable and non-cancellable</li>
+                    {% endregionblock %}
+
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <div id="thing-with-videos">                      
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/xrBfrXM_vxY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                  </div>
+
+                </div>
+
               </div>
 
               <div class="tab-pane" id="2a">
@@ -78,7 +96,7 @@ title: Cyber Monday
                 {% endregionblock %}
               </div>
 
-              <div class="button-holder">                
+              <div class="button-holder">
                 <a href="https://newyorkerhotel.reztrip.com/classic/en/special_offer?action=show&controller=landings&locale=en&rate_code=DISCYB&rate_code=DISCYB&starting_page=special_offer&vr=3" class="btn-common" target="_blank">Book This Offer</a>
               </div>
 
