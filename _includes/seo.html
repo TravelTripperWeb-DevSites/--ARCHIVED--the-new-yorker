@@ -68,8 +68,13 @@
   {% else%}
   <meta name="twitter:card" content="summary">
   {% endif %}
+
   {% if page.blogimage %}
-   <meta name="twitter:image" content="{{ page.blogimage.url_large }}">
+  {% if page.url = "/blog/macys-thanksgiving-day-parade/"%}
+   <meta name="twitter:image:src" content="{{ page.blogimage.url_large }}">
+   {% else %}
+    <meta name="twitter:image" content="{{ page.blogimage.url_large }}">
+   {% endif %} 
   {% elsif site.data.social.og_image %}
   <meta name="twitter:image" content="{{ site.data.social.og_image | absolute_url }}">
   {% endif %}
