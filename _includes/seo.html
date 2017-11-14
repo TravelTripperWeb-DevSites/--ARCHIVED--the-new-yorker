@@ -62,7 +62,7 @@
   <meta name="twitter:url" content="{{ canonical_url }}">
   <meta name="twitter:card" content="summary">
   {% if page.blogimage %}
-   <meta name="twitter:image" content="{{ page.blogimage.url }}">
+   <meta name="twitter:image" content="http:{{ page.blogimage.url_large }}">
   {% elsif site.data.social.og_image %}
   <meta name="twitter:image" content="{{ site.data.social.og_image | absolute_url }}">
   {% endif %}
