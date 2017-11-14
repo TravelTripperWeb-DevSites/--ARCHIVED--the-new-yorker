@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
 
@@ -161,15 +163,15 @@
 
   <link rel="stylesheet" type="text/css" href="https://plugins.traveltripper.io/v2/css/booking-widget.css" />
 
-  <style type="text/css">
+<style type="text/css">
   @media screen and (max-width: 1023px){
     .menu-btn{
-      right: 330px;
+      right: 302px;
     }
   }
   @media screen and (max-width: 767px){
     .menu-btn{
-      right: 215px;
+      right: 265px;
     }
   }
 </style>
@@ -206,7 +208,15 @@
       </ul>
     </div>
     <div class="menu-btn"></div>
-    <div class="booknow"> <a href="javascript:void(0);" show-booking-widget><span class="cal"><img src="/images/calendar.svg" alt=""/></span>Réservez dès maintenant</a> </div>
+    <div class="booknow"> <a href="javascript:void(0);" show-booking-widget style="font-size:10px; padding-right: 10px; padding-left: 10px;"><span class="cal"><img src="/images/calendar.svg" alt=""/></span>Réservez dès maintenant</a> 
+                <select onchange="location = this.value;">
+                  <option value="/">EN</option>
+                  <option value="/fr/"{% if page.url contains '/fr/'%} selected="selected"{% endif %}>FR</option>
+                  <option value="/es/"{% if page.url contains '/es/'%} selected="selected"{% endif %}>ES</option>
+                  <option value="/it/"{% if page.url contains '/it/'%} selected="selected"{% endif %}>IT</option>
+                  <option value="/de/"{% if page.url contains '/de/'%} selected="selected"{% endif %}>DE</option>
+                </select>
+            </div>
   </div>
 </nav>
 

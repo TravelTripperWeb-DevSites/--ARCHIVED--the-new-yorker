@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
 
@@ -123,12 +125,12 @@
 <style type="text/css">
   @media screen and (max-width: 1023px){
     .menu-btn{
-      right: 330px;
+      right: 302px;
     }
   }
   @media screen and (max-width: 767px){
     .menu-btn{
-      right: 215px;
+      right: 265px;
     }
   }
 </style>
@@ -167,9 +169,18 @@
                 </ul>
             </div>
             <div class="menu-btn"></div>
-            <div class="booknow"> <a href="javascript:void(0);" show-booking-widget><span class="cal"><img src="/images/calendar.svg" alt=""/></span>Réservez dès maintenant</a> </div>
+            <div class="booknow"> <a href="javascript:void(0);" show-booking-widget style="font-size:10px; padding-right: 10px; padding-left: 10px;"><span class="cal"><img src="/images/calendar.svg" alt=""/></span>Réservez dès maintenant</a> 
+                <select onchange="location = this.value;">
+                  <option value="/">EN</option>
+                  <option value="/fr/"{% if page.url contains '/fr/'%} selected="selected"{% endif %}>FR</option>
+                  <option value="/es/"{% if page.url contains '/es/'%} selected="selected"{% endif %}>ES</option>
+                  <option value="/it/"{% if page.url contains '/it/'%} selected="selected"{% endif %}>IT</option>
+                  <option value="/de/"{% if page.url contains '/de/'%} selected="selected"{% endif %}>DE</option>
+                </select>
+            </div>
         </div>
     </nav>
+
     <section class="home-banner custom-carousel" rt3-recent-bookings="recentBookings" ng-cloak>
         <div class="container-fluid">
             <div id="home-banner" class="carousel slide carousel-fade" data-ride="carousel">
@@ -211,7 +222,7 @@
         <div class="best-rate-ota" ng-show="browser.otaRates.brgFound">
             <div class="boxes">
                 <div class="tonight-rate ">
-                    <p>Meilleur tarif disponible</p>
+                    <p>Meilleur tarif disponible</p> 
                     <h4>Tarif de ce soir <a href="https://newyorkerhotel.reztrip.com/search?locale=fr" target="_blank" class="homeTonightRate" ><span class="price">[[ browser.otaRates.reztripRate ]]</span></a></h4>
                 </div>
                 <div class="ota-list">
@@ -238,7 +249,7 @@
                 </div>
                 <div class="col-sm-7 no-padding">
                     <div class="-right">
-                        <h1>Bienvenue au<br>New Yorker</h1>
+                        <h1>Bienvenue au<br>New Yorker</h1>   
                         <p>Niché au cœur du quartier Midtown de Manhattan le long de la 8e avenue, à quelques minutes de Times Square et à une rue de la gare Penn Station, cet édifice emblématique de l’âge d’or du jazz a attiré certains des visiteurs les plus influents de l’histoire. Vous saurez que vous êtes arrivé lorsque vous poserez les yeux sur cette façade de style Art déco, arborant fièrement l’enseigne aux lettres rouges : <span style="color:red;">NEW YORKER</span>.</p>
                         <!-- <div class="btn-holder"><a href="/fr/about/" class="btn-common">Découvrez cette icône historique.</a></div> -->
                     </div>
