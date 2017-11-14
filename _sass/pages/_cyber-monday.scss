@@ -1,9 +1,25 @@
-.landing h1 {
-  font-size: 20px;
-  color: #fff;
-  @media (min-width: $screen-sm-min) {
-    font-size: 43px;
+.cyber-monday {
+
+  &.home-banner .offer-details {
+    position: relative;
+    top: 0;
+    transform: none;
   }
+
+  &.room-details-page .room-details .room-name {
+    @media (min-width: $screen-sm-min) {
+      padding: 40px 0;
+    }
+  }
+
+  h1 {
+    font-size: 20px;
+    color: #fff;
+    @media (min-width: $screen-sm-min) {
+      font-size: 43px;
+    }
+  }
+
 }
 
 .flip-clock-wrapper {
