@@ -53,19 +53,19 @@
   <script>
     $(document).ready(function() {
 
-      var endDate = moment.tz("{{ site.data.countdown-timer.datetime }}", "{{ site.data.countdown-timer.timezone }}");
+      var clock;
 
-    	// $('#clock-timer').countdown(endDate.toDate(), function(event) {
-      //  var daysClock = '<div class="timer-cell"><span>Days</span>' + event.strftime('%D') + '</div>';
-      // 	var hoursClock = '<div class="timer-cell"><span>Hours</span>' + event.strftime('%H') + '</div>';
-      // 	var minsClock = '<div class="timer-cell"><span>Minutes</span>' + event.strftime('%M') + '</div>';
-      // 	var secsClock = '<div class="timer-cell"><span>Seconds</span>' + event.strftime('%S')+ '</div>';
-      //   // $(this).html(daysClock+hoursClock+minsClock+secsClock);
-    	// });
+      /* Set the current date */
+      var currentDate = new Date();
 
-      // console.log("Value of 'endDate' is: " + endDate);
+      /* Set the target date */
+      var targetDate = moment.tz("{{ site.data.countdown-timer.datetime }}", "{{ site.data.countdown-timer.timezone }}");
 
-      var clock = $('#clock-timer').FlipClock(3600 * 24 * 14, {
+      /* Calculate the difference in seconds between the two dates */
+      var timer = targetDate / 1000 - currentDate.getTime() / 1000;
+
+      /* Setup FlipClock */
+      clock = $('#clock-timer').FlipClock(timer, {
         clockFace: 'DailyCounter',
         countdown: true
       });
