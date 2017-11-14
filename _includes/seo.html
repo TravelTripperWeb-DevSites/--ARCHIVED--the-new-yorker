@@ -71,7 +71,9 @@
 
   {% if page.blogimage %}
    {% if page.url == "/blog/macys-thanksgiving-day-parade/"%}
-   <meta name="twitter:image:src" content="{{ page.blogimage.url_large }}">
+   <meta name="twitter:image" content="{{ '/images/large_iStock-458288257.jpg' | absolute_url }}">
+   {% elsif page.url == "/blog/5-unique-things-nyc/"%}
+   <meta name="twitter:image" content="https:{{ page.blogimage.url_large }}">
    {% else %}
     <meta name="twitter:image" content="{{ page.blogimage.url_large }}">
    {% endif %} 
