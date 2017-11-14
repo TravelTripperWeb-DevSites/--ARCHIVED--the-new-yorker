@@ -60,13 +60,21 @@
   <meta name="twitter:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
   <meta name="twitter:description" content="{{ seo_description }}">
   <meta name="twitter:url" content="{{ canonical_url }}">
-   {% if page.blogimage %}
+  {% if seo_author_twitter %}
+    <meta name="twitter:site" content="@{{ seo_author_twitter }}">
+  {% endif %}
+   {% if page.blogimage %} 
   <meta name="twitter:card" content="summary_large_image">
   {% else%}
   <meta name="twitter:card" content="summary">
   {% endif %}
+
   {% if page.blogimage %}
-   <meta name="twitter:image" content="{{ page.blogimage.url_large }}">
+   {% if page.url == "/blog/macys-thanksgiving-day-parade/"%}
+   <meta name="twitter:image:src" content="{{ page.blogimage.url_large }}">
+   {% else %}
+    <meta name="twitter:image" content="{{ page.blogimage.url_large }}">
+   {% endif %} 
   {% elsif site.data.social.og_image %}
   <meta name="twitter:image" content="{{ site.data.social.og_image | absolute_url }}">
   {% endif %}
