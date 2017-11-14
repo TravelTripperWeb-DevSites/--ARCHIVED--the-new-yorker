@@ -7,7 +7,7 @@
     .value('rt3api', new Rt3Api({
       portalId: 'newyorkerhotel',
       hotelId: 'NYCNYR',
-      defaultLocale: 'en',
+      defaultLocale: $('#rezlang').val() || 'en',
       defaultCurrency: 'USD'
     }))
    .config(function($locationProvider) {
