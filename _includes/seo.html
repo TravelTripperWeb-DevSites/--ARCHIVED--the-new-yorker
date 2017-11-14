@@ -69,15 +69,11 @@
   <meta name="twitter:card" content="summary">
   {% endif %} 
 
-  
-  {% if page.blogimage %}
-   {% if page.url == "/blog/macys-thanksgiving-day-parade/"%}
-   <meta name="twitter:image" content="{{ 'https://www.newyorkerhotel.com/images/large_iStock-458288257.jpg' }}">
-   {% elsif page.url == "/blog/5-unique-things-nyc/"%}
+
+  {% if page.blogimage %} 
+    
    <meta name="twitter:image" content="https:{{ page.blogimage.url_large }}">
-   {% else %}
-    <meta name="twitter:image" content="{{ page.blogimage.url_large }}">
-   {% endif %} 
+     
   {% elsif site.data.social.og_image %}
   <meta name="twitter:image" content="{{ site.data.social.og_image | absolute_url }}">
   {% endif %}
