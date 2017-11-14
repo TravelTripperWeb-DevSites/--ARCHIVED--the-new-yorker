@@ -6,12 +6,16 @@ meta_tags:
   robots: noindex, nofollow
 ---
 
-<section class="cyber-monday home-banner custom-carousel room-details-page offer-details-page">
+<section class="home-banner custom-carousel room-details-page offer-details-page">
   <div class="container-fluid">
     <div id="home-banner" class="carousel slide offerPageBanner" data-ride="carousel">
 
       <div class="carousel-inner" role="listbox">
         <div class="item active" style="background-image: url('/images/cyber-monday-banner.jpg');">
+
+          <div class="deal-notice">
+            <p>Deal Ends In</p>
+          </div>
 
           {% include countdown-timer.html %}
 
@@ -50,7 +54,7 @@ meta_tags:
 
               <div class="tab-pane active" id="1a">
                 {% regionblock offer_title, type:header %}
-                  <h3>Special Offer</h3>
+                  <h3>Black Friday / Cyber Monday Sale</h3>
                 {% endregionblock %}
 
                 <div class="row">
@@ -58,10 +62,13 @@ meta_tags:
                   <div class="col-md-6">
 
                     {% regionblock offer_content, type:text %}
-                    <p>Get excited for this price drop! This holiday season, we are celebrating with a big sale. Enjoy an exclusive, website-only, discount of up to 40% off your entire stay. Stay 2 nights or more from now until September 2018 and save big.</p>
-                    <p><b>Black outs and restrictions apply</b></p>
-                    <li>Minimum stay of 2 nights or more</li>
-                    <li>Reservations are non-refundable and non-cancellable</li>
+                    <p>Get excited for this price drop! This holiday season, we are celebrating with a big sale. Enjoy an exclusive, website-only, discount of <strong>up to 40% off</strong> your entire stay. Stay 2 nights or more from now until September 2018 and save big.</p>
+                    <ul>
+                      <li><strong>Blackout dates and restrictions apply</strong></li>
+                      <li>Minimum stay of 2 nights or more</li>
+                      <li>Reservations are non-refundable and non-cancellable</li>
+                      <li>Offer is only valid for reservations made directly on hotel website</li>
+                    </ul>
                     {% endregionblock %}
 
                     <div class="button-holder">
