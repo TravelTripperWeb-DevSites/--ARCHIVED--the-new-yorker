@@ -17,6 +17,10 @@
 
   }
 
+  .countdown-container {
+    margin-top: 40px;
+  }
+
   .home-banner .offer-details {
     position: relative;
     top: 0;
@@ -24,16 +28,19 @@
   }
 
   .room-details-page .room-details .room-name {
+    padding: 30px 0;
     @media (min-width: $screen-sm-min) {
       padding: 40px 0;
     }
   }
 
   h1 {
+    padding-top: 0;
     padding-bottom: 0;
     font-size: 20px;
     color: #fff;
     @media (min-width: $screen-sm-min) {
+      padding-top: 50px;
       padding-bottom: 50px;
       font-size: 43px;
     }
@@ -53,7 +60,7 @@
   }
 
   .button-holder {
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 80px;
     text-align: center;
     @media (min-width: $screen-md-min) {
