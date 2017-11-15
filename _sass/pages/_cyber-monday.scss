@@ -38,11 +38,13 @@
     padding-top: 0;
     padding-bottom: 0;
     font-size: 20px;
+    line-height: 28px;
     color: #fff;
     @media (min-width: $screen-sm-min) {
-      padding-top: 50px;
+      // padding-top: 50px;
       padding-bottom: 50px;
       font-size: 43px;
+      line-height: 53px;
     }
   }
 
@@ -52,7 +54,7 @@
   }
 
   .tab-pane p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .tab-content ul {
