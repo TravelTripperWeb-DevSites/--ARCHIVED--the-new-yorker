@@ -21,6 +21,30 @@
     margin-top: 40px;
   }
 
+  .mobile-clock {
+    display: block;
+    // max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    @media (min-width: $screen-sm-min) {
+      display: none;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 39px;
+      color: #fff;
+    }
+
+  }
+
+  .flip-clock {
+    display: none;
+    @media (min-width: $screen-sm-min) {
+      display: block;
+    }
+  }
+
   .home-banner .offer-details {
     position: relative;
     top: 0;
@@ -71,6 +95,10 @@
     }
   }
 
+  .btn-common {
+    font-size: 20px;
+  }
+
   .video {
     margin-bottom: 80px;
     @media (min-width: $screen-md-min) {
@@ -79,15 +107,15 @@
   }
 
   .flip-clock-wrapper {
-    max-width: 620px;
+    width: 620px;
     margin: 1em auto;
     padding-top: 40px;
-    zoom: .5;
-    -moz-transform: scale(.5);
-    @media (min-width: $screen-sm-min) {
-      zoom: 1;
-      -moz-transform: scale(1);
-    }
+    // zoom: .5;
+    // -moz-transform: scale(.5);
+    // @media (min-width: $screen-sm-min) {
+    //   zoom: 1;
+    //   -moz-transform: scale(1);
+    // }
   }
 
   .flip-clock-divider .flip-clock-label {

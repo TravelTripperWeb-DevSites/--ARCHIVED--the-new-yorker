@@ -54,25 +54,33 @@
   <script>
     $(document).ready(function() {
 
+      //* Add fitVids to the special offer section below header.
+      $("#video").fitVids();
+
       var clock;
 
-      /* Set the current date */
+      //* Set the current date
       var currentDate = new Date();
 
-      /* Set the target date */
+      //* Set the target date
       var targetDate = moment.tz("{{ site.data.countdown-timer.datetime }}", "{{ site.data.countdown-timer.timezone }}");
 
-      /* Calculate the difference in seconds between the two dates */
+      //* Calculate the difference, in seconds, between the two dates
       var timer = targetDate / 1000 - currentDate.getTime() / 1000;
 
-      /* Setup FlipClock */
-      clock = $('#clock-timer').FlipClock(timer, {
+      //* Setup FlipClock
+      clock = $('#flip-clock').FlipClock(timer, {
         clockFace: 'DailyCounter',
         countdown: true
       });
 
-      //* Add fitVids to the special offer section below header.
-      $("#video").fitVids();
+      //* Add a non-flipy time on mobile
+      $('#mobile-clock').countdown(targetDate.toDate(), function(event) {
+        var daysClock = '<div class="col-xs-4"><p>Days</p><p>' + event.strftime('%D') + '</p></div>';
+        var hoursClock = '<div class="col-xs-4"><p>Hours</p><p>' + event.strftime('%H') + '</p></div>';
+        var minutesClock = '<div class="col-xs-4"><p>Minutes</p><p>' + event.strftime('%M') + '</p></div>';
+          $(this).html( daysClock + hoursClock + minutesClock );
+      });
 
     });
   </script>
