@@ -1,0 +1,316 @@
+{
+  "__CONFIG__": {
+    "default_locale": "en",
+    "page_gen": [
+      {
+        "data": "attractions",
+        "template": "attraction-details",
+        "dir": "attractions"
+      },
+      {
+        "data": "blog",
+        "template": "blog-details",
+        "dir": "blog"
+      }
+    ],
+    "locales": [
+      "en"
+    ]
+  },
+  "__ROOT__": {
+    "__PAGES__": [
+      {
+        "label": "The New Yorker, A Wyndham Hotel | Midtown Manhattan Hotel",
+        "published": true,
+        "locales": {
+          "en": "/"
+        },
+        "data_source": null,
+        "source_path": "index.html",
+        "order": 0
+      }
+    ],
+    "attractions": {
+      "__PAGES__": [
+        {
+          "label": "Hotel Near Jacob Javits Center | The New Yorker Attractions",
+          "published": true,
+          "locales": {
+            "en": "/attractions/"
+          },
+          "data_source": null,
+          "source_path": "attractions/index.html",
+          "order": 4
+        }
+      ]
+    },
+    "blog": {
+      "__PAGES__": [
+        {
+          "label": "News and Events in New York | The New Yorker Hotel Blog",
+          "published": true,
+          "locales": {
+            "en": "/blog/"
+          },
+          "data_source": null,
+          "source_path": "blog/index.html",
+          "order": 5
+        }
+      ],
+      "blog-details": {
+        "__PAGES__": [
+          {
+            "label": "Blog",
+            "published": true,
+            "locales": {
+              "en": "/blog/blog-details/"
+            },
+            "data_source": null,
+            "source_path": "blog/blog-details.html",
+            "order": 6
+          }
+        ]
+      }
+    },
+    "contact": {
+      "__PAGES__": [
+        {
+          "label": "The New Yorker, A Wyndham Hotel",
+          "published": true,
+          "locales": {
+            "en": "/contact/"
+          },
+          "data_source": null,
+          "source_path": "contact/index.html",
+          "order": 2
+        }
+      ]
+    },
+    "offer-details": {
+      "__PAGES__": [
+        {
+          "label": "Midtown Manhattan Hotel Packages",
+          "published": true,
+          "locales": {
+            "en": "/offer-details/"
+          },
+          "data_source": null,
+          "source_path": "offer-details/index.html",
+          "order": 3
+        }
+      ]
+    },
+    "offers": {
+      "__PAGES__": [
+        {
+          "label": "Midtown Manhattan Hotel Packages | Manhattan Hotel Specials",
+          "published": true,
+          "locales": {
+            "en": "/offers/"
+          },
+          "data_source": null,
+          "source_path": "offers/index.html",
+          "order": 1
+        }
+      ]
+    },
+    "room-details": {
+      "__PAGES__": [
+        {
+          "label": "Hotel Rooms & Suites in New York",
+          "published": true,
+          "locales": {
+            "en": "/room-details/"
+          },
+          "data_source": null,
+          "source_path": "room-details/index.html",
+          "order": 7
+        }
+      ]
+    },
+    "rooms": {
+      "__PAGES__": [
+        {
+          "label": "Hotel Rooms & Suites in New York | New York City Suites",
+          "published": true,
+          "locales": {
+            "en": "/rooms/"
+          },
+          "data_source": null,
+          "source_path": "rooms/index.html",
+          "order": 8
+        }
+      ]
+    },
+    "about": {
+      "__PAGES__": [
+        {
+          "label": "Art Deco Hotel in New York | History of The New Yorker Hotel",
+          "published": true,
+          "locales": {
+            "en": "/about/"
+          },
+          "data_source": null,
+          "source_path": "about.html",
+          "order": 17
+        }
+      ]
+    },
+    "amenities": {
+      "__PAGES__": [
+        {
+          "label": "The New Yorker, A Wyndham Hotel | Midtown Manhattan Hotel",
+          "published": true,
+          "locales": {
+            "en": "/amenities/"
+          },
+          "data_source": null,
+          "source_path": "amenities.html",
+          "order": 16
+        }
+      ]
+    },
+    "dining": {
+      "__PAGES__": [
+        {
+          "label": "Tick Tock Diner | Trattoria Bianca | Manhattan Restaurants",
+          "published": true,
+          "locales": {
+            "en": "/dining/"
+          },
+          "data_source": null,
+          "source_path": "dining.html",
+          "order": 18
+        }
+      ]
+    },
+    "events": {
+      "__PAGES__": [
+        {
+          "label": "The New Yorker Meeting Rooms | Event Space in Manhattan",
+          "published": true,
+          "locales": {
+            "en": "/events/"
+          },
+          "data_source": null,
+          "source_path": "events.html",
+          "order": 14
+        }
+      ]
+    },
+    "gallery": {
+      "__PAGES__": [
+        {
+          "label": "New York Hotel Pictures | Gallery | New Yorker, Manhattan",
+          "published": true,
+          "locales": {
+            "en": "/gallery/"
+          },
+          "data_source": null,
+          "source_path": "gallery.html",
+          "order": 10
+        }
+      ]
+    },
+    "history": {
+      "__PAGES__": [
+        {
+          "label": "The New Yorker, A Wyndham Hotel",
+          "published": true,
+          "locales": {
+            "en": "/history/"
+          },
+          "data_source": null,
+          "source_path": "history.html",
+          "order": 19
+        }
+      ]
+    },
+    "hotels-near-me": {
+      "__PAGES__": [
+        {
+          "label": "Hotels Near Me | New Yorker Hotel in New York City",
+          "published": true,
+          "locales": {
+            "en": "/hotels-near-me/"
+          },
+          "data_source": null,
+          "source_path": "hotels-near-me.html",
+          "order": 11
+        }
+      ]
+    },
+    "location": {
+      "__PAGES__": [
+        {
+          "label": "Hotels Near Penn Station NYC | Midtown Manhattan Hotel",
+          "published": true,
+          "locales": {
+            "en": "/location/"
+          },
+          "data_source": null,
+          "source_path": "location.html",
+          "order": 13
+        }
+      ]
+    },
+    "page-not-found": {
+      "__PAGES__": [
+        {
+          "label": "Page Not Found | The New Yorker",
+          "published": true,
+          "locales": {
+            "en": "/page-not-found/"
+          },
+          "data_source": null,
+          "source_path": "page-not-found.html",
+          "order": 15
+        }
+      ]
+    },
+    "remarketing-offer": {
+      "__PAGES__": [
+        {
+          "label": "Book Now and Save 27%",
+          "published": true,
+          "locales": {
+            "en": "/remarketing-offer/"
+          },
+          "data_source": null,
+          "source_path": "remarketing-offer.html",
+          "order": 9
+        }
+      ]
+    },
+    "thankyou": {
+      "__PAGES__": [
+        {
+          "label": "Thank You",
+          "published": true,
+          "locales": {
+            "en": "/thankyou/"
+          },
+          "data_source": null,
+          "source_path": "thankyou.html",
+          "order": 12
+        }
+      ]
+    }
+  },
+  "__REGIONS__": [
+    "hotels-near-me.html/hotels_nyc_content.json",
+    "hotels-near-me.html/discover_bigapple_content.json",
+    "hotels-near-me.html/welcome_manhattan_content.json",
+    "hotels-near-me.html/parking_content.json",
+    "hotels-near-me.html/img_address_content.json",
+    "contact/index.html/inquiries.json"
+  ],
+  "__SETTINGS__": [
+    "authors",
+    "pageorder",
+    "social",
+    "config",
+    "navigation"
+  ],
+  "__SHA__": "78350372456dffac5cf1f4d3c58a1857eed486b8"
+}

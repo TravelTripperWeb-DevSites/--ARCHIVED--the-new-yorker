@@ -60,9 +60,21 @@
   <meta name="twitter:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
   <meta name="twitter:description" content="{{ seo_description }}">
   <meta name="twitter:url" content="{{ canonical_url }}">
+  {% if seo_author_twitter %}
+    <meta name="twitter:site" content="@{{ seo_author_twitter }}">
+  {% endif %}
+   {% if page.blogimage %} 
+  <meta name="twitter:card" content="summary_large_image">
+  {% else%}
   <meta name="twitter:card" content="summary">
+  {% endif %} 
 
-  {% if site.data.social.og_image %}
+
+  {% if page.blogimage %} 
+    
+   <meta name="twitter:image" content="https:{{ page.blogimage.url_large }}">
+     
+  {% elsif site.data.social.og_image %}
   <meta name="twitter:image" content="{{ site.data.social.og_image | absolute_url }}">
   {% endif %}
 
@@ -82,7 +94,7 @@
 {% endif %}
 
 {% if page.blogimage %}
-  <meta property="og:image" content="{{ page.blogimage.url }}">
+  <meta property="og:image" content="{{ page.blogimage.url_large }}">
 {% elsif site.data.social.og_image %}
     <meta property="og:image" content="{% if site.data.social.og_image contains "://" %}{{ site.data.social.og_image }}{% else %}{{ site.data.social.og_image | absolute_url }}{% endif %}">
 {% endif %}
