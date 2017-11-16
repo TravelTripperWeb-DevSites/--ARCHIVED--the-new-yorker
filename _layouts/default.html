@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser">
+  <body {% if page.body_class %}class="{{ page.body_class }}"{% endif %} ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser">
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZGV8GK"
@@ -20,8 +20,6 @@
     {% if page.map == true %}
     	{% include map.html %}
     {% endif %}
-
-   
 
   </body>
 
