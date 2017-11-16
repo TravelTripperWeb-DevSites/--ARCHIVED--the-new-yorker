@@ -17,13 +17,18 @@ meta_tags:
             <p>Deal Ends In</p>
           </div>
 
-          {% include countdown-timer.html %}
+          <div class="countdown-container">
+            <div class="timer-info">
+              <div id="mobile-clock" class="mobile-clock row"></div>
+              <div id="flip-clock" class="flip-clock"></div>
+            </div>
+          </div>
 
           <div class="room-details offer-details">
 
             <div class="room-name">
               {% regionblock page_title, type:header %}
-                <h1>Black Friday/ Cyber Monday Sale<br>Save Up To 40% Off<br><strong>Sale Now Live</strong></h1>
+                <h1>Exclusive Cyber Weekend Presale<br>Save Up To 40% Off<br>Hurry - Presale Now Live</h1>
               {% endregionblock %}
             </div>
 
@@ -62,13 +67,7 @@ meta_tags:
                   <div class="col-md-6">
 
                     {% regionblock offer_content, type:text %}
-                    <p>The sale is now live. Get excited for this price drop! This holiday season, we are celebrating with a big sale. Enjoy an exclusive, website-only, discount of <strong>up to 40% off</strong> your entire stay. Stay 2 nights or more from now until September 2018 and save big.</p>
-                    <p><strong>Blackout dates and restrictions apply</strong></p>
-                    <ul>
-                      <li>Minimum stay of 2 nights or more</li>
-                      <li>Reservations are non-refundable and non-cancellable</li>
-                      <li>Offer is only valid for reservations made directly on hotel website</li>
-                    </ul>
+                      <p>Hurry, this limited time presale is now live and is exclusive to our email members. This exciting price drop will be made available to everybody over the cyber-weekend, so use this exclusive sneak peek to book the dates you want, but be quick, as time is running out. Enjoy our website-only discount of up to 40% off your entire stay when you book 2 or more nights from now until September 2018. Save big and beat the Cyber Weekend rush!</p>
                     {% endregionblock %}
 
                     <div class="button-holder">
