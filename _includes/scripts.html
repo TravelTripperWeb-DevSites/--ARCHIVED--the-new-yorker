@@ -1,13 +1,12 @@
 <script>
-function getIp(data){
-   sessionStorage.ip_add =  data.ip;
-}
+  function getIp(data) {
+    sessionStorage.ip_add = data.ip;
+  }
 </script>
 <script src="https://api.ipify.org?format=jsonp&callback=getIp"></script>
 
 <script src="/js/jquery-1.11.1.js"></script>
-
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
+<!-- <script src="/js/jquery-3.1.1.min.js"></script> -->
 
 <script src="/js/bootstrap.min.js"></script>
 
@@ -19,32 +18,113 @@ function getIp(data){
 
 <script src="/js/angular.min.js"></script>
 <script src="/js/jquery-ui.min.js"></script>
-<script src="/js/update-meta.min.js"></script> 
-<script src="/js/rt3api.js"></script>
 <script src="/js/ui-date.js"></script>
+<script src="/js/scripts.js"></script>
+<script src="/js/utm-tracking.js"></script>
+
 <script src="/js/rez-trip.js"></script>
 <script src="/js/rt3-services.js"></script>
 <script src="/js/rt3-directives.js"></script>
 <script src="/js/rt3-filters.js"></script>
-<script src="/js/scripts.js"></script>
-<script src="/js/utm-tracking.js"></script>
 <script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
-  <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
+<script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
 
+<script>
+  TTWeb.Config.configure({
+    hotelId: 'NYCNYR', // or whatever your values are,
+    portalId: 'newyorkerhotel',
+    defaultTimezone: 'America/New_York', // timezone of site
+    ipAddress: sessionStorage.ip_add,
+    defaultCurrency: 'USD',
+    //rootPath: 'https://rt3api-prd-ase.ttaws.com' // include this line only if site is on asian server i.e elite and cristalhospitality
+  });
+
+  $("[show-booking-widget]").bookingWidget({
+    showRateCalendar: true,
+    showOfferCode: true
+  });
+</script>
+
+
+{% if page.url == '/cyber-monday/' or page.url == '/pre-cyber-monday/' %}
+  <script src="/js/moment.min.js"></script>
+  <script src="/js/moment-timezone-with-data.min.js"></script>
+  <script src="/js/jquery.countdown.min.js"></script>
+  <script src="/js/flipclock.min.js"></script>
+  <script src="/js/jquery.fitvids.js"></script>
   <script>
-
-    TTWeb.Config.configure({
-      hotelId: 'NYCNYR', //'orwhatever your values are',
-      portalId: 'newyorkerhotel',
-      defaultTimezone: 'America/New_York', // timezone of site
-      ipAddress: sessionStorage.ip_add,
-      defaultCurrency: 'USD',
-      //rootPath: 'https://rt3api-prd-ase.ttaws.com' // include this line only if site is on asian server i.e elite and cristalhospitality
-    });
-
-
-    $("[show-booking-widget]").bookingWidget({
-         showRateCalendar: true,
-         showOfferCode: true
+    $(document).ready(function() {
+      //* Add fitVids to the special offer section below header.
+      $("#video").fitVids();
     });
   </script>
+{% endif %}
+
+
+{% if page.url == '/cyber-monday/' %}
+  <script>
+    $(document).ready(function() {
+
+      var clock;
+
+      //* Set the current date
+      var currentDate = new Date();
+
+      //* Set the target date
+      var targetDate = moment.tz("2017-11-27 23:59", "America/New_York");
+
+      //* Calculate the difference, in seconds, between the two dates
+      var timer = targetDate / 1000 - currentDate.getTime() / 1000;
+
+      //* Setup FlipClock
+      clock = $('#flip-clock').FlipClock(timer, {
+        clockFace: 'DailyCounter',
+        countdown: true
+      });
+
+      //* Add a non-flipy time on mobile
+      $('#mobile-clock').countdown(targetDate.toDate(), function(event) {
+        var daysClock = '<div class="col-xs-4"><p>Days</p><p>' + event.strftime('%D') + '</p></div>';
+        var hoursClock = '<div class="col-xs-4"><p>Hours</p><p>' + event.strftime('%H') + '</p></div>';
+        var minutesClock = '<div class="col-xs-4"><p>Minutes</p><p>' + event.strftime('%M') + '</p></div>';
+          $(this).html( daysClock + hoursClock + minutesClock );
+      });
+
+    });
+  </script>
+{% endif %}
+
+
+{% if page.url == '/pre-cyber-monday/' %}
+  <script>
+    $(document).ready(function() {
+
+      var clock;
+
+      //* Set the current date
+      var currentDate = new Date();
+
+      //* Set the target date
+      var targetDate = moment.tz("2017-11-19 12:00", "America/New_York");
+
+      //* Calculate the difference, in seconds, between the two dates
+      var timer = targetDate / 1000 - currentDate.getTime() / 1000;
+
+      //* Setup FlipClock
+      clock = $('#flip-clock').FlipClock(timer, {
+        clockFace: 'DailyCounter',
+        countdown: true
+      });
+
+      //* Add a non-flipy time on mobile
+      $('#mobile-clock').countdown(targetDate.toDate(), function(event) {
+        var daysClock = '<div class="col-xs-4"><p>Days</p><p>' + event.strftime('%D') + '</p></div>';
+        var hoursClock = '<div class="col-xs-4"><p>Hours</p><p>' + event.strftime('%H') + '</p></div>';
+        var minutesClock = '<div class="col-xs-4"><p>Minutes</p><p>' + event.strftime('%M') + '</p></div>';
+          $(this).html( daysClock + hoursClock + minutesClock );
+      });
+
+    });
+  </script>
+{% endif %}
+

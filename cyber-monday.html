@@ -1,0 +1,133 @@
+---
+layout: default
+title: Cyber Monday
+body_class: cyber-monday
+meta_tags:
+  robots: noindex, nofollow
+---
+
+<section class="home-banner custom-carousel room-details-page offer-details-page">
+  <div class="container-fluid">
+    <div id="home-banner" class="carousel slide offerPageBanner" data-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active" style="background-image: url('/images/cyber-monday-banner.jpg');">
+
+          <div class="deal-notice">
+            <p>Deal Ends In</p>
+          </div>
+
+          <div class="countdown-container">
+            <div class="timer-info">
+              <div id="mobile-clock" class="mobile-clock row"></div>
+              <div id="flip-clock" class="flip-clock"></div>
+            </div>
+          </div>
+
+          <div class="room-details offer-details">
+
+            <div class="room-name">
+              {% regionblock page_title, type:header %}
+                <h1>Black Friday/ Cyber Monday Sale<br>Save Up To 40% Off<br><strong>Sale Now Live</strong></h1>
+              {% endregionblock %}
+            </div>
+
+            <a href="https://newyorkerhotel.reztrip.com/classic/en/special_offer?action=show&controller=landings&locale=en&rate_code=DISCYB&rate_code=DISCYB&starting_page=special_offer&vr=3" class="btn-common" target="_blank">Book This Offer</a>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="rooms-details-container offer-details-container">
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="rooms-details">
+          <div id="exTab1" class="container">
+
+            <ul class="nav">
+              <li class="active"><a href="#1a" data-toggle="tab">Description</a></li>
+              <li><a href="#2a" data-toggle="tab">Terms & Conditions</a></li>
+            </ul>
+
+            <div class="tab-content clearfix">
+
+              <div class="tab-pane active" id="1a">
+                {% regionblock offer_title, type:header %}
+                  <h3>Special Offer</h3>
+                {% endregionblock %}
+
+                <div class="row">
+
+                  <div class="col-md-6">
+
+                    {% regionblock offer_content, type:text %}
+                      <p>The sale is now live. Get excited for this price drop! This holiday season, we are celebrating with a big sale. Enjoy an exclusive, website-only, discount of <strong>up to 40% off</strong> your entire stay. Stay 2 nights or more from now until September 2018 and save big.</p>
+                      <p><strong>Blackout dates and restrictions apply</strong></p>
+                      <ul>
+                        <li>Minimum stay of 2 nights or more</li>
+                        <li>Reservations are non-refundable and non-cancellable</li>
+                        <li>Offer is only valid for reservations made directly on hotel website</li>
+                      </ul>
+                    {% endregionblock %}
+
+                    <div class="button-holder">
+                      <a href="https://newyorkerhotel.reztrip.com/classic/en/special_offer?action=show&controller=landings&locale=en&rate_code=DISCYB&rate_code=DISCYB&starting_page=special_offer&vr=3" class="btn-common" target="_blank">Book This Offer</a>
+                    </div>
+
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <div id="video" class="video">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/xrBfrXM_vxY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="2a">
+                {% regionblock terms_title, type:header %}
+                  <h3>Terms & Conditions</h3>
+                {% endregionblock %}
+                {% regionblock terms_content, type:text %}
+                  <ul>
+                    <li>Payment is due at time of booking and is non-refundable & non-cancellable.</li>
+                    <li>A refundable security deposit of USD 45 per night will be applicable at check in time.</li>
+                    <li>The hotel is completely <strong>non-smoking</strong>, and a penalty will apply if any smoking occurs.</li>
+                    <li>Facility Fee: USD $29.00 plus sales tax per accommodation per night, which provides guests with the following services and added value offerings:</li>
+                      <ul>
+                        <li>Premium High Speed In Room Internet Access</li>
+                        <li>Long Distance &amp; International In Room Calling</li>
+                        <li>Business Center Access</li>
+                        <li>State of the Art Fitness Center Access</li>
+                      </ul>
+                    <li>Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination.</li>
+                  </ul>
+                {% endregionblock %}
+
+                <div class="button-holder">
+                  <a href="https://newyorkerhotel.reztrip.com/classic/en/special_offer?action=show&controller=landings&locale=en&rate_code=DISCYB&rate_code=DISCYB&starting_page=special_offer&vr=3" class="btn-common" target="_blank">Book This Offer</a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include newsletter.html %}
+{% include twitter-instagram.html %}
