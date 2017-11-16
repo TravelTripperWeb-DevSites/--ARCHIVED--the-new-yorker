@@ -1,70 +1,157 @@
 .cyber-monday {
 
-  &.home-banner .offer-details {
+  .deal-notice {
+    padding-top: 100px;
+
+    p {
+      font-size: 40px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      text-shadow: 4px 4px 6px rgba(0, 0, 0, .5);
+      text-transform: uppercase;
+      @media (min-width: $screen-sm-min) {
+        font-size: 60px;
+      }
+    }
+
+  }
+
+  .countdown-container {
+    margin-top: 40px;
+  }
+
+  .mobile-clock {
+    display: block;
+    // max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    @media (min-width: $screen-sm-min) {
+      display: none;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 39px;
+      color: #fff;
+    }
+
+  }
+
+  .flip-clock {
+    display: none;
+    @media (min-width: $screen-sm-min) {
+      display: block;
+    }
+  }
+
+  .home-banner .offer-details {
     position: relative;
     top: 0;
     transform: none;
   }
 
-  &.room-details-page .room-details .room-name {
+  .room-details-page .room-details .room-name {
+    padding: 30px 0;
     @media (min-width: $screen-sm-min) {
       padding: 40px 0;
     }
   }
 
   h1 {
+    padding-top: 0;
+    padding-bottom: 0;
     font-size: 20px;
+    line-height: 28px;
     color: #fff;
     @media (min-width: $screen-sm-min) {
+      // padding-top: 50px;
+      padding-bottom: 50px;
       font-size: 43px;
+      line-height: 53px;
     }
   }
 
-}
-
-.flip-clock-wrapper {
-  max-width: 620px;
-  margin: 1em auto;
-  padding-top: 140px;
-  zoom: .5;
-  -moz-transform: scale(.5);
-  @media (min-width: $screen-sm-min) {
-    zoom: 1;
-    -moz-transform: scale(1);
+  .offer-details-container .rooms-details .tab-content .tab-pane h3 {
+    font-weight: 700;
+    text-align: left;
   }
-}
 
-.flip-clock-divider .flip-clock-label {
-  font-size: 20px;
-  color: #fff;
-}
-
-.flip-clock-divider.days .flip-clock-label {
-  right: -94px;
-}
-
-.flip-clock-divider.hours .flip-clock-label {
-  right: -97px;
-}
-
-.flip-clock-divider.minutes .flip-clock-label {
-  right: -106px;
-}
-
-.flip-clock-divider.seconds .flip-clock-label {
-  right: -111px;
-}
-
-.flip-clock-wrapper ul li a div div.inn {
-  color: #333;
-  text-shadow: none;
-  background-color: #fff;
-}
-
-.flip-clock-dot {
-  display: none;
-  background-color: #fff;
-  @media (min-width: $screen-sm-min) {
-    display: block;
+  .rooms-details-container .rooms-details .tab-content .tab-pane p {
+    margin-bottom: 10px;
+    font-size: 17px;
   }
+
+  .tab-content ul {
+    margin-left: 20px;
+  }
+
+  .button-holder {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    text-align: center;
+    @media (min-width: $screen-md-min) {
+      max-width: 470px;
+      margin-bottom: 0;
+    }
+  }
+
+  .btn-common {
+    font-size: 20px;
+  }
+
+  .video {
+    margin-bottom: 80px;
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 0;
+    }
+  }
+
+  .flip-clock-wrapper {
+    width: 620px;
+    margin: 1em auto;
+    padding-top: 40px;
+    // zoom: .5;
+    // -moz-transform: scale(.5);
+    // @media (min-width: $screen-sm-min) {
+    //   zoom: 1;
+    //   -moz-transform: scale(1);
+    // }
+  }
+
+  .flip-clock-divider .flip-clock-label {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .flip-clock-divider.days .flip-clock-label {
+    right: -94px;
+  }
+
+  .flip-clock-divider.hours .flip-clock-label {
+    right: -97px;
+  }
+
+  .flip-clock-divider.minutes .flip-clock-label {
+    right: -106px;
+  }
+
+  .flip-clock-divider.seconds .flip-clock-label {
+    right: -111px;
+  }
+
+  .flip-clock-wrapper ul li a div div.inn {
+    color: #333;
+    text-shadow: none;
+    background-color: #fff;
+  }
+
+  .flip-clock-dot {
+    display: none;
+    background-color: #fff;
+    @media (min-width: $screen-sm-min) {
+      display: block;
+    }
+  }
+
 }

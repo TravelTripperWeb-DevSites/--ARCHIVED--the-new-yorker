@@ -61,7 +61,7 @@
   <meta name="twitter:description" content="{{ seo_description }}">
   <meta name="twitter:url" content="{{ canonical_url }}">
   <meta name="twitter:card" content="summary">
-  
+
   {% if site.data.social.og_image %}
   <meta name="twitter:image" content="{{ site.data.social.og_image | absolute_url }}">
   {% endif %}
@@ -84,7 +84,7 @@
 {% if page.blogimage %}
   <meta property="og:image" content="{{ page.blogimage.url }}">
 {% elsif site.data.social.og_image %}
-    <meta property="og:image" content="{% if site.data.social.og_image contains "://" %}{{ site.data.social.og_image }}{% else %}{{ site.data.social.og_image | absolute_url }}{% endif %}">  
+    <meta property="og:image" content="{% if site.data.social.og_image contains "://" %}{{ site.data.social.og_image }}{% else %}{{ site.data.social.og_image | absolute_url }}{% endif %}">
 {% endif %}
 
 {% if page.date %}
@@ -115,4 +115,7 @@
   </script>
 {% endif %}
 
+{% if page.meta_tags.robots %}
+  <meta name="robots" content="{{ page.meta_tags.robots }}">
+{% endif %}
 <!-- end SEO -->
