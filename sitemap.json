@@ -86,6 +86,454 @@
         }
       ]
     },
+    "de": {
+      "__PAGES__": [
+        {
+          "label": "de",
+          "published": true,
+          "locales": {
+            "en": "/de/"
+          },
+          "data_source": null,
+          "source_path": "de/index.html",
+          "order": 12
+        }
+      ],
+      "contact": {
+        "__PAGES__": [
+          {
+            "label": "contact",
+            "published": true,
+            "locales": {
+              "en": "/de/contact/"
+            },
+            "data_source": null,
+            "source_path": "de/contact/index.html",
+            "order": 5
+          }
+        ]
+      },
+      "gallery": {
+        "__PAGES__": [
+          {
+            "label": "gallery",
+            "published": true,
+            "locales": {
+              "en": "/de/gallery/"
+            },
+            "data_source": null,
+            "source_path": "de/gallery/index.html",
+            "order": 6
+          }
+        ]
+      },
+      "location": {
+        "__PAGES__": [
+          {
+            "label": "location",
+            "published": true,
+            "locales": {
+              "en": "/de/location/"
+            },
+            "data_source": null,
+            "source_path": "de/location/index.html",
+            "order": 7
+          }
+        ]
+      },
+      "offer-details": {
+        "__PAGES__": [
+          {
+            "label": "offer-details",
+            "published": true,
+            "locales": {
+              "en": "/de/offer-details/"
+            },
+            "data_source": null,
+            "source_path": "de/offer-details/index.html",
+            "order": 8
+          }
+        ]
+      },
+      "offers": {
+        "__PAGES__": [
+          {
+            "label": "offers",
+            "published": true,
+            "locales": {
+              "en": "/de/offers/"
+            },
+            "data_source": null,
+            "source_path": "de/offers/index.html",
+            "order": 9
+          }
+        ]
+      },
+      "room-details": {
+        "__PAGES__": [
+          {
+            "label": "room-details",
+            "published": true,
+            "locales": {
+              "en": "/de/room-details/"
+            },
+            "data_source": null,
+            "source_path": "de/room-details/index.html",
+            "order": 10
+          }
+        ]
+      },
+      "rooms": {
+        "__PAGES__": [
+          {
+            "label": "rooms",
+            "published": true,
+            "locales": {
+              "en": "/de/rooms/"
+            },
+            "data_source": null,
+            "source_path": "de/rooms/index.html",
+            "order": 11
+          }
+        ]
+      }
+    },
+    "es": {
+      "__PAGES__": [
+        {
+          "label": "es",
+          "published": true,
+          "locales": {
+            "en": "/es/"
+          },
+          "data_source": null,
+          "source_path": "es/index.html",
+          "order": 20
+        }
+      ],
+      "contact": {
+        "__PAGES__": [
+          {
+            "label": "contact",
+            "published": true,
+            "locales": {
+              "en": "/es/contact/"
+            },
+            "data_source": null,
+            "source_path": "es/contact/index.html",
+            "order": 13
+          }
+        ]
+      },
+      "gallery": {
+        "__PAGES__": [
+          {
+            "label": "gallery",
+            "published": true,
+            "locales": {
+              "en": "/es/gallery/"
+            },
+            "data_source": null,
+            "source_path": "es/gallery/index.html",
+            "order": 14
+          }
+        ]
+      },
+      "location": {
+        "__PAGES__": [
+          {
+            "label": "location",
+            "published": true,
+            "locales": {
+              "en": "/es/location/"
+            },
+            "data_source": null,
+            "source_path": "es/location/index.html",
+            "order": 15
+          }
+        ]
+      },
+      "offer-details": {
+        "__PAGES__": [
+          {
+            "label": "offer-details",
+            "published": true,
+            "locales": {
+              "en": "/es/offer-details/"
+            },
+            "data_source": null,
+            "source_path": "es/offer-details/index.html",
+            "order": 16
+          }
+        ]
+      },
+      "offers": {
+        "__PAGES__": [
+          {
+            "label": "offers",
+            "published": true,
+            "locales": {
+              "en": "/es/offers/"
+            },
+            "data_source": null,
+            "source_path": "es/offers/index.html",
+            "order": 17
+          }
+        ]
+      },
+      "room-details": {
+        "__PAGES__": [
+          {
+            "label": "room-details",
+            "published": true,
+            "locales": {
+              "en": "/es/room-details/"
+            },
+            "data_source": null,
+            "source_path": "es/room-details/index.html",
+            "order": 18
+          }
+        ]
+      },
+      "rooms": {
+        "__PAGES__": [
+          {
+            "label": "rooms",
+            "published": true,
+            "locales": {
+              "en": "/es/rooms/"
+            },
+            "data_source": null,
+            "source_path": "es/rooms/index.html",
+            "order": 19
+          }
+        ]
+      }
+    },
+    "fr": {
+      "__PAGES__": [
+        {
+          "label": "fr",
+          "published": true,
+          "locales": {
+            "en": "/fr/"
+          },
+          "data_source": null,
+          "source_path": "fr/index.html",
+          "order": 28
+        }
+      ],
+      "contact": {
+        "__PAGES__": [
+          {
+            "label": "contact",
+            "published": true,
+            "locales": {
+              "en": "/fr/contact/"
+            },
+            "data_source": null,
+            "source_path": "fr/contact/index.html",
+            "order": 21
+          }
+        ]
+      },
+      "gallery": {
+        "__PAGES__": [
+          {
+            "label": "gallery",
+            "published": true,
+            "locales": {
+              "en": "/fr/gallery/"
+            },
+            "data_source": null,
+            "source_path": "fr/gallery/index.html",
+            "order": 22
+          }
+        ]
+      },
+      "location": {
+        "__PAGES__": [
+          {
+            "label": "location",
+            "published": true,
+            "locales": {
+              "en": "/fr/location/"
+            },
+            "data_source": null,
+            "source_path": "fr/location/index.html",
+            "order": 23
+          }
+        ]
+      },
+      "offer-details": {
+        "__PAGES__": [
+          {
+            "label": "offer-details",
+            "published": true,
+            "locales": {
+              "en": "/fr/offer-details/"
+            },
+            "data_source": null,
+            "source_path": "fr/offer-details/index.html",
+            "order": 24
+          }
+        ]
+      },
+      "offers": {
+        "__PAGES__": [
+          {
+            "label": "offers",
+            "published": true,
+            "locales": {
+              "en": "/fr/offers/"
+            },
+            "data_source": null,
+            "source_path": "fr/offers/index.html",
+            "order": 25
+          }
+        ]
+      },
+      "room-details": {
+        "__PAGES__": [
+          {
+            "label": "room-details",
+            "published": true,
+            "locales": {
+              "en": "/fr/room-details/"
+            },
+            "data_source": null,
+            "source_path": "fr/room-details/index.html",
+            "order": 26
+          }
+        ]
+      },
+      "rooms": {
+        "__PAGES__": [
+          {
+            "label": "rooms",
+            "published": true,
+            "locales": {
+              "en": "/fr/rooms/"
+            },
+            "data_source": null,
+            "source_path": "fr/rooms/index.html",
+            "order": 27
+          }
+        ]
+      }
+    },
+    "it": {
+      "__PAGES__": [
+        {
+          "label": "it",
+          "published": true,
+          "locales": {
+            "en": "/it/"
+          },
+          "data_source": null,
+          "source_path": "it/index.html",
+          "order": 36
+        }
+      ],
+      "contact": {
+        "__PAGES__": [
+          {
+            "label": "contact",
+            "published": true,
+            "locales": {
+              "en": "/it/contact/"
+            },
+            "data_source": null,
+            "source_path": "it/contact/index.html",
+            "order": 29
+          }
+        ]
+      },
+      "gallery": {
+        "__PAGES__": [
+          {
+            "label": "gallery",
+            "published": true,
+            "locales": {
+              "en": "/it/gallery/"
+            },
+            "data_source": null,
+            "source_path": "it/gallery/index.html",
+            "order": 30
+          }
+        ]
+      },
+      "location": {
+        "__PAGES__": [
+          {
+            "label": "location",
+            "published": true,
+            "locales": {
+              "en": "/it/location/"
+            },
+            "data_source": null,
+            "source_path": "it/location/index.html",
+            "order": 31
+          }
+        ]
+      },
+      "offer-details": {
+        "__PAGES__": [
+          {
+            "label": "offer-details",
+            "published": true,
+            "locales": {
+              "en": "/it/offer-details/"
+            },
+            "data_source": null,
+            "source_path": "it/offer-details/index.html",
+            "order": 32
+          }
+        ]
+      },
+      "offers": {
+        "__PAGES__": [
+          {
+            "label": "offers",
+            "published": true,
+            "locales": {
+              "en": "/it/offers/"
+            },
+            "data_source": null,
+            "source_path": "it/offers/index.html",
+            "order": 33
+          }
+        ]
+      },
+      "room-details": {
+        "__PAGES__": [
+          {
+            "label": "room-details",
+            "published": true,
+            "locales": {
+              "en": "/it/room-details/"
+            },
+            "data_source": null,
+            "source_path": "it/room-details/index.html",
+            "order": 34
+          }
+        ]
+      },
+      "rooms": {
+        "__PAGES__": [
+          {
+            "label": "rooms",
+            "published": true,
+            "locales": {
+              "en": "/it/rooms/"
+            },
+            "data_source": null,
+            "source_path": "it/rooms/index.html",
+            "order": 35
+          }
+        ]
+      }
+    },
     "offer-details": {
       "__PAGES__": [
         {
@@ -167,6 +615,20 @@
           "data_source": null,
           "source_path": "amenities.html",
           "order": 16
+        }
+      ]
+    },
+    "cyber-monday": {
+      "__PAGES__": [
+        {
+          "label": "Cyber Monday",
+          "published": true,
+          "locales": {
+            "en": "/cyber-monday/"
+          },
+          "data_source": null,
+          "source_path": "cyber-monday.html",
+          "order": 43
         }
       ]
     },
@@ -268,6 +730,20 @@
         }
       ]
     },
+    "pre-cyber-monday": {
+      "__PAGES__": [
+        {
+          "label": "Pre Cyber Monday",
+          "published": true,
+          "locales": {
+            "en": "/pre-cyber-monday/"
+          },
+          "data_source": null,
+          "source_path": "pre-cyber-monday.html",
+          "order": 52
+        }
+      ]
+    },
     "remarketing-offer": {
       "__PAGES__": [
         {
@@ -298,19 +774,30 @@
     }
   },
   "__REGIONS__": [
+    "cyber-monday.html/page_title.json",
+    "cyber-monday.html/offer_title.json",
+    "cyber-monday.html/offer_content.json",
+    "cyber-monday.html/terms_title.json",
+    "cyber-monday.html/terms_content.json",
     "hotels-near-me.html/hotels_nyc_content.json",
     "hotels-near-me.html/discover_bigapple_content.json",
     "hotels-near-me.html/welcome_manhattan_content.json",
     "hotels-near-me.html/parking_content.json",
     "hotels-near-me.html/img_address_content.json",
-    "contact/index.html/inquiries.json"
+    "contact/index.html/inquiries.json",
+    "pre-cyber-monday.html/page_title.json",
+    "pre-cyber-monday.html/offer_title.json",
+    "pre-cyber-monday.html/offer_content.json",
+    "pre-cyber-monday.html/terms_title.json",
+    "pre-cyber-monday.html/terms_content.json"
   ],
   "__SETTINGS__": [
     "authors",
+    "countdown-timer",
     "pageorder",
     "social",
     "config",
     "navigation"
   ],
-  "__SHA__": "78350372456dffac5cf1f4d3c58a1857eed486b8"
+  "__SHA__": "0e190464690a8863a7e1a8b0f7225efd44050f47"
 }
