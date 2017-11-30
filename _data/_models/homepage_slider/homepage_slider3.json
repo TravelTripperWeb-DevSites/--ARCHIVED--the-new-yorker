@@ -1,9 +1,12 @@
 {
-	"title": "Breakfast For a Dollar",
-	"image": {
-		"url": "https://d31f902anbz5po.cloudfront.net/677/32888_2_yankee_large.jpg"
-	},
-	"button-text": "Book This Offer",
-	"button-url": "/offer-details/#breakfast-for-a-dollar",
-	"sort_order": 3
+  "title": "Breakfast For a Dollar",
+  "image": {
+    "url": "https://d31f902anbz5po.cloudfront.net/677/32888_2_yankee_large.jpg",
+    "alt": "Breakfast",
+    "caption": "",
+    "description": ""
+  },
+  "button-text": "Book This Offer",
+  "button-url": "/offer-details/#breakfast-for-a-dollar",
+  "sort_order": 2
 }
