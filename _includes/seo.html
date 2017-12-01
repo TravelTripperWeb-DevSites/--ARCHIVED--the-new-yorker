@@ -130,4 +130,71 @@
 {% if page.meta_tags.robots %}
   <meta name="robots" content="{{ page.meta_tags.robots }}">
 {% endif %}
+<script type='application/ld+json'>
+{
+  "@context": "http://www.schema.org",
+  "@type": "Organization",
+  "name": "The New Yorker Hotel",
+  "url": "https://www.newyorkerhotel.com/",
+  "logo": "https://www.newyorkerhotel.com/images/the-new-yorker-logo.svg",
+  "description": "Experience The New Yorker Hotel, a boutique hotel in New York. Book your stay at our Midtown Manhattan Hotel and start your New York getaway.",
+     "sameAs": [
+    "https://plus.google.com/106550560316390846347"
+   
+  ]
+  }
+}
+</script>	
+<script type='application/ld+json'>
+{
+  "@context": "http://schema.org",
+  "@type": "Hotel",
+  "image": "https://www.newyorkerhotel.com/images/welcome-1.jpg",
+  "starRating" : { "@type" : "Rating",
+                   "ratingValue" : "4"},
+  "priceRange" : "Best Rate Guaranteed",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "481 8th Ave",
+    "addressLocality": "New York",
+    "addressRegion": "New York",
+    "postalCode": "NY 10001",
+    "addressCountry": "United States"
+  },
+   "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3.9",
+    "bestRating": "5",
+    "ratingCount": "2245"
+    },
+  
+  "description": "Experience The New Yorker Hotel, a boutique hotel in New York. Book your stay at our Midtown Manhattan Hotel and start your New York getaway.",
+  "name": "The New Yorker Hotel",
+  "alternateName":"The New Yorker A Wyndham Hotel",
+  "telephone": "+1 212-971-0101",
+  "email": "reservations@nyhotel.com",
+  "url": "https://www.newyorkerhotel.com/",
+   "sameAs" : ["https://twitter.com/WyndhamNYH","https://www.facebook.com/newyorkerhotel","https://plus.google.com/106550560316390846347","https://www.tripadvisor.com/Hotel_Review-g60763-d122005-Reviews-The_New_Yorker_A_Wyndham_Hotel-New_York_City_New_York.html","https://www.instagram.com/newyorkerhotel/","https://www.youtube.com/channel/UCXDFDBPGBkC07HOxL7ISQLQ""]
+    },   
+   "hasMap": "https://goo.gl/maps/h5Mei2sS23z"
+ },
+ 
+  "potentialAction":{
+   "@type":"ReserveAction",
+   "target":{
+   "@type":"EntryPoint",
+   "urlTemplate":"https://newyorkerhotel.reztrip.com/classic/en/searches/5a214b6361b4d71d66bd93e9/hotels/NYCNYR/rooms?action=show&adults%5B%5D=1&children%5B%5D=0&controller=landings&locale=en&starting_page=search","actionPlatform":[
+   "http://schema.org/DesktopWebPlatform",
+   "http://schema.org/IOSPlatform",
+    "http://schema.org/AndroidPlatform"
+]
+},
+   "result":{
+   "@type":"LodgingReservation",
+   "name":"Book Now"
+  }
+ }
+}
+</script>
+
 <!-- end SEO -->
