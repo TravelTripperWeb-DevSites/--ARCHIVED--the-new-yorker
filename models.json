@@ -1,8 +1,8 @@
 {
   "attractions": [
     {
-      "name": "MACY’S HERALD SQUARE",
-      "title": "MACY’S HERALD SQUARE",
+      "name": "MACYΓÇÖS HERALD SQUARE",
+      "title": "MACYΓÇÖS HERALD SQUARE",
       "file": "attraction1.json"
     },
     {
@@ -113,8 +113,8 @@
       "file": "blog21.json"
     },
     {
-      "name": "A Brief History of the New Yorker’s Past",
-      "title": "A Brief History of the New Yorker’s Past",
+      "name": "A Brief History of the New YorkerΓÇÖs Past",
+      "title": "A Brief History of the New YorkerΓÇÖs Past",
       "file": "blog22.json"
     },
     {
@@ -228,6 +228,11 @@
       "file": "blog44.json"
     },
     {
+      "name": "Butcher & Banker: Dine In The New Yorker HotelΓÇÖs Old Bank Vault",
+      "title": "Butcher & Banker: Dine In The New Yorker HotelΓÇÖs Old Bank Vault",
+      "file": "blog45.json"
+    },
+    {
       "name": "The Westminster Kennel Club Dog Show",
       "title": "The Westminster Kennel Club Dog Show",
       "file": "blog6.json"
@@ -258,14 +263,14 @@
       "file": "homepage_slider1.json"
     },
     {
-      "name": "Pay Now, Save 10%",
-      "title": "Pay Now, Save 10%",
-      "file": "homepage_slider2.json"
-    },
-    {
       "name": "Breakfast For a Dollar",
       "title": "Breakfast For a Dollar",
       "file": "homepage_slider3.json"
+    },
+    {
+      "name": "STAY 2/3 NIGHTS, SAVE 15%",
+      "title": "STAY 2/3 NIGHTS, SAVE 15%",
+      "file": "homepage_slider4.json"
     }
   ],
   "simple": [
