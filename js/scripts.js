@@ -284,6 +284,12 @@ $('#link').click(function() {
   $('#welcomeVideo iframe').attr('src', src);
 });
 
+$('#history-link').click(function() {
+  var src = 'https://www.youtube.com/embed/PYD1ZnWT4Jg?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1';
+  $('#welcomeVideo').modal('show');
+  $('#welcomeVideo iframe').attr('src', src);
+});
+
 $('#welcomeVideo button').click(function() {
   $('#welcomeVideo iframe').removeAttr('src');
 });
