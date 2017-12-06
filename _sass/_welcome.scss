@@ -25,6 +25,10 @@
 			}
 	}
 	.-left {
+		&.video-right{
+			margin: 25px auto;
+			max-width: 75%;
+		}
 		.img-holder {
 			position: relative;
 			img {
