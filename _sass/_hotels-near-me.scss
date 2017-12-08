@@ -63,7 +63,7 @@
 	}
 .discover{
 	.content-box{
-		padding:30px 25px 20px 95px !important;
+		padding:30px 25px 20px 59px !important;
 		h5{font-family:$main-font-bold; font-size:14px; text-transform:uppercase; letter-spacing:2px; color:$text; padding:26px 0 8px;}
 		p{font-family:$main-font-regular; font-size:14px;color:$grey-text;
 			a{ color:$grey-text;}
@@ -78,6 +78,9 @@
 			p{ margin-top:30px;color:$grey-text;
 				@media (max-width:768px){ text-align:center;}
 			}
+		}
+		.content-1{
+		             width:90% !important;
 		}
 		
 		.img{
