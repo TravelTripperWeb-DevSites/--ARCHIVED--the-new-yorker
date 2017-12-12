@@ -288,6 +288,19 @@
     "git_file_name": "_assets/image_data/9610767305_8f16b88147_o.json"
   },
   {
+    "name": "BBDinnerMenu",
+    "file_name": "BBDinnerMenu.pdf",
+    "file_type": "application/pdf",
+    "url": "//cdn.traveltripper.io/site-assets/426_558_9873/media/2017-12-05-051116/BBDinnerMenu.pdf",
+    "tags": "",
+    "file_size": 1234329.0,
+    "width": null,
+    "height": null,
+    "description": "",
+    "date_added": "2017-12-05-051116",
+    "git_file_name": "_assets/image_data/BBDinnerMenu.json"
+  },
+  {
     "name": "best-tacos-new-york-city",
     "file_name": "best-tacos-new-york-city.jpg",
     "file_type": "image/jpeg",
@@ -342,6 +355,19 @@
     "git_file_name": "_assets/image_data/Butcher-And-Banker-Interior.json"
   },
   {
+    "name": "cocktailMenuR4",
+    "file_name": "cocktailMenuR4.pdf",
+    "file_type": "application/pdf",
+    "url": "//cdn.traveltripper.io/site-assets/426_558_9873/media/2017-12-05-051119/cocktailMenuR4.pdf",
+    "tags": "",
+    "file_size": 644600.0,
+    "width": null,
+    "height": null,
+    "description": "",
+    "date_added": "2017-12-05-051119",
+    "git_file_name": "_assets/image_data/cocktailMenuR4.json"
+  },
+  {
     "name": "cyber-monday-banner",
     "file_name": "cyber-monday-banner.jpg",
     "file_type": "image/jpeg",
@@ -358,6 +384,19 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_9491/media/2017-11-22-115410/xsmall_cyber-monday-banner.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_9491/media/2017-11-22-115410/thumb_cyber-monday-banner.jpg",
     "git_file_name": "_assets/image_data/cyber-monday-banner.json"
+  },
+  {
+    "name": "DessertMenuR 3",
+    "file_name": "DessertMenuR 3.pdf",
+    "file_type": "application/pdf",
+    "url": "//cdn.traveltripper.io/site-assets/426_558_9873/media/2017-12-05-051123/DessertMenuR-3.pdf",
+    "tags": "",
+    "file_size": 468266.0,
+    "width": null,
+    "height": null,
+    "description": "",
+    "date_added": "2017-12-05-051123",
+    "git_file_name": "_assets/image_data/DessertMenuR 3.json"
   },
   {
     "name": "iStock-155599682",
@@ -1846,6 +1885,19 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_8234/media/2017-10-13-170946/xsmall_weird-nyc-roosevelt-island.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_8234/media/2017-10-13-170946/thumb_weird-nyc-roosevelt-island.jpg",
     "git_file_name": "_assets/image_data/weird-nyc-roosevelt-island.json"
+  },
+  {
+    "name": "WineList V14",
+    "file_name": "WineList V14.pdf",
+    "file_type": "application/pdf",
+    "url": "//cdn.traveltripper.io/site-assets/426_558_9873/media/2017-12-05-051121/WineList-V14.pdf",
+    "tags": "",
+    "file_size": 795001.0,
+    "width": null,
+    "height": null,
+    "description": "",
+    "date_added": "2017-12-05-051121",
+    "git_file_name": "_assets/image_data/WineList V14.json"
   },
   {
     "name": "Winter-Acitivies-Central-Park",
