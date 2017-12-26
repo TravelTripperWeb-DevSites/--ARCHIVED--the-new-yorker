@@ -1,8 +1,8 @@
 {
   "attractions": [
     {
-      "name": "MACYÔÇÖS HERALD SQUARE",
-      "title": "MACYÔÇÖS HERALD SQUARE",
+      "name": "MACYΓÇÖS HERALD SQUARE",
+      "title": "MACYΓÇÖS HERALD SQUARE",
       "file": "attraction1.json"
     },
     {
@@ -113,8 +113,8 @@
       "file": "blog21.json"
     },
     {
-      "name": "A Brief History of the New YorkerÔÇÖs Past",
-      "title": "A Brief History of the New YorkerÔÇÖs Past",
+      "name": "A Brief History of the New YorkerΓÇÖs Past",
+      "title": "A Brief History of the New YorkerΓÇÖs Past",
       "file": "blog22.json"
     },
     {
@@ -228,14 +228,19 @@
       "file": "blog44.json"
     },
     {
-      "name": "Butcher & Banker: Dine In The New Yorker HotelÔÇÖs Old Bank Vault",
-      "title": "Butcher & Banker: Dine In The New Yorker HotelÔÇÖs Old Bank Vault",
+      "name": "Butcher & Banker: Dine In The New Yorker HotelΓÇÖs Old Bank Vault",
+      "title": "Butcher & Banker: Dine In The New Yorker HotelΓÇÖs Old Bank Vault",
       "file": "blog45.json"
     },
     {
       "name": "5 Winter Activities In New York City",
       "title": "5 Winter Activities In New York City",
       "file": "blog46.json"
+    },
+    {
+      "name": "New Year's Eve 2018 in NYC",
+      "title": "New Year's Eve 2018 in NYC",
+      "file": "blog47.json"
     },
     {
       "name": "The Westminster Kennel Club Dog Show",
