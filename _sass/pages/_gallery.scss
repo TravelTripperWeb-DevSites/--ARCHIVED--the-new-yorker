@@ -131,3 +131,37 @@
 	}
 	
 	
+
+.lg-sub-html{
+	padding: 20px 10px;
+	 width: 400px;
+	 min-height: 200px;
+	 max-width: 100%;
+	 left: 30%;
+	 bottom: calc(50% - 50px) !important;
+	 left: calc(50% - 200px);
+	 background-color: rgba(255,255,255,0.8);
+	 color: #000;
+	 z-index: 1070;
+	 h4{
+	 	padding-top: 10px;
+	 	font-weight: 300;
+	 	font-family: "GothamHTF-Light";
+	 	font-size: 12px;
+	 	letter-spacing: 1px;
+	 	padding-bottom: 20px;
+	 }
+	 h3{
+	 	 font-family: "GothamHTF-Bold";
+ 	     font-size: 24px;
+ 	     padding: 0;
+	 }
+	 p{
+	 	margin-top: 10px;
+	 }
+	 a{
+	 	margin-top:10px;
+	 	padding: 10px 16px 11px 16px;
+	 }
+
+}
