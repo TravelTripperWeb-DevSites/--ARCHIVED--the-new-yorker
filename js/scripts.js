@@ -28,6 +28,9 @@ $(window).on("load",function(e){
 
 //Date Picker
 $(document).ready(function() {
+
+  $('.selectpicker').selectpicker();
+  
    adjustHomeBannerHeight();
   
 
