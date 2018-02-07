@@ -85,7 +85,7 @@ a:hover,a:focus {
 			}
 	}
 	@media (max-width: 767px){
-		padding: 7px 0;
+		padding: 12px 0;
 		
 	}
 	
@@ -143,11 +143,48 @@ a:hover,a:focus {
 		}
 		select{
 			padding: 3px 0;
-			width:42px;
-    		margin-left: 5px;
+			/*width:42px;*/
+			width: auto;
+    		/*margin-left: 5px;*/
     		font-family: $main-font-medium;
 		}
+		&.langpick {
+	    .btn {
+	        &.dropdown-toggle {
+	            border-radius: 0;
+	            @media (max-width: 767px){
+	            	padding: 5px 15px 5px 3px;
+	        	}
+	        	@media (max-width: 480px){
+					width: 60px;
+				}
+	        }
+	    }
+	    .dropdown-menu {
+	        &.open {
+	            border-radius: 0;
+	            overflow: hidden;
+	        }
+	        ul {
+	            &.inner {
+	                li {
+	                    a {
+	                        background-color: transparent;
+	                        color: #000;
+	                        padding: 5px 15px;
+	                        display: block;
+	                        text-align: left;
+	                        &:hover {
+	                            background-color: #0971ce;
+	                            color: #fff;
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }
 	}
+}
 
 .logo {
 	float:left;
@@ -160,7 +197,12 @@ a:hover,a:focus {
 	@media (max-width: 767px){
 		width: 110px;
 	}
-	
+	@media (max-width: 480px){
+		width: 100px;
+	}
+	@media (max-width: 374px){
+		width: 80px;
+	}
 	img {
 		width: 100%;
 		height: auto;
@@ -315,7 +357,7 @@ a:hover,a:focus {
 	position:relative;
 	cursor: pointer;
 	position: absolute;
-	right: 230px;
+	right: 280px;
 	width: 32px;
 	height: 22px;
 	top: 28px;
@@ -325,8 +367,8 @@ a:hover,a:focus {
 		display:block;
 	}
 	@media (max-width: 767px){
-		top:16px;
-		right:165px;
+		top:13px;
+		right:190px;
 	}
 }
 .menu-btn:after{
@@ -408,3 +450,39 @@ h1{
 
 	   }
 	  
+.flag-icon{
+	position: relative;
+    display: inline-block;
+    width: 1.33333333em;
+    line-height: 1em;
+}
+.flag-icon-us {
+    background-image: url('/images/flag.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 10px;
+}
+.flag-icon-fr{
+	background-image: url('/images/flags/fr.png');
+	background-size: 100%;
+    background-repeat: no-repeat;
+    height: 10px;
+}
+.flag-icon-es{
+	background-image: url('/images/flags/es.png');
+	background-size: 100%;
+    background-repeat: no-repeat;
+    height: 10px;
+}
+.flag-icon-it{
+	background-image: url('/images/flags/it.png');
+	background-size: 100%;
+    background-repeat: no-repeat;
+    height: 10px;
+}
+.flag-icon-de{
+	background-image: url('/images/flags/de.png');
+	background-size: 100%;
+    background-repeat: no-repeat;
+    height: 10px;
+}
