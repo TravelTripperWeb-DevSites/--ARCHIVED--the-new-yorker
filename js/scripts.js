@@ -386,10 +386,8 @@ $(window).load(function() {
 $("#timeline-1").timeline();
 
 // language dropdown
-$(document).ready(function() {
   $(".booknow.langpick").hover(function(){
     $(this).find(".dropdown-menu").slideDown({duration:200, easing:"easeInQuad"});
     }, function(){
     $(this).find(".dropdown-menu").slideUp({duration:200, easing:"easeInQuad"});
   });
-});
