@@ -239,7 +239,18 @@ $(document).ready(function() {
   });
   $('#thenewyorkergallery').lightGallery({
     selector: '.item'
-  })
+  });
+
+  // get rt3 offers in gallery
+   $('#thenewyorkergallery').rezGallery({
+             hotelID : 'NYCNYR',
+             portalID : 'newyorkerhotel',
+             buttonClass :'btn-common',
+             pageLink : true,
+             description : true,
+             offerdetailPage : '/offer-details/'
+   });
+
 });
 
 $(document).ready(function() {
