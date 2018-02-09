@@ -388,7 +388,7 @@ $("#timeline-1").timeline();
 // language dropdown
 
 $(".booknow.langpick").hover(function(){
-  $(this).find(".dropdown-menu").slideDown();
+  $(this).find(".dropdown-menu").slideDown({duration:200, easing:"easeInQuad"});
   }, function(){
-  $(this).find(".dropdown-menu").slideUp();
+  $(this).find(".dropdown-menu").slideUp({duration:200, easing:"easeInQuad"});
 });
