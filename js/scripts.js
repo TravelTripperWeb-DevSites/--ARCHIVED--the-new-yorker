@@ -384,3 +384,10 @@ $(window).load(function() {
   }
 })(jQuery);
 $("#timeline-1").timeline();
+
+// language dropdown
+  $(".booknow.langpick").hover(function(){
+    $(this).find(".dropdown-menu").slideDown(100);
+    }, function(){
+    $(this).find(".dropdown-menu").slideUp(100);
+  });
