@@ -351,8 +351,7 @@
 <section class="offers-wrapper home-page-offers">
      <div class="container-fluid" rt3-special-rates= "offers">
      	      <div class="col-sm-4 no-padding-margin" ng-repeat="offer in offers.special_rates | limitTo: 3">
-     	                   <div class="thumb">
-     	                        <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt="...">
+     	                   <div class="thumb" style="background-image: url([[offer.lead_photo_url.yankee_large]]);">
      	                         <div class="caption">
      	                             <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
 
