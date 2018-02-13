@@ -1317,6 +1317,24 @@
     "git_file_name": "_assets/image_data/NYC-New-Years-Eve.json"
   },
   {
+    "name": "romance-package",
+    "file_name": "romance-package.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/426_558_12129/media/2018-02-09-004753/romance-package.jpg",
+    "tags": "",
+    "file_size": 103820.0,
+    "width": 800,
+    "height": 600,
+    "description": "",
+    "date_added": "2018-02-09-004753",
+    "url_large": "//cdn.traveltripper.io/site-assets/426_558_12129/media/2018-02-09-004753/large_romance-package.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/426_558_12129/media/2018-02-09-004753/medium_romance-package.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/426_558_12129/media/2018-02-09-004753/small_romance-package.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_12129/media/2018-02-09-004753/xsmall_romance-package.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_12129/media/2018-02-09-004753/thumb_romance-package.jpg",
+    "git_file_name": "_assets/image_data/romance-package.json"
+  },
+  {
     "name": "shutterstock_129258293",
     "file_name": "shutterstock_129258293.jpg",
     "file_type": "image/jpeg",
