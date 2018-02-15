@@ -126,8 +126,12 @@
   </script>
 {% endif %}
 
-{% if page.meta_tags.robots %}
-  <meta name="robots" content="{{ page.meta_tags.robots }}">
+{% if page.meta_tags !="" %}
+ {% if page.url =='/blog/'%}
+   <meta name="robots" content="">
+ {% else %}
+   <meta name="robots" content="{{ page.meta_tags }}">
+ {%endif%}
 {% endif %}
 <script type='application/ld+json'>
 {
