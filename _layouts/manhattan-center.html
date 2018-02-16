@@ -41,7 +41,10 @@ layout: default
             </div>
             <div class="col-sm-7 no-padding">
                 <div class="-left">
-                    <div class="img-holder"><img src="/images/events/hammerstein.jpg" alt="events"/>
+                    <div class="img-holder">
+                      {% regionblock hammerstein_image, type;image %}
+                      <img src="/images/events/hammerstein.jpg" alt="hammerstein"/>
+                       {% endregionblock %}
                     </div>
                 </div>
           </div>
@@ -101,7 +104,10 @@ layout: default
             </div>
             <div class="col-sm-7 no-padding">
                 <div class="-left">
-                    <div class="img-holder"><img src="/images/events/the-bank.jpg" alt="events"/>
+                    <div class="img-holder">
+                      {% regionblock the_bank_image, type;image %}
+                      <img src="/images/events/the-bank.jpg" alt="events"/>
+                      {% endregionblock %}
                     </div>
                 </div>
           </div>
