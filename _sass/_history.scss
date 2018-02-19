@@ -217,7 +217,7 @@ $timeline-container-width:100%;
                       }
                       p{
                          padding: 0 5px !important;
-                        @media (max-width: 383px){
+                        @media (max-width: 467px){
                         line-height: 20px;
                         font-size: 16px;
                       }
@@ -238,4 +238,7 @@ $timeline-container-width:100%;
 }
 .mg-top{
   margin-top: 20px;
+  li{
+    font-size: 18px !important;
+  }
 }
