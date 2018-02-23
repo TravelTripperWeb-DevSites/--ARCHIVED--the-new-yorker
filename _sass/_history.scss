@@ -195,3 +195,50 @@ $timeline-container-width:100%;
     }
   }
 }	  
+
+.inner-page-banner{
+          .view-space{
+                     h1{
+                          font-size: 50px;
+                          line-height: 68px;
+                          padding-top: 35px !important;
+                          @media (max-width: 1200px){
+                            font-size: 25px !important;
+                          line-height: 32px;
+                        }
+                         @media (max-width: 1200px){
+                          font-size: 25px !important;
+                          line-height: 30px;
+                        }
+                        @media (max-width: 400px) { 
+                         font-size: 20px !important;
+                        line-height: 28px !important;
+                       }
+                      }
+                      p{
+                         padding: 0 5px !important;
+                        @media (max-width: 467px){
+                        line-height: 20px;
+                        font-size: 16px;
+                      }
+                      }
+                  }
+              }
+
+
+ @media (max-width: 639px) and (min-width: 500px){
+              .v-banner-h{
+                         height: 337px !important;
+                         }
+                       }
+      
+.content-align{
+  text-align: inherit !important;
+  padding: 50px 15px 50px 55px !important;
+}
+.mg-top{
+  margin-top: 20px;
+  li{
+    font-size: 18px !important;
+  }
+}
