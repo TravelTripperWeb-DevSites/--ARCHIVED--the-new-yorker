@@ -3,7 +3,7 @@
 		<span> Share: </span> 
 		<ul class="social-share">
 		    <li>
-		        <a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{ page.url }}&title={{blog.title}}&description={{ blog.blog_post | strip_html | truncatewords: 20 | remove: '<p>' | remove: '</p>'}}&caption=Triumph Hotels&picture={{blog.image.url}}" class="fa fa-facebook" title="Share on Facebook" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" ></a>
+		        <a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{ page.url }}&title={{blog.title}}&description={{ blog.blog_post | strip_html | truncatewords: 20 | remove: '<p>' | remove: '</p>'}}&caption=Triumph Hotels&picture={{blog.image.url}}" class="fa fa-facebook" title="Share on Facebook" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="nofollow" ></a>
 		    </li>
 		    <li>
 		        <a href="https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ page.title }} {{site.url}}{{ page.url }}" class="fa fa-twitter" title="Share on Twitter" ></a>
