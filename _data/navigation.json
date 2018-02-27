@@ -50,7 +50,10 @@
 			'title':'Events',
 			'name': 'events',
 			'url': '/events/',
-			'submenu': 'false' 
+			'submenu': 'true' ,
+			'subitems': [
+			{'title':'Manhattan Center','name': 'Manhattan Center','url': '/manhattan-center/'}
+		]
 		},
 		{
 			'title':'Blog',
