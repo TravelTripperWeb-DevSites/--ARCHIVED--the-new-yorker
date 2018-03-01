@@ -349,7 +349,7 @@ angular.module('rezTrip')
                   angular.forEach(response.special_rates, function(value, key) {
                       tmpName = $filter ('formatNameForLink')(value.rate_plan_name);
                       hashName = $filter ('formatNameForLink')(specialRates.locationHash);
-                      if (tmpName == hashName) {
+                      if (tmpName == hashName  || value.rate_plan_code == specialRates.locationHash) {
                           angular.extend(specialRates.sRdetail, value);
 
                       }
