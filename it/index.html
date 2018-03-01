@@ -196,13 +196,14 @@
       </ul>
     </div>
     <div class="menu-btn"></div>
-    <div class="booknow langpick"> 
+    <div class="booknow langpick">
       <select class="selectpicker" data-width="fit" onchange="location = this.value;">
         <option value="/" data-content='<span class="flag-icon flag-icon-us"></span> EN'></option>
         <option value="/fr/" {% if page.url contains '/fr/'%} selected="selected"{% endif %}  data-content='<span class="flag-icon flag-icon-fr"></span> FR'></option>
         <option value="/es/" {% if page.url contains '/es/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-es"></span> ES'></option>
         <option value="/it/" {% if page.url contains '/it/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-it"></span> IT'></option>
         <option value="/de/" {% if page.url contains '/de/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-de"></span> DE'></option>
+        <option value="/zh/" {% if page.url contains '/zh/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-zh"></span> ZH'></option>
       </select>
     <a href="javascript:void(0);" show-booking-widget><span class="cal"><img src="/images/calendar.svg" alt=""/></span>Prenota ora</a>
     <!-- <select onchange="location = this.value;">
@@ -462,8 +463,7 @@
 <section class="offers-wrapper home-page-offers">
      <div class="container-fluid" rt3-special-rates= "offers">
      	      <div class="col-sm-4 no-padding-margin" ng-repeat="offer in offers.special_rates | limitTo: 3">
-     	                   <div class="thumb">
-     	                        <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt="...">
+     	                   <div class="thumb" style="background-image: url([[offer.lead_photo_url.yankee_large]]);">
      	                         <div class="caption">
      	                             <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
 
@@ -706,7 +706,7 @@ function getIp(data){
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
 
 <script src="/js/bootstrap.min.js"></script>
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.js"></script>
 <script src="/js/lightgallery.js"></script>
 <script src="/js/lg-fullscreen.js"></script>
 <script src="/js/lg-thumbnail.js"></script>
@@ -723,7 +723,7 @@ function getIp(data){
 <script src="/js/rt3-filters.js"></script>
 <script src="/js/scripts.js"></script>
 <script src="/js/utm-tracking.js"></script>
-<script src="/js/update-meta.min.js"></script> 
+<script src="/js/update-meta.min.js"></script>
 <script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
   <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
 

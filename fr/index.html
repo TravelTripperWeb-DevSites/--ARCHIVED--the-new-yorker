@@ -172,20 +172,14 @@
             <div class="menu-btn"></div>
             <div class="booknow langpick">
                 <select class="selectpicker" data-width="fit" onchange="location = this.value;">
-        <option value="/" data-content='<span class="flag-icon flag-icon-us"></span> EN'></option>
-        <option value="/fr/" {% if page.url contains '/fr/'%} selected="selected"{% endif %}  data-content='<span class="flag-icon flag-icon-fr"></span> FR'></option>
-        <option value="/es/" {% if page.url contains '/es/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-es"></span> ES'></option>
-        <option value="/it/" {% if page.url contains '/it/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-it"></span> IT'></option>
-        <option value="/de/" {% if page.url contains '/de/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-de"></span> DE'></option>
-      </select>
-                <!-- <select onchange="location = this.value;">
-                  <option value="/">EN</option>
-                  <option value="/fr/"{% if page.url contains '/fr/'%} selected="selected"{% endif %}>FR</option>
-                  <option value="/es/"{% if page.url contains '/es/'%} selected="selected"{% endif %}>ES</option>
-                  <option value="/it/"{% if page.url contains '/it/'%} selected="selected"{% endif %}>IT</option>
-                  <option value="/de/"{% if page.url contains '/de/'%} selected="selected"{% endif %}>DE</option>
-                </select> -->
-            <a href="javascript:void(0);" show-booking-widget style="font-size:10px; padding-right: 10px; padding-left: 10px;"><span class="cal"><img src="/images/calendar.svg" alt=""/></span>Réservez dès maintenant</a>
+                <option value="/" data-content='<span class="flag-icon flag-icon-us"></span> EN'></option>
+                <option value="/fr/" {% if page.url contains '/fr/'%} selected="selected"{% endif %}  data-content='<span class="flag-icon flag-icon-fr"></span> FR'></option>
+                <option value="/es/" {% if page.url contains '/es/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-es"></span> ES'></option>
+                <option value="/it/" {% if page.url contains '/it/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-it"></span> IT'></option>
+                <option value="/de/" {% if page.url contains '/de/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-de"></span> DE'></option>
+                <option value="/zh/" {% if page.url contains '/zh/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-zh"></span> ZH'></option>
+              </select>
+              <a href="javascript:void(0);" show-booking-widget style="font-size:10px; padding-right: 10px; padding-left: 10px;"><span class="cal"><img src="/images/calendar.svg" alt=""/></span>Réservez dès maintenant</a>
             </div>
         </div>
     </nav>
@@ -231,7 +225,7 @@
         <div class="best-rate-ota" ng-show="browser.otaRates.brgFound">
             <div class="boxes">
                 <div class="tonight-rate ">
-                    <p>Meilleur tarif disponible</p> 
+                    <p>Meilleur tarif disponible</p>
                     <h4>Tarif de ce soir <a href="https://newyorkerhotel.reztrip.com/search?locale=fr" target="_blank" class="homeTonightRate" ><span class="price">[[ browser.otaRates.reztripRate ]]</span></a></h4>
                 </div>
                 <div class="ota-list">
@@ -258,7 +252,7 @@
                 </div>
                 <div class="col-sm-7 no-padding">
                     <div class="-right">
-                        <h1>Bienvenue au<br>New Yorker</h1>   
+                        <h1>Bienvenue au<br>New Yorker</h1>
                         <p>Niché au cœur du quartier Midtown de Manhattan le long de la 8e avenue, à quelques minutes de Times Square et à une rue de la gare Penn Station, cet édifice emblématique de l’âge d’or du jazz a attiré certains des visiteurs les plus influents de l’histoire. Vous saurez que vous êtes arrivé lorsque vous poserez les yeux sur cette façade de style Art déco, arborant fièrement l’enseigne aux lettres rouges : <span style="color:red;">NEW YORKER</span>.</p>
                         <!-- <div class="btn-holder"><a href="/fr/about/" class="btn-common">Découvrez cette icône historique.</a></div> -->
                     </div>
@@ -390,8 +384,7 @@
     <section class="offers-wrapper home-page-offers">
         <div class="container-fluid" rt3-special-rates="offers">
             <div class="col-sm-4 no-padding-margin" ng-repeat="offer in offers.special_rates | limitTo: 3">
-                <div class="thumb">
-                    <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt="...">
+                <div class="thumb" style="background-image: url([[offer.lead_photo_url.yankee_large]]);">
                     <div class="caption">
                         <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
                         <a ng-href="/fr/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common btn-white" rel="tooltip" title="Afficher cette offre">Afficher l’offre</a>
@@ -620,7 +613,7 @@
     <script src="/js/jquery-1.11.1.js"></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
     <script src="/js/bootstrap.min.js"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.js"></script>
     <script src="/js/lightgallery.js"></script>
     <script src="/js/lg-fullscreen.js"></script>
     <script src="/js/lg-thumbnail.js"></script>
@@ -636,7 +629,7 @@
     <script src="/js/rt3-filters.js"></script>
     <script src="/js/scripts.js"></script>
     <script src="/js/utm-tracking.js"></script>
-    <script src="/js/update-meta.min.js"></script> 
+    <script src="/js/update-meta.min.js"></script>
     <script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
     <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
     <script>
