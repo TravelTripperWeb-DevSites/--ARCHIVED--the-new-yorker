@@ -32,9 +32,9 @@ $(document).ready(function() {
   if($(".selectpicker")){
     $('.selectpicker').selectpicker();
   }
-  
+
    adjustHomeBannerHeight();
-  
+
 
   console.log(window.location.href);
 

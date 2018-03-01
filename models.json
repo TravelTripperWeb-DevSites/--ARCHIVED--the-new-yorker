@@ -1,8 +1,8 @@
 {
   "attractions": [
     {
-      "name": "MACYΓÇÖS HERALD SQUARE",
-      "title": "MACYΓÇÖS HERALD SQUARE",
+      "name": "MACY’S HERALD SQUARE",
+      "title": "MACY’S HERALD SQUARE",
       "file": "attraction1.json"
     },
     {
@@ -113,8 +113,8 @@
       "file": "blog21.json"
     },
     {
-      "name": "A Brief History of the New YorkerΓÇÖs Past",
-      "title": "A Brief History of the New YorkerΓÇÖs Past",
+      "name": "A Brief History of the New Yorker’s Past",
+      "title": "A Brief History of the New Yorker’s Past",
       "file": "blog22.json"
     },
     {
@@ -228,8 +228,8 @@
       "file": "blog44.json"
     },
     {
-      "name": "Butcher & Banker: Dine In The New Yorker HotelΓÇÖs Old Bank Vault",
-      "title": "Butcher & Banker: Dine In The New Yorker HotelΓÇÖs Old Bank Vault",
+      "name": "Butcher & Banker: Dine In The New Yorker Hotel’s Old Bank Vault",
+      "title": "Butcher & Banker: Dine In The New Yorker Hotel’s Old Bank Vault",
       "file": "blog45.json"
     },
     {
@@ -248,8 +248,8 @@
       "file": "blog48.json"
     },
     {
-      "name": "10 Things You DidnΓÇÖt Know About New York City",
-      "title": "10 Things You DidnΓÇÖt Know About New York City",
+      "name": "10 Things You Didn’t Know About New York City",
+      "title": "10 Things You Didn’t Know About New York City",
       "file": "blog49.json"
     },
     {
@@ -263,13 +263,13 @@
       "file": "blog51.json"
     },
     {
-      "name": "10 Words YouΓÇÖll Only Hear in New York City",
-      "title": "10 Words YouΓÇÖll Only Hear in New York City",
+      "name": "10 Words You’ll Only Hear in New York City",
+      "title": "10 Words You’ll Only Hear in New York City",
       "file": "blog52.json"
     },
     {
-      "name": "La Cr├¿me de la Cr├¿me of the Canine World Returns to NYC",
-      "title": "La Cr├¿me de la Cr├¿me of the Canine World Returns to NYC",
+      "name": "La Crème de la Crème of the Canine World Returns to NYC",
+      "title": "La Crème de la Crème of the Canine World Returns to NYC",
       "file": "blog53.json"
     },
     {
@@ -281,6 +281,11 @@
       "name": "Top Events to Watch Out for This March",
       "title": "Top Events to Watch Out for This March",
       "file": "blog55.json"
+    },
+    {
+      "name": "New York: The Land of Easter Eggs and Passover Seders",
+      "title": "New York: The Land of Easter Eggs and Passover Seders",
+      "file": "blog56.json"
     },
     {
       "name": "The Westminster Kennel Club Dog Show",

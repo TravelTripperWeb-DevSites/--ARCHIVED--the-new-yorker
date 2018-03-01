@@ -3,22 +3,22 @@ layout: default
 ---
 <input type="hidden" id="roomId"  value="{{page.code}}" />
 <input type="hidden" id="roomList" value="[[ browser.roomsList ]]"   />
- 
+ <div class="loading" style="display:block;">Loading&#8230;</div>
 
 
 <section ng-controller ="roomDetail" >
 
 
 <!-- seo angular -->
- 
+
   <update-meta name="description" content="[[selectedRoom.description]]"></update-meta>
   <update-meta property="og:title" content="[[selectedRoom.name]]"></update-meta>
   <update-meta property="og:description" content="[[selectedRoom.description]]"></update-meta>
   <update-title title="[[selectedRoom.name]]"></update-title>
   <update-meta itemprop="description" content="[[selectedRoom.description]]"></update-meta>
-  <update-link rel="canonical" href="https://www.newyorkerhotel.com/room-details/#[[selectedRoom.name | formatNameForLink]]"> 
-  <update-meta property="og:url" content="https://www.newyorkerhotel.com/room-details/#[[selectedRoom.name | formatNameForLink]]"> 
-  <update-meta property="og:image" content="[[selectedRoom.photos[0].yankee_large]]"> 
+  <update-link rel="canonical" href="https://www.newyorkerhotel.com/room-details/#[[selectedRoom.name | formatNameForLink]]">
+  <update-meta property="og:url" content="https://www.newyorkerhotel.com/room-details/#[[selectedRoom.name | formatNameForLink]]">
+  <update-meta property="og:image" content="[[selectedRoom.photos[0].yankee_large]]">
   <update-mata name="twitter:title" content="[[selectedRoom.name]]">
   <update-mata name="twitter:description" content="[[selectedRoom.description]]">
   <update-mata name="twitter:url" content="https://www.newyorkerhotel.com/room-details/#[[selectedRoom.name | formatNameForLink]]">

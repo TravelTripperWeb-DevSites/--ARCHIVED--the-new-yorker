@@ -48,11 +48,11 @@
               "description": "体验纽约人酒店，纽约的一家精品酒店。在曼哈顿中城酒店预订住宿并开始您的纽约之旅。",
                  "sameAs": [
                 "https://plus.google.com/106550560316390846347"
-               
+
               ]
               }
             }
-        </script>   
+        </script>
         <script type='application/ld+json'>
             {
               "@context": "http://schema.org",
@@ -75,7 +75,7 @@
                 "bestRating": "5",
                 "ratingCount": "2245"
                 },
-              
+
               "description": "体验纽约人酒店，纽约的一家精品酒店。在曼哈顿中城酒店预订住宿并开始您的纽约之旅。",
               "name": "纽约人酒店",
               "alternateName":"温德姆酒店旗下纽约人酒店",
@@ -83,10 +83,10 @@
               "email": "reservations@nyhotel.com",
               "url": "https://www.newyorkerhotel.com/",
                "sameAs" : ["https://twitter.com/WyndhamNYH","https://www.facebook.com/newyorkerhotel","https://plus.google.com/106550560316390846347","https://www.tripadvisor.com/Hotel_Review-g60763-d122005-Reviews-The_New_Yorker_A_Wyndham_Hotel-New_York_City_New_York.html","https://www.instagram.com/newyorkerhotel/","https://www.youtube.com/channel/UCXDFDBPGBkC07HOxL7ISQLQ"]
-                },   
+                },
                "hasMap": "https://goo.gl/maps/h5Mei2sS23z"
              },
-             
+
               "potentialAction":{
                "@type":"ReserveAction",
                "target":{
@@ -153,11 +153,11 @@
                 hpid: "NYCNYR", /* Property ID */
                 pt: "PRODUCT" /* Page Type - HOME_PAGE or PRODUCT or TRACKING */
               };
-            
+
               /* Please do not modify the below code. */
               var paramsArr = [];
               for(key in params) { paramsArr.push(key + '=' + encodeURIComponent(params[key])) };
-            
+
               var pl = document.createElement('script');
               pl.type = 'text/javascript';
               pl.async = true;
@@ -181,7 +181,7 @@
         </style>
     </head>
     <body ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser">
-        <input type="hidden" id="rezlang" value="de">
+        <input type="hidden" id="rezlang" value="zh-CN"><div class="loading" style="display:block;">Loading&#8230;</div>
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZGV8GK"
             height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
@@ -223,9 +223,9 @@
                             <div class="item" ng-class="{'active': $index == 0}"  style="background-image: url([[photo.yankee_large]]);" ng-repeat ="photo in selectedRoom.photos" >
                                 <div class="banner-overlay"></div>
                                 <div class="room-details">
-                                    <div class="room-price">今晚价格 <a href="https://newyorkerhotel.reztrip.com/search?locale=de&selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" >[[ selectedRoom.todayRate ]]</a></div>
+                                    <div class="room-price">今晚价格 <a href="https://newyorkerhotel.reztrip.com/search?locale=zh-CN&selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" >[[ selectedRoom.todayRate ]]</a></div>
                                     <div class="room-name"><span>[[selectedRoom.name]]</span></div>
-                                    <a href="https://newyorkerhotel.reztrip.com/search?locale=de&selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" class="btn-common">预订此客房</a>
+                                    <a href="https://newyorkerhotel.reztrip.com/search?locale=zh-CN&selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" class="btn-common">预订此客房</a>
                                 </div>
                             </div>
                         </div>
@@ -239,7 +239,7 @@
                 <div class="container-fluid rooms-navigation">
                     <div class="row">
                         <div class="col-sm-12">
-                            <a href="/de/rooms/">返回到客房列表</a> <a ng-href="/de/room-details/#[[prevRoomName | formatNameForLink ]]" ng-click="reloadPage" class="prev-room" ng-show="prevRoomName"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> 上一间客房</span></a> <a ng-href="/de/room-details/#[[nextRoomName | formatNameForLink ]]" ng-click="reloadPage" class="next-room" ng-show="nextRoomName"><span>下一间客房</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt=""> </a>
+                            <a href="/zh/rooms/">返回到客房列表</a> <a ng-href="/zh/room-details/#[[prevRoomCode]]" ng-click="reloadPage" class="prev-room" ng-show="prevRoomCode"> <img src="/images/rooms-left-arrow.png" width="27" height="24" alt=""><span> 上一间客房</span></a> <a ng-href="/zh/room-details/#[[nextRoomCode ]]" ng-click="reloadPage" class="next-room" ng-show="nextRoomCode"><span>下一间客房</span> <img src="/images/rooms-right-arrow.png" width="27" height="24" alt=""> </a>
                         </div>
                     </div>
                 </div>
@@ -284,7 +284,7 @@
                     <div class="thumb" style="background-image: url([[offer.lead_photo_url.yankee_large]]);">
                         <div class="caption">
                             <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
-                            <a ng-href="/de/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common btn-white" rel="tooltip" title="查看优惠">查看优惠</a>
+                            <a ng-href="/zh/offer-details/#[[offer.rate_plan_code]]" class="btn-common btn-white" rel="tooltip" title="查看优惠">查看优惠</a>
                         </div>
                     </div>
                 </div>
@@ -330,7 +330,7 @@
         <script src="/js/jquery-1.11.1.js"></script>
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
         <script src="/js/bootstrap.min.js"></script>
-        <script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.js"></script>
         <script src="/js/lightgallery.js"></script>
         <script src="/js/lg-fullscreen.js"></script>
         <script src="/js/lg-thumbnail.js"></script>
@@ -346,7 +346,7 @@
         <script src="/js/rt3-filters.js"></script>
         <script src="/js/scripts.js"></script>
         <script src="/js/utm-tracking.js"></script>
-        <script src="/js/update-meta.min.js"></script> 
+        <script src="/js/update-meta.min.js"></script>
         <script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
         <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
         <script >
@@ -358,8 +358,8 @@
               defaultCurrency: 'USD',
               //rootPath: 'https://rt3api-prd-ase.ttaws.com' // include this line only if site is on asian server i.e elite and cristalhospitality
             });
-            
-            
+
+
             $("[show-booking-widget]").bookingWidget({
                  showRateCalendar: true,
                  showOfferCode: true
@@ -374,7 +374,7 @@
                     <div class="address">
                         <h3>联系我们</h3>
                         <p>
-                            <a href="https://goo.gl/maps/m7a6UQKkgcH2" target="_blank"> <span>纽约州纽约市第八大道 34 街 481 号</span> <span>, 10001</span></a> <span>+1 (21 2) 9 71 01 01</span> 
+                            <a href="https://goo.gl/maps/m7a6UQKkgcH2" target="_blank"> <span>纽约州纽约市第八大道 34 街 481 号</span> <span>, 10001</span></a> <span>+1 (21 2) 9 71 01 01</span>
                         </p>
                         <p>
                             <span><a href="mailto:reservations@nyhotel.com">reservations@nyhotel.com</a></span> <span><a href="mailto:guestservices@nyhotel.com">guestservices@nyhotel.com</a></span>
