@@ -126,6 +126,53 @@
   </script>
 {% endif %}
 
+<meta http-equiv="Content-Language" content="{{ active_lang }}">
+{% if page.url == '/' or page.url == '/es/' or page.url == '/it/' or page.url == '/de/' or page.url == '/fr/' or page.url == '/zh/' or page.url contains '/contact/' or page.url contains '/gallery/' or page.url contains '/location' or page.url contains 'offer-details' or page.url contains '/offers/' or page.url contains '/offer/' or page.url contains '/rooms/' or page.url contains '/room/' %}
+  {% if page.url contains '/es/' %}
+    <link rel="alternate" hreflang="{{ site.default_lang }}" href="{{ site.url }}{{ page.url | remove: '/es' }}">
+    <link rel="alternate" hreflang="{{ active_lang }}" href="{{ site.url }}{{ page.url }}">
+    <link rel="alternate" hreflang="it" href="{{ site.url }}{{ page.url | remove: '/es' | prepend: '/it' }}">
+    <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.url | remove: '/es' | prepend: '/fr' }}">
+    <link rel="alternate" hreflang="de" href="{{ site.url }}{{ page.url | remove: '/es' | prepend: '/de' }}">
+    <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ page.url | remove: '/es' | prepend: '/zh' }}">
+  {% elsif page.url contains '/it/' %}
+    <link rel="alternate" hreflang="{{ site.default_lang }}" href="{{ site.url }}{{ page.url | remove: '/pt' }}">
+    <link rel="alternate" hreflang="{{ active_lang }}" href="{{ site.url }}{{ page.url }}">
+    <link rel="alternate" hreflang="es" href="{{ site.url }}{{ page.url | remove: '/it' | prepend: '/es' }}">
+    <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.url | remove: '/it' | prepend: '/fr' }}">
+    <link rel="alternate" hreflang="de" href="{{ site.url }}{{ page.url | remove: '/it' | prepend: '/de' }}">
+    <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ page.url | remove: '/it' | prepend: '/zh' }}">
+    {% elsif page.url contains '/fr/' %}
+    <link rel="alternate" hreflang="{{ site.default_lang }}" href="{{ site.url }}{{ page.url | remove: '/fr' }}">
+    <link rel="alternate" hreflang="{{ active_lang }}" href="{{ site.url }}{{ page.url }}">
+    <link rel="alternate" hreflang="es" href="{{ site.url }}{{ page.url | remove: '/fr' | prepend: '/es' }}">
+    <link rel="alternate" hreflang="it" href="{{ site.url }}{{ page.url | remove: '/fr' | prepend: '/pt' }}">
+    <link rel="alternate" hreflang="de" href="{{ site.url }}{{ page.url | remove: '/fr' | prepend: '/de' }}">
+    <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ page.url | remove: '/fr' | prepend: '/zh' }}">
+    {% elsif page.url contains '/de/' %}
+    <link rel="alternate" hreflang="{{ site.default_lang }}" href="{{ site.url }}{{ page.url | remove: '/de' }}">
+    <link rel="alternate" hreflang="{{ active_lang }}" href="{{ site.url }}{{ page.url }}">
+    <link rel="alternate" hreflang="es" href="{{ site.url }}{{ page.url | remove: '/de' | prepend: '/es' }}">
+    <link rel="alternate" hreflang="it" href="{{ site.url }}{{ page.url | remove: '/de' | prepend: '/pt' }}">
+    <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.url | remove: '/de' | prepend: '/fr' }}">
+    <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ page.url | remove: '/de' | prepend: '/zh' }}">
+    {% elsif page.url contains '/zh/' %}
+    <link rel="alternate" hreflang="{{ site.default_lang }}" href="{{ site.url }}{{ page.url | remove: '/de' }}">
+    <link rel="alternate" hreflang="{{ active_lang }}" href="{{ site.url }}{{ page.url }}">
+    <link rel="alternate" hreflang="es" href="{{ site.url }}{{ page.url | remove: '/zh' | prepend: '/es' }}">
+    <link rel="alternate" hreflang="it" href="{{ site.url }}{{ page.url | remove: '/zh' | prepend: '/pt' }}">
+    <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.url | remove: '/zh' | prepend: '/fr' }}">
+    <link rel="alternate" hreflang="de" href="{{ site.url }}{{ page.url | remove: '/zh' | prepend: '/de' }}">
+  {% else %}
+    <link rel="alternate" hreflang="{{ site.default_lang }}" href="{{ site.url }}{{ page.url }}">
+    <link rel="alternate" hreflang="es" href="{{ site.url }}{{ page.url | prepend: '/es' }}">
+    <link rel="alternate" hreflang="it" href="{{ site.url }}{{ page.url | prepend: '/it' }}">
+    <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.url | prepend: '/fr' }}">
+    <link rel="alternate" hreflang="de" href="{{ site.url }}{{ page.url | prepend: '/de' }}">
+    <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ page.url | prepend: '/zh' }}">
+  {% endif %}
+{% endif %}
+
 {% if page.meta_tags !="" %}
  {% if page.url =='/blog/'%}
    <meta name="robots" content="">
