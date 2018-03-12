@@ -16,8 +16,12 @@ layout: default
             <div class="offer-wrap">
           <div class="offer-img" style="background-image:url(/images/attractions/broadway.jpg);"> </div>
           <div class="offers-description">
+            {% regionblock deals_contentofferhead1, type:text %}
             <h4>Last Minute NYC Deals</h4>
+            {% endregionblock %}
+            {% regionblock deals_contentoffertext1, type:text %}
             <p>Save on Broadway Show tickets for Wicked, The Lion King, Chicago and more when you book this package.</p>
+            {% endregionblock %}
             <a href="/offers/last-minute-nyc-deals/" target="_blank" class="btn-common btn-book"> View offer </a>
             <a href="#" title="Book Now" class="btn-common btn-book"> Book Now </a>
           </div>
