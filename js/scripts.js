@@ -393,3 +393,48 @@ $("#timeline-1").timeline();
     }, function(){
     $(this).find(".dropdown-menu").slideUp(100);
   });
+
+//Mobile Redirect Popover
+
+$(document).ready(function () {
+    var viewWidth = $(window).width();
+    if (viewWidth < 480) {
+        if (!Cookies.get('mobilePopup')) {
+            $('#mobileRedirect').modal('show');
+            Cookies.set('mobilePopup', 'valid', { expires: 0.0115, path: "/" }); // need to set the path to fix a FF bug
+            setTimeout(function(){
+                var map2 = new google.maps.Map(document.getElementById('popmap'), {
+                    zoom: 15,
+                    center: {
+                        lat: 40.749129,
+                        lng: -73.991691
+                    },
+                    disableDefaultUI: true
+                });
+                var noPoi = [
+                {
+                    featureType: "poi",
+                    stylers: [
+                      { visibility: "off" }
+                    ]
+                  }
+                ];
+
+                map2.setOptions({styles: noPoi});
+                var image = '/assets/images/loc.png';
+                var popMarker = new google.maps.Marker({
+                    position: {
+                        lat: 40.749129,
+                        lng: -73.991691
+                    },
+                    map: map2,
+                    icon: image
+                });
+
+            },2000);
+
+        }
+
+    }
+
+});
