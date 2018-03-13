@@ -33,7 +33,7 @@ meta_description_localized:
             <div class="offer-details">
               <div class="offer-title"><span>{{ slide.title }}</span></div>
               {% if slide.sub-title %}<div class="offer-sub-title">{{ slide.sub-title }}</div>{% endif %}
-              <a href="{{ slide.button-url }}" class="btn-common">{{ slide.button-text }}</a>
+              <a href="{{ slide.button-url }}" class="btn-common" title="{{ slide.button-text }}">{{ slide.button-text }}</a>
             </div>
           </div>
         {% endfor %}
@@ -51,8 +51,8 @@ meta_description_localized:
 
       <div class="counter"><span class="num">1 of {% for slide in slides %}{% if forloop.first %}{{ forloop.length }}{% endif %}{% endfor %}</span></div>
 
-      <a class="left carousel-control" href="#home-banner" role="button" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="sr-only">Previous</span></a>
-      <a class="right carousel-control" href="#home-banner" role="button" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i><span class="sr-only">Next</span></a>
+      <a class="left carousel-control" href="#home-banner" role="button" data-slide="prev" title="Previous"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="sr-only">Previous</span></a>
+      <a class="right carousel-control" href="#home-banner" role="button" data-slide="next" title="Next"><i class="fa fa-angle-right" aria-hidden="true"></i><span class="sr-only">Next</span></a>
 
     </div>
   </div>
@@ -64,7 +64,7 @@ meta_description_localized:
 
       <div class="tonight-rate ">
         <p>Best Price Available</p>
-        <h4>Tonight's Rate <a href="https://newyorkerhotel.reztrip.com/search?" target="_blank"  class="homeTonightRate" ><span class="price">[[ browser.otaRates.reztripRate ]]</span></a></h4>
+        <h4>Tonight's Rate <a href="https://newyorkerhotel.reztrip.com/search?" target="_blank"  class="homeTonightRate" title="[[ browser.otaRates.reztripRate ]]"><span class="price">[[ browser.otaRates.reztripRate ]]</span></a></h4>
       </div>
 
       <div class="ota-list">
@@ -83,13 +83,13 @@ meta_description_localized:
       <div class="col-sm-5 no-padding">
         <div class="-left">
           <div class="img-holder">
-            <img src="/images/welcome-2.jpg">
-            <a href="javascript:void(0)" id="link">
-              <img src="/images/play-icon.svg" class="play-icon">
+            <img src="/images/welcome-2.jpg" alt="welcome">
+            <a href="javascript:void(0)" id="link" title="Play">
+              <img src="/images/play-icon.svg" class="play-icon" alt="Play">
             </a>
           </div>
           <div class="img-holder">
-            <img src="/images/welcome-1.jpg">
+            <img src="/images/welcome-1.jpg" alt="Welcome">
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@ meta_description_localized:
         <div class="-right">
           <h1>welcome to the<br>New yorker</h1>
           <p>The <a href="https://www.newyorkerhotel.com/" title="New Yorker hotel">New Yorker</a> has a history as intriguing as her intricate design. From her iconic Art Deco style to her ingenious American construction, the “Grand Old Lady” has been striking component of the New York skyline, towering above all others and illuminating it since her 1930 inception. Built with a private power plant, an underground tunnel to Penn Station and even an ice-rink, The New Yorker was the most technologically advanced of her day. At the height of her popularity she hosted influential politicians, celebrities, and sports figures, and entertained in The Terrace Room with the who’s who of the Big Band era. Today she returns to her roots, proving that she was destined for greatness from the very start.</p>
-          <div class="btn-holder"><a href="/history/" class="btn-common">Discover this historical icon</a></div>
+          <div class="btn-holder"><a href="/history/" class="btn-common" title="History">Discover this historical icon</a></div>
         </div>
       </div>
     </div>
@@ -110,7 +110,7 @@ meta_description_localized:
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <div class="modal-body">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" frameborder="0" allowfullscreen=""></iframe>
+          <iframe class="embed-responsive-item" frameborder="0" allowfullscreen="" title="model"></iframe>
         </div>
       </div>
     </div>

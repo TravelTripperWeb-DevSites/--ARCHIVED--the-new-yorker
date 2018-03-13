@@ -19,10 +19,10 @@ layout: default
   	<div class="room-item" style="background-image:url([[room.photos[0].yankee_large]]);">
 
     	<div class="room-details">
-      	<div class="price"><span ng-hide="room.todayRate == 'CHECK AVAILABILITY'">from </span><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><span>[[ room.todayRate ]]</span></a></div>
+      	<div class="price"><span ng-hide="room.todayRate == 'CHECK AVAILABILITY'">from </span><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank" title="Room Rate"><span>[[ room.todayRate ]]</span></a></div>
       	<h3 style="color: #ffffff;">[[room.name]]</h3>
-      	<a class="view-rooms" ng-href="/room-details/#[[room.name | formatNameForLink]]">View Room +</a>
-      	<a class="book-now" ng-href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><img src="/images/calendar-blue.svg" alt=""></a>
+      	<a class="view-rooms" ng-href="/room-details/#[[room.name | formatNameForLink]]" title="View Room">View Room +</a>
+      	<a class="book-now" ng-href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank" title="Book Now"><img src="/images/calendar-blue.svg" alt="Calendar"></a>
       	</div>
   	</div>
 	</div>

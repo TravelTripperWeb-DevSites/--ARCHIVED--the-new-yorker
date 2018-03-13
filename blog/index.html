@@ -20,17 +20,17 @@ meta_tags: noindex, follow
         <div class="intro">
             <div class="col-sm-5 no-padding cta-events-img" style="background-image: url({{post.blogimage.url}})">
             	<div class="-left">
-                	<div class="btn-holder"><a href="/blog/{{post.url_friendly_name}}/" class="btn-common">View this Blog</a></div>
+                	<div class="btn-holder"><a href="/blog/{{post.url_friendly_name}}/" class="btn-common" title="View this Blog">View this Blog</a></div>
                 </div>
             </div>
             <div class="col-sm-7 no-padding">
                 <div class="-right -right-blog">
-                   <a class="blogtitlelink" href="/blog/{{post.url_friendly_name}}/">
+                   <a class="blogtitlelink" href="/blog/{{post.url_friendly_name}}/" title="{{post.title}}">
                     <h2>{{post.title}}</h2>
                    </a>
                    	<div class="date-holder">{{post.date | date: "%B %d, %Y"}}</div>
                     {{post.short_description}}
-                    <div class="btn-holder"><a href="/blog/{{post.url_friendly_name}}/" class="btn-common">Read More</a> 
+                    <div class="btn-holder"><a href="/blog/{{post.url_friendly_name}}/" class="btn-common" title="Read More">Read More</a> 
                    <!--    <div class="share-links">
                         <h4>Share on </h4>
                         <a  href="https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ post.title }} {{site.url}}/blog/{{post.url_friendly_name}}/" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
@@ -54,13 +54,13 @@ meta_tags: noindex, follow
 <ul class="pagination">
 
   {% if data_paginator.previous_page %}
-    <li><a href="{{ data_paginator.previous_page_path }}{% if  data_paginator.previous_page_path !="/blog/" %}/{%endif%}" class="previous">Previous</a></li>
+    <li><a href="{{ data_paginator.previous_page_path }}{% if  data_paginator.previous_page_path !="/blog/" %}/{%endif%}" class="previous" title="Previous">Previous</a></li>
   {% else %}
     <li><span class="previous">Previous</span></li>
   {% endif %}
    
   {% if data_paginator.next_page %}
-    <li><a href="{{ data_paginator.next_page_path }}/" class="next">Next</a></li>
+    <li><a href="{{ data_paginator.next_page_path }}/" class="next" title="Next">Next</a></li>
   {% else %}
     <li><span class="next ">Next</span></li>
   {% endif %}
