@@ -199,8 +199,8 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
 <section class="offers-wrapper rooms-rates">
      <div class="container-fluid">
      	      <div class="col-sm-4 no-padding-margin" ng-repeat ="room in browser.roomsList | limitTo: 3">
-     	                   <div class="thumb">
-     	                        <div class="caption" ng-style="{'background-image': 'url([[room.photos[0].yankee_large]])'}">
+     	                   <div class="thumb" ng-style="{'background-image': 'url([[room.photos[0].yankee_large]])'}">
+     	                        <div class="caption">
     	                             <span>Tonight’s rate $ <strong><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank" title="[[ room.todayRate ]]"><span>[[ room.todayRate ]]</span></a></strong></span>
      	                             <h3>[[room.name]]</h3>
      	                              <a ng-href="/rooms/#[[room.name | formatNameForLink]]" class="btn-common" rel="tooltip" title="View This Offer">View Room</a>
@@ -220,14 +220,12 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <div class="modal-body">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" frameborder="0" allowfullscreen=""></iframe>
+          <iframe class="embed-responsive-item" frameborder="0" allowfullscreen="" title="Historic"></iframe>
         </div>
       </div>
     </div>
   </div>
 </div>
 {% include exclusive-offer.html %}
-
-
 {% include newsletter.html %}
 {% include twitter-instagram.html %}

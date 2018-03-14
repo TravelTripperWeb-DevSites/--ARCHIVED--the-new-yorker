@@ -149,8 +149,8 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
 <section class="offers-wrapper rooms-rates">
      <div class="container-fluid">
      	      <div class="col-sm-4 no-padding-margin" ng-repeat ="room in browser.roomsList | limitTo: 3">
-     	                   <div class="thumb">
-     	                        <div class="caption" style="background-image: url([[room.photos[0].yankee_large]]);">
+     	                   <div class="thumb" style="background-image: url([[room.photos[0].yankee_large]]);">
+     	                        <div class="caption" >
     	                             <span>Tonight’s rate $ <strong><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank" title="[[ room.todayRate ]]"><span>[[ room.todayRate ]]</span></a></strong></span>
      	                             <h3>[[room.name]]</h3>
      	                              <a href="/rooms/#[[room.name | formatNameForLink]]" class="btn-common" rel="tooltip" title="View This Offer" title="View Room">View Room</a>

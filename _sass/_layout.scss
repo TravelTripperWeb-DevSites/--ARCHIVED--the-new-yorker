@@ -38,7 +38,7 @@
 		}
 }
 a {
-	color: #0a0a12;
+	color: $heading;
 	transition: all 0.4s;
 		&:hover {
 			color: $text-color;
@@ -95,3 +95,9 @@ a {
 	}
 }
 
+
+.carousel-control{
+  .sr-only{
+    color: $black;
+  }
+}

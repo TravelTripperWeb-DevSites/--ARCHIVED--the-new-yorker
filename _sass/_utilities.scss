@@ -130,3 +130,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+.carousel-control{
+  .sr-only{
+    color: $black;
+  }
+}

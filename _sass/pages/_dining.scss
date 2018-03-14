@@ -39,11 +39,11 @@
 				padding: 0 10px;
 				width:165px;
 			}
-			p{ width:auto; max-width:none; color:$grey-text; padding:40px 0;}
+			p{ width:auto; max-width:none; color:$grey-color; padding:40px 0;}
 			ul{
 				padding:10px 0; border-top:solid 1px #bfbfc1; margin:0 auto;text-align:center; display:flex;
-				li{ list-style:none; float:left; padding:0px 2px; color:$grey-text; font-size:13px; width:28%;
-					a{ color:$grey-text; font-style:italic; word-wrap: break-word;}
+				li{ list-style:none; float:left; padding:0px 2px; color:$grey-color; font-size:13px; width:28%;
+					a{ color:$grey-color; font-style:italic; word-wrap: break-word;}
 					span{ text-transform:uppercase; color:$text; font-family:$main-font-bold; font-style:normal;}
 					&.mail{ width:44%;}
 					&.full{ width:100%;}
@@ -90,7 +90,7 @@
 			&:after{ left: calc(50% - 25px); right:inherit; margin:0 auto;}
 		}
 	}
-	p{ max-width:465px; margin:0 auto; padding:50px 30px 100px; color:$grey-text;}
+	p{ max-width:465px; margin:0 auto; padding:50px 30px 100px; color:$grey-color;}
 	.btn-holder{ margin-bottom:90px;}
 }
 .mtop{
