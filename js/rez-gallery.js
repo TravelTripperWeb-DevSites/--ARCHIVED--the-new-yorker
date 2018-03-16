@@ -61,7 +61,7 @@
 			    	}
                     $this.attr('data-sub-html',options.customHTML+'<h3>'+response.special_rates[item].rate_plan_name+'</h3> '+rez_detail+' <p><a class="'+options.buttonClass+'"  href="'+offercode+'">'+options.buttonText+'</a></p>');
                      $this.attr('data-src', response.special_rates[item].lead_photo_url.yankee_large );
-                     $this.html('<img src="'+ response.special_rates[item].lead_photo_url.thumb_yankee_jumbo+'">');
+                     $this.html('<img src="'+ response.special_rates[item].lead_photo_url.thumb_yankee_jumbo+'" alt="'+response.special_rates[item].rate_plan_name+'">');
                    item = item + 1; 
 		    	}else{ 
 		    		$this.closest('.fancybox.hidden').remove();

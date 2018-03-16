@@ -15,7 +15,6 @@
     	content: "";
     	display: block;
     	position: absolute;
-    	background-color: rgba(16, 16, 24, 0.75);
     	top:0px;
     	left:0px;
     	width:100%;
@@ -28,7 +27,7 @@
     	padding:90px 0;
     	position:relative;
     	z-index:4;
-
+        background-color: rgba(0, 0, 0, 0.6);
     	 @media(min-width: $screen-sm-min)
 
     	 {
@@ -132,12 +131,12 @@
                 .room-details{
                    position: relative;
                    color:$white;
-                   background: rgba(16, 16, 24, 0.3);
+                   background: rgba(16, 16, 24, 0.6);
                     transition: all 0.4s;
 					min-height: 341px;
                     &:hover{
 
-                        background: rgba(16, 16, 24, 0.5);
+                        background: rgba(16, 16, 24, 0.7);
                         transition: all 0.4s;
                      }
 

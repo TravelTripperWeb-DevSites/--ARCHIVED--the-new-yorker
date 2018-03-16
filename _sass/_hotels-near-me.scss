@@ -65,8 +65,8 @@
 	.content-box{
 		padding:30px 25px 20px 59px !important;
 		h5{font-family:$main-font-bold; font-size:14px; text-transform:uppercase; letter-spacing:2px; color:$text; padding:26px 0 8px;}
-		p{font-family:$main-font-regular; font-size:14px;color:$grey-text;
-			a{ color:$grey-text;}
+		p{font-family:$main-font-regular; font-size:14px;color:$grey-color;
+			a{ color:$grey-color;}
 		}
 		.btn-holder{ padding:45px 0 0 0px !important;}
 		@media (min-width:769px) and (max-width:1024px){ padding: 30px 22px 10px 22px !important;}
@@ -75,7 +75,7 @@
 	.intro{
 		.content{ width:80%; margin:50px auto 30px;
 			h2{ margin-top:20px;}
-			p{ margin-top:30px;color:$grey-text;
+			p{ margin-top:30px;color:$grey-color;
 				@media (max-width:768px){ text-align:center;}
 			}
 		}
@@ -147,15 +147,15 @@
 			font-size: 13px;
 			text-align: center;
 			text-transform: uppercase;
-			color: #0a0a12;
+			color: $heading;
 			letter-spacing: 1px;
 			
 		}
 		.content-box{
-			h5{ text-align:left; color:#1a87e9; padding-bottom:30px;
+			h5{ text-align:left; color:$blue; padding-bottom:30px;
 				@media (max-width:768px){ text-align:center;}
 			}
-			p,i{ color:$grey-text;}
+			p,i{ color:$grey-color;}
 			@media (max-width:768px){ text-align:center;}
 		}
 		&.landmark{ padding:50px 0px 70px !important;}
