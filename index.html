@@ -30,6 +30,7 @@ meta_description_localized:
         {% assign slides = site.data._models.homepage_slider | sort: "sort_order" %}
         {% for slide in slides %}
           <div class="item{% if forloop.first == true %} active{% endif %}" style="background-image: url('{{ slide.image.url }}');">
+            <div class="banner-overlay"></div>
             <div class="offer-details">
               <div class="offer-title"><span>{{ slide.title }}</span></div>
               {% if slide.sub-title %}<div class="offer-sub-title">{{ slide.sub-title }}</div>{% endif %}
