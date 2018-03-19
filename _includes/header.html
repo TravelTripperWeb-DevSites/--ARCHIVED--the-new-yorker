@@ -18,6 +18,7 @@
     </div>
     <div class="menu-btn"></div>
     <div class="booknow langpick">  
+      <div class="langpick-wrap">
       <select class="selectpicker" aria-label="Select Language" data-width="fit" onchange="location = this.value;">
         <option value="/" data-content='<span class="flag-icon flag-icon-us"></span> EN'></option>
         <option value="/fr/" {% if page.url contains '/fr/'%} selected="selected"{% endif %}  data-content='<span class="flag-icon flag-icon-fr"></span> FR'></option>
@@ -25,7 +26,7 @@
         <option value="/it/" {% if page.url contains '/it/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-it"></span> IT'></option>
         <option value="/de/" {% if page.url contains '/de/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-de"></span> DE'></option>
         <option value="/zh/" {% if page.url contains '/zh/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-zh"></span> ZH'></option>
-      </select>
+      </select></div>
     <a href="javascript:void(0);" show-booking-widget><span class="cal"><img src="/images/calendar.svg" alt=""/></span>Book Now</a>
     </div>
   </div>
