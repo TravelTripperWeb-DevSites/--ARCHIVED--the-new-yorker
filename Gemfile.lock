@@ -6,7 +6,6 @@ GEM
     extras (0.3.0)
       forwardable-extended (~> 2.5)
     fastimage (2.1.1)
-    ffi (1.9.23)
     ffi (1.9.23-x64-mingw32)
     forwardable-extended (2.6.0)
     i18n (1.0.0)
@@ -59,7 +58,6 @@ GEM
     xkeys (2.2.0)
 
 PLATFORMS
-  ruby
   x64-mingw32
 
 DEPENDENCIES

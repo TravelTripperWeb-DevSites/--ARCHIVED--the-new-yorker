@@ -39,7 +39,7 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
 		     	      	   <h2>Our Art Deco<br>NYC Hotel</h2>
 		     	      	   <p>Luminaries including Nikola Tesla, John F. Kennedy, Muhammad Ali and Jennifer Hudson have stayed here at our <a href="https://www.newyorkerhotel.com/" title="New Yorker Hotel">NYC Art Deco hotel</a>. Learn more about our past, present, and future – and then add your name to our list of VIP guests!</p>
 		     	      	   <div class="btn-holder">
-		     	      	      <a class="btn-common" href="/gallery/"> View the Gallery</a>
+		     	      	      <a class="btn-common" href="/gallery/" title="View the Gallery"> View the Gallery</a>
 		     	      	   </div>
      	      	   </div>
      	      </div>
@@ -52,7 +52,7 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
 		<div class="overlay">
 			<h5>world-class Events</h5>
 			<h4>UNIQUE EVENT SPACES</h4>
-            <a href='/events/' class='icon-button'><i class='fa fa-angle-right'></i></a>
+            <a href='/events/' class='icon-button' title="Events"><i class='fa fa-angle-right'></i></a>
 			</div>
 		</div>
 	</div>
@@ -61,7 +61,7 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
             <div class="overlay">
                 <h5>Culinary Delight</h5>
                 <h4>EXPERIENCE NY CITY DINING</h4>
-                <a href='/dining/' class='icon-button'><i class='fa fa-angle-right'></i></a>
+                <a href='/dining/' class='icon-button' title="Dining"><i class='fa fa-angle-right'></i></a>
             </div>
 		</div>
 	</div>
@@ -135,11 +135,11 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
   </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" title="Previous">
     <span class="left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" title="Next">
     <span class="right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -149,13 +149,13 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
 <section class="offers-wrapper rooms-rates">
      <div class="container-fluid">
      	      <div class="col-sm-4 no-padding-margin" ng-repeat ="room in browser.roomsList | limitTo: 3">
-     	                   <div class="thumb">
-     	                        <div class="caption" style="background-image: url([[room.photos[0].yankee_large]]);">
-    	                             <span>Tonight’s rate $ <strong><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><span>[[ room.todayRate ]]</span></a></strong></span>
+     	                   <div class="thumb" style="background-image: url([[room.photos[0].yankee_large]]);">
+     	                        <div class="caption" >
+    	                             <span>Tonight’s rate $ <strong><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank" title="[[ room.todayRate ]]"><span>[[ room.todayRate ]]</span></a></strong></span>
      	                             <h3>[[room.name]]</h3>
-     	                              <a href="/rooms/#[[room.name | formatNameForLink]]" class="btn-common" rel="tooltip" title="View This Offer">View Room</a>
+     	                              <a href="/rooms/#[[room.name | formatNameForLink]]" class="btn-common" rel="tooltip" title="View This Offer" title="View Room">View Room</a>
      	                              <div class="clearfix"></div>
-     	                             <a ng-href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><img class="cal-icon" src="../images/about/calendar-icon.jpg" alt="Calendar" /></a>
+     	                             <a ng-href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank" title="Calendar"><img class="cal-icon" src="../images/about/calendar-icon.jpg" alt="Calendar" /></a>
      	                         </div>
 
      	                     </div>

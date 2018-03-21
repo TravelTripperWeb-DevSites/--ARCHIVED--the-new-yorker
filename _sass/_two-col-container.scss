@@ -197,6 +197,7 @@
 }
 
 .offers-wrapper{
+  position: relative;
 	  .container-fluid{
 	  	  padding: 0px;
 	  	 .thumb  { 
@@ -211,16 +212,10 @@
 	  	     position:relative;  
 	  	     .caption { 
 		  	     position:absolute;
-		  	     top: 50%;
-             transform: translateY(-50%);  
-             -webkit-transform: translateY(-50%);  
-             -ms-transform: translateY(-50%);  
-             -moz-transform: translateY(-50%);  
-             -moz-transform: translateY(-50%);  
-             transform: translateY(-50%);  
 		  	     width:100%; 
 		  	     text-align:center; 
 		  	     z-index:2;
+             background: rgba(16, 16, 24, 0.6);
                  	 	h3{
                	  	     	font-family: $main-font-medium;  
                	  	     	color: #fff !important;
@@ -264,10 +259,29 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+        position: relative;
+
+        .caption{
+          position:absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          .v-align{
+          left: 0;
+          right: 0;
+          top:50%;
+          position: absolute;
+          -webkit-transform: translateY(-50%);
+             -moz-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+               -o-transform: translateY(-50%);
+                  transform: translateY(-50%) ;
+        }
       }
     }
 }
-
+}
 .btn-white {
     background-color: #fff !important; 
     color: #000 !important;

@@ -418,7 +418,7 @@ h1{
     line-height: 53px;
     text-align: left;
     font-family: "Poiret One";
-    color: #0a0a12;
+    color: $heading;
     position: relative;
     text-transform: uppercase;
 	&:after {
@@ -491,4 +491,8 @@ h1{
 	background-size: 100%;
     background-repeat: no-repeat;
     height: 10px;
+}
+
+.langpick-wrap{
+	display: inline-block;
 }

@@ -20,7 +20,7 @@ layout: default
                   </div>
                 </div>
                 <div class="col-sm-6">
-           	    	<div class="img"><img src="../images/location/02.jpg" alt="" class="img-responsive"/></div> 
+           	    	<div class="img"><img src="../images/location/02.jpg" alt="location" class="img-responsive"/></div> 
                 </div>
             </div>
          </div> 
@@ -49,17 +49,15 @@ layout: default
                   </div>
                   <div class="col-sm-6">
                        <div class="content-box">
-
-                           <h2 class="m-b-20"></h2>
                            <h5>Address</h5>
                            <p>481 8th Avenue &amp; 34th Street<br>New York, NY 10001</p>
                            <h5>Contact</h5>
-                           <p><a href="tel:212-971-0101">(212) 971 0101</a><br>
-                            <a href="mailto:reservations@nyhotel.com">reservations@nyhotel.com</a><br>
-                            <a href="mailto:guestservices@nyhotel.com">guestservices@nyhotel.com</a>
+                           <p><a href="tel:212-971-0101" title="(212) 971 0101">(212) 971 0101</a><br>
+                            <a href="mailto:reservations@nyhotel.com" title="reservations@nyhotel.com">reservations@nyhotel.com</a><br>
+                            <a href="mailto:guestservices@nyhotel.com" title="guestservices@nyhotel.com">guestservices@nyhotel.com</a>
                            </p>
                            <div class="btn-holder">
-                              <a class="btn-common" href="/gallery/"> View the Gallery</a>
+                              <a class="btn-common" href="/gallery/" title="View the Gallery"> View the Gallery</a>
                            </div>
                        </div>
                   </div>
@@ -105,12 +103,12 @@ layout: default
                                <h5>{{attractions.sub_title}}</h5>
                                <p>{{attractions.short_description}}</p>
                                <!--<a href="/attractions/{{attractions.url_friendly_name}}">View Attraction <i class="fa fa-plus"></i></a>-->
-                               <div class="btn-holder"><a href="/attractions/{{attractions.url_friendly_name}}/" class="btn-common">View this Attraction</a></div>
+                               <div class="btn-holder"><a href="/attractions/{{attractions.url_friendly_name}}/" class="btn-common" title="View this Attraction">View this Attraction</a></div>
     						   <!--<i>4 Pennsylvania Plaza, New York, NY 10001</i>-->
                        </div>
                   </div>
                   <div class="col-sm-5">
-                       <img src="{{attractions.attraction_image.url}}">
+                       <img src="{{attractions.attraction_image.url}}" alt="{{attractions.title}}">
                   </div>
     
                 </div>
@@ -118,11 +116,11 @@ layout: default
         </div>
        {% endfor %}
       </div>
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" title="Previous">
         <span class="left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" title="Next">
         <span class="right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
@@ -135,7 +133,7 @@ layout: default
         <div class="cta-content">
             <h4>Discover NY from our legendary hotel</h4>
             <h3>An Art Deco icon</h3>
-            <div class="btn-holder"><a href="/rooms/" class="btn-common btn-white">View Our Rooms</a></div>
+            <div class="btn-holder"><a href="/rooms/" class="btn-common btn-white" title="View Our Rooms">View Our Rooms</a></div>
         </div>
     </div>
 </section>
