@@ -21,9 +21,9 @@
         }
         img {
             width: 50%;
-            padding-bottom: 40px;
+           /* padding-bottom: 40px;*/
             display: block;
-            margin: 0 auto;
+            margin: 20px auto;
         }
         .btn {
             display: block;
@@ -36,7 +36,7 @@
         }
     }
     .popmap {
-        height:45vh;
+        height:60vh;
         background: url('/images/map.jpg') no-repeat #dfdfdf;
         background-size: cover;
     }
