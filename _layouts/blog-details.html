@@ -18,13 +18,13 @@ pagename: about
             	<h1>{{blog.title}}</h1>
               <div class="date-holder">{{blog.date  |  date: "%B %d, %Y"}}</div>
                 {{blog.more_content}}
-                <div class="btn-holder"><a href="/blog/" class="btn-common">See all blog posts</a></div>
+                <div class="btn-holder"><a href="/blog/" class="btn-common" title="See all blog posts">See all blog posts</a></div>
                 <div class="col-xs-12 share-links">
               <h4>Share:</h4>
-			<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[title]={{blog.title}}&p[url]={{site.url}}{{ page.url }}&p[summary]={{ blog.blog_post | strip_html | truncatewords: 20 | remove: '<p>' | remove: '</p>'}}&p[images][0]={{blog.blogimage.url_large}}" class="fa fa-facebook" title="Share on Facebook" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="nofollow" ></a>
-                        <a  href="https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ post.title }} {{site.url}}{{ page.url }}" title="Share on Twitter" rel="nofollow"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
+			<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[title]={{blog.title}}&p[url]={{site.url}}{{ page.url }}&p[summary]={{ blog.blog_post | strip_html | truncatewords: 20 | remove: '<p>' | remove: '</p>'}}&p[images][0]={{blog.blogimage.url_large}}" class="fa fa-facebook" title="Share on Facebook" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="nofollow" title="Facebook" ><span class="sr-only">fb</span></a>
+                        <a  href="https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ post.title }} {{site.url}}{{ page.url }}" title="Share on Twitter" rel="nofollow" title="Twitter" ><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span class="sr-only">tw</span></a>
 
-                        <a href="https://plus.google.com/share?url={{site.url}}{{ page.url }}" class="fa fa-google-plus" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="nofollow" ></a>
+                        <a href="https://plus.google.com/share?url={{site.url}}{{ page.url }}" class="fa fa-google-plus" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="nofollow" title="google" ><span class="sr-only">g+</span></a>
             </div>
             </div>
         </div>
@@ -35,11 +35,11 @@ pagename: about
                 {% assign blog = site.data._models.blog %}
 				{% for a in blog limit:5  | sort : 'date' %}
                 <div class="fe-item">
-            	<p><a href="/blog/{{a.url_friendly_name}}/"><img src="{{a.blogimage.url}}" alt=""/></a></p>
-                <p><a href="/blog/{{a.url_friendly_name}}/">{{a.title}}</a></p>
+            	<p><a href="/blog/{{a.url_friendly_name}}/" title="{{a.title}}"><img src="{{a.blogimage.url}}" alt="{{a.title}}"/></a></p>
+                <p><a href="/blog/{{a.url_friendly_name}}/" title="{{a.title}}">{{a.title}}</a></p>
                 </div>
                 {% endfor %}
-                <div class="btn-holder"><a href="/blog/" class="btn-common">See all blog posts</a></div>
+                <div class="btn-holder"><a href="/blog/" class="btn-common" title="See all blog posts">See all blog posts</a></div>
             </div>
             </div>
         </div>

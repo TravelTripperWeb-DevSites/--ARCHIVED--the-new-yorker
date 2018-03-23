@@ -136,15 +136,15 @@
 			font-size: 13px;
 			text-align: center;
 			text-transform: uppercase;
-			color: #0a0a12;
+			color: $heading;
 			letter-spacing: 1px;
 			
 		}
 		.content-box{
-			h5{ text-align:left; color:#1a87e9; padding-bottom:30px;
+			h5{ text-align:left; color:$blue; padding-bottom:30px;
 				@media (max-width:768px){ text-align:center;}
 			}
-			p,i{ color:$grey-text;}
+			p,i{ color:$grey-color;}
 			@media (max-width:768px){ text-align:center;}
 		}
 		&.landmark{ padding:50px 0px 70px !important;}

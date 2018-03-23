@@ -69,7 +69,7 @@ $phone-max: 479px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"bootstrap",
-  "utilities",
+  	"utilities",
 	"fonts",
 	"header",
 	"footer",
@@ -89,7 +89,7 @@ $phone-max: 479px;
 	"two-col-container",
 	"cta-one",
 	"instagram",
-  "pages/rooms",
+  	"pages/rooms",
 	"pages/room_details",
 	"pages/dining",
 	"pages/events",
@@ -100,6 +100,7 @@ $phone-max: 479px;
 	"pages/blog",
 	"pages/contact",
 	"hotels-near-me",
-  "pages/cyber-monday",
-  "mobile-redirect"
+  	"pages/cyber-monday"
+  	 "mobile-redirect"
+
 ;

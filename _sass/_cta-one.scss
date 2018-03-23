@@ -37,6 +37,10 @@
 		.cta-content {
 			position: relative;
 			z-index:2;
+			span{
+				background:rgba($black ,0.6);
+				padding: 10px;
+			}
 		}
 		.btn-holder {
 			padding:0;

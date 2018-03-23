@@ -301,11 +301,12 @@
      	      <div class="col-sm-4 no-padding-margin" ng-repeat="offer in offers.special_rates | limitTo: 3">
      	                   <div class="thumb" style="background-image: url([[offer.lead_photo_url.yankee_large]]);">
      	                         <div class="caption">
+                                <div class="v-align">
      	                             <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
 
      	                             <a ng-href="/de/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common btn-white" rel="tooltip" title="Dieses Angebot ansehen">Angebot ansehen</a>
      	                         </div>
-
+                              </div>
      	                     </div>
      	      </div>
 
