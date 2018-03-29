@@ -1,0 +1,27 @@
+{
+  "title": " Spring Sale",
+  "image": {
+    "name": "new-yorker-spring-in-new-york",
+    "file_name": "new-yorker-spring-in-new-york.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/426_558_13372/media/2018-03-09-155338/new-yorker-spring-in-new-york.jpg",
+    "tags": "",
+    "file_size": 419421,
+    "width": 1048,
+    "height": 699,
+    "description": "",
+    "date_added": "2018-03-09-155338",
+    "url_large": "//cdn.traveltripper.io/site-assets/426_558_13372/media/2018-03-09-155338/large_new-yorker-spring-in-new-york.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/426_558_13372/media/2018-03-09-155338/medium_new-yorker-spring-in-new-york.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/426_558_13372/media/2018-03-09-155338/small_new-yorker-spring-in-new-york.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_13372/media/2018-03-09-155338/xsmall_new-yorker-spring-in-new-york.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_13372/media/2018-03-09-155338/thumb_new-yorker-spring-in-new-york.jpg",
+    "git_file_name": "_assets/image_data/new-yorker-spring-in-new-york.json",
+    "path": "//cdn.traveltripper.io/site-assets/426_558_13372/media/2018-03-09-155338/new-yorker-spring-in-new-york.jpg",
+    "alt": "spring sale",
+    "caption": ""
+  },
+  "button-text": "BOOK THIS OFFER",
+  "button-url": " https://newyorkerhotel.reztrip.com/ext/promoRate?property=677&mode=b&pm=true&sr=336151&vr=3",
+  "sort_order": 1
+}
