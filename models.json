@@ -308,6 +308,11 @@
       "file": "blog6.json"
     },
     {
+      "name": "Common Questions About Visiting New York City, Part 2",
+      "title": "Common Questions About Visiting New York City, Part 2",
+      "file": "blog60.json"
+    },
+    {
       "name": "Where to Eat the Best Pizza in Manhattan",
       "title": "Where to Eat the Best Pizza in Manhattan",
       "file": "blog7.json"
@@ -328,11 +333,6 @@
   ],
   "homepage_slider": [
     {
-      "name": "ROMANCE PACKAGE",
-      "title": "ROMANCE PACKAGE",
-      "file": "homepage_slider1.json"
-    },
-    {
       "name": "Breakfast For a Dollar",
       "title": "Breakfast For a Dollar",
       "file": "homepage_slider3.json"
@@ -341,6 +341,11 @@
       "name": "STAY 2/3 NIGHTS, SAVE 15%",
       "title": "STAY 2/3 NIGHTS, SAVE 15%",
       "file": "homepage_slider4.json"
+    },
+    {
+      "name": " Spring Sale",
+      "title": " Spring Sale",
+      "file": "homepage_slider5.json"
     }
   ],
   "simple": [
