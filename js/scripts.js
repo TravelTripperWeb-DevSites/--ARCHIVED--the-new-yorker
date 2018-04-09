@@ -253,7 +253,7 @@ $(document).ready(function() {
       0: {
         items: 1,
         nav: true,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+        navText: ['<a class="left carousel-control" href="javascript:void(0)" role="button" data-slide="prev" title="Previous"> <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="sr-only">Previous</span></a>','<a class="right carousel-control" href="javascript:void(0)" role="button" data-slide="next" title="Next"> <i class="fa fa-angle-right" aria-hidden="true"></i> <span class="sr-only">Next</span> </a>']
       },
       600: {
         items: 3,
@@ -263,7 +263,7 @@ $(document).ready(function() {
       1000: {
         items: 3,
         nav: true,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        navText:  ['<a class="left carousel-control" href="javascript:void(0)" role="button" data-slide="prev" title="Previous"> <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="sr-only">Previous</span></a>','<a class="right carousel-control" href="javascript:void(0)" role="button" data-slide="next" title="Next"> <i class="fa fa-angle-right" aria-hidden="true"></i> <span class="sr-only">Next</span> </a>'],
         loop: true
       }
     }
