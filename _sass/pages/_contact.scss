@@ -19,6 +19,7 @@
   .social {
     position: relative;
     margin-top: 30px;
+    margin-bottom: 30px;
     @media(max-width: 768px) {
       margin-top: 10px;
     }
@@ -26,6 +27,9 @@
       color: $white;
       margin: 10px;
       display: inline-block;
+    }
+    h4 {
+      font-size: 20px;
     }
   }
   .newsletter-signup{
@@ -38,6 +42,9 @@
     .input-group {
       margin-top: 14px;
     }
+    h4 {
+      font-size: 20px;
+    }
   }
 }
 .discover{
@@ -45,7 +52,7 @@
 		padding:20px !important;
 		h2{padding:26px 0 8px; font-size: 42px; letter-spacing: 4px; line-height: 53px;}
 		h5{font-family:$main-font-bold; font-size:14px; text-transform:uppercase; letter-spacing:2px; color:$text;}
-		p{font-family:$main-font-regular; font-size:15px; color:$white; padding:20px 0px;
+		p{font-family:$main-font-regular; font-size:17px; color:$white; padding:20px 0px;
 		letter-spacing:1px;
 			a{ color:$white;
 
