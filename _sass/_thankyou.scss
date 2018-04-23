@@ -25,7 +25,11 @@ h1{
 		&.page-title{font-family: $main-heading; color:$white;}
 	}
 // Mother day SWEEPSTAKES
-
+.mothers-day-banner{
+  background:url(/images/blog/blog-banner.jpg) no-repeat;
+	background-size:cover;
+	position: relative;
+}
 .mothers-day-form-heading{
   padding-bottom: 20px !important;
 }
