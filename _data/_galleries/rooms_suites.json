@@ -20,6 +20,26 @@
       "git_file_name": "_assets/image_data/new-yorker-travel-with-pet-to-new-york.json",
       "path": "//cdn.traveltripper.io/site-assets/426_558_14520/media/2018-04-11-213825/new-yorker-travel-with-pet-to-new-york.jpg",
       "alt": "new-yorker-travel-with-pet-to-new-york"
+    },
+    {
+      "name": "new-yorker-broadway-off-broadway-shows-blue-man",
+      "file_name": "new-yorker-broadway-off-broadway-shows-blue-man.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_14331/media/2018-04-05-174251/new-yorker-broadway-off-broadway-shows-blue-man.jpg",
+      "tags": "",
+      "file_size": 1127823,
+      "width": 1000,
+      "height": 758,
+      "description": "",
+      "date_added": "2018-04-05-174251",
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_14331/media/2018-04-05-174251/large_new-yorker-broadway-off-broadway-shows-blue-man.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_14331/media/2018-04-05-174251/medium_new-yorker-broadway-off-broadway-shows-blue-man.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_14331/media/2018-04-05-174251/small_new-yorker-broadway-off-broadway-shows-blue-man.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_14331/media/2018-04-05-174251/xsmall_new-yorker-broadway-off-broadway-shows-blue-man.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_14331/media/2018-04-05-174251/thumb_new-yorker-broadway-off-broadway-shows-blue-man.jpg",
+      "git_file_name": "_assets/image_data/new-yorker-broadway-off-broadway-shows-blue-man.json",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_14331/media/2018-04-05-174251/new-yorker-broadway-off-broadway-shows-blue-man.jpg",
+      "alt": "new-yorker-broadway-off-broadway-shows-blue-man"
     }
   ],
   "description": ""
