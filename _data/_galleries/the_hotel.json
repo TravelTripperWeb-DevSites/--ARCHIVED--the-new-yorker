@@ -20,6 +20,26 @@
       "git_file_name": "_assets/image_data/mothersday.json",
       "path": "//cdn.traveltripper.io/site-assets/426_558_14867/media/2018-04-25-023857/mothersday.jpg",
       "alt": "mothersday"
+    },
+    {
+      "name": "new-yorker-pet-friendly-restaurant-new-york",
+      "file_name": "new-yorker-pet-friendly-restaurant-new-york.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_14520/media/2018-04-11-214014/new-yorker-pet-friendly-restaurant-new-york.jpg",
+      "tags": "",
+      "file_size": 604044,
+      "width": 1254,
+      "height": 836,
+      "description": "",
+      "date_added": "2018-04-11-214014",
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_14520/media/2018-04-11-214014/large_new-yorker-pet-friendly-restaurant-new-york.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_14520/media/2018-04-11-214014/medium_new-yorker-pet-friendly-restaurant-new-york.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_14520/media/2018-04-11-214014/small_new-yorker-pet-friendly-restaurant-new-york.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_14520/media/2018-04-11-214014/xsmall_new-yorker-pet-friendly-restaurant-new-york.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_14520/media/2018-04-11-214014/thumb_new-yorker-pet-friendly-restaurant-new-york.jpg",
+      "git_file_name": "_assets/image_data/new-yorker-pet-friendly-restaurant-new-york.json",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_14520/media/2018-04-11-214014/new-yorker-pet-friendly-restaurant-new-york.jpg",
+      "alt": "new-yorker-pet-friendly-restaurant-new-york"
     }
   ],
   "description": ""
