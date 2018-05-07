@@ -209,6 +209,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085645/thumb_executive-queen-room.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085645/executive-queen-room.jpg",
       "alt": "Executive Queen Room"
+    },
+    {
+      "name": "newyorker-suite-queen",
+      "file_name": "newyorker-suite-queen.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085714/newyorker-suite-queen.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-085714",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1200,
+      "file_size": 496533,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085714/large_newyorker-suite-queen.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085714/medium_newyorker-suite-queen.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085714/small_newyorker-suite-queen.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085714/xsmall_newyorker-suite-queen.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085714/thumb_newyorker-suite-queen.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085714/newyorker-suite-queen.jpg",
+      "alt": "Newyorker-Suite-Queen"
     }
   ],
   "description": ""
