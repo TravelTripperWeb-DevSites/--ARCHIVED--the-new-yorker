@@ -38,6 +38,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/thumb_guestroom.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/guestroom.jpg",
       "alt": "Guestroom"
+    },
+    {
+      "name": "metro-view-room-queen",
+      "file_name": "metro-view-room-queen.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085015/metro-view-room-queen.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-085015",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1199,
+      "file_size": 326195,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085015/large_metro-view-room-queen.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085015/medium_metro-view-room-queen.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085015/small_metro-view-room-queen.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085015/xsmall_metro-view-room-queen.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085015/thumb_metro-view-room-queen.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085015/metro-view-room-queen.jpg",
+      "alt": "Metro View Room Queen"
     }
   ],
   "description": ""
