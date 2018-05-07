@@ -114,6 +114,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085150/thumb_metro-room-queen.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085150/metro-room-queen.jpg",
       "alt": "Metro Room Queen"
+    },
+    {
+      "name": "premium-suite-queen",
+      "file_name": "premium-suite-queen.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085219/premium-suite-queen.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-085219",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1338,
+      "file_size": 708297,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085219/large_premium-suite-queen.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085219/medium_premium-suite-queen.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085219/small_premium-suite-queen.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085219/xsmall_premium-suite-queen.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085219/thumb_premium-suite-queen.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085219/premium-suite-queen.jpg",
+      "alt": "Premium Suite Queen"
     }
   ],
   "description": ""
