@@ -19,6 +19,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084920/thumb_executive-room-accessible-double.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084920/executive-room-accessible-double.jpg",
       "alt": "Executive Room Accessible Double"
+    },
+    {
+      "name": "guestroom",
+      "file_name": "guestroom.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/guestroom.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-084951",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1200,
+      "file_size": 678687,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/large_guestroom.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/medium_guestroom.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/small_guestroom.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/xsmall_guestroom.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/thumb_guestroom.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/guestroom.jpg",
+      "alt": "Guestroom"
     }
   ],
   "description": ""
