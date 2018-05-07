@@ -247,6 +247,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085749/thumb_executive-view-room-queen.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085749/executive-view-room-queen.jpg",
       "alt": "Executive View Room Queen"
+    },
+    {
+      "name": "executive-room-queen",
+      "file_name": "executive-room-queen.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085818/executive-room-queen.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-085818",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1148,
+      "file_size": 1201616,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085818/large_executive-room-queen.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085818/medium_executive-room-queen.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085818/small_executive-room-queen.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085818/xsmall_executive-room-queen.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085818/thumb_executive-room-queen.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085818/executive-room-queen.jpg",
+      "alt": "Executive Room Queen"
     }
   ],
   "description": ""
