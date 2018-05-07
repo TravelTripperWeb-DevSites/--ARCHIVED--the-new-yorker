@@ -304,6 +304,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085909/thumb_executive-queenroom.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085909/executive-queenroom.jpg",
       "alt": "Executive Queenroom"
+    },
+    {
+      "name": "suite-double",
+      "file_name": "suite-double.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085935/suite-double.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-085935",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1148,
+      "file_size": 1472042,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085935/large_suite-double.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085935/medium_suite-double.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085935/small_suite-double.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085935/xsmall_suite-double.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085935/thumb_suite-double.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085935/suite-double.jpg",
+      "alt": "Suite Double"
     }
   ],
   "description": ""
