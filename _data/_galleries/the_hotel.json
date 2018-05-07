@@ -59,6 +59,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072408/thumb_thenewyorker.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072408/thenewyorker.jpg",
       "alt": "thenewyorker"
+    },
+    {
+      "name": "restaurant",
+      "file_name": "restaurant.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072425/restaurant.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-072425",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1204,
+      "file_size": 409856,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072425/large_restaurant.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072425/medium_restaurant.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072425/small_restaurant.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072425/xsmall_restaurant.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072425/thumb_restaurant.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072425/restaurant.jpg",
+      "alt": "restaurant"
     }
   ],
   "description": ""
