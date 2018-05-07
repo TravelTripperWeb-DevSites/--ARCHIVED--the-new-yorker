@@ -154,6 +154,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072524/thumb_newyorker.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072524/newyorker.jpg",
       "alt": "newyorker"
+    },
+    {
+      "name": "meetingsroom",
+      "file_name": "meetingsroom.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072539/meetingsroom.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-072539",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1200,
+      "file_size": 550254,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072539/large_meetingsroom.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072539/medium_meetingsroom.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072539/small_meetingsroom.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072539/xsmall_meetingsroom.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072539/thumb_meetingsroom.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072539/meetingsroom.jpg",
+      "alt": "meetingsroom"
     }
   ],
   "description": ""
