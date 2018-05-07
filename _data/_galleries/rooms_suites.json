@@ -266,6 +266,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085818/thumb_executive-room-queen.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085818/executive-room-queen.jpg",
       "alt": "Executive Room Queen"
+    },
+    {
+      "name": "executive-room-double",
+      "file_name": "executive-room-double.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085845/executive-room-double.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-085845",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1148,
+      "file_size": 1550166,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085845/large_executive-room-double.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085845/medium_executive-room-double.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085845/small_executive-room-double.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085845/xsmall_executive-room-double.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085845/thumb_executive-room-double.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085845/executive-room-double.jpg",
+      "alt": "Executive Room Double"
     }
   ],
   "description": ""
