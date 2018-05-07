@@ -140,6 +140,26 @@
       "git_file_name": "_assets/image_data/newyorkerhotel.json",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073653/newyorkerhotel.jpg",
       "alt": "newyorkerhotel"
+    },
+    {
+      "name": "crystalballroom",
+      "file_name": "crystalballroom.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073646/crystalballroom.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-073646",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1200,
+      "file_size": 537578,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073646/large_crystalballroom.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073646/medium_crystalballroom.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073646/small_crystalballroom.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073646/xsmall_crystalballroom.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073646/thumb_crystalballroom.jpg",
+      "git_file_name": "_assets/image_data/crystalballroom.json",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073646/crystalballroom.jpg",
+      "alt": "crystalballroom"
     }
   ],
   "description": ""
