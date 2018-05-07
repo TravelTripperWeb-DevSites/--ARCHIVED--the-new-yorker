@@ -133,6 +133,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085219/thumb_premium-suite-queen.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085219/premium-suite-queen.jpg",
       "alt": "Premium Suite Queen"
+    },
+    {
+      "name": "bathroom",
+      "file_name": "bathroom.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085328/bathroom.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-085328",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1271,
+      "file_size": 295059,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085328/large_bathroom.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085328/medium_bathroom.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085328/small_bathroom.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085328/xsmall_bathroom.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085328/thumb_bathroom.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085328/bathroom.jpg",
+      "alt": "bathroom"
     }
   ],
   "description": ""
