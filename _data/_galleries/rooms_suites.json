@@ -1,5 +1,25 @@
 {
   "name": "ROOMS & SUITES",
-  "photos": null,
+  "photos": [
+    {
+      "name": "executive-room-accessible-double",
+      "file_name": "executive-room-accessible-double.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084920/executive-room-accessible-double.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-084920",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1169,
+      "file_size": 358958,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084920/large_executive-room-accessible-double.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084920/medium_executive-room-accessible-double.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084920/small_executive-room-accessible-double.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084920/xsmall_executive-room-accessible-double.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084920/thumb_executive-room-accessible-double.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084920/executive-room-accessible-double.jpg",
+      "alt": "Executive Room Accessible Double"
+    }
+  ],
   "description": ""
 }
