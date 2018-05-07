@@ -171,6 +171,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081750/thumb_gym.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081750/gym.jpg",
       "alt": "Gym"
+    },
+    {
+      "name": "queensboro",
+      "file_name": "queensboro.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081810/queensboro.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-081810",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1800,
+      "file_size": 881088,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081810/large_queensboro.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081810/medium_queensboro.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081810/small_queensboro.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081810/xsmall_queensboro.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081810/thumb_queensboro.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081810/queensboro.jpg",
+      "alt": "Queens Boro Bridge"
     }
   ],
   "description": ""
