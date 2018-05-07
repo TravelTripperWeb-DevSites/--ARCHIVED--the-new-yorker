@@ -77,6 +77,25 @@
       "git_file_name": "_assets/image_data/mothersday.json",
       "path": "//cdn.traveltripper.io/site-assets/426_558_14867/media/2018-04-25-023857/mothersday.jpg",
       "alt": "mothersday"
+    },
+    {
+      "name": "maxresdefault",
+      "file_name": "maxresdefault.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-080736/maxresdefault.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-080736",
+      "file_type": "image/jpeg",
+      "width": 1280,
+      "height": 720,
+      "file_size": 75801,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-080736/large_maxresdefault.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-080736/medium_maxresdefault.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-080736/small_maxresdefault.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-080736/xsmall_maxresdefault.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-080736/thumb_maxresdefault.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-080736/maxresdefault.jpg",
+      "alt": "maxresdefault"
     }
   ],
   "description": ""
