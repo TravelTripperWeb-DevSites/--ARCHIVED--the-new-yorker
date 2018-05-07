@@ -171,6 +171,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085534/thumb_premium-queen-suite.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085534/premium-queen-suite.jpg",
       "alt": "Premium Queen Suite"
+    },
+    {
+      "name": "blue-spa-toiletries",
+      "file_name": "blue-spa-toiletries.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085611/blue-spa-toiletries.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-085611",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1200,
+      "file_size": 154697,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085611/large_blue-spa-toiletries.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085611/medium_blue-spa-toiletries.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085611/small_blue-spa-toiletries.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085611/xsmall_blue-spa-toiletries.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085611/thumb_blue-spa-toiletries.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085611/blue-spa-toiletries.jpg",
+      "alt": "Blue Spa Toiletries"
     }
   ],
   "description": ""
