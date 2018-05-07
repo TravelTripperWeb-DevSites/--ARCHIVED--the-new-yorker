@@ -1,5 +1,25 @@
 {
   "name": "THE HOTEL",
-  "photos": null,
+  "photos": [
+    {
+      "name": "thenewyorker",
+      "file_name": "thenewyorker.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-075809/thenewyorker.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-075809",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1148,
+      "file_size": 458257,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-075809/large_thenewyorker.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-075809/medium_thenewyorker.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-075809/small_thenewyorker.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-075809/xsmall_thenewyorker.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-075809/thumb_thenewyorker.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-075809/thenewyorker.jpg",
+      "alt": "The New Yorker"
+    }
+  ],
   "description": ""
 }
