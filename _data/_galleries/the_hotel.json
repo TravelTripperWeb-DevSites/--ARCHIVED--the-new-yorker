@@ -59,24 +59,23 @@
       "alt": "Lobby"
     },
     {
-      "name": "mothersday",
-      "file_name": "mothersday.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/426_558_14867/media/2018-04-25-023857/mothersday.jpg",
+      "name": "wyndhamnewyorker",
+      "file_name": "wyndhamnewyorker.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081257/wyndhamnewyorker.jpg",
       "tags": "",
       "description": "",
-      "date_added": "2018-04-25-023857",
+      "date_added": "2018-05-07-081257",
       "file_type": "image/jpeg",
-      "width": 2000,
-      "height": 700,
-      "file_size": 77978,
-      "url_large": "//cdn.traveltripper.io/site-assets/426_558_14867/media/2018-04-25-023857/large_mothersday.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_14867/media/2018-04-25-023857/medium_mothersday.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/426_558_14867/media/2018-04-25-023857/small_mothersday.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_14867/media/2018-04-25-023857/xsmall_mothersday.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_14867/media/2018-04-25-023857/thumb_mothersday.jpg",
-      "git_file_name": "_assets/image_data/mothersday.json",
-      "path": "//cdn.traveltripper.io/site-assets/426_558_14867/media/2018-04-25-023857/mothersday.jpg",
-      "alt": "mothersday"
+      "width": 1600,
+      "height": 792,
+      "file_size": 326870,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081257/large_wyndhamnewyorker.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081257/medium_wyndhamnewyorker.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081257/small_wyndhamnewyorker.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081257/xsmall_wyndhamnewyorker.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081257/thumb_wyndhamnewyorker.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081257/wyndhamnewyorker.jpg",
+      "alt": "Wyndham New Yorker"
     }
   ],
   "description": ""
