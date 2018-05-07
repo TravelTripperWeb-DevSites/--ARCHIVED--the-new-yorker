@@ -120,6 +120,26 @@
       "git_file_name": "_assets/image_data/meetingsroom.json",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073649/meetingsroom.jpg",
       "alt": "meetingroom"
+    },
+    {
+      "name": "newyorkerhotel",
+      "file_name": "newyorkerhotel.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073653/newyorkerhotel.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-073653",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1200,
+      "file_size": 420858,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073653/large_newyorkerhotel.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073653/medium_newyorkerhotel.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073653/small_newyorkerhotel.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073653/xsmall_newyorkerhotel.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073653/thumb_newyorkerhotel.jpg",
+      "git_file_name": "_assets/image_data/newyorkerhotel.json",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073653/newyorkerhotel.jpg",
+      "alt": "newyorkerhotel"
     }
   ],
   "description": ""
