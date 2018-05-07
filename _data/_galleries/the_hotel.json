@@ -40,6 +40,25 @@
       "git_file_name": "_assets/image_data/new-yorker-pet-friendly-restaurant-new-york.json",
       "path": "//cdn.traveltripper.io/site-assets/426_558_14520/media/2018-04-11-214014/new-yorker-pet-friendly-restaurant-new-york.jpg",
       "alt": "new-yorker-pet-friendly-restaurant-new-york"
+    },
+    {
+      "name": "thenewyorker",
+      "file_name": "thenewyorker.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072408/thenewyorker.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-072408",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1148,
+      "file_size": 458257,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072408/large_thenewyorker.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072408/medium_thenewyorker.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072408/small_thenewyorker.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072408/xsmall_thenewyorker.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072408/thumb_thenewyorker.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072408/thenewyorker.jpg",
+      "alt": "thenewyorker"
     }
   ],
   "description": ""
