@@ -192,6 +192,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072552/thumb_crystalballroom.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072552/crystalballroom.jpg",
       "alt": "crystalballroom"
+    },
+    {
+      "name": "gym",
+      "file_name": "gym.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072603/gym.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-072603",
+      "file_type": "image/jpeg",
+      "width": 478,
+      "height": 350,
+      "file_size": 34856,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072603/large_gym.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072603/medium_gym.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072603/small_gym.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072603/xsmall_gym.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072603/thumb_gym.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-072603/gym.jpg",
+      "alt": "gym"
     }
   ],
   "description": ""
