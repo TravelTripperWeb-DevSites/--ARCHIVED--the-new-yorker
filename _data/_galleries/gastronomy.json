@@ -1,7 +1,26 @@
 {
   "name": "GASTRONOMY",
   "photos": [
-
+    {
+      "name": "New-yorker-common-questions-kids",
+      "file_name": "New-yorker-common-questions-kids.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_14023/media/2018-03-28-132934/New-yorker-common-questions-kids.jpg",
+      "tags": "",
+      "file_size": 849866,
+      "width": 1341,
+      "height": 782,
+      "description": "",
+      "date_added": "2018-03-28-132934",
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_14023/media/2018-03-28-132934/large_New-yorker-common-questions-kids.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_14023/media/2018-03-28-132934/medium_New-yorker-common-questions-kids.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_14023/media/2018-03-28-132934/small_New-yorker-common-questions-kids.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_14023/media/2018-03-28-132934/xsmall_New-yorker-common-questions-kids.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_14023/media/2018-03-28-132934/thumb_New-yorker-common-questions-kids.jpg",
+      "git_file_name": "_assets/image_data/New-yorker-common-questions-kids.json",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_14023/media/2018-03-28-132934/New-yorker-common-questions-kids.jpg",
+      "alt": "New-yorker-common-questions-kids"
+    }
   ],
   "description": ""
 }
