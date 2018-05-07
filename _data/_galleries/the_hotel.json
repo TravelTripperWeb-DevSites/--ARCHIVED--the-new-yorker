@@ -200,6 +200,26 @@
       "git_file_name": "_assets/image_data/queensboro.json",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073657/queensboro.jpg",
       "alt": "queensboro"
+    },
+    {
+      "name": "Thenewyorker",
+      "file_name": "thenewyorker.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073703/thenewyorker.jpg",
+      "tags": "",
+      "description": "The New Yorker",
+      "date_added": "2018-05-07-073703",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1148,
+      "file_size": 458257,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073703/large_thenewyorker.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073703/medium_thenewyorker.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073703/small_thenewyorker.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073703/xsmall_thenewyorker.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073703/thumb_thenewyorker.jpg",
+      "git_file_name": "_assets/image_data/thenewyorker.json",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-073703/thenewyorker.jpg",
+      "alt": "vljhf sflshflskfh  sfshfksf sfh sf;k"
     }
   ],
   "description": ""
