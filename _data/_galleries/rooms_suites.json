@@ -190,6 +190,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085611/thumb_blue-spa-toiletries.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085611/blue-spa-toiletries.jpg",
       "alt": "Blue Spa Toiletries"
+    },
+    {
+      "name": "executive-queen-room",
+      "file_name": "executive-queen-room.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085645/executive-queen-room.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-07-085645",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1200,
+      "file_size": 277276,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085645/large_executive-queen-room.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085645/medium_executive-queen-room.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085645/small_executive-queen-room.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085645/xsmall_executive-queen-room.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085645/thumb_executive-queen-room.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085645/executive-queen-room.jpg",
+      "alt": "Executive Queen Room"
     }
   ],
   "description": ""
