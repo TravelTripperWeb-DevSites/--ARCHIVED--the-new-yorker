@@ -57,6 +57,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/thumb_dining-room.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/dining-room.jpg",
       "alt": "Dining Room"
+    },
+    {
+      "name": "ticktockdinner",
+      "file_name": "ticktockdinner.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015505/ticktockdinner.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-08-015505",
+      "file_type": "image/jpeg",
+      "width": 682,
+      "height": 1024,
+      "file_size": 111056,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015505/large_ticktockdinner.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015505/medium_ticktockdinner.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015505/small_ticktockdinner.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015505/xsmall_ticktockdinner.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015505/thumb_ticktockdinner.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015505/ticktockdinner.jpg",
+      "alt": "Tick Tock Dinner"
     }
   ],
   "description": ""
