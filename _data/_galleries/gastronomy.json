@@ -114,6 +114,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/thumb_restaurant.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/restaurant.jpg",
       "alt": "Restaurant"
+    },
+    {
+      "name": "cheesecake",
+      "file_name": "cheesecake.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015604/cheesecake.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-08-015604",
+      "file_type": "image/jpeg",
+      "width": 1024,
+      "height": 524,
+      "file_size": 90819,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015604/large_cheesecake.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015604/medium_cheesecake.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015604/small_cheesecake.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015604/xsmall_cheesecake.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015604/thumb_cheesecake.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015604/cheesecake.jpg",
+      "alt": "Cake"
     }
   ],
   "description": ""
