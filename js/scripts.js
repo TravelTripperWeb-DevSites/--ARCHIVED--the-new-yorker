@@ -253,7 +253,7 @@ $(document).ready(function() {
       0: {
         items: 1,
         nav: true,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+        navText: ['<a class="left carousel-control" href="javascript:void(0)" role="button" data-slide="prev" title="Previous"> <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="sr-only">Previous</span></a>','<a class="right carousel-control" href="javascript:void(0)" role="button" data-slide="next" title="Next"> <i class="fa fa-angle-right" aria-hidden="true"></i> <span class="sr-only">Next</span> </a>']
       },
       600: {
         items: 3,
@@ -263,7 +263,7 @@ $(document).ready(function() {
       1000: {
         items: 3,
         nav: true,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        navText:  ['<a class="left carousel-control" href="javascript:void(0)" role="button" data-slide="prev" title="Previous"> <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="sr-only">Previous</span></a>','<a class="right carousel-control" href="javascript:void(0)" role="button" data-slide="next" title="Next"> <i class="fa fa-angle-right" aria-hidden="true"></i> <span class="sr-only">Next</span> </a>'],
         loop: true
       }
     }
@@ -393,3 +393,48 @@ $("#timeline-1").timeline();
     }, function(){
     $(this).find(".dropdown-menu").slideUp(100);
   });
+
+//Mobile Redirect Popover
+
+$(document).ready(function () {
+    var viewWidth = $(window).width();
+    if (viewWidth < 480) {
+        if (!Cookies.get('mobilePopup')) {
+            $('#mobileRedirect').modal('show');
+            Cookies.set('mobilePopup', 'valid', { expires: 0.0115, path: "/" }); // need to set the path to fix a FF bug
+            setTimeout(function(){
+                var map2 = new google.maps.Map(document.getElementById('popmap'), {
+                    zoom: 15,
+                    center: {
+                        lat: 40.749129,
+                        lng: -73.991691
+                    },
+                    disableDefaultUI: true
+                });
+                var noPoi = [
+                {
+                    featureType: "poi",
+                    stylers: [
+                      { visibility: "off" }
+                    ]
+                  }
+                ];
+
+                map2.setOptions({styles: noPoi});
+                var image = '/assets/images/loc.png';
+                var popMarker = new google.maps.Marker({
+                    position: {
+                        lat: 40.749129,
+                        lng: -73.991691
+                    },
+                    map: map2,
+                    icon: image
+                });
+
+            },2000);
+
+        }
+
+    }
+
+});

@@ -4,7 +4,7 @@
   @media (min-width: $screen-md-min){
    padding: 100px 15px;
   }
- 
+
  h3 {
   font-family: $main-heading;
   font-size: 72px;
@@ -22,5 +22,29 @@
  }
 }
 h1{
-		&.page-title{font-family: $main-heading; color:$white;}  
+		&.page-title{font-family: $main-heading; color:$white;}
 	}
+// Mother day SWEEPSTAKES
+.mothers-day-banner{
+  background:url(https://cdn.traveltripper.io/site-assets/426_558_14867/media/2018-04-25-023857/mothersday.jpg) no-repeat;
+	background-size:cover;
+	position: relative;
+}
+.mothers-day-form-heading{
+  padding-bottom: 20px !important;
+}
+  .mothers-day-lineheight{
+    h1{
+      font-size: 60px;
+    }
+  }
+  .mothers-day-content{
+    ul{
+      padding: 12px 0px !important;
+      margin-left: 15px;
+      font-size: 16px;
+    }
+  }
+  .mothers-day-form-field{
+    margin-left: 20px !important;
+  }

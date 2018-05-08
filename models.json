@@ -66,6 +66,11 @@
       "file": "blog53.json"
     },
     {
+      "name": "The Best Bars in NYC for Pints, Cocktails and Jazz",
+      "title": "The Best Bars in NYC for Pints, Cocktails and Jazz",
+      "file": "blog63.json"
+    },
+    {
       "name": "Butcher & Banker: Dine In The New Yorker Hotel’s Old Bank Vault",
       "title": "Butcher & Banker: Dine In The New Yorker Hotel’s Old Bank Vault",
       "file": "blog45.json"
@@ -109,6 +114,11 @@
       "name": "The Taste of Times Square",
       "title": "The Taste of Times Square",
       "file": "blog20.json"
+    },
+    {
+      "name": "Top Events in NYC, May Edition",
+      "title": "Top Events in NYC, May Edition",
+      "file": "blog65.json"
     },
     {
       "name": "Common Questions About Visiting New York City, Part 1",
@@ -201,6 +211,11 @@
       "file": "blog40.json"
     },
     {
+      "name": "Treat Yourself to a New York Spa Experience",
+      "title": "Treat Yourself to a New York Spa Experience",
+      "file": "blog64.json"
+    },
+    {
       "name": "The International Vision Expo East",
       "title": "The International Vision Expo East",
       "file": "blog14.json"
@@ -241,6 +256,11 @@
       "file": "blog39.json"
     },
     {
+      "name": "The Gems of Broadway and Off-Broadway Shows ",
+      "title": "The Gems of Broadway and Off-Broadway Shows ",
+      "file": "blog61.json"
+    },
+    {
       "name": "The NACAC New York National College Fair",
       "title": "The NACAC New York National College Fair",
       "file": "blog13.json"
@@ -274,6 +294,11 @@
       "name": "March Madness & More at Madison Square Garden",
       "title": "March Madness & More at Madison Square Garden",
       "file": "blog9.json"
+    },
+    {
+      "name": "Where to Take Your Pet in New York City",
+      "title": "Where to Take Your Pet in New York City",
+      "file": "blog62.json"
     }
   ],
   "gallery": [
@@ -291,8 +316,8 @@
       "file": "homepage_slider3.json"
     },
     {
-      "name": " Spring Sale",
-      "title": " Spring Sale",
+      "name": "MOTHER’S DAY SWEEPSTAKES",
+      "title": "MOTHER’S DAY SWEEPSTAKES",
       "file": "homepage_slider5.json"
     }
   ],
