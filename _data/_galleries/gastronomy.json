@@ -133,6 +133,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015604/thumb_cheesecake.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015604/cheesecake.jpg",
       "alt": "Cake"
+    },
+    {
+      "name": "dining",
+      "file_name": "dining.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015631/dining.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-08-015631",
+      "file_type": "image/jpeg",
+      "width": 1813,
+      "height": 1932,
+      "file_size": 751724,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015631/large_dining.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015631/medium_dining.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015631/small_dining.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015631/xsmall_dining.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015631/thumb_dining.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015631/dining.jpg",
+      "alt": "Dining"
     }
   ],
   "description": ""
