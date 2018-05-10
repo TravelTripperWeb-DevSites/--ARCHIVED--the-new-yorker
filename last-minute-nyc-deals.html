@@ -78,12 +78,12 @@ permalink_localized:
 <section class="discover dining">
   <div class="two-col-wrapper padding80 white_bg cover" style="background-image: url('/images/location/03.jpg');">
     <div class="container intro">
+      {% regionblock deals_heading5, type:header %}
+      <h1>MORE LAST MINUTE NEW YORK HOTEL OFFERS</h1>
+      {% endregionblock %}
       <div class="row no-gutters">
         <div class="col-sm-6">
           <div class="content">
-            {% regionblock deals_heading5, type:header %}
-            <h2>Trattoria<br>Bianca</h2>
-            {% endregionblock %}
             {% regionblock deals_content6, type:text %}
             <p>Open daily for lunch and dinner, this sleek Italian restaurant features Art Deco design and offers an oyster bar, our famous gorgonzola garlic bread, and delicious dishes including Chianti- braised short rib and seafood fritto misto. Wash it all down with a glass of wine from our extensive collection.</p>
             {% endregionblock %}
@@ -93,9 +93,9 @@ permalink_localized:
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="img">
+          <div class="img w-100">
             {% regionblock deals_image1, type:image %}
-            <img src="/images/dining/02.jpg" alt="" class="img-responsive" />
+            <img src="//cdn.traveltripper.io/site-assets/426_558_13494/media/2018-03-13-161939/large_new-yorker-hotel-breakfast-package.jpg" alt="nyc-hotel-breakfast-offer" class="img-responsive" />
             {% endregionblock %}
           </div>
         </div>
@@ -136,6 +136,14 @@ permalink_localized:
     </div>
   </div>
 </section>
+<div class="other-offers">
+{% regionblock otheroffers_content1, type:text %}
+<h3>"Want to take a look at the other special offers available when you book here on the New Yorker Hotel website? Just <a href="/offers/" title="Offers">click here</a> to return to our specials page."</h3>
+{% endregionblock %}
+{% regionblock otheroffers_button1, type:text %}
+<a class="btn-common" href="/offers/">special offers</a>
+{% endregionblock %}
+</div>
 
 {% include home-offers.html %}
 {% include twitter-instagram.html %}
