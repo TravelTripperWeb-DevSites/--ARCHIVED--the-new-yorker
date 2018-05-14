@@ -12,6 +12,17 @@ layout: default
   <input type="hidden" id="offerList" value="[[ offers.special_rates ]]" title="hidden" aria-label="hidden"  />
   <div class="container-fluid">
     <div class="row">
+      <div class="col-sm-6">
+            <div class="offer-wrap">
+          <div class="offer-img" style="background-image:url('/images/gallery/thumb/8.jpg');"> </div>
+          <div class="offers-description">
+            <h4><a href="/offers/last-minute-nyc-deals/">Last Minute NYC Hotel Deals</a></h4>
+            <p>Take a look at our last minute New York City hotel deals and offers at The New Yorker!</p>
+            <a href="/offers/last-minute-nyc-deals/" class="btn-common btn-book"> View offers </a>
+            <a href="#" title="Book Now" class="btn-common btn-book"> Book Now </a>
+          </div>
+        </div>
+      </div>
       <div class="col-sm-6" ng-repeat="offer in offers.special_rates">
         <div class="offer-wrap">
           <div class="offer-img" style="background-image:url([[offer.lead_photo_url.yankee_large]]);" > </div>

@@ -1,113 +1,270 @@
 /*Dining page styles here*/
-.m-t--150{ margin-top:-90px;}
-.m-r-15{ margin-right:15px;}
-.m-t-50{ margin-top:50px;}
-.max-895{ max-width:895px;}
-@media (max-width:768px){
-	.m-r-15{ margin-right:0px; margin-bottom:15px;}
-	
+.m-t--150 {
+  margin-top: -90px;
 }
-.dining{
-	.intro{
-		@media (max-width:768px){
-			h2{ margin-top:40px;}
-		}
-	}
-	.container{
-		.amenitiesslider{
-			display: table;
-			width: 100%;
-		}
-	}
-	.hours{
-		&.nomargin{
-			margin: 40px 0px 0px 0px;
-		}
-			text-align:center;
-			border:solid 1px #bfbfc1; max-width:83%;
-			margin:40px 0 0;	
-			@media (max-width:768px){ margin:80px auto 0;}
-			h5 {
-				font-family: "BrandonGrotesqueWeb-Bold";
-				font-size: 14px;
-				text-transform: uppercase;
-				letter-spacing: 2px;
-				text-align:center;
-				color: #101018;
-				margin:-8px auto 0;
-				background:$bg;
-				padding: 0 10px;
-				width:165px;
-			}
-			p{ width:auto; max-width:none; color:$grey-color; padding:40px 0;}
-			ul{
-				padding:10px 0; border-top:solid 1px #bfbfc1; margin:0 auto;text-align:center; display:flex;
-				li{ list-style:none; float:left; padding:0px 2px; color:$grey-color; font-size:13px; width:28%;
-					a{ color:$grey-color; font-style:italic; word-wrap: break-word;}
-					span{ text-transform:uppercase; color:$text; font-family:$main-font-bold; font-style:normal;}
-					&.mail{ width:44%;}
-					&.full{ width:100%;}
-					&:before{ display:none;}
-				}	
-			}
-			
-		}	
-	&.discover{
-		.intro{
-			.img{ height:474px;}	
-		}
-		.hours{
-			max-width:100%;
-			ul{ padding:10px 0;}	
-			h5{ background:#e6e6e6;}
-			@media (max-width:768px){ margin:20px 0 0;}
-		}	
-	}
-	&.cta-one{
-		.cta-content{
-			p{
-				color: #ffffff;
-				max-width: 660px;
-				margin: 0 auto;
-				padding: 0 20px 85px; max-width:450px;
-					a {
-						color: #fff;
-					}
-			}
-			h3{ padding:100px 0 35px;}	
-		}
-		.banner-overlay{ background-color:rgba(10, 10, 18, 0.2);}
-		.max-895{
-			.btn-common{
-				margin-bottom:10px;	
-			}
-		}
-	}
+
+.m-r-15 {
+  margin-right: 15px;
 }
-.inroom{ text-align:center; width:100%; background-size:cover; display: inline-block; background-color:#f4f4f4;
-	h2{ text-align:center; padding-top:104px;
-		@media (min-width:768px){
-			&:after{ left: calc(50% - 25px); right:inherit; margin:0 auto;}
-		}
-	}
-	p{ max-width:465px; margin:0 auto; padding:50px 30px 100px; color:$grey-color;}
-	.btn-holder{ margin-bottom:90px;}
+
+.m-t-50 {
+  margin-top: 50px;
 }
-.mtop{
-	margin-top: 20px;
-	margin-bottom: 50px;
-	}
-	.mbottom{
-	margin-top: 20px !important;
-	}
-.dinerpad{
-	margin-top: 75px;
-	margin-bottom: 75px;
+
+.max-895 {
+  max-width: 895px;
 }
-.butcher-img{
-	background-image: url('/images/dining/butcher-02.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 474px;
+@media (max-width:768px) {
+  .m-r-15 {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+}
+
+.dining {
+  .intro {
+    @media (max-width:768px) {
+      h2 {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .container {
+    .amenitiesslider {
+      display: table;
+      width: 100%;
+    }
+  }
+
+  .hours {
+    &.nyc-details {
+      width: 100%;
+
+      h5 {
+        margin: -16px auto 0;
+        width: 96%;
+      }
+
+      p {
+        padding: 10px 0;
+      }
+    }
+    text-align: center;
+    border: solid 1px #bfbfc1;
+    max-width: 83%;
+    margin: 40px 0 0;
+    @media (max-width: 768px) {
+      margin: 80px auto 0;
+    }
+
+    &.nomargin {
+      margin: 40px 0 0;
+    }
+
+    h5 {
+      font-family: 'BrandonGrotesqueWeb-Bold';
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      color: #101018;
+      margin: -8px auto 0;
+      background: $bg;
+      padding: 0 10px;
+      width: 165px;
+    }
+
+    .aminities {
+      border-top: solid 1px #bfbfc1;
+
+      ul {
+        li {
+          font-size: 14px;
+          padding: 5px 0;
+        }
+      }
+    }
+
+    ul {
+      width: 200px;
+      margin: 0 auto;
+      padding: 10px 0;
+      text-align: center;
+
+      li {
+        padding: 0 2px;
+        font-size: 13px;
+        color: $grey-color;
+        text-align: left;
+        list-style-position: inside;
+
+        a {
+          color: $grey-color;
+          font-style: italic;
+          word-wrap: break-word;
+        }
+
+        span {
+          text-transform: uppercase;
+          color: $text;
+          font-family: $main-font-bold;
+          font-style: normal;
+        }
+
+        &.mail {
+          width: 44%;
+        }
+
+        &.full {
+          width: 100%;
+        }
+
+        &:before {
+          display: none;
+        }
+
+      }
+
+    }
+
+    p {
+      width: auto;
+      max-width: none;
+      padding: 40px 0;
+      font-size: 13px;
+      color: $grey-color;
+      border-top: solid 1px #bfbfc1;
+    }
+
+  }
+
+  &.discover {
+    .intro {
+      .img {
+        &.w-100 {
+          width: 100%;
+        }
+        height: 474px;
+      }
+    }
+
+    .hours {
+      max-width: 100%;
+
+      ul {
+        padding: 10px 0;
+      }
+
+      h5 {
+        background: #e6e6e6;
+      }
+      @media (max-width:768px) {
+        margin: 20px 0 0;
+      }
+    }
+  }
+
+  &.cta-one {
+    .cta-content {
+      p {
+        color: #ffffff;
+        max-width: 660px;
+        margin: 0 auto;
+        padding: 0 20px 85px;
+        max-width: 450px;
+
+        a {
+          color: #fff;
+        }
+      }
+
+      h3 {
+        padding: 100px 0 35px;
+      }
+    }
+
+    .banner-overlay {
+      background-color: rgba(10, 10, 18, 0.2);
+    }
+
+    .max-895 {
+      .btn-common {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.inroom {
+  text-align: center;
+  width: 100%;
+  background-size: cover;
+  display: inline-block;
+  background-color: #f4f4f4;
+
+  h2 {
+    text-align: center;
+    padding-top: 104px;
+    @media (min-width:768px) {
+      &:after {
+        left: calc(50% - 25px);
+        right: inherit;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  p {
+    max-width: 465px;
+    margin: 0 auto;
+    padding: 50px 30px 100px;
+    color: $grey-color;
+  }
+
+  .btn-holder {
+    margin-bottom: 90px;
+  }
+}
+
+.mtop {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.mbottom {
+  margin-top: 20px !important;
+}
+
+.dinerpad {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.butcher-img {
+  background-image: url('/images/dining/butcher-02.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 474px;
+}
+
+.other-offers {
+  max-width: 85%;
+  margin: 0 auto;
+  h4 {
+    padding-bottom: 30px;
+    font-family: $main-heading;
+    font-size: 28px;
+    line-height: 42px;
+  }
+  padding: 30px 0;
+  text-align: center;
+  @media(min-width: $screen-xs-min) {
+    padding: 30px 0;
+  }
+  @media(min-width: $screen-sm-min) {
+    padding: 80px 0 72px;
+  }
 }
