@@ -7,9 +7,8 @@ GEM
       forwardable-extended (~> 2.5)
     fastimage (2.1.1)
     ffi (1.9.23)
-    ffi (1.9.23-x64-mingw32)
     forwardable-extended (2.6.0)
-    i18n (1.0.0)
+    i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     jekyll (3.1.6)
       colorator (~> 0.1)
@@ -60,7 +59,6 @@ GEM
 
 PLATFORMS
   ruby
-  x64-mingw32
 
 DEPENDENCIES
   i18n
