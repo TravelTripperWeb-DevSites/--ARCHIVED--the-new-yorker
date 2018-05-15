@@ -12,8 +12,6 @@ layout: default
   <input type="hidden" id="offerList" value="[[ offers.special_rates ]]" title="hidden" aria-label="hidden"  />
   <div class="container-fluid">
     <div class="row">
-      {% comment %}
-      Unpublished static offer
       <div class="col-sm-6">
             <div class="offer-wrap">
           <div class="offer-img" style="background-image:url('/images/gallery/thumb/8.jpg');"> </div>
@@ -25,7 +23,6 @@ layout: default
           </div>
         </div>
       </div>
-      {% endcomment %}
       <div class="col-sm-6" ng-repeat="offer in offers.special_rates">
         <div class="offer-wrap">
           <div class="offer-img" style="background-image:url([[offer.lead_photo_url.yankee_large]]);" > </div>
