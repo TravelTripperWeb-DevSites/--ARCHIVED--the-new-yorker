@@ -154,7 +154,7 @@ h1{
 
 .newsletter-signup{
 	background:$text; vertical-align:middle;
-	h3{ color:#cdaf71; font-size:36px; text-transform:none; font-family:$main-font-thin; padding:70px 0 60px;
+	h3{ color:#cdaf71; font-size:36px; text-transform:uppercase; font-family:$main-font-thin; padding:70px 0 60px;
 		@media (max-width: 990px){
 			padding:70px 0 30px;
 		}
