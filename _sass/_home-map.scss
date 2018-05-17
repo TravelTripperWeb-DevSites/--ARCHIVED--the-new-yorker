@@ -38,7 +38,7 @@
 	}
 
 }
-.reverse-button{ 
+.reverse-button{
 	background:$btn; color:$white; font-family:$main-font-regular; font-size:12px; text-transform:uppercase; letter-spacing:2px; padding:20px 20px 15px; display:inline-block;
 	&:hover{ background:$white; color:$btn;}
 }
@@ -58,21 +58,21 @@
 	@media (max-width: 767px){
 		padding:20px 0;
 	}
-	
+
 	.img{
-		img{ width:100%;}	
+		img{ width:100%;}
 	}
-	.content{ width:80%; margin:0 auto; 
+	.content{ width:80%; margin:0 auto;
 		p{ padding:40px 0 0px;
 			span{ text-transform:uppercase; letter-spacing:2px;}
 		}
 		@media (max-width: 767px){
-			width:98%; margin:20px auto;	
+			width:98%; margin:20px auto;
 		}
 	}
 }
 .exclusive-trans {
-	padding-top:0; 
+	padding-top:0;
 	.content {
 		margin: 0;
 		padding: 0 0 50px 0;
@@ -94,7 +94,7 @@ h1{
 			font-size:52px; padding:20px 0;
 		}
 		&.small-variant{ font-size:42px; letter-spacing:4px;}
-	}		
+	}
 }
 
 /*Home Events*/
@@ -102,7 +102,7 @@ h1{
 .a-e{ text-align:center; background:url(../images/a-e-bg.jpg) no-repeat; background-size:cover; padding:50px 0;
 	h4{ font-family:$main-font-medium; font-size:32px; color:$text; letter-spacing:1px; text-transform:uppercase; padding:20px 0;}
 	ul{
-		li{ 
+		li{
 			list-style:none;
 			padding-bottom:20px;
 			h5{font-family:$main-font-bold; font-size:14px; text-transform:uppercase; letter-spacing:2px; color:$text;}
@@ -124,7 +124,7 @@ h1{
 		a{font-family:$main-font-regular; font-size:12px; letter-spacing:2px; color:$text; padding:10px 0; display:block;
 			i{ font-size:7px; padding-left:2px;}
 			&:hover{ opacity:0.6;}
-		}	
+		}
 	}
 	.owl-nav{
 		width: 97px;
@@ -133,7 +133,7 @@ h1{
 		.owl-prev{ float:left; background:$black; color:$white; padding:12px 21px;
 			i{ font-size:20px;}
 			&:hover{ opacity:0.8;}
-		}	
+		}
 		.owl-next{ float:right; /* background:$black; */ color:$white;/* padding:12px 20px; position:relative; */
 			&:after{
 				position: absolute;
@@ -142,21 +142,21 @@ h1{
 				top: 15px;
 				bottom: 15px;
 				left: 0;
-				width: 1px;	
+				width: 1px;
 			}
 			i{ font-size:20px;}
 			&:hover{ opacity:0.8;}
-		}	
-	}	
+		}
+	}
 }
 
 /*Newsletter Signup*/
 
-.newsletter-signup{ 
+.newsletter-signup{
 	background:$text; vertical-align:middle;
 	h3{ color:#cdaf71; font-size:36px; text-transform:uppercase; font-family:$main-font-thin; padding:70px 0 60px;
 		@media (max-width: 990px){
-			padding:70px 0 30px;	
+			padding:70px 0 30px;
 		}
 	}
 	.input-group{
@@ -179,7 +179,7 @@ h1{
 		}
 		.btn-default{ background:#cdaf71; border:0px;height:40px; border-radius:0px;}
 		@media (max-width: 990px){
-			margin-top: 0px; margin-bottom: 70px;	
+			margin-top: 0px; margin-bottom: 70px;
 		}
 	}
 }
@@ -201,14 +201,14 @@ h1{
 	  margin: 0;
 	  padding: 0;
 	}
-	
+
 	.modal-content {
 	  height: auto;
 	  min-height: 100%;
 	  border-radius: 0;
 	  .modal-body{ padding:0px;}
 	}
-	.close{ 
+	.close{
 		font-size:44px;color: #fff;
 		text-shadow: none;
 		opacity: 0.8;
