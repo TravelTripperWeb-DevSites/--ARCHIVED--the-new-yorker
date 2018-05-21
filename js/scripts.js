@@ -275,7 +275,8 @@ $(document).ready(function() {
     $(".main-menu").slideToggle(300);
   });
   $('#thenewyorkergallery').lightGallery({
-    selector: '.item'
+    selector: '.item',
+    exThumbImage: 'data-exthumbimage'
   });
 
   // get rt3 offers in gallery
