@@ -1,221 +1,78 @@
 ---
 layout: default
 ---
+
 <!--Banner here-->
 <section class="inner-page-banner banner" style="background-image:url(/images/gallery/gallery-banner.jpg);">
-	<div class="overlay">
-        <h1>Gallery</h1>
-        <p>Our New York hotel pictures perfectly capture our sophisticated Art Deco décor, light-filled meeting and conference rooms, famed Tick Tock Diner and comfortable accommodations.</p>
-    </div>
+  <div class="overlay">
+    <h1>Gallery</h1>
+    <p>Our New York hotel pictures perfectly capture our sophisticated Art Deco décor, light-filled meeting and conference rooms, famed Tick Tock Diner and comfortable accommodations.</p>
+  </div>
 </section>
-<section> 
-  <!-- gallery wrap --> 
+<section>
+  <!-- gallery wrap -->
+  {% assign categories = site.data._galleries %}
   <div class="gallery-wrapper">
     <div class="gallery-listing">
       <div class="container-fluid">
         <ul class="gallery-nav">
-         <li><a href="javascript:;" data-rel="all" class="filter active" data-filter="all" title="All">All</a></li>
-         <li><a href="javascript:;" data-rel="hotel" class="filter" title="The Hotel">The Hotel</a></li>
-         <li><a href="javascript:;" data-rel="rooms-suites" class="filter" title="Rooms & Suites">Rooms & Suites</a></li>
-          <li><a href="javascript:;" data-rel="gastronomy" class="filter" title="Gastronomy">Gastronomy</a></li>
-          <li><a href="javascript:;" data-rel="videos" class="filter" title="Videos">Videos</a></li>
+          <li><a href="javascript:;" class="filter active" data-filter="all" data-rel="all">All</a></li>
+          {% for category in categories %} {% assign catname = category[0] %}
+          <li><a href="javascript:;" class="filter" data-rel="{{catname}}">{{ site.data._galleries[catname].name }}</a></li>
+          {% endfor %}
         </ul>
       </div>
       <div class="container gallery-wrap">
-      <div id="thenewyorkergallery">
-      <div class="fancybox" data-filter="hotel">
-      	<h3>The Hotel</h3>
-        <ul class="row">        
-          <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/1.jpg"><img src="/images/gallery/thumb/1.jpg" class="img-responsive" alt="The Hotel" /></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/3.jpg"><img src="/images/gallery/thumb/3.jpg" class="img-responsive" alt="The Hotel"/></div>
-          </li> 
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/4.jpg"><img src="/images/gallery/thumb/4.jpg" class="img-responsive" alt="The Hotel"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4 fancybox hidden" data-filter="hotel" >
-            <div class="item rez-offer" data-sub-html="" data-src=""> </div> 
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/5.jpg"><img src="/images/gallery/thumb/5.jpg" class="img-responsive" alt="The Hotel"/></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/6.jpg"><img src="/images/gallery/thumb/6.jpg" class="img-responsive" alt="The Hotel"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/7.jpg"><img src="/images/gallery/thumb/7.jpg" class="img-responsive" alt="The Hotel"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4 fancybox hidden" data-filter="hotel" >
-            <div class="item rez-offer" data-sub-html="" data-src=""> </div> 
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/8.jpg"><img src="/images/gallery/thumb/8.jpg" class="img-responsive" alt="The Hotel"/></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/9.jpg"><img src="/images/gallery/thumb/9.jpg" class="img-responsive" alt="The Hotel"/></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/10.jpg"><img src="/images/gallery/thumb/10.jpg" class="img-responsive" alt="The Hotel"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4 fancybox hidden" data-filter="hotel" >
-            <div class="item rez-offer" data-sub-html="" data-src=""> </div> 
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/12.jpg"><img src="/images/gallery/thumb/12.jpg" class="img-responsive" alt="The Hotel"/></div>
-          </li>        
-        </ul>
+        <div id="thenewyorkergallery">
+            {% for category in categories %}
+       		    {% assign catname = category[0] %}
+                <div class="fancybox" data-filter="{{catname}}">
+              <h3>{{ site.data._galleries[catname].name }}</h3>
+                <ul class="row">
+       		  	      {% for photo in site.data._galleries[catname].photos %}
+                        <li class="col-md-3 col-sm-4">
+                          <div class="item img-block" style="background-image:url({% if photo.url_small %}{{ photo.url_small }}{% else %}{{ photo.url }}{% endif %});"  data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}" data-exthumbimage="{% if photo.url_medium %}{{ photo.url_medium }}{% else %}{{ photo.url }}{% endif %}">
+                              <img style="display:none;" src="{% if photo.url_thumb %}{{ photo.url_thumb }}{% else %}{{ photo.url }}{% endif %}" alt="{{ photo.alt }}">
+                          </div>
+                          <p>{{ photo.alt }}</p>
+                        </li>
+       		  	     {% endfor %}
+                </ul>
+                </div>
+       		{% endfor %}
         </div>
-        <div class="fancybox" data-filter="rooms-suites">
-        <h3>Rooms & Suites</h3>
-        <ul class="row">        
-          <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/13.jpg"><img src="/images/gallery/thumb/13.jpg" class="img-responsive" alt="Rooms & Suites" /></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/14.jpg"><img src="/images/gallery/thumb/14.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/15.jpg"><img src="/images/gallery/thumb/15.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4 fancybox hidden" data-filter="hotel" >
-            <div class="item rez-offer" data-sub-html="" data-src=""> </div> 
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/16.jpg"><img src="/images/gallery/thumb/16.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/17.jpg"><img src="/images/gallery/thumb/17.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/18.jpg"><img src="/images/gallery/thumb/18.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4 fancybox hidden" data-filter="hotel" >
-            <div class="item rez-offer" data-sub-html="" data-src=""> </div> 
-          </li>
-          <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/19.jpg"><img src="/images/gallery/thumb/19.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/20.jpg"><img src="/images/gallery/thumb/20.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/21.jpg"><img src="/images/gallery/thumb/21.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4 fancybox hidden" data-filter="hotel" >
-            <div class="item rez-offer" data-sub-html="" data-src=""> </div> 
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/22.jpg"><img src="/images/gallery/thumb/22.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/23.jpg"><img src="/images/gallery/thumb/23.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/24.jpg"><img src="/images/gallery/thumb/24.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4 fancybox hidden" data-filter="hotel" >
-            <div class="item rez-offer" data-sub-html="" data-src=""> </div> 
-          </li>
-          <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/37.jpg"><img src="/images/gallery/thumb/37.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/38.jpg"><img src="/images/gallery/thumb/38.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/39.jpg"><img src="/images/gallery/thumb/39.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4 fancybox hidden" data-filter="hotel" >
-            <div class="item rez-offer" data-sub-html="" data-src=""> </div> 
-          </li>
-          <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/40.jpg"><img src="/images/gallery/thumb/40.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/41.jpg"><img src="/images/gallery/thumb/41.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4 fancybox hidden" data-filter="hotel" >
-            <div class="item rez-offer" data-sub-html="" data-src=""> </div> 
-          </li>
-          <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/42.jpg"><img src="/images/gallery/thumb/42.jpg" class="img-responsive" alt="Rooms & Suites"/></div>
-          </li>
+        <div class="fancybox" data-filter="videos">
+          <h3>Videos</h3>
+          <ul class="row">
+            <li class="col-md-3 col-sm-4">
+              <div class="item"><img src="/images/gallery/thumb/33.jpg" class="img-responsive" alt="Vidoe Thumb" />
+                <a href="#" id="gal-1" title="Video"><img src="/images/play-icon.svg" class="play-icon" alt="Play"></a>
+              </div>
+            </li>
+            <li class="col-md-3 col-sm-4">
+              <div class="item" data-src="/images/gallery/large/34.jpg"><img src="/images/gallery/thumb/34.jpg" class="img-responsive" alt="Vidoe Thumb" />
+                <a href="#" id="gal-2" title="Video"><img src="/images/play-icon.svg" class="play-icon" alt="Play"></a>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-        </ul>
-        </div>
-        <div class="fancybox" data-filter="gastronomy">
-        <h3>Gastronomy</h3>
-        <ul class="row">        
-          <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/25.jpg"><img src="/images/gallery/thumb/25.jpg" class="img-responsive" alt="Gastronomy" /></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/26.jpg"><img src="/images/gallery/thumb/26.jpg" class="img-responsive" alt="Gastronomy"/></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/27.jpg"><img src="/images/gallery/thumb/27.jpg" class="img-responsive" alt="Gastronomy"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4 fancybox hidden" data-filter="hotel" >
-            <div class="item rez-offer" data-sub-html="" data-src=""> </div> 
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/28.jpg"><img src="/images/gallery/thumb/28.jpg" class="img-responsive" alt="Gastronomy"/></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/29.jpg"><img src="/images/gallery/thumb/29.jpg" class="img-responsive" alt="Gastronomy"/></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/30.jpg"><img src="/images/gallery/thumb/30.jpg" class="img-responsive" alt="Gastronomy"/></div>
-          </li>
-          <li class="col-md-3 col-sm-4 fancybox hidden" data-filter="hotel" >
-            <div class="item rez-offer" data-sub-html="" data-src=""> </div> 
-          </li>
-          <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/31.jpg"><img src="/images/gallery/thumb/31.jpg" class="img-responsive" alt="Gastronomy"/></div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/32.jpg"><img src="/images/gallery/thumb/32.jpg" class="img-responsive" alt="Gastronomy"/></div>
-          </li> 
-        </ul>
-        </div>
-        </div>
-    
-    
-    <div class="fancybox" data-filter="videos">
-        <h3>Videos</h3>
-        <ul class="row">        
-          <li class="col-md-3 col-sm-4">
-            <div class="item"><img src="/images/gallery/thumb/33.jpg" class="img-responsive" alt="Vidoe Thumb" />
-            <a href="#" id="gal-1" title="Video"><img src="/images/play-icon.svg" class="play-icon" alt="Play"></a>
-            </div>
-          </li>
-           <li class="col-md-3 col-sm-4">
-            <div class="item" data-src="/images/gallery/large/34.jpg"><img src="/images/gallery/thumb/34.jpg" class="img-responsive" alt="Vidoe Thumb"/>
-            <a href="#" id="gal-2" title="Video"><img src="/images/play-icon.svg" class="play-icon" alt="Play"></a>
-            </div>
-          </li>
-        </ul>
+        <!--<div class="btn-holder text-center"><a href="javascript:void(0);" class="button-common">load more images</a></div>-->
       </div>
-      
-    <!--<div class="btn-holder text-center"><a href="javascript:void(0);" class="button-common">load more images</a></div>-->
+      <!--/gallery wrap -->
+    </div>
   </div>
-  <!--/gallery wrap --> 
-  </div>
-</div>
 </section>
-{% include newsletter.html %}
-{% include twitter-instagram.html %}
+{% include newsletter.html %} {% include twitter-instagram.html %}
 
-<!--Youtube video--> 
+<!--Youtube video-->
 <div class="modal fade full-screen" id="galleryVideo-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" title="Close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <div class="modal-body">
-      	<div class="embed-responsive embed-responsive-16by9">
-       		<iframe class="embed-responsive-item"  title="Gallery Video"  frameborder="0" allowfullscreen=""></iframe>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" title="Gallery Video" frameborder="0" allowfullscreen=""></iframe>
         </div>
       </div>
     </div>
@@ -227,8 +84,8 @@ layout: default
     <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" title="Close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <div class="modal-body">
-      	<div class="embed-responsive embed-responsive-16by9">
-       		<iframe class="embed-responsive-item"  title="Gallery Video"  frameborder="0" allowfullscreen=""></iframe>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" title="Gallery Video" frameborder="0" allowfullscreen=""></iframe>
         </div>
       </div>
     </div>
