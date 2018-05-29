@@ -1,0 +1,56 @@
+---
+layout: default
+pagename: blog
+---
+{% assign seo_title = page.data.title %}
+
+<!--Banner here-->
+<section class="inner-page-banner banner detail" style="background-image:url(/images/blog/blog-details-banner.jpg);">
+	<div class="overlay overlay-lite">
+        <h6>Blog</h6>
+    </div>
+</section>
+
+<section class="blog">
+  <div class="blog__row">
+    <div class="blog__categories">
+      {% include blog-categories.html %}
+    </div>
+    <div class="blog__list">
+      {% for post in site.data._models.blog %}
+      {% if post.category.url_friendly_name == page.url_friendly_name %}
+      <div class="blog__item">
+        <figure class="blog__image">
+          <a href="/blog/{{ post.url_friendly_name }}/">
+            <img src="{{ post.blogimage.url_medium }}" alt="{{ post.title }}">
+          </a>
+          </figure>
+        <h2>
+          <a href="/blog/{{ post.url_friendly_name }}/">{{ post.title }}</a>
+        </h2>
+        <div class="blog__info">
+          <span class="blog__date">{% assign d = post.date | date: "%-d" %}
+                  {{ post.date | date: "%B" }}
+                  {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+                  {{ post.date | date: "%Y" }} </span>
+                  {% if post.category %}
+        					<a href="/blog/category/{{post.category.url_friendly_name}}/" class="blog__category">{{ post.category.title }}</a>
+        					{% endif %}
+        </div>
+        {% if post.short_description != "" %}
+          {{ post.short_description }}
+        {% endif %}
+        <div class="btn-holder">
+          <a href="/blog/{{ post.url_friendly_name }}/" class="btn-common">Read More</a>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+
+    </div>
+
+  </div>
+</section>
+
+{% include newsletter.html %}
+{% include twitter-instagram.html %}

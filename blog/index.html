@@ -14,60 +14,66 @@ meta_tags: noindex, follow
     </div>
 </section>
 
-{% for post in data_paginator.posts | sort : 'date'%}
-<section class="intro-wrap cta-events attractions-listing">
-	<div class="container">
-        <div class="intro">
-            <div class="col-sm-5 no-padding cta-events-img" style="background-image: url({{post.blogimage.url}})">
-            	<div class="-left">
-                	<div class="btn-holder"><a href="/blog/{{post.url_friendly_name}}/" class="btn-common" title="View this Blog">View this Blog</a></div>
-                </div>
-            </div>
-            <div class="col-sm-7 no-padding">
-                <div class="-right -right-blog">
-                   <a class="blogtitlelink" href="/blog/{{post.url_friendly_name}}/" title="{{post.title}}">
-                    <h2>{{post.title}}</h2>
-                   </a>
-                   	<div class="date-holder">{{post.date | date: "%B %d, %Y"}}</div>
-                    {{post.short_description}}
-                    <div class="btn-holder"><a href="/blog/{{post.url_friendly_name}}/" class="btn-common" title="Read More">Read More</a> 
-                   <!--    <div class="share-links">
-                        <h4>Share on </h4>
-                        <a  href="https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ post.title }} {{site.url}}/blog/{{post.url_friendly_name}}/" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
-
-                        <a href="https://www.facebook.com/sharer/sharer.php?s=100&p[title]={{blog.title}}&p[url]={{site.url}}/blog/{{post.url_friendly_name}}/&p[summary]={{ post.short_description | strip_html | truncatewords: 20 | remove: '<p>' | remove: '</p>'}}&p[images][0]={{post.blogimage.url}}" class="fa fa-facebook" title="Share on Facebook" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" ></a>
-
-                        <a href="https://plus.google.com/share?url={{site.url}}/blog/{{post.url_friendly_name}}/" class="fa fa-google-plus" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" ></a>
- 
-                    </div> -->
-                    </div> 
-               </div>
-          </div>
-        </div>
+<section class="blog">
+  <div class="blog__row">
+    <div class="blog__categories">
+       {% include blog-categories.html %}
     </div>
+    <div class="blog__list">
+      {% for post in data_paginator.posts %}
+      <div class="blog__item">
+        <figure class="blog__image">
+          <a href="/blog/{{ post.url_friendly_name }}/">
+            <img src="{{ post.blogimage.url_medium }}" alt="{{ post.title }}">
+          </a>
+          </figure>
+        <h2>
+          <a href="/blog/{{ post.url_friendly_name }}/">{{ post.title }}</a>
+        </h2>
+        <div class="blog__info">
+          <span class="blog__date">{% assign d = post.date | date: "%-d" %}
+                        {{ post.date | date: "%B" }}
+                        {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+                        {{ post.date | date: "%Y" }} </span>
+					{% if post.category %}
+					<a href="/blog/category/{{post.category.url_friendly_name}}/" class="blog__category">{{ post.category.title }}</a>
+					{% endif %}
+        </div>
+        {% if post.short_description != "" %}
+          {{ post.short_description }}
+        {% endif %}
+        <div class="btn-holder">
+          <a href="/blog/{{ post.url_friendly_name }}/" class="btn-common">Read More</a>
+        </div>
+      </div>
+      {% endfor %}
+
+      {% if data_paginator.total_pages > 1 %}
+			<div class="pagination-wrapper">
+			<div class="pagination">
+			 <p><span class="page_number">Page: {{ data_paginator.page }} of {{ data_paginator.total_pages }}</span></p>
+			<ul class="pagination">
+
+				{% if data_paginator.previous_page %}
+					<li><a href="{{ data_paginator.previous_page_path }}{% if  data_paginator.previous_page_path !="/blog/" %}{%endif%}" class="previous" title="Previous">Previous</a></li>
+				{% else %}
+					<li><span class="previous">Previous</span></li>
+				{% endif %}
+
+				{% if data_paginator.next_page %}
+					<li><a href="{{ data_paginator.next_page_path }}" class="next" title="Next">Next</a></li>
+				{% else %}
+					<li><span class="next ">Next</span></li>
+				{% endif %}
+				</ul>
+
+			</div>
+			</div>
+            {% endif %}
+    </div>
+
+  </div>
 </section>
-{% endfor %}
-
-<div class="pagination-wrapper">
-<div class="pagination"> 
- <p><span class="page_number">Page: {{ data_paginator.page }} of {{ data_paginator.total_pages }}</span></p>
-<ul class="pagination">
-
-  {% if data_paginator.previous_page %}
-    <li><a href="{{ data_paginator.previous_page_path }}{% if  data_paginator.previous_page_path !="/blog/" %}/{%endif%}" class="previous" title="Previous">Previous</a></li>
-  {% else %}
-    <li><span class="previous">Previous</span></li>
-  {% endif %}
-   
-  {% if data_paginator.next_page %}
-    <li><a href="{{ data_paginator.next_page_path }}/" class="next" title="Next">Next</a></li>
-  {% else %}
-    <li><span class="next ">Next</span></li>
-  {% endif %}
-  </ul>
-
-</div>
-</div>
 
 {% include newsletter.html %}
 {% include twitter-instagram.html %}
