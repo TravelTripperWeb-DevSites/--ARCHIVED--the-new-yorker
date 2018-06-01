@@ -83,9 +83,11 @@
 			float: right;
 		}
 		h2 {
-			text-transform: none;
 			margin-bottom: 30px;
+      font-size: 30px;
       text-align: left;
+      text-transform: none;
+      letter-spacing: 3px;
       &:after {
         right: auto;
       }
@@ -134,6 +136,7 @@
         overflow: hidden;
         h4 {
           margin-bottom: 15px;
+          text-transform: uppercase;
         }
         .blog__date {
           font-size: 14px;
@@ -203,7 +206,11 @@
     .blog__item {
       h4 {
         margin-bottom: 30px;
+        font-size: 18px;
         font-weight: bold;
+        @media (min-width: $screen-sm-min) {
+          font-size: 20px;
+        }
       }
       img {
         width: 100%;
@@ -212,11 +219,34 @@
         margin-bottom: 30px;
       }
     }
+    .pagenav {
+      margin-top: 40px;
+      a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+        color: $black;
+      }
+      .prev {
+        padding-right: 10px;
+        .fa {
+          padding: 0 10px 0 0;
+        }
+      }
+      .next {
+        padding-left: 10px;
+        .fa {
+          padding: 0 0 0 10px;
+        }
+      }
+    }
   }
   &__share {
     margin-top: 40px;
     padding-top: 20px;
+    padding-bottom: 20px;
     border-top: solid 1px $grey-border;
+    border-bottom: solid 1px $grey-border;
     span {
       display: inline-block;
       font-family: $main-font-bold;
