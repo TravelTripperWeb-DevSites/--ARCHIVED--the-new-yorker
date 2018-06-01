@@ -11,7 +11,7 @@
 
   <h2>Recent Posts</h2>
 
-  {% for recentpost in site.data._models.blog | limit: 6 %}
+  {% for recentpost in site.data._models.blog | limit: 5 %}
   {% if recentpost.url_friendly_name != page.url_friendly_name %}
   <div class="blog__others__item">
     <a href="/blog/{{recentpost.url_friendly_name }}/">
