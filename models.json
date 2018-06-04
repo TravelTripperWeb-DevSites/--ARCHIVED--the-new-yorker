@@ -408,13 +408,18 @@
       "file": "category2.json"
     },
     {
-      "name": "Weddings",
-      "title": "Weddings",
+      "name": "Local Tips",
+      "title": "Local Tips",
+      "file": "category5.json"
+    },
+    {
+      "name": "Events",
+      "title": "Events",
       "file": "category4.json"
     },
     {
-      "name": "College Guide",
-      "title": "College Guide",
+      "name": "The New Yorker History",
+      "title": "The New Yorker History",
       "file": "category3.json"
     }
   ]
