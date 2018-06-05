@@ -5,10 +5,16 @@ pagename: blog
 {% assign seo_title = page.data.title %}
 
 <!--Banner here-->
-<section class="inner-page-banner banner detail" style="background-image:url(/images/blog/blog-details-banner.jpg);">
-	<div class="overlay overlay-lite">
-        <h6>Blog</h6>
+
+<section>
+  <div class="container-fluid no-padding">
+    <div class="page-banner" style="background-image:url(/images/blog/blog-details-banner.jpg);">
+    <div class="page-title">
+      <h2>Blog</h2>
+      <p>Find out what to do and where to go in the greatest city in the world from the hotel that shares its name — The New Yorker.</p>
     </div>
+    </div>
+  </div>
 </section>
 
 <section class="blog">
@@ -17,6 +23,12 @@ pagename: blog
       {% include blog-categories.html %}
     </div>
     <div class="blog__list">
+
+			<div class="blog__catlanding">
+				<h3><a href="/blog/category/{{ page.url_friendly_name }}/">{{ page.title }}</a></h3>
+				<p>{{ page.description }}</p>
+			</div>
+
       {% for post in site.data._models.blog %}
       {% if post.category.url_friendly_name == page.url_friendly_name %}
       <div class="blog__item">

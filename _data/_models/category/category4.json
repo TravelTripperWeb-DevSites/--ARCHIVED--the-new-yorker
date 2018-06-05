@@ -1,6 +1,6 @@
 {
   "order": "4",
-  "title": "Events",
-  "url_friendly_name": "events",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  "title": "New York City Events",
+  "url_friendly_name": "new-york-city-events",
+  "description": "From games at Madison Square Garden and conventions at the Jacob Javits Center to the city’s best seasonal festivals and concerts, here are our recommendations for things to do in New York City."
 }

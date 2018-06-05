@@ -26,10 +26,16 @@ pagename: blog
 {% assign model = page %}
 
 <!--Banner here-->
-<section class="inner-page-banner banner detail" style="background-image:url(/images/blog/blog-details-banner.jpg);">
-	<div class="overlay overlay-lite">
-        <h6>Blog</h6>
+
+<section>
+  <div class="container-fluid no-padding">
+    <div class="page-banner" style="background-image:url(/images/blog/blog-details-banner.jpg);">
+    <div class="page-title">
+      <h2>Blog</h2>
+      <p>Find out what to do and where to go in the greatest city in the world from the hotel that shares its name — The New Yorker.</p>
     </div>
+    </div>
+  </div>
 </section>
 
 <section class="blog blog--single">
@@ -39,7 +45,7 @@ pagename: blog
     </div>
     <div class="blog__list">
       <div class="blog__item">
-        <h2>{{ blog.title }}</h2>
+        <h1>{{ blog.title }}</h1>
         <div class="blog__info">
           <span class="blog__date">{% assign d = blog.date | date: "%-d" %}
                   {{ blog.date | date: "%B" }}
