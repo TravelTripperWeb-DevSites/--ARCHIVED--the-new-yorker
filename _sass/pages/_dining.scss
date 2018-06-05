@@ -94,7 +94,7 @@
       text-align: center;
 
       li {
-        padding: 0 2px;
+        // padding: 0 2px;
         font-size: 13px;
         color: $grey-color;
         text-align: left;
@@ -113,9 +113,9 @@
           font-style: normal;
         }
 
-        &.mail {
-          width: 44%;
-        }
+        // &.mail {
+        //   width: 44%;
+        // }
 
         &.full {
           width: 100%;
