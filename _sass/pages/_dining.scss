@@ -88,14 +88,16 @@
     }
 
     ul {
-      width: 200px;
+      width: 151px;
       margin: 0 auto;
       padding: 10px 0;
       text-align: center;
+      padding-left: 4px;
 
       li {
         // padding: 0 2px;
         font-size: 13px;
+        list-style-type: none;
         color: $grey-color;
         text-align: left;
         list-style-position: inside;
