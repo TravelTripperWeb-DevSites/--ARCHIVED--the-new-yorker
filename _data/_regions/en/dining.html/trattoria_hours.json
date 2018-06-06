@@ -1,0 +1,6 @@
+[
+  {
+    "_template": "html",
+    "content": "<div class=\"hours\">\n<h5>Opening hours</h5>\n<p>Lunch and Dinner Only<br /> Daily at 11:30 am and close at 10pm<br /> 7 days a week, 365 days a year</p>\n<ul>\n<li class=\"full\"><span>T</span> <a title=\"(212) 268-8444\" href=\"tel:212-268-8444\">(212) 268-8444</a></li>\n<li class=\"full\"><span>E</span> <a title=\"info@trattoriabianca.com\" href=\"mailto:info@trattoriabianca.com\">info@trattoriabianca.com</a></li>\n</ul>\n</div>"
+  }
+]
