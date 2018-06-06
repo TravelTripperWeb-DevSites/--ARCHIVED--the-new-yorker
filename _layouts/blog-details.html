@@ -51,7 +51,7 @@ pagename: blog
                   {{ blog.date | date: "%B" }}
                   {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
                   {{ blog.date | date: "%Y" }}</span>
-					{% if post.category %}
+					{% if blog.category %}
 					<a href="/blog/category/{{blog.category.url_friendly_name}}/" class="blog__category">{{ blog.category.title }}</a>
 					{% endif %}
         </div>
