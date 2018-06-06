@@ -30,7 +30,7 @@ pagename: blog
 			</div>
 
       {% for post in site.data._models.blog %}
-      {% if post.category.url_friendly_name == page.url_friendly_name %}}
+      {% if post.category.url_friendly_name == page.url_friendly_name %}
       <div class="blog__item">
         <figure class="blog__image">
           <a href="/blog/{{ post.url_friendly_name }}/">
