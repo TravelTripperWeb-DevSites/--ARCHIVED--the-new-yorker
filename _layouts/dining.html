@@ -4,8 +4,12 @@ layout: default
 <!--Banner here-->
 <section class="inner-page-banner dining">
 	<div class="overlay">
+		{% regionblock heading %}
         <h1>Gastronomy</h1>
+	  {% endregionblock %}
+	  {% regionblock heading_text, type:text %}
         <p>The restaurant and lounge offerings at The New Yorker Hotel are guaranteed to please even the most discerning palates. Whether you’re looking to satisfy a late-night craving at Tick Tock Diner, indulge in some hearty Tuscan cuisine, or sip a cocktail with friends, we’ve got you covered.</p>
+		{% endregionblock %}
     </div>
 </section>
 
@@ -16,13 +20,13 @@ layout: default
           	<div class="col-sm-7 no-padding" style="background-image: url('/images/dining/TickTock.jpg')">
             	<div class="-left">
                 	<div id="home-room-banner" class="carousel slide" data-ride="carousel">
-  
+
                        <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active"><!-- <img src="/images/dining/TickTock.jpg"> --></div>
                       </div>
-                      
-                      
+
+
                       <!-- Left and right controls -->
                       <!--<a class="left carousel-control" href="#home-room-banner" role="button" data-slide="prev">
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -76,15 +80,15 @@ layout: default
                   </div>
                 </div>
                 <div class="col-sm-6">
-           	    	<div class="img"><img src="/images/dining/02.jpg" alt="Dining" class="img-responsive"/></div> 
+           	    	<div class="img"><img src="/images/dining/02.jpg" alt="Dining" class="img-responsive"/></div>
                 </div>
             </div>
-         </div> 
-         
+         </div>
+
          <div class="container">
               <div class="row no-gutters m-t--150 amenitiesslider">
                   <div class="col-sm-6 no-gutters">
-                       <div id="amenitiesCarousel" class="carousel slide no-shadow margin22" data-ride="carousel"> 
+                       <div id="amenitiesCarousel" class="carousel slide no-shadow margin22" data-ride="carousel">
     					 <!-- Wrapper for slides -->
                          <div class="carousel-inner" role="listbox">
                            <div class="item active">
@@ -99,7 +103,7 @@ layout: default
                            <img src="/images/amenities/arrow-left.png">
                          </a>
                          <a class="right carousel-control" href="#amenitiesCarousel" role="button" data-slide="next">
-                           <img src="/images/amenities/arrow-right.png"> 
+                           <img src="/images/amenities/arrow-right.png">
                          </a>-->
                        </div>
                   </div>
@@ -123,9 +127,9 @@ layout: default
                        </div>
                   </div>
               </div>
-         </div> 
+         </div>
     </div>
-</section> 
+</section>
 
 <!-- Butcher & Banker -->
 <section class="discover dining">
@@ -143,15 +147,15 @@ layout: default
                   </div>
                 </div>
                 <div class="col-sm-6 butcher-img">
-                   
+
                 </div>
             </div>
-         </div> 
-         
+         </div>
+
          <div class="container">
               <div class="row no-gutters amenitiesslider">
                   <div class="col-sm-6 no-gutters">
-                       <div id="amenitiesCarousel2" class="carousel slide no-shadow margin22" data-ride="carousel"> 
+                       <div id="amenitiesCarousel2" class="carousel slide no-shadow margin22" data-ride="carousel">
                <!-- Wrapper for slides -->
                          <div class="carousel-inner" role="listbox">
                            <div class="item active">
@@ -166,7 +170,7 @@ layout: default
                            <img src="/images/amenities/arrow-left.png">
                          </a>
                          <a class="right carousel-control" href="#amenitiesCarousel2" role="button" data-slide="next">
-                           <img src="/images/amenities/arrow-right.png"> 
+                           <img src="/images/amenities/arrow-right.png">
                          </a>-->
                        </div>
                   </div>
@@ -188,7 +192,7 @@ layout: default
                                       <li><span>T</span> <a href="tel:212-268-8455">(212) 268-8455</a></li>
                                       <li><span>F</span> <a href="fax:212-268-8443">(212) 268-8443</a></li>
                                       <li><span>E</span> <a href="mailto:info@butcherandbankernyc.com">info@butcherandbankernyc.com</a></li>
-                                         
+
                                     </ul> -->
                                 </div>
                  <div class="btn-holder">
@@ -197,7 +201,7 @@ layout: default
                        </div>
                   </div>
               </div>
-         </div> 
+         </div>
     </div>
 </section>
 <!--Private Dining-->
@@ -236,6 +240,3 @@ layout: default
 </section> -->
 
 {% include twitter-instagram.html %}
-
-
-
