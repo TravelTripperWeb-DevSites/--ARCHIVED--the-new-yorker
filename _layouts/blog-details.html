@@ -1,49 +1,89 @@
 ---
 layout: default
-pagename: about
+pagename: blog
 ---
+{% assign post = site.data._models.blog  %}
 {% assign blog = page %}
+{% assign seo_title = blog.seo_title %}
+{% assign seo_description = blog.seo_description %}
+
+{% for p in post %}
+    {% if p.url_friendly_name == blog.url_friendly_name %}
+        {% assign pInd = forloop.index0 | minus: 1 %}
+        {% assign nInd = forloop.index0 | plus: 1 %}
+        {% if forloop.first != true %}
+            {% assign prevPostTitle = post[pInd].title %}
+            {% assign prevPostUrl = post[pInd].url_friendly_name %}
+        {% endif %}
+        {% if forloop.last != true %}
+            {% assign nextPostTitle = post[nInd].title %}
+            {% assign nextPostUrl = post[nInd].url_friendly_name %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+
 {% assign model = page %}
+
 <!--Banner here-->
-<section class="inner-page-banner banner detail" style="background-image:url(/images/blog/blog-details-banner.jpg);">
-	<div class="overlay overlay-lite">
-        <h6>Blog</h6>
+
+<section>
+  <div class="container-fluid no-padding">
+    <div class="page-banner" style="background-image:url(/images/blog/blog-details-banner.jpg);">
+    <div class="page-title">
+      <h2>Blog</h2>
+      <p>Find out what to do and where to go in the greatest city in the world from the hotel that shares its name — The New Yorker.</p>
     </div>
+    </div>
+  </div>
 </section>
 
-<section class="blog-details">
-	<div class="container">
-    	<div class="col-sm-7 no-padding">
-        	<div class="-left">
-            	<h1>{{blog.title}}</h1>
-              <div class="date-holder">{{blog.date  |  date: "%B %d, %Y"}}</div>
-                {{blog.more_content}}
-                <div class="btn-holder"><a href="/blog/" class="btn-common" title="See all blog posts">See all blog posts</a></div>
-                <div class="col-xs-12 share-links">
-              <h4>Share:</h4>
-			<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[title]={{blog.title}}&p[url]={{site.url}}{{ page.url }}&p[summary]={{ blog.blog_post | strip_html | truncatewords: 20 | remove: '<p>' | remove: '</p>'}}&p[images][0]={{blog.blogimage.url_large}}" class="fa fa-facebook" title="Share on Facebook" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="nofollow" title="Facebook" ><span class="sr-only">fb</span></a>
-                        <a  href="https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ post.title }} {{site.url}}{{ page.url }}" title="Share on Twitter" rel="nofollow" title="Twitter" ><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span class="sr-only">tw</span></a>
-
-                        <a href="https://plus.google.com/share?url={{site.url}}{{ page.url }}" class="fa fa-google-plus" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="nofollow" title="google" ><span class="sr-only">g+</span></a>
-            </div>
-            </div>
-        </div>
-
-        <div class="col-sm-5 no-padding">
-        	<div class="-right">
-            	<h3>Most recent blog posts</h3>
-                {% assign blog = site.data._models.blog %}
-				{% for a in blog limit:5  | sort : 'date' %}
-                <div class="fe-item">
-            	<p><a href="/blog/{{a.url_friendly_name}}/" title="{{a.title}}"><img src="{{a.blogimage.url}}" alt="{{a.title}}"/></a></p>
-                <p><a href="/blog/{{a.url_friendly_name}}/" title="{{a.title}}">{{a.title}}</a></p>
-                </div>
-                {% endfor %}
-                <div class="btn-holder"><a href="/blog/" class="btn-common" title="See all blog posts">See all blog posts</a></div>
-            </div>
-            </div>
-        </div>
+<section class="blog blog--single">
+  <div class="blog__row">
+    <div class="blog__categories">
+      {% include blog-categories.html %}
     </div>
+    <div class="blog__list">
+      <div class="blog__item">
+        <h1>{{ blog.title }}</h1>
+        <div class="blog__info">
+          <span class="blog__date">{% assign d = blog.date | date: "%-d" %}
+                  {{ blog.date | date: "%B" }}
+                  {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+                  {{ blog.date | date: "%Y" }}</span>
+					{% if blog.category %}
+					<a href="/blog/category/{{blog.category.url_friendly_name}}/" class="blog__category">{{ blog.category.title }}</a>
+					{% endif %}
+        </div>
+
+
+        {{ blog.more_content }}
+
+        <div class="blog__share">
+          {% include social-share.html %}
+        </div>
+
+        <div class="pagenav">
+                    {%if prevPostUrl %}
+                    <a class="prev" href="/blog/{{prevPostUrl}}" title="Previous Blog"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev </a> |
+                    {%else%}
+                    <a class="prev not-active" href="/blog/{{prevPostUrl}}" title="Current Blog"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev </a> |
+                    {%endif%}
+                    {%if nextPostUrl %}
+                    <a class="next" href="/blog/{{nextPostUrl}}" title="Next Blog">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    {%else%}
+                    <a class="next not-active" href="/blog/{{nextPostUrl}}" title="Next Blog">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    {%endif%}
+                </div>
+
+        <div class="btn-holder">
+          <a href="/blog/" class="btn-common">see all blog posts</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
 {% include newsletter.html %}
