@@ -1,0 +1,51 @@
+<div class="blog__search">
+  <form class="search-form" action="/blog/search/" method="get">
+    <input type="text" class="blog__search__box" name="query" id="search-box" placeholder="Type here..." aria-label="Search blogs">
+    <button type="submit" class="blog__search__btn" aria-label="Click to search">
+      <i class="fa fa-search"></i>
+    </button>
+</form>
+</div>
+
+<div class="blog__others">
+
+  <h2>Recent Posts</h2>
+
+  {% for recentpost in site.data._models.blog | limit: 5 %}
+  {% if recentpost.url_friendly_name != page.url_friendly_name %}
+  <div class="blog__others__item">
+    <a href="/blog/{{recentpost.url_friendly_name }}/">
+      <figure style="background-image:url('{{recentpost.blogimage.url_xsmall}}');" class="bg-cover"></figure>
+      <div class="blog__others__item__right">
+        <h4>{{recentpost.title  | truncate: 25 }}</h4>
+        <div class="blog__info">
+          <span class="blog__date">{% assign d = recentpost.date | date: "%-d" %}
+                  {{ recentpost.date | date: "%B" }}
+                  {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+                  {{ recentpost.date | date: "%Y" }}</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+
+<h2>Categories <span class="toggle-arrow"><i class="fa fa-angle-down"></i></span></h2>
+
+<ul class="categories-list">
+  {% assign categories = site.data._models.category | sort:'order' %}
+  {% for categorylist in categories %}
+  <li>
+    <a href="/blog/category/{{categorylist.url_friendly_name}}/">{{categorylist.title}}
+      {% assign count = 0 %}
+          {% for postcount in site.data._models.blog %}
+          {% if postcount.category.title == categorylist.title%}
+          {% capture count  %}{{ count  | plus: '1' }}{% endcapture %}
+          {%endif%}
+          {%endfor%}
+          <span>({{count}})</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
