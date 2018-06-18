@@ -3,7 +3,10 @@
 
 <a href="https://twitter.com/intent/tweet?{% if site.data.social.twitter.username %}via={{ site.data.social.twitter.username }}&{% endif %}text={{ page.title }} {{site.url}}{{ page.url }}" title="Share on Twitter" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;"><i class="fa fa-twitter"></i></a>
 
+{% comment %}
+Removed Google Plus share icon for now as per the request on 90754(Zendesk)
 <a href="https://plus.google.com/share?url={{site.url}}{{ page.url }}" onClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" title="Share on Google plus"><i class="fa fa-google-plus"></i></a>
+{% endcomment %}
 
 {% assign title = blog.title | replace: "'", "" %}
 
