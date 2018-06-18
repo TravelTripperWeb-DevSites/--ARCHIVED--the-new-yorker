@@ -239,10 +239,13 @@
         font-weight: bold;
         @media (min-width: $screen-sm-min) {
           font-size: 20px;
+          margin-bottom: 20px;
         }
       }
       img {
         width: 100%;
+        margin-bottom: 30px;
+        display: block;
       }
       p {
         margin-bottom: 30px;
