@@ -76,7 +76,7 @@ a:hover,a:focus {
 	position: relative;
 		@media (max-width: 1240px){
 		padding: 11px 0;
-		
+
 	}
 	.container-fluid {
 		padding: 0 15px 0 15px;
@@ -86,9 +86,9 @@ a:hover,a:focus {
 	}
 	@media (max-width: 767px){
 		padding: 12px 0;
-		
+
 	}
-	
+
 	.booknow {
 		float:right;
 		padding: 18px 0 0 0;
@@ -100,8 +100,8 @@ a:hover,a:focus {
 				position: absolute;
 				right: 0;
 				top:-8px;
-					
-		
+
+
 			}
 			.cal {
 				display: inline-block;
@@ -115,7 +115,7 @@ a:hover,a:focus {
 						width: 100%;
 					}
 			}
-		
+
 		a{
 			background-color: $blue;
 			display: inline-block;
@@ -126,11 +126,11 @@ a:hover,a:focus {
 		text-align: center;
 		-webkit-transition: all 0.4s;
 		transition: all 0.2s;
-		
+
 		@media (max-width: 1240px){
-					
+
 						padding: 27px 20px;
-					
+
 		}
 		@media (max-width: 767px){
 		font-size: 10px;
@@ -218,13 +218,13 @@ a:hover,a:focus {
 	@media (max-width: 1240px){
 		padding: 10px 0 0 24px;
 	}
-	@media (max-width: 1023px){
+	@media (max-width: 1123px){
 				display: none;
 				}
-				@media (min-width: 1024px){
+				@media (min-width: 1124px){
 				display: block !important;
 				}
-				
+
 				@media (max-width: 1023px){
 					position: absolute;
 					top: 77px;
@@ -249,7 +249,7 @@ a:hover,a:focus {
 						display: block;
 						border-bottom: solid 1px #d3d3d3;
 					}
-				
+
 				a{
 					color: $menu;
 					font-size: 14px;
@@ -265,14 +265,20 @@ a:hover,a:focus {
 						background:none;
 					}
 					&.active{color: $blue;}
-					
+
 					@media (max-width: 1366px){
 						padding: 10px 8px;
 						letter-spacing: 1px;
 						display: block;
 						font-size: 13px;
-						
-						
+
+
+					}
+					@media (max-width: 1290px){
+						padding: 10px 4px;
+						font-size: 11px;
+
+
 					}
 					@media (max-width: 1145px){
 						padding: 10px 5px;
@@ -290,20 +296,20 @@ a:hover,a:focus {
 					@media (max-height: 479px) and (max-width: 599px){
 						padding: 8px 15px;
 					}
-					
-					
+
+
 				}
 				ul{
 					&.dropdown-menu{
-						
+
 						text-align:left !important;
-						
+
 						@media (max-width: 768px){
 							width:100%;
-						}	
+						}
 					}
 				}
-				
+
 			}
 		}
 	}
@@ -325,17 +331,17 @@ a:hover,a:focus {
 	padding: 11px 0;
 	z-index: 20;
 	top:0;
-	
+
     animation-name: example;
     animation-duration: 0.8s;
-	
-	
-	
+
+
+
 	.logo {
 		width: 160px;
 	}
 	.booknow {
-		padding-top: 3px; 
+		padding-top: 3px;
 	}
 	.main-menu {
 		padding: 7px 30px 0 0px;
@@ -362,8 +368,8 @@ a:hover,a:focus {
 	height: 22px;
 	top: 28px;
 	z-index: 1;
-	
-	@media (max-width: 1023px){
+
+	@media (max-width: 1123px){
 		display:block;
 	}
 	@media (max-width: 767px){
@@ -379,7 +385,7 @@ a:hover,a:focus {
 	width: 32px;
 	left:0;
 	height: 12px;
-	
+
 }
 .menu-btn:before{
 	content:"";
@@ -440,8 +446,8 @@ h1{
 }
 
 .mega-title1{
-	  
-	   	
+
+
 	   	letter-spacing: 2px !important;
 
 	   	@media (min-width: $screen-md-min){
@@ -449,7 +455,7 @@ h1{
 	   	}
 
 	   }
-	  
+
 .flag-icon{
 	position: relative;
     display: inline-block;
