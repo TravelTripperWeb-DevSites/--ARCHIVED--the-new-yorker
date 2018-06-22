@@ -225,7 +225,7 @@ a:hover,a:focus {
 				display: block !important;
 				}
 
-				@media (max-width: 1023px){
+				@media (max-width: 1123px){
 					position: absolute;
 					top: 77px;
 					left: 0;
@@ -237,15 +237,18 @@ a:hover,a:focus {
 					}
 	ul {
 		text-align: center;
-		padding-right: 20px;
-		@media (max-width: 1145px){
+		padding-right: 0px;
+		@media (min-width:1291px) and (max-width:1350px){
+			padding-right:40px;
+		}
+		@media (min-width:1123px) and (max-width:1240px){
 			padding-right:55px;
 		}
 		&.nav{
 			li{
 				list-style-type: none;
 				display: inline-block;
-					@media (max-width: 1023px){
+					@media (max-width: 1123px){
 						display: block;
 						border-bottom: solid 1px #d3d3d3;
 					}
@@ -283,7 +286,7 @@ a:hover,a:focus {
 					@media (max-width: 1145px){
 						padding: 10px 5px;
 					}
-						@media (max-width: 1023px){
+						@media (max-width: 1123px){
 						padding: 20px 12px;
 						&:focus{
 							background-color: $blue;
