@@ -48,11 +48,11 @@
               "description": "Experience The New Yorker Hotel, a boutique hotel in New York. Book your stay at our Midtown Manhattan Hotel and start your New York getaway.",
                  "sameAs": [
                 "https://plus.google.com/106550560316390846347"
-               
+
               ]
               }
             }
-        </script> 
+        </script>
         <script type='application/ld+json'>
             {
               "@context": "http://schema.org",
@@ -75,7 +75,7 @@
                 "bestRating": "5",
                 "ratingCount": "2245"
                 },
-              
+
               "description": "Experience The New Yorker Hotel, a boutique hotel in New York. Book your stay at our Midtown Manhattan Hotel and start your New York getaway.",
               "name": "The New Yorker Hotel",
               "alternateName":"The New Yorker A Wyndham Hotel",
@@ -83,10 +83,10 @@
               "email": "reservations@nyhotel.com",
               "url": "https://www.newyorkerhotel.com/",
                "sameAs" : ["https://twitter.com/WyndhamNYH","https://www.facebook.com/newyorkerhotel","https://plus.google.com/106550560316390846347","https://www.tripadvisor.com/Hotel_Review-g60763-d122005-Reviews-The_New_Yorker_A_Wyndham_Hotel-New_York_City_New_York.html","https://www.instagram.com/newyorkerhotel/","https://www.youtube.com/channel/UCXDFDBPGBkC07HOxL7ISQLQ"]
-                },   
+                },
                "hasMap": "https://goo.gl/maps/h5Mei2sS23z"
              },
-             
+
               "potentialAction":{
                "@type":"ReserveAction",
                "target":{
@@ -123,6 +123,7 @@
         <link rel="stylesheet" href="/css/animations.css">
         <link rel="stylesheet" href="/css/lightgallery.css">
         <link rel="stylesheet" href="/css/font-awesome.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
         <link rel="apple-touch-icon" sizes="57x57" href="/fav-icon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/fav-icon/apple-icon-60x60.png">
@@ -153,11 +154,11 @@
                 hpid: "NYCNYR", /* Property ID */
                 pt: "TRACKING" /* Page Type - HOME_PAGE or PRODUCT or TRACKING */
               };
-            
+
               /* Please do not modify the below code. */
               var paramsArr = [];
               for(key in params) { paramsArr.push(key + '=' + encodeURIComponent(params[key])) };
-            
+
               var pl = document.createElement('script');
               pl.type = 'text/javascript';
               pl.async = true;
@@ -307,7 +308,7 @@
         </section>
         <!--<section class="offer-section">
             <h4>Latest Events & Happenings</h4>
-            
+
             <div class="container">
             <div  class="row">
             <div class="col-sm-6 col-md-3">
@@ -330,11 +331,11 @@
               <h5>Event 04</h5>
               <a href="#" class="view-offer">View Event +</a>
             </div>
-            
+
             </div>
             </div>
             <a href="/events/" class="btn-common btn-white">View All Event</a>
-            
+
             </section>-->
         <section class="newsletter-signup">
             <div class="container">
@@ -392,7 +393,7 @@
         <script src="/js/rt3-filters.js"></script>
         <script src="/js/scripts.js"></script>
         <script src="/js/utm-tracking.js"></script>
-        <script src="/js/update-meta.min.js"></script> 
+        <script src="/js/update-meta.min.js"></script>
         <script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
         <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
         <script >
@@ -404,8 +405,8 @@
               defaultCurrency: 'USD',
               //rootPath: 'https://rt3api-prd-ase.ttaws.com' // include this line only if site is on asian server i.e elite and cristalhospitality
             });
-            
-            
+
+
             $("[show-booking-widget]").bookingWidget({
                  showRateCalendar: true,
                  showOfferCode: true
@@ -420,7 +421,7 @@
                     <div class="address">
                         <h3>联系我们</h3>
                         <p>
-                            <a href="https://goo.gl/maps/m7a6UQKkgcH2" target="_blank"> <span>纽约州纽约市第八大道 34 街 481 号</span> <span>, 10001</span></a> <span>+1 (21 2) 9 71 01 01</span> 
+                            <a href="https://goo.gl/maps/m7a6UQKkgcH2" target="_blank"> <span>纽约州纽约市第八大道 34 街 481 号</span> <span>, 10001</span></a> <span>+1 (21 2) 9 71 01 01</span>
                         </p>
                         <p>
                             <span><a href="mailto:reservations@nyhotel.com">reservations@nyhotel.com</a></span> <span><a href="mailto:guestservices@nyhotel.com">guestservices@nyhotel.com</a></span>
@@ -447,31 +448,33 @@
                 </div>
             </div>
         </footer>
+        <!-- Leaflet Settings -->
+        <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+        integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+        crossorigin=""></script>
         <script>
-            function initMap() {
-                    var myLatLng = {lat: 40.752941, lng: -73.993605};
-            
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                      zoom: 15,
-                      center: new google.maps.LatLng(40.752941, -73.993605),
-                  scrollwheel: false,
-                  disableDefaultUI: true
-                    });
-            
-            
-            
-                var iconBase = '/images/';
-            
-            
-                    var marker = new google.maps.Marker({
-                      position: myLatLng,
-                      map: map,
-                      title: 'The New Yorker',
-                  icon: iconBase + 'loc.png'
-                    });
-            
-                  }
+        setTimeout(function(){
+          // Create map object, assign it to the 'map' div, give initial latitude, longitude and zoom values.
+          var map = L.map('map', {scrollWheelZoom:false}).setView([40.752941, -73.993605], 15);
+
+          // Add base map tiles from Carto CDN - Voyager Theme
+          L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_nolabels/{z}/{x}/{y}.png', {
+            attribution:'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution/">CARTO</a>',
+            maxZoom: 20,
+            minZoom: 0,
+          }).addTo(map);
+
+          // Create a custom marker icon.
+          var hotelIcon = L.icon({
+            iconUrl: '/assets/images/leaflet/loc.png',
+            iconSize: [25, 36],
+          });
+
+          // Create a default marker object, pass custom icon as an option, add it to the map.
+          var marker = L.marker([40.752941, -73.993605], {icon:hotelIcon}).addTo(map);
+
+          // Bind a popup to the default marker
+          }, 1000);
         </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwWlYP11jOR0OfULhQV_H6sZ7SCRj1WoY&callback=initMap"></script>
     </body>
 </html>
