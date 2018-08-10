@@ -77,8 +77,8 @@
       "submenu": "false"
     },
     {
-      "title": "Connect With Us",
-      "name": "connect with us",
+      "title": "Connect",
+      "name": "connect",
       "url": "/contact/",
       "submenu": "false"
     },
