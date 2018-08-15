@@ -458,3 +458,8 @@ function pinterestShare(img, desc) {
         "&description=" + desc, "pinIt", "toolbar=no, scrollbars=no, resizable=no, top=0, right=0");
     return false;
 }
+
+// countdown clock
+
+
+$('#countdown').timeTo(100, function(){ alert('Countdown finished'); });
