@@ -528,7 +528,7 @@ function pinterestShare(img, desc) {
           // basic math variables
           var _second = 1000,
               _minute = _second * 60,
-              _hour = _minute * 60,
+              _hour = (_minute * 60) +(_day * 24) ,
               _day = _hour * 24;
 
           // calculate dates
