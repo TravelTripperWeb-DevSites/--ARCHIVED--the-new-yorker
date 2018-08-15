@@ -528,12 +528,12 @@ function pinterestShare(img, desc) {
           // basic math variables
           var _second = 1000,
               _minute = _second * 60,
-              _hour = (_minute * 60) +(_day * 24) ,
+              _hour = _minute * 60  ,
               _day = _hour * 24;
 
           // calculate dates
           var days = Math.floor(difference / _day),
-              hours = Math.floor((difference % _day) / _hour),
+              hours = Math.floor(difference / _hour),
               minutes = Math.floor((difference % _hour) / _minute),
               seconds = Math.floor((difference % _minute) / _second);
 
