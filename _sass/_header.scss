@@ -515,12 +515,19 @@ h1{
   text-align: center;
   background-color: black;
   height:100px;
+  @media screen and (max-width:650px){
+	  height:139px;
+  }
   
   h3,a {
     display: inline-block;
     margin: 0 15px;
 	vertical-align: middle;
 	margin-top:-50px;
+	@media screen and (max-width:650px){
+		margin-top:10px;
+	}
+	
   }
   h3 {
     font-family: $main-heading;
@@ -553,7 +560,7 @@ h1{
     }
   }
 }
-
+ 
 
 //countdown styles 
 
