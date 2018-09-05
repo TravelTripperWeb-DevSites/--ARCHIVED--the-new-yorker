@@ -29,12 +29,37 @@
 <script src="/js/rt3-services.js"></script>
 <script src="/js/rt3-directives.js"></script>
 <script src="/js/rt3-filters.js"></script>
-<script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
+<script src="http://localhost:3000/rt3api.min.js"></script>
+<!-- <script src="https://plugins.traveltripper.io/v3/rt3api.js"></script> //-->
 <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
 <script src="/js/js.cookie-2.2.0.min.js"></script>
 
 
+<style>
+  .ttweb-gradient-modal .cp-header {
+    font-size: 16px;
+    width: 70%;
+  }
+  .ttweb-gradient-modal .cp-subheader {
+    font-size: 9px;
+  }
+  .ttweb-gradient-modal .cp-lowestrate {
+    float: right;
+    width: 30%;
+  }
+  .ttweb-resume-search-widget__title {
+    display: none;
+  }
+  .ttweb-resume-search-widget__rate {
+    display: none;
+  }
+</style>
+
 <script>
+  
+  var showCPDelay = 2000;
+  var sessionLength = 120000; //TTWeb.UserData.defaultSessionLength
+  
   TTWeb.Config.configure({
     hotelId: 'NYCNYR', // or whatever your values are,
     portalId: 'newyorkerhotel',
@@ -48,6 +73,83 @@
     showRateCalendar: true,
     showOfferCode: true
   });
+  
+  var bookingWidget = new TTWeb.Booking({
+    showRateCalendar: true,
+    showOfferCode: true      
+  });
+
+  function showBookingWidget() {
+    bookingWidget.showWidget();
+  }
+  
+  var hcName = "HC";
+  var cpName = "CP"
+  var assignment = TTWeb.AbTest.assignUser("CPvsHC", cpName, hcName)
+  if (assignment == hcName) {
+    // Set up HC
+    var script = document.createElement('script');
+    script.src = "//cdn.hotelchamp.com/app/launcher/0uGxjVM4pX.js";
+    document.head.appendChild(script); 
+  } else {
+    // Launch CP
+    // 1. set up content
+    var formatter = new Intl.NumberFormat('en-US', {
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0
+    })
+    var liveRate = new TTWeb.LiveRate();
+    
+    
+    
+    var resumeSearchHTML = new TTWeb.ResumeSearch();
+    //if (UserData.)
+    
+    var bookingSearch = new TTWeb.BookingSearch(TTWeb.UserData.globalSearch)
+    
+    var rateCompare = new TTWeb.RateCompare();
+    var otaTablePromise = rateCompare.getOTATable();
+    var resumeSearchPromise = resumeSearchHTML.getSearchRatesHtml();
+    var liveRatePromise = liveRate.getCrossOutRate(bookingSearch.reztripParams)
+    Promise.all([otaTablePromise, resumeSearchPromise, liveRatePromise]).then(function(vals) {
+      
+      var lrResp = vals[2];
+      var ratesHtml = "";
+      var lowestRateRoom = lrResp.lowestRateRoom;
+      var lowestRateRoom = lrResp.lowestRateRoom;
+
+      if (lowestRateRoom && lowestRateRoom.rateFound) {
+        ratesHtml = "<span class=\"ttweb-resume-search-widget__lowestcost__crossout\">" + TTWeb.Config.defaultCurrencySymbol + formatter.format( lowestRateRoom.originalRate) + "</span>" + "<span class=\"ttweb-resume-search-widget__lowestcost__actual\">" + TTWeb.Config.defaultCurrencySymbol + formatter.format(lowestRateRoom.discountedRate) + "</span>";
+      }
+      
+      var header = "<div><div class='cp-lowestrate'>"+ratesHtml+"</div><div class='cp-header'>Lowest Price, Guaranteed</div><div class='cp-subheader'>Sample rate for tonight</div></div>";
+      
+      
+      var button ='<a href="'+bookingSearch.reztripBookingUrl+'">Book Now</a>'
+      if (TTWeb.UserData.globalSearchEmpty) {
+        button ='<a onClick="showBookingWidget()">Book Now</a>'
+      }
+      
+      var overlay = new TTWeb.GradientModalPopup({
+        header: header,
+        body: vals[0],
+        footer: vals[1] + button
+      });
+      window.overlay = overlay;
+      overlay.onHide(function() {
+        TTWeb.UserData.saveInStorage("ClosedCP", true, sessionLength);
+      })
+      overlay.onShow(function() {
+        TTWeb.UserData.saveInStorage("ShownCP", true, sessionLength);
+      })
+      setTimeout(() => {
+        // && !TTWeb.UserData.fetchFromStorage("ShownCP")
+        if (!TTWeb.UserData.fetchFromStorage("ClosedCP")  && !overlay.isShown()) {
+          overlay.show();
+        }
+      }, showCPDelay)
+    });
+  }  
 </script>
 
 
@@ -131,31 +233,4 @@
 
     });
   </script>
-{% endif %}
-
-<!-- {{page.url}} -->
-{% if page.url == "/" %}
-<script src="/js/plugins/rt-widget.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-      $('body').RTwidgets(
-{% if site.data.special-popup-modal.publish == 'true' %}
-       {
-              offer_popup_widget: {
-                  show: true,
-                       offer_data_url: '/js/api/special-offer-popup.json',
-                        timeout: 3000
-              }
-          }
-{% else %}
-          {
-              offer_popup_widget: {
-                  show: false,
-                  timeout: 3000
-              }
-          }
-{% endif %}
-          );
-    });
-</script>
 {% endif %}
