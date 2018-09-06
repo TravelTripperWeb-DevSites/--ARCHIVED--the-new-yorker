@@ -36,8 +36,6 @@ $(document).ready(function() {
    adjustHomeBannerHeight();
 
 
-  console.log(window.location.href);
-
 
   $("#od_arrival").datepicker({
     dateFormat: "yy-mm-dd",
@@ -58,7 +56,6 @@ $(document).ready(function() {
     altFormat: 'yy-mm-dd',
     onClose: function() {
       var dt1 = $('#v').datepicker('getDate');
-      console.log(dt1);
       var dt2 = $('#od_departure').datepicker('getDate');
       if (dt2 <= dt1) {
         var minDate = $('#od_departure').datepicker('option', 'minDate');
@@ -87,7 +84,6 @@ $(document).ready(function() {
     altFormat: 'yy-mm-dd',
     onClose: function() {
       var dt1 = $('#v').datepicker('getDate');
-      console.log(dt1);
       var dt2 = $('#departure_date').datepicker('getDate');
       if (dt2 <= dt1) {
         var minDate = $('#departure_date').datepicker('option', 'minDate');

@@ -29,23 +29,76 @@
 <script src="/js/rt3-services.js"></script>
 <script src="/js/rt3-directives.js"></script>
 <script src="/js/rt3-filters.js"></script>
-<script src="http://localhost:3000/rt3api.min.js"></script>
-<!-- <script src="https://plugins.traveltripper.io/v3/rt3api.js"></script> //-->
+<!-- <script src="http://localhost:3000/rt3api.min.js"></script>//-->
+<script src="https://plugins.traveltripper.io/v3/rt3api.min.js"></script> 
 <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
 <script src="/js/js.cookie-2.2.0.min.js"></script>
 
 
 <style>
-  .ttweb-gradient-modal .cp-header {
-    font-size: 16px;
+  
+  .special-banner-bar__brg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    width: 95%;
+    margin: 0px auto;
+  }
+  .special-banner-bar__brg .cp-top {
+    width: 270px;
+  }
+  .special-banner-bar__brg .ttweb-rate-compare {
+    width: 300px;
+    margin: 0 20px;
+    padding: 0 20px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
+  .special-banner-bar__brg .ttweb-rate-compare__row {
+    float: left;
+    width: 50%;
+    color:white;
+    display: block  ;
+  }
+  .special-banner-bar__brg a { 
+    padding: 12px 16px 8px 16px;
+    line-height: 1em
+    margin: 0
+  }
+  .special-banner-bar__brg .ttweb-rate-compare__label,
+  .special-banner-bar__brg .ttweb-rate-compare__cost {
+    display: inline-block;
+  }
+  
+  .cp-header {
+    font-size: 22px;
+    font-family: "DIN Condensed";
+    font-weight: bold;
     width: 70%;
   }
-  .ttweb-gradient-modal .cp-subheader {
-    font-size: 9px;
+  .cp-subheader {
+    font-size: 10px;
+    font-weight: 300;
   }
-  .ttweb-gradient-modal .cp-lowestrate {
+  .cp-lowestrate {
     float: right;
     width: 30%;
+    text-align: right;
+  }
+  .ttweb-resume-search-widget__lowestcost__crossout {
+    margin-right: 5px;
+  }
+  .ttweb-gradient-modal__header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+  }
+  .ttweb-resume-search-widget--no-resume {
+    border-top: 1px solid #ccc;
+    padding-top: .5em;
+    margin-top: .5em;    
   }
   .ttweb-resume-search-widget__title {
     display: none;
@@ -53,11 +106,31 @@
   .ttweb-resume-search-widget__rate {
     display: none;
   }
+  .ttweb-resume-search-widget__tonight-rates {
+    display: none;
+  }
+  .ttweb-gradient-modal__footer {
+    display: block;
+  }
+  .ttweb-gradient-modal .button {
+    display: block;
+    background: #0f73cc;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 14px 15px 12px;
+    margin: 20px auto;
+    text-align: center;
+    width: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1em;
+  }
 </style>
 
 <script>
   
-  var showCPDelay = 2000;
+  var showCPDelay = 6000; //2000;
   var sessionLength = 120000; //TTWeb.UserData.defaultSessionLength
   
   TTWeb.Config.configure({
@@ -111,6 +184,11 @@
     var otaTablePromise = rateCompare.getOTATable();
     var resumeSearchPromise = resumeSearchHTML.getSearchRatesHtml();
     var liveRatePromise = liveRate.getCrossOutRate(bookingSearch.reztripParams)
+    
+    otaTablePromise.then(function(rateTableHtml) {
+        
+    })
+    
     Promise.all([otaTablePromise, resumeSearchPromise, liveRatePromise]).then(function(vals) {
       
       var lrResp = vals[2];
@@ -122,12 +200,12 @@
         ratesHtml = "<span class=\"ttweb-resume-search-widget__lowestcost__crossout\">" + TTWeb.Config.defaultCurrencySymbol + formatter.format( lowestRateRoom.originalRate) + "</span>" + "<span class=\"ttweb-resume-search-widget__lowestcost__actual\">" + TTWeb.Config.defaultCurrencySymbol + formatter.format(lowestRateRoom.discountedRate) + "</span>";
       }
       
-      var header = "<div><div class='cp-lowestrate'>"+ratesHtml+"</div><div class='cp-header'>Lowest Price, Guaranteed</div><div class='cp-subheader'>Sample rate for tonight</div></div>";
+      var header = "<div class='cp-top'><div class='cp-lowestrate'>"+ratesHtml+"</div><div class='cp-header'>Lowest Price, Guaranteed</div><div class='cp-subheader'>Sample rate for tonight</div></div>";
       
       
-      var button ='<a href="'+bookingSearch.reztripBookingUrl+'">Book Now</a>'
+      var button ='<a class="button" href="'+bookingSearch.reztripBookingUrl+'">Book Now</a>'
       if (TTWeb.UserData.globalSearchEmpty) {
-        button ='<a onClick="showBookingWidget()">Book Now</a>'
+        button ='<a class="button" onClick="showBookingWidget()">Book Now</a>'
       }
       
       var overlay = new TTWeb.GradientModalPopup({
@@ -135,6 +213,9 @@
         body: vals[0],
         footer: vals[1] + button
       });
+      
+      $(".special-banner-bar").html("<div class='special-banner-bar__brg'>"+header + vals[0] + button + "</div>")
+      
       window.overlay = overlay;
       overlay.onHide(function() {
         TTWeb.UserData.saveInStorage("ClosedCP", true, sessionLength);
@@ -143,8 +224,8 @@
         TTWeb.UserData.saveInStorage("ShownCP", true, sessionLength);
       })
       setTimeout(() => {
-        // && !TTWeb.UserData.fetchFromStorage("ShownCP")
-        if (!TTWeb.UserData.fetchFromStorage("ClosedCP")  && !overlay.isShown()) {
+        //
+        if (!TTWeb.UserData.fetchFromStorage("ClosedCP")  && !TTWeb.UserData.fetchFromStorage("ShownCP") && !overlay.isShown()) {
           overlay.show();
         }
       }, showCPDelay)
