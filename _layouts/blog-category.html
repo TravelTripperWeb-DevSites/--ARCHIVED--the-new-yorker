@@ -34,7 +34,7 @@ pagename: blog
       <div class="blog__item">
         <figure class="blog__image">
           <a href="/blog/{{ post.url_friendly_name }}/">
-            <img src="{{ post.blogimage.url_medium }}" alt="{{ post.title }}">
+            <img src="{% if post.blogimage.url_medium %}{{ post.blogimage.url_medium }}{% else %}{{ post.blogimage.url }}{% endif %}" alt="{{ post.title }}">
           </a>
           </figure>
         <h2>
