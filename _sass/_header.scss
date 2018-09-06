@@ -509,7 +509,11 @@ h1{
 
 //special-banner-bar
 .special-banner-bar {
+  .content {
+    display: none;
+  }
   max-width: 100%;
+  min-height: 70px;
   margin: 2px auto;
   padding: 10px 0;
   text-align: center;

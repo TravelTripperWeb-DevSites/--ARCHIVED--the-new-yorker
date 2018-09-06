@@ -34,104 +34,22 @@
 <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
 <script src="/js/js.cookie-2.2.0.min.js"></script>
 
-
-<style>
-  
-  .special-banner-bar__brg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: left;
-    width: 95%;
-    margin: 0px auto;
-  }
-  .special-banner-bar__brg .cp-top {
-    width: 270px;
-  }
-  .special-banner-bar__brg .ttweb-rate-compare {
-    width: 300px;
-    margin: 0 20px;
-    padding: 0 20px;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-  }
-  .special-banner-bar__brg .ttweb-rate-compare__row {
-    float: left;
-    width: 50%;
-    color:white;
-    display: block  ;
-  }
-  .special-banner-bar__brg a { 
-    padding: 12px 16px 8px 16px;
-    line-height: 1em
-    margin: 0
-  }
-  .special-banner-bar__brg .ttweb-rate-compare__label,
-  .special-banner-bar__brg .ttweb-rate-compare__cost {
-    display: inline-block;
-  }
-  
-  .cp-header {
-    font-size: 22px;
-    font-family: "DIN Condensed";
-    font-weight: bold;
-    width: 70%;
-  }
-  .cp-subheader {
-    font-size: 10px;
-    font-weight: 300;
-  }
-  .cp-lowestrate {
-    float: right;
-    width: 30%;
-    text-align: right;
-  }
-  .ttweb-resume-search-widget__lowestcost__crossout {
-    margin-right: 5px;
-  }
-  .ttweb-gradient-modal__header {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: .5em;
-    margin-bottom: .5em;
-  }
-  .ttweb-resume-search-widget--no-resume {
-    border-top: 1px solid #ccc;
-    padding-top: .5em;
-    margin-top: .5em;    
-  }
-  .ttweb-resume-search-widget__title {
-    display: none;
-  }
-  .ttweb-resume-search-widget__rate {
-    display: none;
-  }
-  .ttweb-resume-search-widget__tonight-rates {
-    display: none;
-  }
-  .ttweb-gradient-modal__footer {
-    display: block;
-  }
-  .ttweb-gradient-modal .button {
-    display: block;
-    background: #0f73cc;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    padding: 14px 15px 12px;
-    margin: 20px auto;
-    text-align: center;
-    width: 50%;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 1em;
-  }
-</style>
-
 <script>
   
   var showCPDelay = 6000; //2000;
   var sessionLength = 120000; //TTWeb.UserData.defaultSessionLength
+  
+  var locale = 'en'
+  let path = window.location.pathname
+  var locales = ['fr','it', 'es', 'de', 'zh']
+  for(var i=0,ii=locales.length;i<ii;i++) {
+    var l = locales[i]
+    if (path.startsWith("/"+l+"/")) {
+      locale = l
+    }
+  }
+  //console.log(locale)
+  //TTWeb.Analytics.trackEvent("")
   
   TTWeb.Config.configure({
     hotelId: 'NYCNYR', // or whatever your values are,
@@ -139,6 +57,7 @@
     defaultTimezone: 'America/New_York', // timezone of site
     ipAddress: sessionStorage.ip_add,
     defaultCurrency: 'USD',
+    locale: locale
     //rootPath: 'https://rt3api-prd-ase.ttaws.com' // include this line only if site is on asian server i.e elite and cristalhospitality
   });
 
@@ -147,90 +66,111 @@
     showOfferCode: true
   });
   
-  var bookingWidget = new TTWeb.Booking({
-    showRateCalendar: true,
-    showOfferCode: true      
-  });
-
-  function showBookingWidget() {
-    bookingWidget.showWidget();
-  }
-  
-  var hcName = "HC";
-  var cpName = "CP"
-  var assignment = TTWeb.AbTest.assignUser("CPvsHC", cpName, hcName)
-  if (assignment == hcName) {
-    // Set up HC
+  function setUpHc() {
+    $(".special-banner-bar .content").show();
     var script = document.createElement('script');
     script.src = "//cdn.hotelchamp.com/app/launcher/0uGxjVM4pX.js";
-    document.head.appendChild(script); 
+    document.head.appendChild(script);     
+  }
+  
+  if (locale !== 'en') {
+    setUpHc();    
   } else {
-    // Launch CP
-    // 1. set up content
-    var formatter = new Intl.NumberFormat('en-US', {
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0
-    })
-    var liveRate = new TTWeb.LiveRate();
-    
-    
-    
-    var resumeSearchHTML = new TTWeb.ResumeSearch();
-    //if (UserData.)
-    
-    var bookingSearch = new TTWeb.BookingSearch(TTWeb.UserData.globalSearch)
-    
-    var rateCompare = new TTWeb.RateCompare();
-    var otaTablePromise = rateCompare.getOTATable();
-    var resumeSearchPromise = resumeSearchHTML.getSearchRatesHtml();
-    var liveRatePromise = liveRate.getCrossOutRate(bookingSearch.reztripParams)
-    
-    otaTablePromise.then(function(rateTableHtml) {
-        
-    })
-    
-    Promise.all([otaTablePromise, resumeSearchPromise, liveRatePromise]).then(function(vals) {
-      
-      var lrResp = vals[2];
-      var ratesHtml = "";
-      var lowestRateRoom = lrResp.lowestRateRoom;
-      var lowestRateRoom = lrResp.lowestRateRoom;
-
-      if (lowestRateRoom && lowestRateRoom.rateFound) {
-        ratesHtml = "<span class=\"ttweb-resume-search-widget__lowestcost__crossout\">" + TTWeb.Config.defaultCurrencySymbol + formatter.format( lowestRateRoom.originalRate) + "</span>" + "<span class=\"ttweb-resume-search-widget__lowestcost__actual\">" + TTWeb.Config.defaultCurrencySymbol + formatter.format(lowestRateRoom.discountedRate) + "</span>";
-      }
-      
-      var header = "<div class='cp-top'><div class='cp-lowestrate'>"+ratesHtml+"</div><div class='cp-header'>Lowest Price, Guaranteed</div><div class='cp-subheader'>Sample rate for tonight</div></div>";
-      
-      
-      var button ='<a class="button" href="'+bookingSearch.reztripBookingUrl+'">Book Now</a>'
-      if (TTWeb.UserData.globalSearchEmpty) {
-        button ='<a class="button" onClick="showBookingWidget()">Book Now</a>'
-      }
-      
-      var overlay = new TTWeb.GradientModalPopup({
-        header: header,
-        body: vals[0],
-        footer: vals[1] + button
-      });
-      
-      $(".special-banner-bar").html("<div class='special-banner-bar__brg'>"+header + vals[0] + button + "</div>")
-      
-      window.overlay = overlay;
-      overlay.onHide(function() {
-        TTWeb.UserData.saveInStorage("ClosedCP", true, sessionLength);
-      })
-      overlay.onShow(function() {
-        TTWeb.UserData.saveInStorage("ShownCP", true, sessionLength);
-      })
-      setTimeout(() => {
-        //
-        if (!TTWeb.UserData.fetchFromStorage("ClosedCP")  && !TTWeb.UserData.fetchFromStorage("ShownCP") && !overlay.isShown()) {
-          overlay.show();
-        }
-      }, showCPDelay)
+    var bookingWidget = new TTWeb.Booking({
+      showRateCalendar: true,
+      showOfferCode: true      
     });
-  }  
+
+    function showBookingWidget() {
+      bookingWidget.showWidget();
+    }
+  
+    var hcName = "HC";
+    var cpName = "CP"
+    var assignment = TTWeb.AbTest.assignUser("CPvsHC", cpName, hcName)
+    if (assignment == hcName) {
+      // Set up HC
+      setUpHc()
+    } else {
+      // Launch CP
+      // 1. set up content
+      var formatter = new Intl.NumberFormat('en-US', {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0
+      })
+      var liveRate = new TTWeb.LiveRate();
+    
+    
+    
+      var resumeSearchHTML = new TTWeb.ResumeSearch();
+      //if (UserData.)
+    
+      var bookingSearch = new TTWeb.BookingSearch(TTWeb.UserData.globalSearch)
+    
+      var rateCompare = new TTWeb.RateCompare();
+      var otaTablePromise = rateCompare.getOTATable();
+      var resumeSearchPromise = resumeSearchHTML.getSearchRatesHtml();
+      var liveRatePromise = liveRate.getCrossOutRate(bookingSearch.reztripParams)
+    
+      otaTablePromise.then(function(rateTableHtml) {
+        
+      })
+    
+      Promise.all([otaTablePromise, resumeSearchPromise, liveRatePromise]).then(function(vals) {
+      
+        var lrResp = vals[2];
+        var ratesHtml = "";
+        var lowestRateRoom = lrResp.lowestRateRoom;
+        var lowestRateRoom = lrResp.lowestRateRoom;
+
+        if (lowestRateRoom && lowestRateRoom.rateFound) {
+          ratesHtml = "<span class=\"ttweb-resume-search-widget__lowestcost__crossout\">" + TTWeb.Config.defaultCurrencySymbol + formatter.format( lowestRateRoom.originalRate) + "</span>" + "<span class=\"ttweb-resume-search-widget__lowestcost__actual\">" + TTWeb.Config.defaultCurrencySymbol + formatter.format(lowestRateRoom.discountedRate) + "</span>";
+        }
+      
+        var header = "<div class='cp-top'><div class='cp-lowestrate'>"+ratesHtml+"</div><div class='cp-header'>Lowest Price, Guaranteed</div><div class='cp-subheader'>Sample rate for tonight</div></div>";
+      
+      
+        var button ='<a class="button" href="'+bookingSearch.reztripBookingUrl+'">Book Now</a>';
+        var widgetButton = '<a class="button" onClick="showBookingWidget()">Book Now</a>';
+        if (TTWeb.UserData.globalSearchEmpty) {
+          button = widgetButton;
+        }
+        
+        var otaTable = vals[0];
+        if (otaTable == '') {
+          otaTable ='<div class="ttweb-rate-compare"></div>';
+          
+        }
+      
+        var overlay = new TTWeb.GradientModalPopup({
+          header: header,
+          body: otaTable,
+          footer: vals[1] + button
+        });
+      
+        
+        $(".special-banner-bar").html("<div class='special-banner-bar__brg'>"+header + otaTable + widgetButton + "</div>")
+      
+        window.overlay = overlay;
+        overlay.onHide(function() {
+          TTWeb.UserData.saveInStorage("ClosedCP", true, sessionLength);
+        })
+        overlay.onShow(function() {
+          TTWeb.UserData.saveInStorage("ShownCP", true, sessionLength);
+        })
+        setTimeout(() => {
+          //
+          if (!TTWeb.UserData.fetchFromStorage("ClosedCP")  && !TTWeb.UserData.fetchFromStorage("ShownCP") && !overlay.isShown()) {
+            overlay.show();
+            $(".ttweb-resume-search-widget__change-dates-row, .ttweb-resume-search-widget__date-row").click(showBookingWidget);
+      
+          }
+        }, showCPDelay)
+      });
+    }      
+  }
+  
+
 </script>
 
 
