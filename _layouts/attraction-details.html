@@ -22,7 +22,7 @@ pagename: attraction
                       <div class="carousel-inner" role="listbox">
                         <div class="item active"><img src="{{attractions.attraction_image.url}}" alt="Attraction"></div>
                       </div>
-                      
+
                     </div>
                 </div>
             </div>
@@ -44,8 +44,8 @@ pagename: attraction
                 <div class="owl-carousel attractions-carousel">
                 {% for attractions in site.data._models.attractions %}
                       <div class="item">
-                        <img src="{{attractions.attraction_image.url}}" alt="{{attractions.title}}"/> 
-                        <h5>{{attractions.title}}</h5>
+                        <img src="{{attractions.attraction_image.url}}" alt="{{attractions.title}}"/>
+                        <h5><a href="/attractions/{{ attractions.url_friendly_name }}/" title="{{ attractions.title }}">{{attractions.title}}</a></h5>
                         <a href="/attractions/{{attractions.url_friendly_name}}/" title="View Attraction">View Attraction <i class="fa fa-plus"></i></a>
                       </div>
                 {% endfor %}
