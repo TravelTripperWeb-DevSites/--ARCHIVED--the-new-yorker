@@ -576,4 +576,4 @@ $('.countdown').downCount({
 }, function () {
   alert('WOOT WOOT, done!');
 });
-*?
+*/
