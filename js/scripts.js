@@ -567,12 +567,13 @@ function pinterestShare(img, desc) {
 
 })(jQuery);
 
-// countdown clock
+// countdown clock uncomment to activate
 
-    
+ /*   
 $('.countdown').downCount({
   date: '09/10/2018 12:00:00',
   offset: +10
 }, function () {
   alert('WOOT WOOT, done!');
 });
+*?
