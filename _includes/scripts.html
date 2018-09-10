@@ -36,8 +36,9 @@
 
 <script>
   
-  var showCPDelay = 6000; //2000;
-  var sessionLength = 120000; //TTWeb.UserData.defaultSessionLength
+  var showCPDelay = 12000; //2000;
+  var openedSessionLength = 60 * 60 * 1 * 1000; //1 hour after seeing the "open" for the first time
+  var closedSessionLength = 60 * 60 * 24 * 1000 //24 hours after closing the session
   
   var locale = 'en'
   let path = window.location.pathname
@@ -153,10 +154,10 @@
       
         window.overlay = overlay;
         overlay.onHide(function() {
-          TTWeb.UserData.saveInStorage("ClosedCP", true, sessionLength);
+          TTWeb.UserData.saveInStorage("ClosedCP", true, closedSessionLength);
         })
         overlay.onShow(function() {
-          TTWeb.UserData.saveInStorage("ShownCP", true, sessionLength);
+          TTWeb.UserData.saveInStorage("ShownCP", true, openedSessionLength);
         })
         setTimeout(() => {
           //
