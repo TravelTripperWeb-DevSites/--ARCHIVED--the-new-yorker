@@ -20,15 +20,15 @@ layout: default
                   </div>
                 </div>
                 <div class="col-sm-6">
-           	    	<div class="img"><img src="../images/location/02.jpg" alt="location" class="img-responsive"/></div> 
+           	    	<div class="img"><img src="../images/location/02.jpg" alt="location" class="img-responsive"/></div>
                 </div>
             </div>
-         </div> 
-         
+         </div>
+
          <div class="container">
               <div class="row no-gutters">
                   <div class="col-sm-6 no-gutters">
-                       <div id="amenitiesCarousel" class="carousel slide no-shadow margin22" data-ride="carousel"> 
+                       <div id="amenitiesCarousel" class="carousel slide no-shadow margin22" data-ride="carousel">
     					 <!-- Wrapper for slides -->
                          <div class="carousel-inner" role="listbox">
                            <div class="item active">
@@ -43,7 +43,7 @@ layout: default
                            <img src="/images/amenities/arrow-left.png">
                          </a>
                          <a class="right carousel-control" href="#amenitiesCarousel" role="button" data-slide="next">
-                           <img src="/images/amenities/arrow-right.png"> 
+                           <img src="/images/amenities/arrow-right.png">
                          </a>-->
                        </div>
                   </div>
@@ -62,9 +62,9 @@ layout: default
                        </div>
                   </div>
               </div>
-         </div> 
+         </div>
     </div>
-</section> 
+</section>
 <h3>Welcome to the heart of Manhattan</h3>
 <section class="full-map">
 	<div class="map-inner" id="map"></div>
@@ -85,7 +85,7 @@ layout: default
 	<div class="two-col-wrapper cover landmark featured">
        <h5>Browse Featured Attractions</h5>
        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-       
+
       <div class="carousel-inner" role="listbox">
       {% assign active_offer_flag =  0 %}
       {% for attractions in site.data._models.attractions %}
@@ -99,7 +99,7 @@ layout: default
               <div class="row">
                   <div class="col-sm-6">
                        <div class="content-box">
-                               <h2>{{attractions.title}}</h2>
+                               <h2><a href="/attractions/{{attractions.url_friendly_name}}/" title="{{attractions.title}}">{{attractions.title}}</a></h2>
                                <h5>{{attractions.sub_title}}</h5>
                                <p>{{attractions.short_description}}</p>
                                <!--<a href="/attractions/{{attractions.url_friendly_name}}">View Attraction <i class="fa fa-plus"></i></a>-->
@@ -110,7 +110,7 @@ layout: default
                   <div class="col-sm-5">
                        <img src="{{attractions.attraction_image.url}}" alt="{{attractions.title}}">
                   </div>
-    
+
                 </div>
               </div>
         </div>
@@ -139,7 +139,7 @@ layout: default
 </section>
 
 <!--<section class="offer-section">
-	
+
 	<h4>Latest Events & Happenings</h4>
 
 	<div class="container">
@@ -172,6 +172,3 @@ layout: default
 </section>-->
 {% include newsletter.html %}
 {% include twitter-instagram.html %}
-
-
-
