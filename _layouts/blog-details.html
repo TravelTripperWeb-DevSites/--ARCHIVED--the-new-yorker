@@ -67,12 +67,12 @@ pagename: blog
                     {%if prevPostUrl %}
                     <a class="prev" href="/blog/{{prevPostUrl}}/" title="Previous Blog"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev </a> |
                     {%else%}
-                    <a class="prev not-active" href="/blog/{{prevPostUrl}}/" title="Current Blog"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev </a> |
+                    <a class="prev not-active" href="/blog/{{prevPostUrl}}" title="Current Blog"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev </a> |
                     {%endif%}
-                    {%if nextPostUrl %}
+                    {% if nextPostUrl %}
                     <a class="next" href="/blog/{{nextPostUrl}}/" title="Next Blog">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     {%else%}
-                    <a class="next not-active" href="/blog/{{nextPostUrl}}/" title="Next Blog">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    <a class="next not-active" href="/blog/{{nextPostUrl}}" title="Next Blog">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     {%endif%}
                 </div>
 
