@@ -50,16 +50,16 @@
                 <div class="owl-carousel attractions-carousel">
                 {% for attractions in site.data._models.attractions %}
                       <div class="item">
-                        <img src="{{attractions.attraction_image.url}}" alt="{{attractions.title}}"/> 
-                        <h5>{{attractions.title}}</h5>
-                        <a href="/attractions/{{attractions.url_friendly_name}}/">View Attraction 
+                        <img src="{{attractions.attraction_image.url}}" alt="{{attractions.title}}"/>
+                        <h5><a href="/attractions/{{ attractions.url_friendly_name }}/" title="{{ attractions.title }}">{{ attractions.title }}</a></h5>
+                        <a href="/attractions/{{attractions.url_friendly_name}}/">View Attraction
                             <i class="fa fa-plus"></i>
                         </a>
                       </div>
                 {% endfor %}
                 </div>
                 <!-- Left and right controls -->
-                      
+
                       <!-- <a class="right carousel-control" href="#home-room-banner" role="button" data-slide="next" title="Next">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                         <span class="sr-only">Next</span>
@@ -78,22 +78,22 @@
             	<h4>Attractions</h4>
                 <div class="owl-carousel attractions-carousel">
                       <div class="item">
-                        <img src="../images/home-owl/01.jpg" alt=""/> 
+                        <img src="../images/home-owl/01.jpg" alt=""/>
                         <h5>Empire State Building</h5>
                         <a href="#">Read More <i class="fa fa-plus"></i></a>
                       </div>
                       <div class="item">
-                        <img src="../images/home-owl/02.jpg" alt=""/> 
+                        <img src="../images/home-owl/02.jpg" alt=""/>
                         <h5>Madison Square Garden</h5>
                         <a href="#">Read More <i class="fa fa-plus"></i></a>
                       </div>
                       <div class="item">
-                        <img src="../images/home-owl/03.jpg" alt=""/> 
+                        <img src="../images/home-owl/03.jpg" alt=""/>
                         <h5>Times Square</h5>
                         <a href="#">Read More <i class="fa fa-plus"></i></a>
                       </div>
                       <div class="item">
-                        <img src="../images/home-owl/04.jpg" alt=""/> 
+                        <img src="../images/home-owl/04.jpg" alt=""/>
                         <h5>Other Attraction</h5>
                         <a href="#">Read More <i class="fa fa-plus"></i></a>
                       </div>
