@@ -5,6 +5,8 @@
   color: white;
   text-align: left;
   margin: 0px auto;
+  
+  
   .cp-top {
    width: 285px;
  }
@@ -29,6 +31,23 @@
   .ttweb-rate-compare__label, .ttweb-rate-compare__cost {
     display: inline-block;
   }
+  
+  
+  @media(max-width: 480px) {
+    flex-wrap: wrap;
+    .cp-top {
+      width: 90%;
+    }
+    .ttweb-rate-compare {
+      width: 90%;
+      border: none;
+      margin: 0.5em 0;
+    }
+    .button {
+      display: none;
+    }
+  }
+  
 }
 .cp-header {
   font-size: 24px;
