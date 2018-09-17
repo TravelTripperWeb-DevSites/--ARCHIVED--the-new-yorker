@@ -92,7 +92,7 @@ $(document).ready(function() {
     }
   });
   // setTimeout(function() {
-    $(".price-wrap1, .caption-price").css("display", "block");
+    // $(".price-wrap1, .caption-price").css("display", "block");
   // }, 4500);
   $(".homeTonightRate").click(function() {
     $(".booking-widget form").submit();
