@@ -510,10 +510,15 @@ h1{
 //special-banner-bar
 .special-banner-bar {
 	max-width: 100%;
+  min-height: 70px;
 	margin: 2px auto;
 	padding: 10px 0;
 	text-align: center;
 	background-color: black;
+  .content {
+    display: none;
+  }
+  
 	h3,a {
 	  display: inline-block;
 	  margin: 0 15px;
@@ -548,7 +553,7 @@ h1{
 		background-color: $white;
 	  }
 	}
-  }
+}
   
  
 
