@@ -5,6 +5,7 @@
   }
 }
 .special-banner-bar__brg {
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,10 +25,15 @@
     border-right: 1px solid white;
   }
   .ttweb-rate-compare__row {
-    float: left;
-    width: 50%;
     color:white;
-    display: block  ;
+    margin-right: 10px;
+    float: left;
+    width: calc(50% - 10px);
+    white-space: nowrap;
+    @media (min-width: 650px) and (max-width: 900px) {
+      float: none;
+      width: auto;
+    }
   }
   a {
     padding: 12px 16px 8px 16px;
@@ -39,18 +45,19 @@
   }
 
 
-  @media(max-width: 480px) {
+  @media(max-width: 650px) {
     flex-wrap: wrap;
     .cp-top {
       width: 90%;
       width: calc(100% - 40px);
     }
     .ttweb-rate-compare {
+      float: none;
       width: 90%;
       width: calc(100% - 40px);
       display: flex;
       flex-flow: wrap;
-      margin: 5px 0 0;
+      margin: 5px 0 0 0;
       border: 0;
       border-top: 1px solid #3e3e3e;
       padding: 5px 0 0 0;
@@ -59,6 +66,8 @@
       flex: 0 0 50%;
       display: flex;
       padding-right: 10px;
+      float: none;
+      margin: 0;
       &:nth-child(2n+2) {
         padding-left: 10px;
         padding-right: 0;
