@@ -1,12 +1,19 @@
+.special-banner-bar {
+  @media ( max-width: 480px ) {
+    margin: 10px 0 2px 0;
+    padding: 10px 0 4px 0;
+  }
+}
 .special-banner-bar__brg {
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: left;
   margin: 0px auto;
-  
-  
+
+
   .cp-top {
    width: 285px;
  }
@@ -18,12 +25,17 @@
     border-right: 1px solid white;
   }
   .ttweb-rate-compare__row {
-    float: left;
-    width: 50%;
     color:white;
-    display: block  ;
+    margin-right: 10px;
+    float: left;
+    width: calc(50% - 10px);
+    white-space: nowrap;
+    @media (min-width: 650px) and (max-width: 900px) {
+      float: none;
+      width: auto;
+    }
   }
-  a { 
+  a {
     padding: 12px 16px 8px 16px;
     line-height: 1em;
     margin: 0
@@ -31,29 +43,55 @@
   .ttweb-rate-compare__label, .ttweb-rate-compare__cost {
     display: inline-block;
   }
-  
-  
-  @media(max-width: 480px) {
+
+
+  @media(max-width: 650px) {
     flex-wrap: wrap;
     .cp-top {
       width: 90%;
+      width: calc(100% - 40px);
     }
     .ttweb-rate-compare {
+      float: none;
       width: 90%;
-      border: none;
-      margin: 0.5em 0;
+      width: calc(100% - 40px);
+      display: flex;
+      flex-flow: wrap;
+      margin: 5px 0 0 0;
+      border: 0;
+      border-top: 1px solid #3e3e3e;
+      padding: 5px 0 0 0;
     }
+    .ttweb-rate-compare__row {
+      flex: 0 0 50%;
+      display: flex;
+      padding-right: 10px;
+      float: none;
+      margin: 0;
+      &:nth-child(2n+2) {
+        padding-left: 10px;
+        padding-right: 0;
+      }
+    }
+    .ttweb-rate-compare__label, .ttweb-rate-compare__cost {
+      line-height: 12px;
+    }
+
     .button {
       display: none;
     }
   }
-  
+
 }
 .cp-header {
   font-size: 24px;
+  line-height: 24px;
   font-family: "DIN Condensed";
   font-weight: bold;
   width: 70%;
+  @media(min-width: 374px) and (max-width: 560px) {
+    font-size: 28px;
+  }
 }
 .cp-subheader {
   font-size: 12px;
@@ -63,6 +101,16 @@
   float: right;
   width: 30%;
   text-align: right;
+  .ttweb-resume-search-widget__lowestcost__crossout {
+    @media(min-width: 374px) and (max-width: 560px) {
+      font-size: 20px;
+    }
+  }
+  .ttweb-resume-search-widget__lowestcost__actual {
+    @media(min-width: 374px) and (max-width: 560px){
+      font-size: 20px;
+    }
+  }
 }
 
 .ttweb-rate-compare {
@@ -75,7 +123,7 @@
 .ttweb-resume-search-widget__change-dates-row {
   text-align: center;
   margin: .5em 0;
- 
+
 }
 
 .ttweb-resume-search-widget__lowestcost__crossout {
@@ -89,7 +137,7 @@
 .ttweb-resume-search-widget--no-resume {
   border-top: 1px solid #ccc;
   padding-top: .5em;
-  margin-top: .5em;    
+  margin-top: .5em;
 }
 .ttweb-resume-search-widget__title {
   display: none;
