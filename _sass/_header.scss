@@ -334,6 +334,7 @@ a:hover,a:focus {
 	padding: 11px 0;
 	z-index: 20;
 	top:0;
+  z-index: 9999;
 
     animation-name: example;
     animation-duration: 0.8s;
@@ -504,4 +505,82 @@ h1{
 
 .langpick-wrap{
 	display: inline-block;
+}
+
+//special-banner-bar
+.special-banner-bar {
+	max-width: 100%;
+  min-height: 70px;
+	margin: 2px auto;
+	padding: 10px 0;
+	text-align: center;
+	background-color: black;
+  .content {
+    display: none;
+  }
+  
+	h3,a {
+	  display: inline-block;
+	  margin: 0 15px;
+	  vertical-align: middle;
+	}
+	h3 {
+	  font-family: $main-heading;
+		  font-size: 20px;
+	  color: white;
+	  font-weight: bold;
+	  line-height: 1.9rem;
+	  color: $white;
+	  text-transform: uppercase;
+	  strong {
+		color: $white;
+	  }
+	}
+	a {
+	  padding: 12px 16px 10px 16px;
+	  font-family: $main-font-medium;
+	  font-size: 15px;
+	  color: $white;
+	  text-shadow: none;
+	  text-transform: uppercase;
+	  letter-spacing: .17em;
+	  background-color: $blue;
+	  border: solid 1px $white;
+	  border-radius: 0;
+	  transition: all .3s ease;
+	  &:hover {
+		color: $black;
+		background-color: $white;
+	  }
+	}
+}
+  
+ 
+
+//countdown styles 
+
+ul.countdown {
+	list-style: none;
+	padding: 0;
+	margin-top:17px;
+	display: inline-block;
+	text-align: center;
+	
+}
+ul.countdown li {
+	display: inline-block;
+}
+ul.countdown li span {
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 40px;
+}
+ul.countdown li.seperator {
+	font-size: 40px;
+	line-height: 33px;
+	vertical-align: top;
+}
+ul.countdown li p {
+	color: #a7abb1;
+	font-size: 14px;
 }

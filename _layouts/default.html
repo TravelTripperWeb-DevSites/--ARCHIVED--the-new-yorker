@@ -2,8 +2,6 @@
 <html lang="en">
 
   {% include head.html %}
-  <!--Popup that opens only on Mobile-->
-{% include mobile-redirect.html %}
 
   <body {% if page.body_class %}class="{{ page.body_class }}"{% endif %} ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser">
 
@@ -13,6 +11,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
    	{% include header.html %}
+    {% include special-banner-bar.html %}
 
     {{ content }}
 

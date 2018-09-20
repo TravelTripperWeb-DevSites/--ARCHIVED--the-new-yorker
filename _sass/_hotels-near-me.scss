@@ -9,33 +9,39 @@
 	width:100%;
 	vertical-align:middle;
 	@media (max-width:499px){
-		height:370px;	
+		height:370px;
 	}
 	@media (min-width:500px) and (max-width:639px){
-		height:283px;	
+		height:283px;
 	}
 	@media (min-width:640px) and (max-width:768px){
-		height:260px;	
+		min-height:260px;
 	}
 	h1{
 		@extend .mega-title;
 		color:$white !important;
 		letter-spacing:8px !important;
-		padding:120px 0 20px !important;	
+		padding:120px 0 20px !important;
 		@media (max-width:768px){
 			padding-top:60px !important;
 			font-size:32px !important;
 		}
 	}
 	p{ color:$white; max-width:660px; margin:0 auto; padding:0 30px;}
-	
+
 	/*Individual Inner page Banner images here*/
-	
+
 	&.hotels-near-me{
 		background:url(../images/hotels-near-me-banner.jpg) no-repeat; background-size:cover;
 	}
-	&.dining{
-		background:url(../images/dining-banner.jpg) no-repeat; background-size:cover;
+	&.dining {
+	  background: url(../images/dining-banner.jpg) no-repeat;
+    background-size: cover;
+    h1 {
+      @media only screen and (max-width: 1500px) and (min-width: 769px) {
+        font-size: 65px;
+      }
+    }
 	}
 	.overlay{
 		position: absolute;
@@ -52,7 +58,7 @@
 }
 
 /*Location page discover section*/
-@media only screen and (max-width: 1200px) and (min-width: 769px) { 
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
     		.discover{
     		.intro{
     			.content{
@@ -70,7 +76,7 @@
 		}
 		.btn-holder{ padding:45px 0 0 0px !important;}
 		@media (min-width:769px) and (max-width:1024px){ padding: 30px 22px 10px 22px !important;}
-		@media (max-width:768px){ text-align:center; padding:30px 20px 20px 20px !important;}	
+		@media (max-width:768px){ text-align:center; padding:30px 20px 20px 20px !important;}
 	}
 	.intro{
 		.content{ width:80%; margin:50px auto 30px;
@@ -82,13 +88,13 @@
 		.content-1{
 		             width:90% !important;
 		}
-		
+
 		.img{
 			width:328px;
 			height:295px;
-			margin:20px auto 70px;	
+			margin:20px auto 70px;
 			@media (max-width:768px){ margin:20px auto; width:90%; height:auto;}
-		}	
+		}
 	}
 }
 
@@ -102,7 +108,7 @@
 			    margin: auto;
 			    }
 			}
-			
+
 			ul{
 				margin-left:15px;
 				}
@@ -110,7 +116,7 @@
 				margin-top:16px;color:$grey-text;
 				padding-left:10px;
 				line-height:24px;
-				
+
 			}
 		}
 
@@ -127,7 +133,7 @@
 			&:hover{ opacity:0.8;}
 			@media (max-width:768px){ width:12.15%; height:auto;}
 		}
-		@media (max-width:768px){ width:100%; left:0px;}	
+		@media (max-width:768px){ width:100%; left:0px;}
 	}
 	.help-text{ position:absolute; background:$white; color:$grey-text; padding:15px 20px 8px; right:0px; bottom:0px; font-style:italic;}
 }
@@ -149,7 +155,7 @@
 			text-transform: uppercase;
 			color: $heading;
 			letter-spacing: 1px;
-			
+
 		}
 		.content-box{
 			h5{ text-align:left; color:$blue; padding-bottom:30px;

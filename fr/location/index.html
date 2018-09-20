@@ -111,6 +111,7 @@
   <link rel="stylesheet" href="/css/animations.css">
   <link rel="stylesheet" href="/css/lightgallery.css">
   <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/fav-icon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/fav-icon/apple-icon-60x60.png">
@@ -494,32 +495,35 @@ function getIp(data){
 
 
 
-    	<script>
-function initMap() {
-        var myLatLng = {lat: 40.752941, lng: -73.993605};
+<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+crossorigin=""></script>
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
-          center: new google.maps.LatLng(40.752941, -73.993605),
-		  scrollwheel: false,
-		  disableDefaultUI: true
-        });
+<!-- Leaflet Settings -->
+<script>
+setTimeout(function(){
+  // Create map object, assign it to the 'map' div, give initial latitude, longitude and zoom values.
+  var map = L.map('map', {scrollWheelZoom:false}).setView([40.752941, -73.993605], 15);
 
+  // Add base map tiles from Carto CDN - Voyager Theme
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_nolabels/{z}/{x}/{y}.png', {
+    attribution:'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution/">CARTO</a>',
+    maxZoom: 20,
+    minZoom: 0,
+  }).addTo(map);
 
+  // Create a custom marker icon.
+  var hotelIcon = L.icon({
+    iconUrl: '/assets/images/leaflet/loc.png',
+    iconSize: [25, 36],
+  });
 
-		var iconBase = '/images/';
+  // Create a default marker object, pass custom icon as an option, add it to the map.
+  var marker = L.marker([40.752941, -73.993605], {icon:hotelIcon}).addTo(map);
 
-
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'The New Yorker',
-		  icon: iconBase + 'loc.png'
-        });
-
-      }
+  // Bind a popup to the default marker
+  }, 1000);
 </script>
-<script async  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuWyydFA14iTVzJEaiASa6fgKgpMwOQLQ&callback=initMap"></script>
 
 
 

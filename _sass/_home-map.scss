@@ -120,7 +120,17 @@ h1{
 
 .attractions-carousel{
 	.item{
-		h5{font-family:$main-font-bold; font-size:14px; text-transform:uppercase; letter-spacing:2px; color:$text; padding-top:25px;}
+		h5 {
+			font-family: $main-font-bold;
+			font-size: 14px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: $text;
+			padding-top: 25px;
+			a {
+				font-family: $main-font-bold;
+			}
+		}
 		a{font-family:$main-font-regular; font-size:12px; letter-spacing:2px; color:$text; padding:10px 0; display:block;
 			i{ font-size:7px; padding-left:2px;}
 			&:hover{ opacity:0.6;}
