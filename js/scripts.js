@@ -15,7 +15,7 @@ $(window).on("load",function(e){
                 if(i>3) return false;
               }
 
-              $('<li><a href="'+item.link+'" target="_blank" rel="nofollow"><span class="sr-only"></span><figure style="background-image:url('+item.images.standard_resolution.url+');"> </figure></a></li>').appendTo('.instafeed');
+              $('<li><a href="'+item.link+'" target="_blank" title="Instagram image" rel="nofollow"><span class="sr-only"></span><figure style="background-image:url('+item.images.standard_resolution.url+');"> </figure></a></li>').appendTo('.instafeed');
               //$('.t-feeds').find('.photolist'+i).html('<a href="'+item.link+'" target="_blank"><img src="'+item.images.standard_resolution.url+'" class="img-respond"/><span class="insta-icon"><img src="/images/gates/location/instagram.png" alt=""/></span><div class="insta-overlay"><div class="overlay-con"><img src="/images/gates/location/instagram.png"><span>Follow Us <br> on Instagram</span></div></div></a>');
           });
           $('.instagram-feed').slideDown('slow');
@@ -258,7 +258,7 @@ $(document).ready(function() {
       0: {
         items: 1,
         nav: true,
-        navText: ['<a class="left carousel-control" href="javascript:void(0)" role="button" data-slide="prev" title="Previous"> <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="sr-only">Previous</span></a>','<a class="right carousel-control" href="javascript:void(0)" role="button" data-slide="next" title="Next"> <i class="fa fa-angle-right" aria-hidden="true"></i> <span class="sr-only">Next</span> </a>']
+        navText: ['<a class="left carousel-control" href="javascript:void(0)" data-slide="prev" title="Previous"> <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="sr-only">Previous</span></a>','<a class="right carousel-control" href="javascript:void(0)" data-slide="next" title="Next"> <i class="fa fa-angle-right" aria-hidden="true"></i> <span class="sr-only">Next</span> </a>']
       },
       600: {
         items: 3,
@@ -268,7 +268,7 @@ $(document).ready(function() {
       1000: {
         items: 3,
         nav: true,
-        navText:  ['<a class="left carousel-control" href="javascript:void(0)" role="button" data-slide="prev" title="Previous"> <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="sr-only">Previous</span></a>','<a class="right carousel-control" href="javascript:void(0)" role="button" data-slide="next" title="Next"> <i class="fa fa-angle-right" aria-hidden="true"></i> <span class="sr-only">Next</span> </a>'],
+        navText:  ['<a class="left carousel-control" href="javascript:void(0)" data-slide="prev" title="Previous"> <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="sr-only">Previous</span></a>','<a class="right carousel-control" href="javascript:void(0)" data-slide="next" title="Next"> <i class="fa fa-angle-right" aria-hidden="true"></i> <span class="sr-only">Next</span> </a>'],
         loop: true
       }
     }
@@ -556,7 +556,7 @@ function pinterestShare(img, desc) {
           container.find('.minutes_ref').text(ref_minutes);
           container.find('.seconds_ref').text(ref_seconds);
       };
-      
+
       // start
       var interval = setInterval(countdown, 1000);
   };
@@ -565,7 +565,7 @@ function pinterestShare(img, desc) {
 
 // countdown clock uncomment to activate
 
- /*   
+ /*
 $('.countdown').downCount({
   date: '09/10/2018 12:00:00',
   offset: +10
