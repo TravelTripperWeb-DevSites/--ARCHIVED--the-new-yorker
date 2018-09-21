@@ -7,7 +7,7 @@
 
                 max-width: 100%;
              }
-            
+
     }
 }
 
@@ -23,7 +23,7 @@
                                           max-width:470px;
                                            float: right;
 
-                                    } 
+                                    }
 
         .col-sm-6, .col-sm-12{
 
@@ -31,7 +31,7 @@
 
         }
         .col-sm-12{
-               padding-right: 8px; 
+               padding-right: 8px;
         }
 
         .form-group{
@@ -45,11 +45,11 @@
              font-size: 13px;
              color:$heading
             }
-            ::-moz-placeholder { /* Firefox 19+ */ 
+            ::-moz-placeholder { /* Firefox 19+ */
              font-size: 13px;
              color:$heading
-            } 
-            :-ms-input-placeholder { 
+            }
+            :-ms-input-placeholder {
              font-size: 13px;
              color:$heading
             }
@@ -61,18 +61,18 @@
         color:$heading;
         width:100%;
         border-radius: 0px;
-        
-           
+
+
     }
 
     label{
 
-           display:block; 
+           display:block;
            text-transform: uppercase;
            letter-spacing: 3px;
            padding-left:10px;
 
-       
+
 
 
     }
@@ -85,7 +85,7 @@
 
     .book-now{
 
-    background-color: #1a87e9;
+    background-color: #0971ce;
     padding: 20px 16px;
     text-transform: uppercase;
     font-family: $main-font-regular;
@@ -136,25 +136,25 @@
                 border:none;
 
             .tab-content {
-                
+
                 .tab-pane {
 
                             h3{
                                     padding: 25px 0px;
                                     @media(min-width: $screen-sm-min){
                                          padding: 50px 0px;
-                                    } 
+                                    }
                                   }
 
                              p{
                                 max-width:none;
                                 @media(min-width: $screen-sm-min){
                                           max-width:470px;
-                                    } 
+                                    }
 
                             }
                 }
-            }                    
+            }
 
              .nav{
 
@@ -164,7 +164,7 @@
 
                     text-align: left !important;
                  }
-                
+
 
                     li{
 
@@ -182,12 +182,12 @@
                             }
 
                     }
-          
+
 
              }
-            
+
         }
-     
+
     }
 
 
@@ -200,7 +200,7 @@
 
         border-left: 1px solid #dfdfdf;
 
-        
+
      }
 }
 h1{
@@ -216,5 +216,5 @@ h1{
                 &:after{
                     width:0px !important;
                 }
-             
+
     }
