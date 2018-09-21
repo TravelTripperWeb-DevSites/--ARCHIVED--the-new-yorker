@@ -28,47 +28,46 @@ layout: default
        		    {% assign catname = category[0] %}
                 <div class="fancybox" data-filter="{{catname}}">
               <h3>{{ site.data._galleries[catname].name }}</h3>
-                <ul class="row">
+                <div class="row">
        		  	      {% for photo in site.data._galleries[catname].photos %}
                       {% assign mod = forloop.index | modulo: 3 %}
-                        <li class="col-md-3 col-sm-4">
+                        <div class="col-md-3 col-sm-4 graphic-container">
                           <div class="item img-block" style="background-image:url({% if photo.url_small %}{{ photo.url_small }}{% else %}{{ photo.url }}{% endif %});"  data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}" data-exthumbimage="{% if photo.url_medium %}{{ photo.url_medium }}{% else %}{{ photo.url }}{% endif %}">
                               <img style="display:none;" src="{% if photo.url_thumb %}{{ photo.url_thumb }}{% else %}{{ photo.url }}{% endif %}" alt="{{ photo.alt }}">
                           </div>
                           <p>{{ photo.alt }}</p>
-                        </li>
+                        </div>
                       {% if mod == 2 %}
                           <div class="item img-block hidden rez-offer" data-sub-html="" data-src=""> </div>
-                          
+
                      {% endif %}
        		  	     {% endfor %}
-                </ul>
+                </div>
                 </div>
        		{% endfor %}
         </div>
         <div class="fancybox" data-filter="videos">
           <h3>Videos</h3>
-          <ul class="row">
-            <li class="col-md-3 col-sm-4">
+          <div class="row">
+            <div class="col-md-3 col-sm-4 graphic-container">
               <div class="item"><img src="/images/gallery/thumb/33.jpg" class="img-responsive" alt="Vidoe Thumb" />
                 <a href="#" id="gal-1" title="Video"><img src="/images/play-icon.svg" class="play-icon" alt="Play"></a>
               </div>
-            </li>
-            <li class="col-md-3 col-sm-4">
+            </div>
+            <div class="col-md-3 col-sm-4 graphic-container">
               <div class="item" data-src="/images/gallery/large/34.jpg"><img src="/images/gallery/thumb/34.jpg" class="img-responsive" alt="Vidoe Thumb" />
                 <a href="#" id="gal-2" title="Video"><img src="/images/play-icon.svg" class="play-icon" alt="Play"></a>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
-
-        <!--<div class="btn-holder text-center"><a href="javascript:void(0);" class="button-common">load more images</a></div>-->
       </div>
       <!--/gallery wrap -->
     </div>
   </div>
 </section>
-{% include newsletter.html %} {% include twitter-instagram.html %}
+{% include newsletter.html %}
+{% include twitter-instagram.html %}
 
 <!--Youtube video-->
 <div class="modal fade full-screen" id="galleryVideo-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

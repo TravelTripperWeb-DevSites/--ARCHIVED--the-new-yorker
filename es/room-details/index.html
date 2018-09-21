@@ -222,7 +222,7 @@
    <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox" >
 
-    <div class="item" ng-class="{'active': $index == 0}"  style="background-image: url([[photo.yankee_large]]);" ng-repeat ="photo in selectedRoom.photos" >
+    <div class="item" role="option" ng-class="{'active': $index == 0}"  style="background-image: url([[photo.yankee_large]]);" ng-repeat ="photo in selectedRoom.photos" >
     <div class="banner-overlay"></div>
     <div class="room-details">
     <div class="room-price">El precio de esta noche <a href="https://newyorkerhotel.reztrip.com/search?locale=es&selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" >[[ selectedRoom.todayRate ]]</a></div>
@@ -237,7 +237,7 @@
 
 	<div class="counter"><span class="num">1 de [[selectedRoom.photos.length]]</span></div>
   <!-- Left and right controls -->
-  <a class="left carousel-control" href="#home-banner" role="button" data-slide="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="sr-only">Anterior</span> </a> <a class="right carousel-control" href="#home-banner" role="button" data-slide="next"> <i class="fa fa-angle-right" aria-hidden="true"></i> <span class="sr-only">Siguiente</span> </a>
+  <a class="left carousel-control" href="#home-banner" data-slide="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="sr-only">Anterior</span> </a> <a class="right carousel-control" href="#home-banner" data-slide="next"> <i class="fa fa-angle-right" aria-hidden="true"></i> <span class="sr-only">Siguiente</span> </a>
 </div>
   </div>
 </section>

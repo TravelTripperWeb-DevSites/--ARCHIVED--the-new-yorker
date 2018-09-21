@@ -230,11 +230,9 @@
     <div id="home-banner" class="carousel slide carousel-fade" data-ride="carousel">
 
       <div class="carousel-inner" role="listbox">
-        <!-- <div class="item active" style="background-image: url(/images/banner-4.jpg); height:650px;"></div> -->
-        <!-- <div class="item" style="background-image: url(/images/banner-2.jpg);"></div> -->
 
 
-          <div class="item active" style="background-image: url('https://cdn.traveltripper.io/site-assets/426_558_6591/media/2017-08-25-085033/new-yorker-exclusive-offer.jpg');">
+          <div class="item active" role="option" style="background-image: url('https://cdn.traveltripper.io/site-assets/426_558_6591/media/2017-08-25-085033/new-yorker-exclusive-offer.jpg');">
             <div class="offer-details">
               <div class="offer-title"><span>Exclusivo de Nueva York</span></div>
 
@@ -242,7 +240,7 @@
             </div>
           </div>
 
-          <div class="item" style="background-image: url('https://cdn.traveltripper.io/site-assets/426_558_6591/media/2017-08-25-085409/pay-now-save-10-percent-offer.jpg');">
+          <div class="item" role="option" style="background-image: url('https://cdn.traveltripper.io/site-assets/426_558_6591/media/2017-08-25-085409/pay-now-save-10-percent-offer.jpg');">
             <div class="offer-details">
               <div class="offer-title"><span>Paga ahora, ahorra un 10 %</span></div>
 
@@ -250,7 +248,7 @@
             </div>
           </div>
 
-          <div class="item" style="background-image: url('https://d31f902anbz5po.cloudfront.net/677/32888_2_yankee_large.jpg');">
+          <div class="item" role="option" style="background-image: url('https://d31f902anbz5po.cloudfront.net/677/32888_2_yankee_large.jpg');">
             <div class="offer-details">
               <div class="offer-title"><span>Desayuno por un dólar</span></div>
 
@@ -260,19 +258,13 @@
 
       </div>
 
-      <!-- <div class="banner-overlay"></div> -->
-
-      <!-- <div class="banner-logo">
-        <a href="/"><img src="/images/the-new-yorker-logo-white.svg" alt="The New Yorker"></a>
-      </div> -->
-
       <div class="caption-price" style="display:none">
         <span class="price-holder" ng-show="recentBookings.totalBookings > 5"><span class="recentBookingNo">[[ recentBookings.totalBookings ]]</span><span class="recentBookingText">Personas reservaron nuestro hotel en los últimos 2 días</span></span>
       </div>
 
       <div class="counter"><span class="num">1 de 3</span></div>
 
-      <a class="left carousel-control" href="#home-banner" role="button" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="sr-only">Anterior</span></a> <a class="right carousel-control" href="#home-banner" role="button" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i><span class="sr-only">Siguiente</span></a>
+      <a class="left carousel-control" href="#home-banner" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="sr-only">Anterior</span></a> <a class="right carousel-control" href="#home-banner" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i><span class="sr-only">Siguiente</span></a>
 
     </div>
   </div>
@@ -350,15 +342,15 @@
 
                        <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
-                        <div class="item active"><img ng-src="/images/home-room-1.jpg"></div>
-                        <div class="item"><img ng-src="/images/home-room-2.jpg"></div>
-                        <div class="item"><img ng-src="/images/home-room-3.jpg"></div>
-                        <div class="item"><img ng-src="/images/home-room-4.jpg"></div>
+                        <div class="item active" role="option"><img ng-src="/images/home-room-1.jpg"></div>
+                        <div class="item" role="option"><img ng-src="/images/home-room-2.jpg"></div>
+                        <div class="item" role="option"><img ng-src="/images/home-room-3.jpg"></div>
+                        <div class="item" role="option"><img ng-src="/images/home-room-4.jpg"></div>
                       </div>
 
 
                       <!-- Left and right controls -->
-                      <a class="left carousel-control" href="#home-room-banner" role="button" data-slide="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="sr-only">Anterior</span> </a> <a class="right carousel-control" href="#home-room-banner" role="button" data-slide="next"> <i class="fa fa-angle-right" aria-hidden="true"></i> <span class="sr-only">Siguiente</span> </a>
+                      <a class="left carousel-control" href="#home-room-banner" data-slide="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="sr-only">Anterior</span> </a> <a class="right carousel-control" href="#home-room-banner" data-slide="next"> <i class="fa fa-angle-right" aria-hidden="true"></i> <span class="sr-only">Siguiente</span> </a>
                     </div>
                 </div>
             </div>
@@ -402,7 +394,7 @@
      	      	     </div>
 
      	      	     <!-- Left and right controls -->
-     	      	     <a class="left carousel-control" href="#amenitiesCarousel" role="button" data-slide="prev"> <img src="/images/amenities/arrow-left.png"> </a> <a class="right carousel-control" href="#amenitiesCarousel" role="button" data-slide="next"> <img src="/images/amenities/arrow-right.png"> </a>
+     	      	     <a class="left carousel-control" href="#amenitiesCarousel" data-slide="prev"> <img src="/images/amenities/arrow-left.png"> </a> <a class="right carousel-control" href="#amenitiesCarousel" data-slide="next"> <img src="/images/amenities/arrow-right.png"> </a>
      	      	   </div>
      	      </div>
      	      <div class="col-sm-6">

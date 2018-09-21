@@ -12,7 +12,7 @@
 	}
 }
 .about{
-	background:url(../images/about/about-banner.jpg) no-repeat; 
+	background:url(../images/about/about-banner.jpg) no-repeat;
 	background-size:cover;
 	position: relative;
 	.overlay{
@@ -23,7 +23,7 @@
 		height: 100%;
 		display: block;
 	}
-	
+
 }
 .two-cal-wraper-full{
 	position: relative;
@@ -47,7 +47,7 @@
 			width: 100%;
 			padding: 25% 0 0 0;
 			@media (max-width:768px){ padding:5% 10% 0;}
-		
+
 		h1{
 			color: $white;
 			font-size: 36px;
@@ -81,7 +81,7 @@
 		}
 			&.aminites-services{
 				padding: 15% 0 0 0;
-				
+
 				h2{
 					text-align:center;
 					color: #ffffff;
@@ -116,7 +116,7 @@
 			&:last-child{ margin-right:0px;}
 			@media (max-width:768px){ margin:0px;}
 		}
-		@media (max-width:768px){ padding:120px 0 0px !important;}	
+		@media (max-width:768px){ padding:120px 0 0px !important;}
 	}
 	padding: 200px 0px 130px 0px !important;
 	 ol.carousel-indicators {
@@ -144,7 +144,7 @@
 			@media (max-width:768px){ width:100%;}
 		 }
 		 @media (max-width:768px){left:50%;}
-		
+
 	}
 	.content-box{
 		padding-top: 59px !important;
@@ -171,8 +171,8 @@
 		&:hover, &:focus, &:active{
 			background: none;
 		}
-		
-		
+
+
 			&.left{
 				background: transparent url(../images/about/arrow-left.png) no-repeat center 40% !important;
 				opacity: 1 !important;
@@ -181,7 +181,7 @@
 				background: transparent url(../images/about/arrow-right.png) no-repeat center 40% !important;
 				opacity: 1 !important;
 			}
-		
+
 	}
 }
 /* carousel css ends here */
