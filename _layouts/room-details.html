@@ -35,8 +35,8 @@ layout: default
     <div class="item" role="option" ng-class="{'active': $index == 0}"  ng-style="{'background-image': 'url('+photo.yankee_large+')'}" ng-repeat ="photo in selectedRoom.photos" >
     <div class="banner-overlay"></div>
     <div class="room-details">
-    <div class="room-price">Tonight’s rate <a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" title="[[ selectedRoom.todayRate ]]" >[[ selectedRoom.todayRate ]]</a></div>
-    <div class="room-name"><span>[[selectedRoom.name]]</span></div>
+    <div class="room-price" tabindex="0">Tonight’s rate <a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" title="[[ selectedRoom.todayRate ]]" >[[ selectedRoom.todayRate ]]</a></div>
+    <div class="room-name" tabindex="0"><span>[[selectedRoom.name]]</span></div>
     <a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" class="btn-common" title="BOOK THIS ROOM">BOOK THIS ROOM</a>
     </div>
 
@@ -47,11 +47,11 @@ layout: default
 
 	<div class="counter"><span class="num">1 of [[selectedRoom.photos.length]]</span></div>
   <!-- Left and right controls -->
-  <a class="left carousel-control" href="#home-banner" data-slide="prev" title="Previous">
+  <a class="left carousel-control" href="#home-banner" data-slide="prev" title="Previous" tabindex="-1">
     <i class="fa fa-angle-left" aria-hidden="true"></i>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#home-banner" data-slide="next" title="Next">
+  <a class="right carousel-control" href="#home-banner" data-slide="next" title="Next" tabindex="-1">
     <i class="fa fa-angle-right" aria-hidden="true"></i>
     <span class="sr-only">Next</span>
   </a>
@@ -80,25 +80,23 @@ layout: default
     <div class="col-sm-12">
        <div class="rooms-details">
       <div id="exTab1" class="container">
-    <ul  class="nav">
-      <li class="active"> <a href="#1a" data-toggle="tab" title="Description">Description</a> </li>
-      <li><a href="#2a" data-toggle="tab" title="Amenities">Amenities</a> </li>
-
-    </ul>
-
-      <div class="tab-content clearfix">
-        <div class="tab-pane active" id="1a">
-          <h3>luxury redefined</h3>
-          <p>[[selectedRoom.description]]</p>
-        </div>
-        <div class="tab-pane" id="2a">
-           <h3>Amenities redefined</h3>
-           <ul>
+        <ul class="nav">
+          <li class="active"> <a href="#1a" data-toggle="tab" title="Description" aria-label="Description. [[selectedRoom.description]]">Description</a> </li>
+          <li class="amenities-tab"><a href="#2a" data-toggle="tab" title="Amenities" aria-label="">Amenities</a> </li>
+        </ul>
+        <div class="tab-content clearfix">
+          <div class="tab-pane active" id="1a">
+            <h3>luxury redefined</h3>
+            <p>[[selectedRoom.description]]</p>
+          </div>
+          <div class="tab-pane" id="2a">
+             <h3>Amenities redefined</h3>
+             <ul class="amenities-list">
                <li ng-repeat="amenity in selectedRoom.amenities">[[amenity]] </li>
              </ul>
-        </div>
+          </div>
 
-      </div>
+        </div>
   </div>
        </div>
      </div>

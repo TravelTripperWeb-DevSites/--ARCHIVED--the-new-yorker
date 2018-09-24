@@ -3,7 +3,7 @@ layout: default
 ---
 <!--Banner here-->
 <section class="inner-page-banner location">
-	<div class="overlay">
+	<div class="overlay" tabindex="0">
         <h1>Prime location</h1>
         <p>The New Yorker Hotel’s picture-perfect location in Midtown Manhattan, is just minutes from the Jacob Javits Center, Penn Station and Madison Square Garden, puts some of the city’s most remarkable attractions right at your doorstep.</p>
     </div>
@@ -14,7 +14,7 @@ layout: default
     	 <div class="container intro">
          	<div class="row no-gutters">
             	<div class="col-sm-6">
-                  <div class="content">
+                  <div class="content" tabindex="0">
                       <h2>Discover<br>The big Apple</h2>
                       <p>New York is one of the world’s most famous cities – full of countless things to see, do and experience. <a href="https://www.newyorkerhotel.com/" title="Midtown Manhattan hotel">The New Yorker Hotel's</a> picture-perfect location in Midtown Manhattan, puts some of the city’s most remarkable attractions right at your doorstep. Just minutes from Times Square, Jacob Javits Center, the Empire State Building and one block from Penn Station, Madison Square Garden and Manhattan Center, The New Yorker Hotel is the place to be.</p>
                   </div>
@@ -39,10 +39,10 @@ layout: default
                   </div>
                   <div class="col-sm-6">
                        <div class="content-box">
-                           <h5>Address</h5>
-                           <p>481 8th Avenue &amp; 34th Street<br>New York, NY 10001</p>
-                           <h5>Contact</h5>
-                           <p><a href="tel:212-971-0101" title="(212) 971 0101">(212) 971 0101</a><br>
+                           <h5 tabindex="0">Address</h5>
+                           <p tabindex="0">481 8th Avenue &amp; 34th Street<br>New York, NY 10001</p>
+                           <h5 tabindex="0">Contact</h5>
+                           <p tabindex="0"><a href="tel:212-971-0101" title="(212) 971 0101">(212) 971 0101</a><br>
                             <a href="mailto:reservations@nyhotel.com" title="reservations@nyhotel.com">reservations@nyhotel.com</a><br>
                             <a href="mailto:guestservices@nyhotel.com" title="guestservices@nyhotel.com">guestservices@nyhotel.com</a>
                            </p>
@@ -55,34 +55,22 @@ layout: default
          </div>
     </div>
 </section>
-<h3>Welcome to the heart of Manhattan</h3>
+<h3 tabindex="0">Welcome to the heart of Manhattan</h3>
 <section class="full-map">
 	<div class="map-inner" id="map"></div>
-	<!--Yet to implement below code-->
-	<!--<ul class="map-controls">
-    	<li><a href="#"><img src="../images/location/nav-icons/res.png" alt=""/></a></li>
-        <li><a href="#"><img src="../images/location/nav-icons/bar.png" alt=""/></a></li>
-        <li><a href="#"><img src="../images/location/nav-icons/coffee.png" alt=""/></a></li>
-        <li><a href="#"><img src="../images/location/nav-icons/sites.png" alt=""/></a></li>
-        <li><a href="#"><img src="../images/location/nav-icons/exh.png" alt=""/></a></li>
-        <li><a href="#"><img src="../images/location/nav-icons/mta.png" alt=""/></a></li>
-        <li><a href="#"><img src="../images/location/nav-icons/train.png" alt=""/></a></li>
-        <li><a href="#"><img src="../images/location/nav-icons/plane.png" alt=""/></a></li>
-    </ul>
-    <div class="help-text">Click on icons to view sites</div>-->
 </section>
 <section class="featured-attractions">
 	<div class="two-col-wrapper cover landmark featured">
-       <h5>Browse Featured Attractions</h5>
+       <h5 tabindex="0">Browse Featured Attractions</h5>
        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
       <div class="carousel-inner" role="listbox">
       {% assign active_offer_flag =  0 %}
       {% for attractions in site.data._models.attractions %}
       {% if active_offer_flag  == 0 %}
-        <div class="item active" role="option">
+        <div class="item active" role="option" tabindex="0">
         {% else %}
-        <div class="item">
+        <div class="item" role="option">
         {% endif %}
       {% assign active_offer_flag =  1 %}
           <div class="container">
@@ -90,8 +78,8 @@ layout: default
                   <div class="col-sm-6">
                        <div class="content-box">
                                <h2><a href="/attractions/{{attractions.url_friendly_name}}/" title="{{attractions.title}}">{{attractions.title}}</a></h2>
-                               <h5>{{attractions.sub_title}}</h5>
-                               <p>{{attractions.short_description}}</p>
+                               <h5 target="0">{{attractions.sub_title}}</h5>
+                               <p tabindex="0">{{attractions.short_description}}</p>
                                <!--<a href="/attractions/{{attractions.url_friendly_name}}">View Attraction <i class="fa fa-plus"></i></a>-->
                                <div class="btn-holder"><a href="/attractions/{{attractions.url_friendly_name}}/" class="btn-common" title="View this Attraction">View this Attraction</a></div>
     						   <!--<i>4 Pennsylvania Plaza, New York, NY 10001</i>-->
@@ -121,44 +109,11 @@ layout: default
 	<div class="container">
     	<div class="banner-overlay"></div>
         <div class="cta-content">
-            <h4>Discover NY from our legendary hotel</h4>
-            <h3>An Art Deco icon</h3>
+            <h4 tabindex="0">Discover NY from our legendary hotel</h4>
+            <h3 tabindex="0">An Art Deco icon</h3>
             <div class="btn-holder"><a href="/rooms/" class="btn-common btn-white" title="View Our Rooms">View Our Rooms</a></div>
         </div>
     </div>
 </section>
-
-<!--<section class="offer-section">
-
-	<h4>Latest Events & Happenings</h4>
-
-	<div class="container">
-	<div  class="row">
-	<div class="col-sm-6 col-md-3">
-		<img src="/images/events-happenings/01.jpg" alt="">
-		<h5>Event 01</h5>
-		<a href="#"  class="view-offer">View Event +</a>
-	</div>
-	<div class="col-sm-6 col-md-3">
-		<img src="/images/events-happenings/02.jpg" alt="">
-		<h5>Event 02</h5>
-		<a href="#" class="view-offer">View Event +</a>
-	</div>
-	<div class="col-sm-6 col-md-3">
-		<img src="/images/events-happenings/03.jpg" alt="">
-		<h5>Event 03</h5>
-		<a href="#" class="view-offer">View Event +</a>
-	</div>
-	<div class="col-sm-6 col-md-3">
-		<img src="/images/events-happenings/04.jpg" alt="">
-		<h5>Event 04</h5>
-		<a href="#" class="view-offer">View Event +</a>
-	</div>
-
-	</div>
-	</div>
-	<a href="/events/" class="btn-common btn-white">View All Event</a>
-
-</section>-->
 {% include newsletter.html %}
 {% include twitter-instagram.html %}

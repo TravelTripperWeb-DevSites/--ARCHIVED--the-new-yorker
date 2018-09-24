@@ -1,6 +1,6 @@
 [
   {
     "_template": "html",
-    "content": "<h1 class=\"mega-title small-variant\">Welcome to the&nbsp;New yorker hotel in central manhattan</h1>"
+    "content": "<h1 class=\"mega-title small-variant\" tabindex=\"0\">Welcome to the&nbsp;New yorker hotel in central manhattan</h1>"
   }
 ]

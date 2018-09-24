@@ -2,7 +2,7 @@
 layout: default
 ---
 <section class="inner-page-banner about">
-<div class="overlay">
+<div class="overlay" tabindex="0">
 	<h1>Historic new yorker</h1>
     <p>Built in 1929, during the height of the Jazz Age, The New Yorker, A Wyndham Hotel has dazzled visitors with its
 Art Deco décor, exceptional service, and superb location in Midtown West for generations.</p>
@@ -25,8 +25,8 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
      	      </div>
      	      <div class="col-sm-6">
      	           <div class="content-box our-art">
-		     	      	   <h2>Our Art Deco<br>NYC Hotel</h2>
-		     	      	   <p>Luminaries including Nikola Tesla, John F. Kennedy, Muhammad Ali and Jennifer Hudson have stayed here at our <a href="https://www.newyorkerhotel.com/" title="New Yorker Hotel">NYC Art Deco hotel</a>. Learn more about our past, present, and future – and then add your name to our list of VIP guests!</p>
+		     	      	   <h2 tabindex="0">Our Art Deco<br>NYC Hotel</h2>
+		     	      	   <p tabindex="0">Luminaries including Nikola Tesla, John F. Kennedy, Muhammad Ali and Jennifer Hudson have stayed here at our <a href="https://www.newyorkerhotel.com/" title="New Yorker Hotel">NYC Art Deco hotel</a>. Learn more about our past, present, and future – and then add your name to our list of VIP guests!</p>
 		     	      	   <div class="btn-holder">
 		     	      	      <a class="btn-common" href="/gallery/" title="View the Gallery"> View the Gallery</a>
 		     	      	   </div>
@@ -39,8 +39,8 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
 	<div class="col-sm-6 no-padding">
 		<div class="content-area" style="background-image:url(/images/about/events.jpg)";>
 		<div class="overlay">
-			<h5>world-class Events</h5>
-			<h4>UNIQUE EVENT SPACES</h4>
+			<h5 tabindex="0">world-class Events</h5>
+			<h4 tabindex="0">UNIQUE EVENT SPACES</h4>
             <a href='/events/' class='icon-button' title="Events"><i class='fa fa-angle-right'></i></a>
 			</div>
 		</div>
@@ -48,8 +48,8 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
 	<div class="col-sm-6 no-padding">
 		<div class="content-area" style="background-image:url(/images/about/delight.jpg);">
             <div class="overlay">
-                <h5>Culinary Delight</h5>
-                <h4>EXPERIENCE NY CITY DINING</h4>
+                <h5 tabindex="0">Culinary Delight</h5>
+                <h4 tabindex="0">EXPERIENCE NY CITY DINING</h4>
                 <a href='/dining/' class='icon-button' title="Dining"><i class='fa fa-angle-right'></i></a>
             </div>
 		</div>
@@ -61,9 +61,9 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
 
    <!-- Indicators -->
 	  <ol class="carousel-indicators">
-		<li data-target="#carousel-example-generic" data-slide-to="0" class="active">Our Past</li>
-        <li data-target="#carousel-example-generic" data-slide-to="1">Our Present</li>
-        <li data-target="#carousel-example-generic" data-slide-to="2">Our Future</li>
+  		<li data-target="#carousel-example-generic" data-slide-to="0" class="historyNav active" tabindex="0" aria-label="Our Past. An iconic landmark. The New Yorker was at the forefront of the city’s building boom in the 1920s. At the time of its opening, it was the largest hotel in New York City, with 2,500 rooms, as well as ballrooms and private dining salons – not to mention the nation’s largest  private power plant, installed in the hotel’s sub basements. ">Our Past</li>
+      <li class="historyNav" data-target="#carousel-example-generic" data-slide-to="1" tabindex="0" aria-label="Our Present. Authentic Luxury. A citywide economic reawakening in 1994 led to new management and a complete refurbishment of the iconic New Yorker. Nearly 200 rooms were officially reopened later that year, and by 2000, over 1,000 elegantly renovated rooms were brought online. In addition, the hotel remodeled the famous Tick Tock Diner, making it a 24-hour eatery and confirming its place as a New York institution.">Our Present</li>
+      <li class="historyNav" data-target="#carousel-example-generic" data-slide-to="2" tabindex="0" aria-label="Our Future. The NYC Experience. The New Yorker Hotel continues to thrive, attracting visitors from all over the world, including those right here in NYC. With the Jacob Javits Covention Center and Hudson Yards just minutes away, and the revitalized West Side of Manhattan becoming increasingly desirable, we’re confident that our hotel will enjoy continued success well into the future. And we invite you to experience it with us!.">Our Future</li>
 	  </ol>
 
 
@@ -75,10 +75,10 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
      	      <div class="col-sm-6">
      	           <div class="content-box">
 		     	      	   <h2>An iconic <br>landmark</h2>
-		     	      	   <p>The <a href="https://www.newyorkerhotel.com/" title="Boutique NYC hotel">New Yorker</a> was at the forefront of the city’s building boom in the 1920s. At the time of its opening, it was the largest hotel in New York City, with 2,500 rooms, as well as ballrooms and private dining “salons” – not to mention the nation’s largest
+		     	      	   <p>The <a href="https://www.newyorkerhotel.com/" title="Boutique NYC hotel" tabindex="-1">New Yorker</a> was at the forefront of the city’s building boom in the 1920s. At the time of its opening, it was the largest hotel in New York City, with 2,500 rooms, as well as ballrooms and private dining “salons” – not to mention the nation’s largest
 							   private power plant, installed in the hotel’s sub basements.</p>
 
-<p>The Big Band era of the early 1930s ushered in the first heyday of the New Yorker, as guests affected by the Great Depression visited the hotel to forget their troubles, if only for a short while. </p>
+                  <p>The Big Band era of the early 1930s ushered in the first heyday of the New Yorker, as guests affected by the Great Depression visited the hotel to forget their troubles, if only for a short while. </p>
 
      	      	   </div>
      	      </div>
@@ -124,11 +124,11 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
   </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev" title="Previous">
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev" title="Previous" tabindex="-1">
     <span class="left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next" title="Next">
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next" title="Next" tabindex="-1">
     <span class="right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -140,8 +140,8 @@ Art Deco décor, exceptional service, and superb location in Midtown West for ge
      	      <div class="col-sm-4 no-padding-margin" ng-repeat ="room in browser.roomsList | limitTo: 3">
      	                   <div class="thumb" style="background-image: url([[room.photos[0].yankee_large]]);">
      	                        <div class="caption" >
-    	                             <span>Tonight’s rate $ <strong><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank" title="[[ room.todayRate ]]"><span>[[ room.todayRate ]]</span></a></strong></span>
-     	                             <h3>[[room.name]]</h3>
+    	                             <span tabindex="0">Tonight’s rate $ <strong><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank" title="[[ room.todayRate ]]"><span>[[ room.todayRate ]]</span></a></strong></span>
+     	                             <h3 tabindex="0">[[room.name]]</h3>
      	                              <a href="/rooms/#[[room.name | formatNameForLink]]" class="btn-common" rel="tooltip" title="View This Offer" title="View Room">View Room</a>
      	                              <div class="clearfix"></div>
      	                             <a ng-href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank" title="Calendar"><img class="cal-icon" src="../images/about/calendar-icon.jpg" alt="Calendar" /></a>

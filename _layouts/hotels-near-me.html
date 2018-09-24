@@ -6,7 +6,7 @@ seo-description:
 ---
 <!--Banner here-->
 <section class="inner-page-banner hotels-near-me">
-    <div class="overlay">
+    <div class="overlay" tabindex="0">
     {% regionblock hotels_nyc_content %}
         <h1>Hotels in New York</h1>
     {% endregionblock %}
@@ -81,9 +81,9 @@ seo-description:
                 <div class="col-sm-6">
                     <div class="content-box">
                         <h2 class="m-b-20"></h2>
-                        <h5>Address</h5>
-                        <p>481 8th Avenue &amp; 34th Street<br>New York, NY 10001</p>
-                        <h5>Contact</h5>
+                        <h5 tabindex="0">Address</h5>
+                        <p tabindex="0">481 8th Avenue &amp; 34th Street<br>New York, NY 10001</p>
+                        <h5 tabindex="0">Contact</h5>
                         <p><a href="tel:212-971-0101">(212) 971 0101</a><br>
                             <a href="mailto:reservations@nyhotel.com">reservations@nyhotel.com</a><br>
                             <a href="mailto:guestservices@nyhotel.com">guestservices@nyhotel.com</a>
@@ -107,8 +107,8 @@ seo-description:
         <div class="col-sm-4 no-padding-margin" ng-repeat="room in browser.roomsList | limitTo: 3">
             <div class="thumb">
                 <div class="caption" style="background-image: url([[room.photos[0].yankee_large]]); max-height: 545px;">
-                    <span>Tonight’s rate $ <strong><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><span>[[ room.todayRate ]]</span></a></strong></span>
-                    <h3>[[room.name]]</h3>
+                    <span tabindex="0">Tonight’s rate $ <strong><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><span>[[ room.todayRate ]]</span></a></strong></span>
+                    <h3 tabindex="0">[[room.name]]</h3>
                     <a href="/rooms/#[[room.name | formatNameForLink]]" class="btn-common" rel="tooltip" title="View This Offer">View Room</a>
                     <div class="clearfix"></div>
                     <a ng-href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><img class="cal-icon" src="../images/about/calendar-icon.jpg" alt="Calendar" /></a>

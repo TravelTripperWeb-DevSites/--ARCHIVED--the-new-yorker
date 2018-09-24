@@ -4,12 +4,12 @@
     <button type="submit" class="blog__search__btn" aria-label="Click to search">
       <i class="fa fa-search"></i>
     </button>
-</form>
+  </form>
 </div>
 
 <div class="blog__others">
 
-  <h2>Recent Posts</h2>
+  <h2 tabindex="0">Recent Posts</h2>
 
   {% for recentpost in site.data._models.blog | limit: 5 %}
   {% if recentpost.url_friendly_name != page.url_friendly_name %}
@@ -31,7 +31,7 @@
   {% endfor %}
 </div>
 
-<h2>Categories <span class="toggle-arrow"><i class="fa fa-angle-down"></i></span></h2>
+<h2 tabindex="0">Categories <span class="toggle-arrow"><i class="fa fa-angle-down"></i></span></h2>
 
 <ul class="categories-list">
   {% assign categories = site.data._models.category | sort:'order' %}
