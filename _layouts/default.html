@@ -4,7 +4,7 @@
   {% include head.html %}
 
   <body {% if page.body_class %}class="{{ page.body_class }}"{% endif %} ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser">
-
+    <a class="skip-main" href="#main">Skip to main content</a>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZGV8GK"
     height="0" width="0" title="GTM" style="display: none; visibility: hidden;" title="GTM"></iframe></noscript>
@@ -12,9 +12,9 @@
 
    	{% include header.html %}
     {% include special-banner-bar.html %}
-
-    {{ content }}
-
+    <div id="main">
+       {{ content }}
+    </div>
     {% include scripts.html %}
     {% include footer.html %}
 
