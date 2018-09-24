@@ -9,7 +9,7 @@ pagename: blog
 <section>
   <div class="container-fluid no-padding">
     <div class="page-banner" style="background-image:url(/images/blog/blog-details-banner.jpg);">
-    <div class="page-title">
+    <div class="page-title" tabindex="0">
       <h2>Blog</h2>
       <p>Find out what to do and where to go in the greatest city in the world from the hotel that shares its name — The New Yorker.</p>
     </div>
@@ -26,14 +26,14 @@ pagename: blog
 
 			<div class="blog__catlanding">
 				<h3><a href="/blog/category/{{ page.url_friendly_name }}/">{{ page.title }}</a></h3>
-				<p>{{ page.description }}</p>
+				<p tabindex="0">{{ page.description }}</p>
 			</div>
 
       {% for post in site.data._models.blog %}
       {% if post.category.url_friendly_name == page.url_friendly_name %}
       <div class="blog__item">
         <figure class="blog__image">
-          <a href="/blog/{{ post.url_friendly_name }}/">
+          <a href="/blog/{{ post.url_friendly_name }}/" tabindex="-1">
             <img src="{% if post.blogimage.url_medium %}{{ post.blogimage.url_medium }}{% else %}{{ post.blogimage.url }}{% endif %}" alt="{{ post.title }}">
           </a>
           </figure>
@@ -41,7 +41,7 @@ pagename: blog
           <a href="/blog/{{ post.url_friendly_name }}/">{{ post.title }}</a>
         </h2>
         <div class="blog__info">
-          <span class="blog__date">{% assign d = post.date | date: "%-d" %}
+          <span class="blog__date" tabindex="0">{% assign d = post.date | date: "%-d" %}
                   {{ post.date | date: "%B" }}
                   {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
                   {{ post.date | date: "%Y" }} </span>
@@ -50,7 +50,7 @@ pagename: blog
         					{% endif %}
         </div>
         {% if post.short_description != "" %}
-          {{ post.short_description }}
+        <span tabindex="0">  {{ post.short_description }}</span>
         {% endif %}
         <div class="btn-holder">
           <a href="/blog/{{ post.url_friendly_name }}/" class="btn-common">Read More</a>

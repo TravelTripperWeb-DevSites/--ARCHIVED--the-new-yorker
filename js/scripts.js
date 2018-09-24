@@ -1,4 +1,52 @@
+$(document).ready(function () {
+  $(document).on("focus", 'ul.nav .nav-item > a', function(){
+     $('.dropdown-menu').hide();
+     var parentListItem = $(this).closest("li");
+     if(parentListItem.hasClass("dropdown")) {
+       $(this).closest(".dropdown").find('.dropdown-menu').show();
+     }
+   });
+   $('#carousel-example-generic .carousel-indicators li').keypress(function(event) {
+    if(event.keyCode == 13) {
+      $(this).click();
+    }
+  });
+  var amenitiesList = "Amenities: ";
+  setTimeout(function(){
+    $(".amenities-list li").each(function(){
+      var amenity = $(this).text();
+      amenitiesList+=amenity;
+    });
+    $("#exTab1 ul li.amenities-tab a").attr("aria-label", amenitiesList);
+  }, 4000);
 
+  var tncList = "Terms & Conditions: ";
+  setTimeout(function(){
+    $(".tnc-list li").each(function(){
+      var tnc = $(this).text();
+      tncList+=tnc;
+    });
+    $("#exTab1 ul li.tnc-tab a").attr("aria-label", tncList);
+  }, 4000);
+
+
+});
+
+   $(window).load(function() {
+     if ($(window).width() > 768) {
+
+       jQuery('ul.nav li.dropdown a').attr('data-toggle', 'disable');
+       //Add Hover effect to menus
+       jQuery('ul.nav li.dropdown').hover(function() {
+         jQuery(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn();
+       }, function() {
+         jQuery(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut();
+       });
+     } else {
+       //jQuery('ul.nav li.dropdown a.dropdown-toggle').removeAttr('data-toggle');
+     }
+
+   });
 
  // get instagram feed
 $(window).on("load",function(e){
@@ -15,7 +63,7 @@ $(window).on("load",function(e){
                 if(i>3) return false;
               }
 
-              $('<li><a href="'+item.link+'" target="_blank" title="Instagram image" rel="nofollow"><span class="sr-only"></span><figure style="background-image:url('+item.images.standard_resolution.url+');"> </figure></a></li>').appendTo('.instafeed');
+              $('<li><a href="'+item.link+'" target="_blank" tabindex="-1" title="Instagram image" rel="nofollow"><span class="sr-only"></span><figure style="background-image:url('+item.images.standard_resolution.url+');"> </figure></a></li>').appendTo('.instafeed');
               //$('.t-feeds').find('.photolist'+i).html('<a href="'+item.link+'" target="_blank"><img src="'+item.images.standard_resolution.url+'" class="img-respond"/><span class="insta-icon"><img src="/images/gates/location/instagram.png" alt=""/></span><div class="insta-overlay"><div class="overlay-con"><img src="/images/gates/location/instagram.png"><span>Follow Us <br> on Instagram</span></div></div></a>');
           });
           $('.instagram-feed').slideDown('slow');
@@ -339,22 +387,6 @@ $('#gal-2').click(function() {
 
 $('.modal .close').click(function() {
   $('.modal iframe').removeAttr('src');
-});
-
-$(window).load(function() {
-  if ($(window).width() > 768) {
-
-    jQuery('ul.nav li.dropdown a').attr('data-toggle', 'disable');
-    //Add Hover effect to menus
-    jQuery('ul.nav li.dropdown').hover(function() {
-      jQuery(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn();
-    }, function() {
-      jQuery(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut();
-    });
-  } else {
-    //jQuery('ul.nav li.dropdown a.dropdown-toggle').removeAttr('data-toggle');
-  }
-
 });
 
 (function($) {

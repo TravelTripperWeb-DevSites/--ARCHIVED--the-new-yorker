@@ -3,7 +3,7 @@ layout: default
 ---
 <!--Banner here-->
 <section class="inner-page-banner banner" style="background-image:url(/images/attractions-banner.jpg);">
-	<div class="overlay">
+	<div class="overlay" tabindex="0">
         <h1>Attractions</h1>
         <p>The New Yorker Hotel’s picture-perfect location in Midtown Manhattan, is just minutes from the Jacob Javits Center, Penn Station and Madison Square Garden, puts some of the city’s most remarkable attractions right at your doorstep.</p>
     </div>
@@ -15,7 +15,7 @@ layout: default
         <div class="intro">
             <div class="col-sm-5 no-padding cta-events-img" style="background-image: url({{a.attraction_image.url}})">
               <div class="bg-link">
-                <a href="{{ a.url_friendly_name }}/" title="{{ a.title }}"></a>
+                <a href="{{ a.url_friendly_name }}/" title="{{ a.title }}" tabindex="-1"></a>
               </div>
             	<!-- <div class="-left">
                 	<div class="btn-holder"><a href="{{a.url_friendly_name}}/" class="btn-common" title="View this Attraction">View this Attraction</a></div>
@@ -24,7 +24,7 @@ layout: default
             <div class="col-sm-7 no-padding">
                 <div class="-right">
                    <h2><a href="{{a.url_friendly_name}}/" title="{{a.title}}">{{a.title}}</a></h2>
-                    <p>{{a.short_description}}</p>
+                    <p tabindex="0">{{a.short_description}}</p>
                     <div class="btn-holder"><a href="{{a.url_friendly_name}}/" class="btn-common" title="View this Attraction">View this Attraction</a></div>
                </div>
           </div>
@@ -34,8 +34,3 @@ layout: default
 {% endfor %}
 {% include newsletter.html %}
 {% include twitter-instagram.html %}
-
-
-
-
-

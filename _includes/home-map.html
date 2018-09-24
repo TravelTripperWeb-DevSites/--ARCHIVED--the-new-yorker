@@ -7,8 +7,8 @@
             </div>
             <div class="col-sm-6 v-center">
             	<div class="content">
-                    <h2>An iconic<br>neighborhood</h2>
-                    <p>New York is one of the world’s most famous cities – full of countless things to see, do and experience. The New Yorker, A Wyndham Hotel’s picture perfect location in <a href="https://www.newyorkerhotel.com/location/" title="Hotel in Midtown West">Midtown West</a>, just moments from the Jacob Javits Center and Penn Station, puts some of the city’s most remarkable attractions right at your doorstep.</p>
+                    <h2 tabindex="0">An iconic<br>neighborhood</h2>
+                    <p tabindex="0">New York is one of the world’s most famous cities – full of countless things to see, do and experience. The New Yorker, A Wyndham Hotel’s picture perfect location in <a href="https://www.newyorkerhotel.com/location/" title="Hotel in Midtown West">Midtown West</a>, just moments from the Jacob Javits Center and Penn Station, puts some of the city’s most remarkable attractions right at your doorstep.</p>
                     <!--<p class="p-t-60"><span>The new yorkeR</span>  -  481 8th Avenue & 34th Street, New York, NY 10001</p>-->
                     <div class="btn-holder">
                     	<a class="btn-common" href="https://www.google.com/maps/place/The+New+Yorker+A+Wyndham+Hotel/@40.752722,-73.9957992,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259ade9128e5f:0x2276df1fe19f85bc!8m2!3d40.752722!4d-73.9936052" target="_blank">Get Hotel Directions</a>
@@ -27,8 +27,8 @@
     	<div class="row no-gutters">
             <div class="col-sm-6 v-center">
             	<div class="content">
-                    <h2>Exclusive Transportation</h2>
-                    <p class="">8th Avenue Guest Service is the exclusive transportation provider of The New Yorker Hotel. Learn more about booking your private car service, airport shuttle bus or NYC bus tour.</p>
+                    <h2 tabindex="0">Exclusive Transportation</h2>
+                    <p class="" tabindex="0">8th Avenue Guest Service is the exclusive transportation provider of The New Yorker Hotel. Learn more about booking your private car service, airport shuttle bus or NYC bus tour.</p>
                     <div class="btn-holder">
                         <a class="btn-common" href="http://www.wnyguest.com" target="_blank">LEARN MORE</a>
                     </div>
@@ -41,17 +41,17 @@
         </div>
     </div>
 </section>
-<h3 class="mega-title1">Discover the Big Apple</h3>
+<h3 class="mega-title1" tabindex="0">Discover the Big Apple</h3>
 <section class="a-e home-attr-sec">
 	<div class="container">
     	<div class="row no-gutters">
         	<div class="col-md-12">
-            	<h4>Attractions</h4>
-                <div class="owl-carousel attractions-carousel">
+            	<h4 tabindex="0">Attractions</h4>
+                <div class="owl-carousel attractions-carousel" role="listbox">
                 {% for attractions in site.data._models.attractions %}
-                      <div class="item">
+                      <div class="item" role="option">
                         <img src="{{attractions.attraction_image.url}}" alt="{{attractions.title}}"/>
-                        <h5><a href="/attractions/{{ attractions.url_friendly_name }}/" title="{{ attractions.title }}">{{ attractions.title }}</a></h5>
+                        <h5 tabindex="0"><a href="/attractions/{{ attractions.url_friendly_name }}/" title="{{ attractions.title }}">{{ attractions.title }}</a></h5>
                         <a href="/attractions/{{attractions.url_friendly_name}}/">View Attraction
                             <i class="fa fa-plus"></i>
                         </a>

@@ -13,7 +13,7 @@ layout: default
     <div class="banner-overlay"></div>
     <div class="room-details offer-details">
 
-    <div class="room-name"><span ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></span></div>
+    <div class="room-name" tabindex="0"><span ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></span></div>
     <a ng-href="[[offers.sRdetail.promo_url]]" class="btn-common" target="_blank" title="Book This Offer">Book This Offer</a>
     </div>
     </div>
@@ -45,8 +45,8 @@ layout: default
        <div class="rooms-details">
       <div id="exTab1" class="container">
     <ul  class="nav">
-      <li class="active"> <a  href="#1a" data-toggle="tab" title="Description">Description</a> </li>
-      <li><a href="#2a" data-toggle="tab" title="Terms & Conditions">Terms & Conditions</a> </li>
+      <li class="desc-tab active"> <a  href="#1a" data-toggle="tab" title="Description" aria-label="Description. [[offers.sRdetail.long_description]]">Description</a> </li>
+      <li class="tnc-tab"><a href="#2a" data-toggle="tab" title="Terms & Conditions" aria-label="">Terms & Conditions</a> </li>
 
     </ul>
 
@@ -54,10 +54,13 @@ layout: default
         <div class="tab-pane active" id="1a">
           <h1>Special Offer</h1>
           <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
+
         </div>
         <div class="tab-pane" id="2a">
            <h3>Terms & Conditions</h3>
+           <ul class="tnc-list">
            <li ng-repeat="terms in offers.sRdetail.policy_description " ng-bind-html="terms | replaceNewline | renderHTMLCorrectly">[[terms]]</li>
+         </ul>
 
         </div>
 

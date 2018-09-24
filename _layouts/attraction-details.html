@@ -8,7 +8,7 @@ pagename: attraction
 
 <section class="inner-page-banner banner detail" style="background-image:url(/images/attractions-banner.jpg);">
 	<div class="overlay">
-        <h1>{{attractions.title}}</h1>
+        <h1 tabindex="0">{{attractions.title}}</h1>
     </div>
 </section>
 <!--Attraction Detail Block-->
@@ -28,8 +28,8 @@ pagename: attraction
             </div>
             <div class="col-sm-5 no-padding">
                 <div class="-right">
-                   <h2>{{attractions.sub_title}}</h2>
-                   <p>{{attractions.detailpage_description}}</p>
+                   <h2 tabindex="0">{{attractions.sub_title}}</h2>
+                   <p tabindex="0">{{attractions.detailpage_description}}</p>
                    <div class="btn-holder"><a href="{{attractions.website_url}}" target="_blank" class="btn-common" title="Visit Attraction's Website">Visit Attraction's Website</a></div>
                 </div>
           </div>
@@ -40,10 +40,10 @@ pagename: attraction
 	<div class="container">
     	<div class="row no-gutters">
         	<div class="col-md-12">
-            	<h4>Other Attractions</h4>
-                <div class="owl-carousel attractions-carousel">
+            	<h4 tabindex="0">Other Attractions</h4>
+                <div class="owl-carousel attractions-carousel" role="listbox">
                 {% for attractions in site.data._models.attractions %}
-                      <div class="item">
+                      <div class="item" role="option">
                         <img src="{{attractions.attraction_image.url}}" alt="{{attractions.title}}"/>
                         <h5><a href="/attractions/{{ attractions.url_friendly_name }}/" title="{{ attractions.title }}">{{attractions.title}}</a></h5>
                         <a href="/attractions/{{attractions.url_friendly_name}}/" title="View Attraction">View Attraction <i class="fa fa-plus"></i></a>

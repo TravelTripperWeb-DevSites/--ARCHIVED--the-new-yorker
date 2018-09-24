@@ -2,7 +2,7 @@
 layout: default
 ---
 <section class="inner-page-banner" style="background-image:url(/images/rooms/rooms-banner.jpg);">
-  <div class="overlay">
+  <div class="overlay" tabindex="0">
         <h1>Special Offers</h1>
         <p>Whether you’re planning a business meeting or a romantic getaway, The New Yorker is sure to have a deal that’s perfect for you. </p>
     </div>
@@ -16,8 +16,8 @@ layout: default
         <div class="offer-wrap">
           <div class="offer-img" style="background-image:url([[offer.lead_photo_url.yankee_large]]);" > </div>
           <div class="offers-description adjustHeight">
-            <h4 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h4>
-            <div class="offerDesc"><span ng-bind-html="offer.short_description | limitTo: 120  | renderHTMLCorrectly "></span><span>[[offer.short_description.length > 120 ? '...' : '']]</span></div>
+            <h4 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly" tabindex="0"></h4>
+            <div class="offerDesc" tabindex="0"><span ng-bind-html="offer.short_description | limitTo: 120  | renderHTMLCorrectly "></span><span>[[offer.short_description.length > 120 ? '...' : '']]</span></div>
             <a ng-href="/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common btn-book" title="View offer"> View offer </a>
              <a ng-href="[[offer.promo_url]]" class="btn-common btn-book" target="_blank" title="Book Now">Book Now</a>
             </div>
@@ -27,8 +27,8 @@ layout: default
             <div class="offer-wrap">
           <div class="offer-img" style="background-image:url(/images/attractions/broadway.jpg);"> </div>
           <div class="offers-description">
-            <h4>Discounted Broadway Shows</h4>
-            <p>Save on Broadway Show tickets for Wicked, The Lion King, Chicago and more when you book this package.</p>
+            <h4 tabindex="0">Discounted Broadway Shows</h4>
+            <p tabindex="0">Save on Broadway Show tickets for Wicked, The Lion King, Chicago and more when you book this package.</p>
             <a href="http://newyorkerhotel.reservenewyorkcity.com/" target="_blank" class="btn-common btn-book" title="View offer"> View offer </a>
             <a href="http://newyorkerhotel.reservenewyorkcity.com/" title="Book Now" class="btn-common btn-book" > Book Now </a>
           </div>
@@ -38,8 +38,8 @@ layout: default
             <div class="offer-wrap">
           <div class="offer-img" style="background-image:url('/images/gallery/thumb/8.jpg');"> </div>
           <div class="offers-description">
-            <h4><a href="/offers/last-minute-nyc-deals/">Last Minute NYC Hotel Deals</a></h4>
-            <p>Take a look at our last minute New York City hotel deals and offers at The New Yorker!</p>
+            <h4 tabindex="0"><a href="/offers/last-minute-nyc-deals/">Last Minute NYC Hotel Deals</a></h4>
+            <p tabindex="0">Take a look at our last minute New York City hotel deals and offers at The New Yorker!</p>
             <a href="/offers/last-minute-nyc-deals/" class="btn-common btn-book"> View offer</a>
             <a href="#" title="Book Now" class="btn-common btn-book"> Book Now </a>
           </div>

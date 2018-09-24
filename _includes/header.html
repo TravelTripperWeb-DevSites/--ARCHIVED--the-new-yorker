@@ -4,22 +4,22 @@
     <div class="main-menu">
       <ul class="nav">
       {% for items in site.data.navigation.mainnav %}
-     	<li {% if items.submenu == "true" %} class="dropdown" {% endif %}><a href="{{ items.url }}" {% if items.name == page.pagename %} class="active" {% endif %} {% if items.submenu == "true" %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}>{{ items.title }}</a>
+     	<li  class="nav-item {% if items.submenu == "true" %} dropdown {% endif %}" ><a href="{{ items.url }}" {% if items.name == page.pagename %} class="active" {% endif %} {% if items.submenu == "true" %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}>{{ items.title }}</a>
         {% if items.submenu == "true" %}
         <ul class="dropdown-menu">
             {% for dropdown in items.subitems %}
                 <li><a href="{{ dropdown.url }}">{{ dropdown.title }}</a></li>
             {% endfor %}
         </ul>
-        {% endif %} 
+        {% endif %}
         </li>
         {% endfor %}
       </ul>
     </div>
     <div class="menu-btn"></div>
-    <div class="booknow langpick">  
-      <div class="langpick-wrap">
-      <select class="selectpicker" aria-label="Select Language" data-width="fit" onchange="location = this.value;">
+    <div class="booknow langpick">
+      <div class="langpick-wrap" tabindex="-1">
+      <select class="selectpicker" aria-label="Select Language" data-width="fit" onchange="location = this.value;" tabindex="-1">
         <option value="/" data-content='<span class="flag-icon flag-icon-us"></span> EN'></option>
         <option value="/fr/" {% if page.url contains '/fr/'%} selected="selected"{% endif %}  data-content='<span class="flag-icon flag-icon-fr"></span> FR'></option>
         <option value="/es/" {% if page.url contains '/es/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-es"></span> ES'></option>

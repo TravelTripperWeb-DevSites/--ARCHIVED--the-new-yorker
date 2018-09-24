@@ -30,7 +30,7 @@ pagename: blog
 <section>
   <div class="container-fluid no-padding">
     <div class="page-banner" style="background-image:url(/images/blog/blog-details-banner.jpg);">
-    <div class="page-title">
+    <div class="page-title" tabindex="0">
       <h2>Blog</h2>
       <p>Find out what to do and where to go in the greatest city in the world from the hotel that shares its name — The New Yorker.</p>
     </div>
@@ -45,8 +45,8 @@ pagename: blog
     </div>
     <div class="blog__list">
       <div class="blog__item">
-        <h1>{{ blog.title }}</h1>
-        <div class="blog__info">
+        <h1 tabindex="0">{{ blog.title }}</h1>
+        <div class="blog__info" tabindex="0">
           <span class="blog__date">{% assign d = blog.date | date: "%-d" %}
                   {{ blog.date | date: "%B" }}
                   {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
@@ -56,8 +56,8 @@ pagename: blog
 					{% endif %}
         </div>
 
+        <span tabindex="0">{{ blog.more_content }}</span>
 
-        {{ blog.more_content }}
 
         <div class="blog__share">
           {% include social-share.html %}
