@@ -38,15 +38,15 @@
   
   var showCPDelay = 12000; //2000;
   var openedSessionLength = 60 * 60 * 1 * 1000; //1 hour after seeing the "open" for the first time
-  var closedSessionLength = 60 * 60 * 24 * 1000 //24 hours after closing the session
+  var closedSessionLength = 60 * 60 * 24 * 1000; //24 hours after closing the session
   
-  var locale = 'en'
-  let path = window.location.pathname
-  var locales = ['fr','it', 'es', 'de', 'zh']
+  var locale = 'en';
+  let path = window.location.pathname;
+  var locales = ['fr','it', 'es', 'de', 'zh'];
   for(var i=0,ii=locales.length;i<ii;i++) {
-    var l = locales[i]
+    var l = locales[i];
     if (path.startsWith("/"+l+"/")) {
-      locale = l
+      locale = l;
     }
   }
   //TTWeb.Analytics.trackEvent("")
@@ -86,11 +86,11 @@
     }
   
     var hcName = "HC";
-    var cpName = "CP"
-    var assignment = TTWeb.AbTest.assignUser("CPvsHC", cpName, hcName)
+    var cpName = "CP";
+    var assignment = TTWeb.AbTest.assignUser("CPvsHC", cpName, hcName);
     if (assignment == hcName) {
       // Set up HC
-      setUpHc()
+      setUpHc();
     } else {
       // Launch CP
       // 1. set up content
@@ -105,12 +105,12 @@
       var resumeSearchHTML = new TTWeb.ResumeSearch();
       //if (UserData.)
     
-      var bookingSearch = new TTWeb.BookingSearch(TTWeb.UserData.globalSearch)
+      var bookingSearch = new TTWeb.BookingSearch(TTWeb.UserData.globalSearch);
     
       var rateCompare = new TTWeb.RateCompare();
       var otaTablePromise = rateCompare.getOTATable();
       var resumeSearchPromise = resumeSearchHTML.getSearchRatesHtml();
-      var liveRatePromise = liveRate.getCrossOutRate(bookingSearch.reztripParams)
+      var liveRatePromise = liveRate.getCrossOutRate(bookingSearch.reztripParams);
     
     
       Promise.all([otaTablePromise, resumeSearchPromise, liveRatePromise]).then(function(vals) {
@@ -134,14 +134,14 @@
         }
         
         var otaTable = vals[0];
-        var showCP = true
+        var showCP = true;
         if (otaTable == '') {
-          showCP = false
+          showCP = false;
         }
       
       
         if (showCP) {
-          $(".special-banner-bar").html("<div class='special-banner-bar__brg'>"+header + otaTable + widgetButton + "</div>")
+          $(".special-banner-bar").html("<div class='special-banner-bar__brg'>"+header + otaTable + widgetButton + "</div>");
           $(".caption-price").show();
           TTWeb.Analytics.trackEvent("CPInteraction", "BRGResponse", "available");                
           
@@ -155,26 +155,26 @@
             window.overlay = overlay;
             overlay.onHide(function() {
               TTWeb.UserData.saveInStorage("ClosedCP", true, closedSessionLength);
-              TTWeb.Analytics.trackEvent("CPInteraction", "GradientModal", "dismissed")
+              TTWeb.Analytics.trackEvent("CPInteraction", "GradientModal", "dismissed");
             })
             overlay.onShow(function() {
               TTWeb.UserData.saveInStorage("ShownCP", true, openedSessionLength);
-              TTWeb.Analytics.trackEvent("CPInteraction", "GradientModal", "shown")
+              TTWeb.Analytics.trackEvent("CPInteraction", "GradientModal", "shown");
             })
-            setTimeout(() => {
+            setTimeout(function() {
               //
               if (!TTWeb.UserData.fetchFromStorage("ClosedCP")  && !TTWeb.UserData.fetchFromStorage("ShownCP") && !overlay.isShown()) {
                 overlay.show();
                 $(".ttweb-resume-search-widget__change-dates-row, .ttweb-resume-search-widget__date-row").click(showBookingWidget);
       
               }
-            }, showCPDelay)
+            }, showCPDelay);
             
           }
           
         } else {
           $(".special-banner-bar .content").show();          
-          TTWeb.Analytics.trackEvent("CPInteraction", "BRGResponse", "notAvailable")          
+          TTWeb.Analytics.trackEvent("CPInteraction", "BRGResponse", "notAvailable");         
         }
       
       });
