@@ -12,7 +12,7 @@
 {% endif %}
 
 {% if site.url %}
-  {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
+  {% assign canonical_url = page.url | replace: "index.html", "" | replace: "/room-details", "/rooms" | replace: "/offer-details", "/offers" | prepend: site.url %}
 {% endif %}
 
 <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -50,8 +50,8 @@
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 
 {% if seo_url %}
-  <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
-  <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
+  <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" | replace: "/room-details", "/rooms" | replace: "/offer-details", "/offers" }}">
+  <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" | replace: "/room-details", "/rooms" | replace: "/offer-details", "/offers"}}">
 {% endif %}
 
 {% if site.data.social.twitter.username %}
@@ -62,17 +62,17 @@
   {% if seo_author_twitter %}
     <meta name="twitter:site" content="@{{ seo_author_twitter }}">
   {% endif %}
-   {% if page.blogimage %} 
+   {% if page.blogimage %}
   <meta name="twitter:card" content="summary_large_image">
   {% else%}
   <meta name="twitter:card" content="summary">
-  {% endif %} 
+  {% endif %}
 
 
-  {% if page.blogimage %} 
-    
+  {% if page.blogimage %}
+
    <meta name="twitter:image" content="https:{{ page.blogimage.url_large }}">
-     
+
   {% elsif site.data.social.og_image %}
   <meta name="twitter:image" content="{{ site.data.social.og_image | absolute_url }}">
   {% endif %}
@@ -190,11 +190,11 @@
   "description": "Experience The New Yorker Hotel, a boutique hotel in New York. Book your stay at our Midtown Manhattan Hotel and start your New York getaway.",
      "sameAs": [
     "https://plus.google.com/106550560316390846347"
-   
+
   ]
   }
 }
-</script>	
+</script>
 <script type='application/ld+json'>
 {
   "@context": "http://schema.org",
@@ -217,7 +217,7 @@
     "bestRating": "5",
     "ratingCount": "2245"
     },
-  
+
   "description": "Experience The New Yorker Hotel, a boutique hotel in New York. Book your stay at our Midtown Manhattan Hotel and start your New York getaway.",
   "name": "The New Yorker Hotel",
   "alternateName":"The New Yorker A Wyndham Hotel",
@@ -225,10 +225,10 @@
   "email": "reservations@nyhotel.com",
   "url": "https://www.newyorkerhotel.com/",
    "sameAs" : ["https://twitter.com/WyndhamNYH","https://www.facebook.com/newyorkerhotel","https://plus.google.com/106550560316390846347","https://www.tripadvisor.com/Hotel_Review-g60763-d122005-Reviews-The_New_Yorker_A_Wyndham_Hotel-New_York_City_New_York.html","https://www.instagram.com/newyorkerhotel/","https://www.youtube.com/channel/UCXDFDBPGBkC07HOxL7ISQLQ"]
-    },   
+    },
    "hasMap": "https://goo.gl/maps/h5Mei2sS23z"
  },
- 
+
   "potentialAction":{
    "@type":"ReserveAction",
    "target":{
