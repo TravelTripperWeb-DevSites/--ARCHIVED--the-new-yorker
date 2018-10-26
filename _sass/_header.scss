@@ -523,6 +523,7 @@ h1{
 	  display: inline-block;
 	  margin: 0 15px;
 	  vertical-align: middle;
+	  margin-top: -51px;
 	}
 	h3 {
 	  font-family: $main-heading;
@@ -532,6 +533,7 @@ h1{
 	  line-height: 1.9rem;
 	  color: $white;
 	  text-transform: uppercase;
+	  
 	  strong {
 		color: $white;
 	  }
