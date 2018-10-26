@@ -515,6 +515,11 @@ h1{
 	padding: 10px 0;
 	text-align: center;
 	background-color: black;
+	@media screen and (max-width:900){
+		height:400px;
+
+  }
+	
   .content {
     display: none;
   }
@@ -524,6 +529,10 @@ h1{
 	  margin: 0 15px;
 	  vertical-align: middle;
 	  margin-top: -51px;
+	  @media screen and (max-width:900){
+		  margin-top:0px;
+
+	}
 	}
 	h3 {
 	  font-family: $main-heading;
@@ -533,6 +542,9 @@ h1{
 	  line-height: 1.9rem;
 	  color: $white;
 	  text-transform: uppercase;
+	  @media screen and (max-width:900px){
+		padding-top: 65px;
+	  }
 	  
 	  strong {
 		color: $white;
