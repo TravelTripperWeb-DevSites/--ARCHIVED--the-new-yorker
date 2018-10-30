@@ -1,8 +1,8 @@
 ---
 title: 'Exclusive Halloween Offer #2 '
 body: 'Exclusive Halloween Offer - Save 30% When Booking Direct '
-offer-link: "#"
+offer-link: https://newyorkerhotel.reztrip.com/classic/en/special_offer?action=show&controller=landings&locale=en&rate_code[]=BPADV3&rate_code[]=BPADV3&starting_page=special_offer
 offer-label: Book Now
 datetime: 2018-10-21 09:00
 timezone: America/New_York
-publish: true
+publish: 'true'
