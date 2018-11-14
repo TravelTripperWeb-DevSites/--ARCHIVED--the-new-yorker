@@ -177,7 +177,7 @@
  {% if page.url =='/blog/'%}
    <meta name="robots" content="">
  {% else %}
-   <meta name="robots" content="{{ page.meta_tags }}">
+   <meta name="robots" content="{{ page.meta_tags.robots }}">
  {%endif%}
 {% endif %}
 <script type='application/ld+json'>
