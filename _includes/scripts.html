@@ -185,7 +185,7 @@
 </script>
 
 
-{% if page.url == '/cyber-monday/' or page.url == '/pre-cyber-monday/' %}
+{% if page.url == '/cyber-monday/' or page.url == '/pre-cyber-monday/' or page.url == '/' %}
   <script src="/js/moment.min.js"></script>
   <script src="/js/moment-timezone-with-data.min.js"></script>
   <script src="/js/jquery.countdown.min.js"></script>
@@ -200,39 +200,42 @@
 {% endif %}
 
 
-{% if page.url == '/cyber-monday/' %}
-  <script>
-    $(document).ready(function() {
+<!-- {% if page.url == '/cyber-monday/' %}
 
-      var clock;
+{% endif %} -->
 
-      //* Set the current date
-      var currentDate = new Date();
+{% if page.url == '/cyber-monday/' or page.url == '/' %}
+<script>
+  $(document).ready(function() {
 
-      //* Set the target date
-      var targetDate = moment.tz("2018-11-28 23:59", "America/New_York");
+    var clock;
 
-      //* Calculate the difference, in seconds, between the two dates
-      var timer = targetDate / 1000 - currentDate.getTime() / 1000;
+    //* Set the current date
+    var currentDate = new Date();
 
-      //* Setup FlipClock
-      clock = $('#flip-clock').FlipClock(timer, {
-        clockFace: 'DailyCounter',
-        countdown: true
-      });
+    //* Set the target date
+    var targetDate = moment.tz("2018-11-28 23:59", "America/New_York");
 
-      //* Add a non-flipy time on mobile
-      $('#mobile-clock').countdown(targetDate.toDate(), function(event) {
-        var daysClock = '<div class="col-xs-4"><p>Days</p><p>' + event.strftime('%D') + '</p></div>';
-        var hoursClock = '<div class="col-xs-4"><p>Hours</p><p>' + event.strftime('%H') + '</p></div>';
-        var minutesClock = '<div class="col-xs-4"><p>Minutes</p><p>' + event.strftime('%M') + '</p></div>';
-          $(this).html( daysClock + hoursClock + minutesClock );
-      });
+    //* Calculate the difference, in seconds, between the two dates
+    var timer = targetDate / 1000 - currentDate.getTime() / 1000;
 
+    //* Setup FlipClock
+    clock = $('#flip-clock').FlipClock(timer, {
+      clockFace: 'DailyCounter',
+      countdown: true
     });
-  </script>
-{% endif %}
 
+    //* Add a non-flipy time on mobile
+    $('#mobile-clock').countdown(targetDate.toDate(), function(event) {
+      var daysClock = '<div class="col-xs-4"><p>Days</p><p>' + event.strftime('%D') + '</p></div>';
+      var hoursClock = '<div class="col-xs-4"><p>Hours</p><p>' + event.strftime('%H') + '</p></div>';
+      var minutesClock = '<div class="col-xs-4"><p>Minutes</p><p>' + event.strftime('%M') + '</p></div>';
+        $(this).html( daysClock + hoursClock + minutesClock );
+    });
+
+  });
+</script>
+{% endif %}
 
 {% if page.url == '/pre-cyber-monday/' %}
   <script>

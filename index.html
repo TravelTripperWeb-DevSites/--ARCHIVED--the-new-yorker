@@ -60,7 +60,7 @@ meta_description_localized:
 {% endcomment %}
 
 <!--Special Banner Bar-->
-<section class="special-banner-bar">
+<!-- <section class="special-banner-bar">
 
   <h3>BLACK FRIDAY/ CYBER MONDAY SALE - 40% OFF</h3>
 
@@ -88,20 +88,49 @@ meta_description_localized:
       </li>
   </ul>
 
-</section>
+</section> -->
 
 <section class="home-banner custom-carousel" rt3-recent-bookings="recentBookings" ng-cloak>
   <div class="container-fluid">
     <div id="home-banner" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
-          <div class="item active" role="option" style="background-image: url('//cdn.traveltripper.io/site-assets/426_558_9658/media/2017-11-30-013515/2-3-nights-offer.jpg');">
-            <div class="banner-overlay"></div>
-            <div class="offer-details">
-              <div class="offer-title" tabindex="0"><span>STAY 2/3 NIGHTS, SAVE 15%</span></div>
-              <a href="/offer-details/#stay-2-or-3-nights-save-15percent" class="btn-common" title="Book This Offer">Book This Offer</a></div>
-    <div class="caption-price" style="display:none" tabindex="-1">
-      <span class="price-holder" ng-show="recentBookings.totalBookings > 5"><span class="recentBookingNo">[[ recentBookings.totalBookings ]]</span><span class="recentBookingText">People booked our hotel in the last 2 days</span></span>
+        <div class="item active cyber-monday" role="option" style="background-image: url('//cdn.traveltripper.io/site-assets/426_558_9658/media/2017-11-30-013515/2-3-nights-offer.jpg');">
+          <div class="banner-overlay"></div>
+
+          <div class="deal-notice">
+            <p>Deal Ends In</p>
           </div>
+
+          <!-- Countdown Timer -->
+          <div class="countdown-container">
+            <div class="timer-info">
+              <div id="mobile-clock" class="mobile-clock row"></div>
+              <div id="flip-clock" class="flip-clock"></div>
+            </div>
+          </div>
+
+          <!-- Cyber Monday Offer -->
+          <div class="room-details offer-details">
+            <div class="room-name">
+              {% regionblock cyber_offer_title, type:header %}
+                <h1>Black Friday/ Cyber Monday Sale<br>Save Up To 40% Off<br><strong>Sale Now Live</strong></h1>
+              {% endregionblock %}
+            </div>
+            {% regionblock cyber_offer_url, type:text %}
+            <a href="/cyber-monday/" class="btn-common" target="_blank">Book This Offer</a>
+            {% endregionblock %}
+          </div>
+
+          <!-- Enable this once CyberMonday offer is disabled -->
+          <!-- <div class="offer-details">
+            <div class="offer-title" tabindex="0"><span>STAY 2/3 NIGHTS, SAVE 15%</span></div>
+            <a href="/offer-details/#stay-2-or-3-nights-save-15percent" class="btn-common" title="Book This Offer">Book This Offer</a>
+          </div> -->
+
+          <!-- Price commented on request -->
+          <!-- <div class="caption-price" style="display:none" tabindex="-1">
+            <span class="price-holder" ng-show="recentBookings.totalBookings > 5"><span class="recentBookingNo">[[ recentBookings.totalBookings ]]</span><span class="recentBookingText">People booked our hotel in the last 2 days</span></span>
+          </div> -->
         </div>
       </div>
     </div>
