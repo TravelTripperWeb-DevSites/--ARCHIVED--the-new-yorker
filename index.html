@@ -94,10 +94,13 @@ meta_description_localized:
   <div class="container-fluid">
     <div id="home-banner" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
-        <div class="cyber-monday" role="option" style="background-image: url('//cdn.traveltripper.io/site-assets/426_558_21124/media/2018-11-20-015009/cyberweekend.jpg'); min-height:650px; ">
-          <!-- Old Image //cdn.traveltripper.io/site-assets/426_558_9658/media/2017-11-30-013515/2-3-nights-offer.jpg -->
+        <div class="item active" role="option" style="background-image: url('//cdn.traveltripper.io/site-assets/426_558_9658/media/2017-11-30-013515/2-3-nights-offer.jpg');">
+          {% comment %}
+          <div class="cyber-monday" role="option" style="background-image: url('//cdn.traveltripper.io/site-assets/426_558_21124/media/2018-11-20-015009/cyberweekend.jpg');
+          {% endcomment %}
+          
           <div class="banner-overlay"></div>
-
+          {% comment %}
           <div class="deal-notice">
             <p>Deal Ends In</p>
           </div>
@@ -121,17 +124,16 @@ meta_description_localized:
             <a href="/cyberweekend/" class="btn-common">View This Offer</a>
             {% endregionblock %}
           </div>
+          {% endcomment %}
 
-          <!-- Enable this once CyberMonday offer is disabled -->
-          <!-- <div class="offer-details">
+          <div class="offer-details">
             <div class="offer-title" tabindex="0"><span>STAY 2/3 NIGHTS, SAVE 15%</span></div>
             <a href="/offer-details/#stay-2-or-3-nights-save-15percent" class="btn-common" title="Book This Offer">Book This Offer</a>
-          </div> -->
+          </div>
 
-          <!-- Price commented on request -->
-          <!-- <div class="caption-price" style="display:none" tabindex="-1">
+          <div class="caption-price" style="display:none" tabindex="-1">
             <span class="price-holder" ng-show="recentBookings.totalBookings > 5"><span class="recentBookingNo">[[ recentBookings.totalBookings ]]</span><span class="recentBookingText">People booked our hotel in the last 2 days</span></span>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
