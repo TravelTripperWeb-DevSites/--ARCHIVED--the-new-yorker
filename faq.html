@@ -1,0 +1,64 @@
+---
+layout: default
+title: FAQ | The New Yorker
+excerpt: FAQ | The New Yorker
+pagename:
+---
+
+<!--Banner here-->
+<section class="inner-page-banner dining pagenotfound">
+	<div class="overlay" tabindex="0">
+        <h1>FAQ</h1>
+    </div>
+</section>
+
+<section class="static-content">
+	{% assign faqs = site.data._models.faq  %}
+	{% for faqs in faq %}
+	<h4>{{ faq.question }}</h4>
+	<div class="answer">
+		<p>{{ faq.answer }}</p>
+	</div>
+
+  <h4>What time is check-in/ check-out?</h4>
+  <div class="answer">
+    <p>Check-in: 4pm</p>
+    <p>Check-out: 12pm</p>
+    <p>Early check-in and late check-out is based on availability for an additional fee</p>
+  </div>
+	<h4>Is there a coffee maker in the room?</h4>
+	<div class="answer">
+		<p>Complimentary coffee makers are available based upon request.</p>
+	</div>
+	<h4>Is there a refrigerator in the room?</h4>
+	<div class="answer">
+		<p>Refrigerators are available upon request for a minimal fee.</p>
+	</div>
+	<h4>Does the hotel have parking?</h4>
+	<div class="answer">
+		<p>The hotel does not have a parking garage however valet and self- parking options are available. Valet parking is located in front of the hotel where one of the door men will be happy to assist you with your vehicle.</p>
+		<p>CON Parking is located at 1 Penn Plaza (34th street between 7th and 8th avenue). Rates are calculated per 24 hours, with no in and out privileges. On the day of departure the vehicle must be retrieved at the exact time it was dropped off (or earlier) to avoid incurring additional charges.</p>
+		<p>Valet Parking is $60.00 for a sedan and $70.00 for an SUV</p>
+		<p>Self-parking is $40.00 for a sedan and $50.00 for an SUV</p>
+	</div>
+	<h4>Does the hotel have cribs available?</h4>
+	<div class="answer">
+		<p>Of course! We want to ensure our youngest guests have a great night’s sleep as well.</p>
+	</div>
+	<h4>Does the hotel have rollaway beds available?</h4>
+	<div class="answer">
+		<p>Rollaway beds are available for an additional fee of $25 per night plus taxes. Not all rooms are equipped to fit a rollaway bed. Please contact the hotel in advance should you require an additional bed in the room.</p>
+	</div>
+	<h4>Is the hotel pet friendly?</h4>
+	<div class="answer">
+		<p>We welcome 4 legged guests as well. There is a pet cleaning fee of $25 per night for each pet. No more than 2 pets are allowed in the guest room. The pet must be in a crate when the guest is not in the room.</p>
+	</div>
+	<h4>Is Wi-Fi included?</h4>
+	<div class="answer">
+		<p>Premium Wi-Fi is included in the daily facility fee</p>
+	</div>
+	<h4>Is there a fitness center?</h4>
+	<div class="answer">
+		<p>Our 24-hour Fitness Center is located in the lower lobby. It includes state-of-the-art fitness bikes, treadmills, free weights, and weight machines.</p>
+	</div>
+</section>

@@ -1,0 +1,9 @@
+"question": {
+  "required": true,
+  "type": "text",
+  "label": "Question"
+},
+"answer": {
+  "type":"richtext",
+  "label": "Answer"
+}
