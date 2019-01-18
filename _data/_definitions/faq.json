@@ -7,5 +7,8 @@
   "answer": {
     "type":"richtext",
     "label": "Answer"
+  },
+  "order":{
+  	 "required": true
   }
 }

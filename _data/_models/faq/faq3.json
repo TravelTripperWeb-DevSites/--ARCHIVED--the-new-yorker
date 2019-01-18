@@ -1,4 +1,5 @@
 {
   "answer": "<p>Refrigerators are available upon request for a minimal fee.</p>",
-  "question": "Is there a refrigerator in the room?"
+  "question": "Is there a refrigerator in the room?",
+  "order": 3
 }

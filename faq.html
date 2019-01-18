@@ -13,7 +13,7 @@ pagename:
 </section>
 
 <section class="static-content">
-	{% assign faq = site.data._models.faq  %}
+	{% assign faq = site.data._models.faq | sort:'order' %}
 	{% for faq in faq %}
 	<h4>{{ faq.question }}</h4>
 	<div class="answer">
