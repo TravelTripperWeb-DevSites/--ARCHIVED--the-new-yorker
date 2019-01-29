@@ -1,4 +1,10 @@
 {
+  "category":{
+  	"label": "Category",
+  	"type": "select",
+  	"options": ["GENERAL","LOCATION AND TRANSPORTATION","HOTEL AMENITIES"],
+  	"required": true
+  },
   "question": {
   "required": true,
   "type": "text",

@@ -1,5 +1,6 @@
 {
   "answer": "<p>Our 24-hour business center is located in the lower lobby, which includes computers and printers.</p>",
   "question": "Is there a business center?",
-  "order": 10
+  "category": "HOTEL AMENITIES",
+  "order": 16
 }

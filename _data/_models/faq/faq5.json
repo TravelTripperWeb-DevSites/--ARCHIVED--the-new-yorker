@@ -1,5 +1,6 @@
 {
-  "answer": "<p>Of course! We want to ensure our youngest guests have a great night&rsquo;s sleep as well.</p>",
+  "answer": "<p>Of course! We want to ensure our youngest guests have a great night’s sleep as well.</p>",
   "question": "Does the hotel have cribs available?",
-  "order": 5
+  "category": "HOTEL AMENITIES",
+  "order": 12
 }

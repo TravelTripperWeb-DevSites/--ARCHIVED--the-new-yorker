@@ -1,5 +1,6 @@
 {
   "answer": "<p>Upon check-in we require a credit card hold of $45 per night for security/ incidentals. If there are no charges billed to the room (room service, restaurant/ bar, upgrade, etc.) or damages to the room, the full amount of the hold will be released on the day of departure. For domestic credit cards it can take 3-7 business days for the hold to be released. For international credit cards it can take 10-20 business days for the hold to be released. If using a debit card it could take longer for the funds to be released by the bank. If using cash for your deposit, there is a minimum hold of $250.</p>",
   "question": "Is there a deposit at check-in?",
-  "order": 17
+  "category": "GENERAL",
+  "order": 3
 }

@@ -1,5 +1,6 @@
 {
-  "answer": "<p>The hotel does not have a transportation service; however we do recommend <a href=\"http://www.wnyguest.com/\" target=\"_blank\">8th Avenue Concierge Services</a> for your transportation needs.</p>",
+  "answer": "<p>The hotel does not have a transportation service; however we do recommend 8th Avenue Concierge Services for your transportation needs.</p>",
   "question": "Does the hotel provide transportation?",
-  "order": 11
+  "category": "LOCATION AND TRANSPORTATION",
+  "order": 9
 }

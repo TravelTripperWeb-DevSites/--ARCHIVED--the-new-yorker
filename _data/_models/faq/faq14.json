@@ -1,5 +1,6 @@
 {
   "answer": "<p>We are a 100% non-smoking hotel. If smoking is located anywhere within the hotel, there is a non-refundable penalty charge of $250.</p>",
-  "question": "Is smoking allowed at the hotel?",
-  "order": 14
+  "question": "Is smoking allowed in the hotel?",
+  "category": "GENERAL",
+  "order": 5
 }

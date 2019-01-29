@@ -1,5 +1,6 @@
 {
   "answer": "<p>18 years of age. All guests under 18 years of age must be accompanied by an adult.</p>",
   "question": "What is the minimum age requirement to check-in?",
-  "order": 15
+  "category": "GENERAL",
+  "order": 4
 }

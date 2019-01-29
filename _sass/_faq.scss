@@ -1,0 +1,25 @@
+// FAQ Pages Scss
+
+.static-faq-content {
+  max-width: 1150px;
+  margin: 50px auto;
+  h2 {
+    &:after {
+      margin-bottom: 10px;
+    }
+  }
+  h4 {
+    font-size: 24px;
+    color: $black;
+  }
+  .answer {
+    position: relative;
+    padding: 0 0 20px;
+    ul {
+      padding-left: 30px;
+      li {
+        font-size: 18px;
+      }
+    }
+  }
+}

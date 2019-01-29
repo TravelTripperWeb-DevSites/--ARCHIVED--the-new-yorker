@@ -1,5 +1,6 @@
 {
-  "answer": "<p>We accept packages on behalf of our guests, which will be stored in our mail room. This is a complimentary service. We ask that any packages sent to the hotel are delivered no more than 6 weeks prior to your check-in date and included the full name on the reservation.</p>",
+  "answer": "<p>We accept packages on behalf of our guests, which will be stored in our mail room. This is a complimentary service. We ask that any packages sent to the hotel include the full name on the reservation and are delivered no more than 6 weeks prior to your check-in date.</p>",
   "question": "Can I have a package sent to the hotel?",
-  "order": 13
+  "category": "HOTEL AMENITIES",
+  "order": 18
 }
