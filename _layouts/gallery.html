@@ -32,8 +32,8 @@ layout: default
        		  	      {% for photo in site.data._galleries[catname].photos %}
                       {% assign mod = forloop.index | modulo: 3 %}
                         <div class="col-md-3 col-sm-4 graphic-container">
-                          <div class="item img-block" style="background-image:url({% if photo.url_small %}{{ photo.url_small }}{% else %}{{ photo.url }}{% endif %});"  data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}" data-exthumbimage="{% if photo.url_medium %}{{ photo.url_medium }}{% else %}{{ photo.url }}{% endif %}">
-                              <img style="display:none;" src="{% if photo.url_thumb %}{{ photo.url_thumb }}{% else %}{{ photo.url }}{% endif %}" alt="{{ photo.alt }}">
+                          <div class="item img-block" style="background-image:url({% if photo.url_xsmall %}{{ photo.url_xsmall }}{% else %}{{ photo.url }}{% endif %});"  data-src="{% if photo.url_large %}{{ photo.url_large }}{% else %}{{ photo.url }}{% endif %}" data-exthumbimage="{% if photo.url_xsmall %}{{ photo.url_xsmall}}{% else %}{{ photo.url }}{% endif %}">
+                              <img style="display:none;" src="{% if photo.url_xsmall %}{{ photo.url_xsmall }}{% elsif photo.url_thumb %}{{ photo.url_thumb }}{% else %}{{ photo.url }}{% endif %}" alt="{{ photo.alt }}">
                           </div>
                           <p>{{ photo.alt }}</p>
                         </div>
