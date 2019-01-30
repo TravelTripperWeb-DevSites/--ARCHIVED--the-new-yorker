@@ -13,7 +13,9 @@ pagename:
 </section>
 
 <section class="static-faq-content">
-	<h2>GENERAL</h2>
+	<div class="text-center">
+		<h3>GENERAL</h3>
+	</div>
 	{% assign faq = site.data._models.faq | where:"category","GENERAL" | sort:'order' %}
 	{% for faq in faq %}
 	<h4>{{ faq.question }}</h4>
@@ -22,7 +24,9 @@ pagename:
 	</div>
 	{% endfor %}
 
-	<h2>LOCATION AND TRANSPORTATION</h2>
+	<div class="text-center">
+		<h3>LOCATION AND TRANSPORTATION</h3>
+	</div>
 	{% assign faq = site.data._models.faq | where:"category","LOCATION AND TRANSPORTATION" | sort:'order' %}
 	{% for faq in faq %}
 	<h4>{{ faq.question }}</h4>
@@ -31,7 +35,9 @@ pagename:
 	</div>
 	{% endfor %}
 
-	<h2>HOTEL AMENITIES</h2>
+	<div class="text-center">
+		<h3>HOTEL AMENITIES</h3>
+	</div>
 	{% assign faq = site.data._models.faq | where:"category","HOTEL AMENITIES" | sort:'order' %}
 	{% for faq in faq %}
 	<h4>{{ faq.question }}</h4>
