@@ -16,33 +16,70 @@ pagename:
 	<div class="text-center">
 		<h3>GENERAL</h3>
 	</div>
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
 	{% assign faq = site.data._models.faq | where:"category","GENERAL" | sort:'order' %}
-	{% for faq in faq %}
-	<h4>{{ faq.question }}</h4>
-	<div class="answer">
-		<p>{{ faq.answer }}</p>
-	</div>
-	{% endfor %}
+	<div class="panel-group" id="accordionGENERAL" role="tablist" aria-multiselectable="false">
+		{% for faq in faq %}
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingGENERAL{{forloop.index}}">
+		      <h4 class="panel-title">
+		        <a role="button" data-toggle="collapse" data-parent="#accordionGENERAL" href="#collapseGENERAL{{forloop.index}}" aria-expanded="true" aria-controls="collapse{{forloop.index}}">
+		          {{ faq.question }}
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseGENERAL{{forloop.index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+		      <div class="panel-body">
+		        {{ faq.answer }}
+		      </div>
+		    </div>
+		  </div>
+			{% endfor %}
+		</div>
 
-	<div class="text-center">
-		<h3>LOCATION AND TRANSPORTATION</h3>
+		<div class="text-center">
+			<h3>LOCATION AND TRANSPORTATION</h3>
+		</div>
+		{% assign faq = site.data._models.faq | where:"category","LOCATION AND TRANSPORTATION" | sort:'order' %}
+		<div class="panel-group" id="accordionLOCATION" role="tablist" aria-multiselectable="false">
+			{% for faq in faq %}
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingLOCATION{{forloop.index}}">
+			      <h4 class="panel-title">
+			        <a role="button" data-toggle="collapse" data-parent="#accordionLOCATION" href="#collapseLOCATION{{forloop.index}}" aria-expanded="true" aria-controls="collapse{{forloop.index}}">
+			          {{ faq.question }}
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseLOCATION{{forloop.index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+			      <div class="panel-body">
+			        {{ faq.answer }}
+			      </div>
+			    </div>
+			  </div>
+				{% endfor %}
+			</div>
 	</div>
-	{% assign faq = site.data._models.faq | where:"category","LOCATION AND TRANSPORTATION" | sort:'order' %}
-	{% for faq in faq %}
-	<h4>{{ faq.question }}</h4>
-	<div class="answer">
-		<p>{{ faq.answer }}</p>
-	</div>
-	{% endfor %}
-
 	<div class="text-center">
 		<h3>HOTEL AMENITIES</h3>
 	</div>
 	{% assign faq = site.data._models.faq | where:"category","HOTEL AMENITIES" | sort:'order' %}
-	{% for faq in faq %}
-	<h4>{{ faq.question }}</h4>
-	<div class="answer">
-		<p>{{ faq.answer }}</p>
-	</div>
-	{% endfor %}
+	<div class="panel-group" id="accordionHOTEL" role="tablist" aria-multiselectable="false">
+		{% for faq in faq %}
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingHOTEL{{forloop.index}}">
+					<h4 class="panel-title">
+						<a role="button" data-toggle="collapse" data-parent="#accordionHOTEL" href="#collapseHOTEL{{forloop.index}}" aria-expanded="true" aria-controls="collapse{{forloop.index}}">
+							{{ faq.question }}
+						</a>
+					</h4>
+				</div>
+				<div id="collapseHOTEL{{forloop.index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+						{{ faq.answer }}
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
 </section>

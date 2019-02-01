@@ -1,7 +1,7 @@
 // FAQ Pages Scss
 
 .static-faq-content {
-  max-width: 1150px;
+  max-width: 1240px;
   margin: 50px auto;
 
   h3 {
@@ -19,6 +19,38 @@
       height: 1px;
       content: '';
       background-color: $black;
+    }
+
+    @media(max-width: $screen-md-min) {
+      font-size: 22px;
+    }
+  }
+  .panel-default {
+    border: 0;
+    border-bottom: 1px solid $black;
+    border-radius: 0;
+    box-shadow: none;
+    .panel-heading {
+      position: relative;
+      background-color: transparent;
+      border: 0;
+      a {
+        padding: 20px 0 0 40px;
+      }
+      [aria-expanded='false'] {
+        background-image: url('/images/qa-max.png');
+        background-repeat: no-repeat;
+        background-position: 0 15px;
+      }
+      [aria-expanded='true'] {
+        background-image: url('/images/qa-min.png');
+        background-repeat: no-repeat;
+        background-position: 0 15px;
+      }
+    }
+    .panel-body {
+      padding-left: 50px;
+      border-top: 0 !important;
     }
   }
 
