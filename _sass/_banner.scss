@@ -1,5 +1,4 @@
 .home-banner {
-
   .container-fluid {
     padding: 0;
   }
@@ -23,6 +22,7 @@
   .carousel-inner {
     .item {
       background-repeat: no-repeat;
+      background-position: center;
       background-size: cover;
       box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .3);
     }
@@ -40,7 +40,7 @@
     position: relative;
     top: 50%; //enable this if CyberMonday banner disabled
     max-width: 638px;
-    margin: 0 auto 0;
+    margin: 0 auto;
     text-align: center;
     transform: translateY(-50%); //enable this if CyberMonday banner disabled
     @media (min-width: 768px) {
@@ -53,9 +53,9 @@
       font-family: 'Poiret One';
       font-size: 30px;
       line-height: 45px;
-      letter-spacing: .1em;
+      color: $white;
       text-transform: uppercase;
-      color: #fff;
+      letter-spacing: .1em;
       @media (min-width: 768px) {
         // padding: 100px 0 20px;
         font-size: 55px;
@@ -65,9 +65,7 @@
       span {
         border-bottom: 4px solid #fff;
       }
-
     }
-
   }
 
   .counter {
@@ -83,13 +81,14 @@
     font-size: 14px;
     letter-spacing: 2px;
     @media (max-width: $screen-xs-max) {
-      bottom: auto;
       top: 60px;
+      bottom: auto;
       margin: 0;
     }
-    .num{
-      background: $black;
+
+    .num {
       padding: 0 5px;
+      background: $black;
     }
   }
 
@@ -124,7 +123,6 @@
       z-index: 2;
     }
   }
-
 }
 
 .custom-carousel {
@@ -139,7 +137,7 @@
     background-color: $white;
     opacity: 1;
     padding: 10px 0;
-    transition: all .4s;
+    transition: all 0.4s;
     @media (max-width: $screen-xs-max) {
       bottom: auto;
       top: 0;
@@ -186,13 +184,12 @@
 
     .fa {
       color: $black;
-      transition: all .4s;
+      transition: all 0.4s;
 
       &:hover {
         color: $white;
       }
     }
-
   }
 }
 
@@ -271,13 +268,11 @@
   // @media (max-width: 768px) {
   //   bottom: 0;
   // }
-
   .best-rate-ota {
     // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-    max-width: 600px;
     width: 100%;
+    max-width: 600px;
     // min-height: 80px;
-
     // left: calc(50% - 300px);
     // display: table;
     // background: rgba(255,255,255,255);
@@ -286,7 +281,6 @@
     //   width: 100%;
     //   bottom: 0;
     // }
-
     .boxes {
       position: relative;
       display: flex;
@@ -332,9 +326,7 @@
               margin-top: 10px;
             }
           }
-
         }
-
       }
 
       .ota-list {
@@ -361,8 +353,8 @@
 
             span {
               padding-left: 4px;
-              text-decoration: line-through;
               color: $white;
+              text-decoration: line-through;
             }
 
             &:nth-child(even) {
