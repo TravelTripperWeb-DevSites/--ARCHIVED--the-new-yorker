@@ -1,0 +1,6 @@
+{
+  "answer": "<p>Check-in: 4pm</p>\n<p>Check-out: 12pm</p>\n<p>Early check-in and late check-out is based on availability for an additional fee</p>",
+  "question": "What time is check-in/ check-out?",
+  "category": "GENERAL",
+  "order": 1
+}
