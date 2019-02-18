@@ -29,7 +29,33 @@ $(document).ready(function() {
 		$("#exTab1 ul li.tnc-tab a").attr("aria-label", tncList);
 	}, 4000);
 
+  // cendyn newsletter submission
+  var newsletterData = {
+     "PostData": {
+       "emailAddress": $("#NLF-email").val()
+    }
+  };
+  var newsletterFormId = $("#NLF-formId").val();
+  $("#NLF").submit(function(event) {
+    $.ajax({
+      type: "POST",
+      url: "https://web2.cendynhub.com/FormsRest/submit/"+newsletterFormId+"?format=json",
+      contentType: "application/json",
+      crossDomain: true,
+      dataType: "json",
+      data: JSON.stringify(newsletterData)
+    }).done(function(result) {
+      if (result !== null) {
+        window.location = "/thankyou";
+      }
 
+    }).fail(function(XMLHttpRequest, textStatus, errorThrown) {
+      // /$('#preloader').hide();
+      // $('.hotel-form__error').show();
+    });
+    event.preventDefault();
+    return false;
+  });
 });
 
 $(window).load(function() {
