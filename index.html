@@ -19,7 +19,6 @@ meta_description_localized:
     from the Empire State Building and lots more in central Manhattan.
 
 ---
-
 {% comment %}
 <section class="home-banner custom-carousel" rt3-recent-bookings="recentBookings" ng-cloak>
   <div class="container-fluid">
@@ -60,108 +59,32 @@ meta_description_localized:
   </div>
 </section>
 {% endcomment %}
-
-<!--Special Banner Bar-->
-<!-- <section class="special-banner-bar">
-
-  <h3>BLACK FRIDAY/ CYBER MONDAY SALE - 40% OFF</h3>
-
-  <a href="/cyber-monday/">BOOK & SAVE &nbsp;</a>
-
-  <ul class="countdown">
-      <li>
-          <span class="days">00</span>
-          <p class="days_ref">hours</p>
-      </li>
-      <li class="seperator">.</li>
-      <li>
-          <span class="hours">00</span>
-          <p class="hours_ref">hours</p>
-      </li>
-      <li class="seperator">:</li>
-      <li>
-          <span class="minutes">00</span>
-          <p class="minutes_ref">minutes</p>
-      </li>
-      <li class="seperator">:</li>
-      <li>
-          <span class="seconds">00</span>
-          <p class="seconds_ref">seconds</p>
-      </li>
-  </ul>
-
-</section> -->
-
-<section class="home-banner custom-carousel" rt3-recent-bookings="recentBookings" ng-cloak>
-  <div class="container-fluid">
-    <div id="home-banner" class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <div class="item active" role="option" style="background-image: url('//cdn.traveltripper.io/site-assets/426_558_9658/media/2017-11-30-013515/2-3-nights-offer.jpg');">
-          {% comment %}
-          <div class="cyber-monday" role="option" style="background-image: url('//cdn.traveltripper.io/site-assets/426_558_21124/media/2018-11-20-015009/cyberweekend.jpg');">
-          {% endcomment %}
-
-          <div class="banner-overlay"></div>
-          {% comment %}
-          <div class="deal-notice">
-            <p>Deal Ends In</p>
-          </div>
-
-          <!-- Countdown Timer -->
-          <div class="countdown-container">
-            <div class="timer-info">
-              <div id="mobile-clock" class="mobile-clock row"></div>
-              <div id="flip-clock" class="flip-clock"></div>
-            </div>
-          </div>
-
-          <!-- Cyber Monday Offer -->
-          <div class="room-details offer-details">
-            <div class="room-name">
-              {% regionblock cyber_offer_title, type:header %}
-                <h1>Black Friday/ Cyber Monday Sale<br>Save Up To 40% Off<br><strong> <a href="/cyberweekend/" style="color:white;">Sale Now Live</a></strong></h1>
-              {% endregionblock %}
-            </div>
-            {% regionblock cyber_offer_url, type:text %}
-            <a href="/cyberweekend/" class="btn-common">View This Offer</a>
-            {% endregionblock %}
-          </div>
-          {% endcomment %}
-
-          <div class="offer-details">
-            <div class="offer-title" tabindex="0"><span>STAY 2/3 NIGHTS, SAVE 15%</span></div>
-            <a href="/offer-details/#stay-2-or-3-nights-save-15percent-advance-purchase" class="btn-common" title="Book This Offer">Book This Offer</a>
-          </div>
-
-          <div class="caption-price" style="display:none" tabindex="-1">
-            <span class="price-holder" ng-show="recentBookings.totalBookings > 5"><span class="recentBookingNo">[[ recentBookings.totalBookings ]]</span><span class="recentBookingText">People booked our hotel in the last 2 days</span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<section class="inner-page-banner home-banner-custom">
+   <div class="overlay"></div>
+   <div class="banner-wrap">
+     <div class="banner-heading">
+       <span tabindex="0">Sign-up to Receive Exclusive Offers and Updates</span>
+     </div>
+     <div class="newsletter-signup">
+         <div class="container">
+             <div class="row no-gutters">
+                 <div class="col-md-12">
+                     <form class="jotform-form" action="" method="post" id="NLF" name="form_63621092258455" accept-charset="utf-8">
+                         <input type="hidden" id="NLF-formId" name="formId" value="7D093D5D-E7A1-4210-8430-87B91CE2F096" title="hidden" aria-label="hidden" />
+                         <div class="input-group">
+                             <input type="email" class="form-control validate[required]" placeholder="Enter Your Email Address" id="NLF-email" name="emailAddress" value="" placeholder="YOUR EMAIL" title="YOUR EMAIL" aria-label="YOUR EMAIL" required="required">
+                             <span class="input-group-btn">
+                         <button class="btn btn-default" id="NLF-submit" type="submit" title="Submit" aria-label="Submit" ><img src="/images/arrow-right.png" width="26" height="21" alt="Submit"/></button>
+                       </span>
+                         </div>
+                         <!-- /input-group -->
+                     </form>
+                 </div>
+             </div>
+         </div>
+     </div>
+   </div>
 </section>
-
-<!--
-<section class="price-wrap1 container-fluid" ng-show="browser.isRate" style="display:none">
-  <div class="best-rate-ota" ng-show="browser.otaRates.brgFound">
-    <div class="boxes">
-
-      <div class="tonight-rate ">
-        <p>Best Price Available</p>
-        <h4>Tonight's Rate <a href="https://newyorkerhotel.reztrip.com/search?" target="_blank"  class="homeTonightRate" title="[[ browser.otaRates.reztripRate ]]"><span class="price">[[ browser.otaRates.reztripRate ]]</span></a></h4>
-      </div>
-
-      <div class="ota-list">
-        <ul>
-          <li ng-repeat="(key, value) in browser.otaRates.brg">[[ key ]] <span>$[[ value ]]</span></li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-//-->
 
 <section class="intro-wrap">
   <div class="container-fluid">
