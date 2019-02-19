@@ -1,6 +1,6 @@
 {
-  "answer": "<p>Refrigerators are available upon request for a minimal fee.</p>",
+  "answer": "<p>Refrigerators are available for a one-time fee of $30.</p>",
   "question": "Is there a refrigerator in the room?",
   "category": "HOTEL AMENITIES",
-  "order": 11
+  "order": 12
 }
