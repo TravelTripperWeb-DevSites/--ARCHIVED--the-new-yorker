@@ -1,6 +1,6 @@
 {
-  "answer": "<p>Complimentary coffee makers are available based upon request.</p>",
+  "answer": "<p>Coffee makers may be requested for a fee of $25 per night.</p>",
   "question": "Is there a coffee maker in the room?",
   "category": "HOTEL AMENITIES",
-  "order": 10
+  "order": 11
 }
