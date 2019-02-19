@@ -81,8 +81,13 @@
       "name": "connect",
       "url": "/contact/",
       "submenu": "false"
+    }, 
+    {
+      "title": "faq",
+      "name": "faq",
+      "url": "/faq/",
+      "submenu": "false"
     },
-
   ],
   "footernav": [{
       "title": "Terms & Conditions",
