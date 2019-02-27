@@ -170,7 +170,7 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085534/xsmall_premium-queen-suite.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085534/thumb_premium-queen-suite.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085534/premium-queen-suite.jpg",
-      "alt": "Premium Queen Suite"
+      "alt": " Premium Suite- Bedroom"
     },
     {
       "name": "blue-spa-toiletries",
@@ -344,5 +344,6 @@
       "alt": "Executive Suite Double"
     }
   ],
-  "description": ""
+  "description": "",
+  "id": "rooms_suites"
 }
