@@ -514,7 +514,11 @@ h1{
 	padding: 10px 0;
 	text-align: center;
 	background-color: $black;
-
+ 
+	.content {
+		display: none;
+	}
+	
 	a,
 	h3 {
 		display: inline-block;
