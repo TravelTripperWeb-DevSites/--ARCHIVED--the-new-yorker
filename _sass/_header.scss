@@ -514,7 +514,7 @@ h1{
 	padding: 10px 0;
 	text-align: center;
 	background-color: $black;
- 
+        min-height: 70px;
 	.content {
 		display: none;
 	}
