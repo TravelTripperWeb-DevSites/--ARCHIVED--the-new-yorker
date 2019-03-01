@@ -1,3 +1,32 @@
+
+.faq-seach {
+  position: relative;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 0 20px;
+  input {
+    height: 40px;
+    padding: 2px 0 0 10px;
+    font-size: 16px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .fa-search {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 18px;
+    color: $light-grey;
+  }
+}
+
+.no-results {
+  display: none;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
 // FAQ Pages Scss
 
 .static-faq-content {
@@ -27,13 +56,13 @@
       }
 
       [aria-expanded='false'] {
-        background-image: url('/images/qa-max.png');
+        background-image: url("/images/qa-max.png");
         background-repeat: no-repeat;
         background-position: 0 15px;
       }
 
       [aria-expanded='true'] {
-        background-image: url('/images/qa-min.png');
+        background-image: url("/images/qa-min.png");
         background-repeat: no-repeat;
         background-position: 0 15px;
       }
