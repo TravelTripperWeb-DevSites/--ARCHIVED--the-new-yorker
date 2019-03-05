@@ -1,5 +1,5 @@
 {
-  "answer": "<p>Refrigerators are available for a one-time fee of $30.</p>",
+  "answer": "<p>Refrigerators are available for a one-time fee of $30 plus taxes.</p>",
   "question": "Is there a refrigerator in the room?",
   "category": "HOTEL AMENITIES",
   "order": 12
