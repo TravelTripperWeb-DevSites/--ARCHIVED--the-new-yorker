@@ -21,6 +21,25 @@
       "alt": "Tick Tock Diner"
     },
     {
+      "name": "restaurant",
+      "file_name": "restaurant.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/restaurant.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-08-015548",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1198,
+      "file_size": 627783,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/large_restaurant.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/medium_restaurant.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/small_restaurant.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/xsmall_restaurant.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/thumb_restaurant.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/restaurant.jpg",
+      "alt": "Tick Tock Diner"
+    },
+    {
       "name": "Butcher & Banker NYC",
       "content_type": "image/jpeg",
       "date_added": "2019-02-28-010926",
@@ -98,25 +117,6 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/thumb_dining-room.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/dining-room.jpg",
       "alt": "Dining Room"
-    },
-    {
-      "name": "restaurant",
-      "file_name": "restaurant.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/restaurant.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-05-08-015548",
-      "file_type": "image/jpeg",
-      "width": 1800,
-      "height": 1198,
-      "file_size": 627783,
-      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/large_restaurant.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/medium_restaurant.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/small_restaurant.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/xsmall_restaurant.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/thumb_restaurant.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015548/restaurant.jpg",
-      "alt": "Tick Tock Diner"
     },
     {
       "name": "dining",
