@@ -79,6 +79,25 @@
       "alt": "Trattoria Bianca- Bar Area"
     },
     {
+      "name": "dining-room",
+      "file_name": "dining-room.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/dining-room.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-05-08-015444",
+      "file_type": "image/jpeg",
+      "width": 1800,
+      "height": 1278,
+      "file_size": 429176,
+      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/large_dining-room.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/medium_dining-room.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/small_dining-room.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/xsmall_dining-room.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/thumb_dining-room.jpg",
+      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/dining-room.jpg",
+      "alt": "Dining Room"
+    },
+    {
       "name": "Butcher & Banker NYC",
       "content_type": "image/jpeg",
       "date_added": "2019-02-28-010926",
@@ -137,25 +156,6 @@
       "path": "//res.cloudinary.com/traveltripperweb/image/upload/v1551773089/sgxqqcm1jjawz7ge5kih.jpg",
       "file_size": null,
       "alt": "Butcher & Banker Dinning"
-    },
-    {
-      "name": "dining-room",
-      "file_name": "dining-room.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/dining-room.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-05-08-015444",
-      "file_type": "image/jpeg",
-      "width": 1800,
-      "height": 1278,
-      "file_size": 429176,
-      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/large_dining-room.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/medium_dining-room.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/small_dining-room.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/xsmall_dining-room.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/thumb_dining-room.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-08-015444/dining-room.jpg",
-      "alt": "Dining Room"
     }
   ],
   "description": "",
