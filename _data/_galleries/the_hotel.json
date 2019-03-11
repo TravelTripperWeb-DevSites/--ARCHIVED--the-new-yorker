@@ -18,7 +18,7 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-075809/xsmall_thenewyorker.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-075809/thumb_thenewyorker.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-075809/thenewyorker.jpg",
-      "alt": "The New Yorker"
+      "alt": "Hotel Exterior"
     },
     {
       "name": "restaurant",
@@ -37,7 +37,7 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-075912/xsmall_restaurant.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-075912/thumb_restaurant.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-075912/restaurant.jpg",
-      "alt": "restaurant"
+      "alt": "Sky Lounge"
     },
     {
       "name": "newyorkerlobby",
@@ -59,25 +59,6 @@
       "alt": "Lobby"
     },
     {
-      "name": "wyndhamnewyorker",
-      "file_name": "wyndhamnewyorker.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081257/wyndhamnewyorker.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-05-07-081257",
-      "file_type": "image/jpeg",
-      "width": 1600,
-      "height": 792,
-      "file_size": 326870,
-      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081257/large_wyndhamnewyorker.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081257/medium_wyndhamnewyorker.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081257/small_wyndhamnewyorker.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081257/xsmall_wyndhamnewyorker.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081257/thumb_wyndhamnewyorker.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081257/wyndhamnewyorker.jpg",
-      "alt": "Wyndham New Yorker"
-    },
-    {
       "name": "newyorker",
       "file_name": "newyorker.jpg",
       "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081557/newyorker.jpg",
@@ -94,7 +75,7 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081557/xsmall_newyorker.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081557/thumb_newyorker.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081557/newyorker.jpg",
-      "alt": "New Yorker NYC"
+      "alt": "City View"
     },
     {
       "name": "meetingsroom",
@@ -113,26 +94,7 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081626/xsmall_meetingsroom.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081626/thumb_meetingsroom.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081626/meetingsroom.jpg",
-      "alt": "Meeting Room"
-    },
-    {
-      "name": "newyorkerhotel",
-      "file_name": "newyorkerhotel.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081653/newyorkerhotel.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-05-07-081653",
-      "file_type": "image/jpeg",
-      "width": 1800,
-      "height": 1200,
-      "file_size": 420858,
-      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081653/large_newyorkerhotel.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081653/medium_newyorkerhotel.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081653/small_newyorkerhotel.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081653/xsmall_newyorkerhotel.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081653/thumb_newyorkerhotel.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081653/newyorkerhotel.jpg",
-      "alt": "New Yorker Hotel View"
+      "alt": "Grand Ballroom"
     },
     {
       "name": "crystalballroom",
@@ -151,46 +113,47 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081729/xsmall_crystalballroom.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081729/thumb_crystalballroom.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081729/crystalballroom.jpg",
-      "alt": "Ball Room"
+      "alt": "Crystal Ballroom"
     },
     {
       "name": "gym",
-      "file_name": "gym.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081750/gym.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-05-07-081750",
-      "file_type": "image/jpeg",
-      "width": 478,
-      "height": 350,
-      "file_size": 34856,
-      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081750/large_gym.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081750/medium_gym.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081750/small_gym.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081750/xsmall_gym.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081750/thumb_gym.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081750/gym.jpg",
-      "alt": "Gym"
+      "content_type": "image/jpeg",
+      "date_added": "2019-02-27-024404",
+      "url_thumb": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1551253444/sirlr3fx6vjn79yb8j4h.jpg",
+      "url_xsmall": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1551253444/sirlr3fx6vjn79yb8j4h.jpg",
+      "url_small": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1551253444/sirlr3fx6vjn79yb8j4h.jpg",
+      "url_medium": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1551253444/sirlr3fx6vjn79yb8j4h.jpg",
+      "url_large": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1551253444/sirlr3fx6vjn79yb8j4h.jpg",
+      "width": 1400,
+      "height": 933,
+      "format": "jpg",
+      "url": "https://res.cloudinary.com/traveltripperweb/image/upload/v1551253444/sirlr3fx6vjn79yb8j4h.jpg",
+      "resource_type": "image",
+      "size": 139817,
+      "path": "https://res.cloudinary.com/traveltripperweb/image/upload/v1551253444/sirlr3fx6vjn79yb8j4h.jpg",
+      "file_size": null,
+      "alt": " Fitness Center"
     },
     {
-      "name": "queensboro",
-      "file_name": "queensboro.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081810/queensboro.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-05-07-081810",
-      "file_type": "image/jpeg",
-      "width": 1800,
-      "height": 1800,
-      "file_size": 881088,
-      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081810/large_queensboro.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081810/medium_queensboro.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081810/small_queensboro.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081810/xsmall_queensboro.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081810/thumb_queensboro.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-081810/queensboro.jpg",
-      "alt": "Queens Boro Bridge"
+      "name": "NewYorker_Views-32",
+      "content_type": "image/jpeg",
+      "date_added": "2019-02-27-024419",
+      "url_thumb": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1551253459/r541ite3o4q5bwxktylf.jpg",
+      "url_xsmall": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1551253459/r541ite3o4q5bwxktylf.jpg",
+      "url_small": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1551253459/r541ite3o4q5bwxktylf.jpg",
+      "url_medium": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1551253459/r541ite3o4q5bwxktylf.jpg",
+      "url_large": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1551253459/r541ite3o4q5bwxktylf.jpg",
+      "width": 1200,
+      "height": 799,
+      "format": "jpg",
+      "url": "https://res.cloudinary.com/traveltripperweb/image/upload/v1551253459/r541ite3o4q5bwxktylf.jpg",
+      "resource_type": "image",
+      "size": 142958,
+      "path": "https://res.cloudinary.com/traveltripperweb/image/upload/v1551253459/r541ite3o4q5bwxktylf.jpg",
+      "file_size": null,
+      "alt": "Hotel View"
     }
   ],
-  "description": ""
+  "description": "",
+  "id": "the_hotel"
 }
