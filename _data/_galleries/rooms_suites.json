@@ -21,25 +21,6 @@
       "alt": "Executive Room Accessible Double"
     },
     {
-      "name": "guestroom",
-      "file_name": "guestroom.jpg",
-      "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/guestroom.jpg",
-      "tags": "",
-      "description": "",
-      "date_added": "2018-05-07-084951",
-      "file_type": "image/jpeg",
-      "width": 1800,
-      "height": 1200,
-      "file_size": 678687,
-      "url_large": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/large_guestroom.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/medium_guestroom.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/small_guestroom.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/xsmall_guestroom.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/thumb_guestroom.jpg",
-      "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-084951/guestroom.jpg",
-      "alt": "Guestroom"
-    },
-    {
       "name": "metro-view-room-queen",
       "file_name": "metro-view-room-queen.jpg",
       "url": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085015/metro-view-room-queen.jpg",
@@ -75,7 +56,7 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085047/xsmall_premium-queen-suite-hall.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085047/thumb_premium-queen-suite-hall.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085047/premium-queen-suite-hall.jpg",
-      "alt": "Premium Queen Suite Hall"
+      "alt": "Premium Suite"
     },
     {
       "name": "metro-view-room-double",
@@ -132,7 +113,7 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085219/xsmall_premium-suite-queen.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085219/thumb_premium-suite-queen.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085219/premium-suite-queen.jpg",
-      "alt": "Premium Suite Queen"
+      "alt": "Premium Suite- Living Area"
     },
     {
       "name": "bathroom",
@@ -170,7 +151,7 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085534/xsmall_premium-queen-suite.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085534/thumb_premium-queen-suite.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085534/premium-queen-suite.jpg",
-      "alt": "Premium Queen Suite"
+      "alt": " Premium Suite- Bedroom"
     },
     {
       "name": "blue-spa-toiletries",
@@ -189,7 +170,7 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085611/xsmall_blue-spa-toiletries.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085611/thumb_blue-spa-toiletries.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085611/blue-spa-toiletries.jpg",
-      "alt": "Blue Spa Toiletries"
+      "alt": " Bathroom- Metro Room"
     },
     {
       "name": "executive-queen-room",
@@ -227,7 +208,7 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085714/xsmall_newyorker-suite-queen.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085714/thumb_newyorker-suite-queen.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085714/newyorker-suite-queen.jpg",
-      "alt": "Newyorker-Suite-Queen"
+      "alt": "New Yorker Suite- Living Area"
     },
     {
       "name": "executive-view-room-queen",
@@ -284,7 +265,7 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085845/xsmall_executive-room-double.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085845/thumb_executive-room-double.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085845/executive-room-double.jpg",
-      "alt": "Executive Room Double"
+      "alt": "Executive Double"
     },
     {
       "name": "executive-queenroom",
@@ -303,7 +284,7 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085909/xsmall_executive-queenroom.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085909/thumb_executive-queenroom.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085909/executive-queenroom.jpg",
-      "alt": "Executive Queenroom"
+      "alt": "Executive Room Queen"
     },
     {
       "name": "suite-double",
@@ -322,7 +303,7 @@
       "url_xsmall": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085935/xsmall_suite-double.jpg",
       "url_thumb": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085935/thumb_suite-double.jpg",
       "path": "//cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-085935/suite-double.jpg",
-      "alt": "Suite Double"
+      "alt": "New Yorker Suite Double"
     },
     {
       "name": "executive-suite-double",
@@ -344,5 +325,6 @@
       "alt": "Executive Suite Double"
     }
   ],
-  "description": ""
+  "description": "",
+  "id": "rooms_suites"
 }
