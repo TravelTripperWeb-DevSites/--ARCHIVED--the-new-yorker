@@ -2,11 +2,30 @@
 
     .offer-details{
 
+      .offer-name {
+        max-width: 638px;
+        margin: 0 auto;
+        padding: 40px 0;
+        font-family: $main-heading;
+        font-size: 46px;
+        line-height: 75px;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: .1em;
 
-             @media(min-width: $screen-sm-min){
+        span{
+            border-bottom:4px solid $white;
+        }
 
-                max-width: 100%;
-             }
+        @media(min-width: $screen-sm-min){
+             padding:100px 0px;
+             line-height: 120px;
+        }
+      }
+     @media(min-width: $screen-sm-min){
+
+        max-width: 100%;
+     }
 
     }
 }
