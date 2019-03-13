@@ -68,13 +68,14 @@ $(document).ready(function() {
   }, 4000);
 
   // cendyn newsletter submission
-  var newsletterData = {
-    "PostData": {
-      "emailAddress": $("#NLF-email").val()
-    }
-  };
-  var newsletterFormId = $("#NLF-formId").val();
+
   $("#NLF").submit(function(event) {
+    var newsletterData = {
+      "PostData": {
+        "emailAddress": $("#NLF-email").val()
+      }
+    };
+    var newsletterFormId = $("#NLF-formId").val();
     $.ajax({
       type: "POST",
       url: "https://web2.cendynhub.com/FormsRest/submit/" + newsletterFormId + "?format=json",
