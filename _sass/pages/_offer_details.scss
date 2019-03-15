@@ -1,90 +1,101 @@
-.offer-details-page{
+.offer-details-page {
+  .offer-details {
+    .offer-name {
+      padding: 40px 0;
+      font-family: $main-heading;
+      font-size: 22px;
+      line-height: 65px;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
 
-    .offer-details{
-
-
-             @media(min-width: $screen-sm-min){
-
-                max-width: 100%;
-             }
-
+      span {
+        border-bottom: 4px solid $white;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 100px 0;
+        font-size: 46px;
+        line-height: 120px;
+        letter-spacing: .1em;
+      }
+      @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min) {
+        font-size: 33px;
+        line-height: 95px;
+        letter-spacing: .1em;
+      }
     }
+  }
 }
 
+.booking-form {
+  float: none;
+  max-width: none;
+  padding: 30px 14px;
+  overflow: hidden;
+  @media(min-width: $screen-sm-min) {
+    float: right;
+    max-width: 470px;
+  }
 
-.booking-form{
+  .col-sm-12,
+  .col-sm-6 {
+    padding: 0;
+  }
 
-        max-width:none;
-        overflow: hidden;
-        float: none;
-        padding: 30px 14px;
+  .col-sm-12 {
+    padding-right: 8px;
+  }
 
-        @media(min-width: $screen-sm-min){
-                                          max-width:470px;
-                                           float: right;
+  .form-group {
+    padding-right: 8px;
+  }
 
-                                    }
+  ::-webkit-input-placeholder {
+    font-size: 13px;
+    color: $heading;
+  }
 
-        .col-sm-6, .col-sm-12{
+  :-moz-placeholder {
+    /* older Firefox*/
+    font-size: 13px;
+    color: $heading;
+  }
 
-            padding:0px;
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 13px;
+    color: $heading;
+  }
 
-        }
-        .col-sm-12{
-               padding-right: 8px;
-        }
+  :-ms-input-placeholder {
+    font-size: 13px;
+    color: $heading;
+  }
 
-        .form-group{
-                padding-right: 8px;
-        }
-            ::-webkit-input-placeholder {
-             font-size: 13px;
-             color:$heading
-            }
-            :-moz-placeholder { /* older Firefox*/
-             font-size: 13px;
-             color:$heading
-            }
-            ::-moz-placeholder { /* Firefox 19+ */
-             font-size: 13px;
-             color:$heading
-            }
-            :-ms-input-placeholder {
-             font-size: 13px;
-             color:$heading
-            }
-    label, input, .select-dropdown{
+  .select-dropdown,
+  input,
+  label {
+    font-family: $main-font-medium;
+    font-size: 13px;
+    font-weight: normal;
+    color: $heading;
+    width: 100%;
+    border-radius: 0;
+  }
 
-        font-family:$main-font-medium;
-        font-size:13px;
-        font-weight: normal;
-        color:$heading;
-        width:100%;
-        border-radius: 0px;
+  label {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-left: 10px;
+  }
 
+  input {
+    padding: 20px 24px;
+    letter-spacing: 1px;
+  }
 
-    }
-
-    label{
-
-           display:block;
-           text-transform: uppercase;
-           letter-spacing: 3px;
-           padding-left:10px;
-
-
-
-
-    }
-
-    input{
-
-        padding:20px 24px;
-        letter-spacing: 1px;
-    }
-
-    .book-now{
-
+  .book-now {
     background-color: #0971ce;
     padding: 20px 16px;
     text-transform: uppercase;
@@ -95,126 +106,89 @@
     color: #ffffff;
     text-shadow: none;
     transition: all 0.4s;
-    border:none;
-    width:100%;
+    border: none;
+    width: 100%;
     margin-right: 8px;
 
-    &:hover{
-        background-color: #404040;
+    &:hover {
+      background-color: #404040;
     }
+  }
 
+  .select-dropdown {
+    padding: 20px 24px;
+    letter-spacing: 1px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("/images/drop-down-arrow.png") no-repeat 94% center;
+    @media(min-width: $screen-sm-min) {
+      background: url("/images/drop-down-arrow.png") no-repeat 85% center;
     }
-    .select-dropdown{
-        padding:20px 24px;
-        letter-spacing: 1px;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        background: url(/images/drop-down-arrow.png) no-repeat 94% center;
-
-         @media(min-width: $screen-sm-min){
-
-        background: url(/images/drop-down-arrow.png) no-repeat 85% center;
-
-         }
-    }
-
-
-
+  }
 }
-
-
-
-
 
 .offer-details-container {
+  max-width: 1105px;
 
-        max-width: 1105px;
+  .rooms-details {
+    padding: 0;
+    border: none;
 
-        .rooms-details {
-
-                padding: 0px;
-                border:none;
-
-            .tab-content {
-
-                .tab-pane {
-
-                            h3{
-                                    padding: 25px 0px;
-                                    @media(min-width: $screen-sm-min){
-                                         padding: 50px 0px;
-                                    }
-                                  }
-
-                             p{
-                                max-width:none;
-                                @media(min-width: $screen-sm-min){
-                                          max-width:470px;
-                                    }
-
-                            }
-                }
-            }
-
-             .nav{
-
-                 text-align: center !important;
-
-                 @media(min-width: $screen-sm-min){
-
-                    text-align: left !important;
-                 }
-
-
-                    li{
-
-
-                            margin: 0 0 10px 0;
-
-                            @media(min-width: $screen-xs-min){
-
-                                margin: 0 32px 0 0;
-                             }
-
-                            a{
-
-                                padding: 0px 0px 7px 0px;
-                            }
-
-                    }
-
-
-             }
-
+    .tab-content {
+      .tab-pane {
+        h3 {
+          padding: 25px 0;
+          @media(min-width: $screen-sm-min) {
+            padding: 50px 0;
+          }
         }
 
+        p {
+          max-width: none;
+          @media(min-width: $screen-sm-min) {
+            max-width: 470px;
+          }
+        }
+      }
     }
 
+    .nav {
+      text-align: center !important;
+      @media(min-width: $screen-sm-min) {
+        text-align: left !important;
+      }
 
+      li {
+        margin: 0 0 10px;
+        @media(min-width: $screen-xs-min) {
+          margin: 0 32px 0 0;
+        }
 
-.rooms-bar{
-
-        border-left: none;
-
-     @media(min-width: $screen-sm-min){
-
-        border-left: 1px solid #dfdfdf;
-
-
-     }
+        a {
+          padding: 0 0 7px;
+        }
+      }
+    }
+  }
 }
-h1{
 
-                font-size: 43px;
-                letter-spacing: 0.1em;
-                font-family: "Poiret One";
-                color: $heading;
-                text-transform: uppercase;
-                text-align: center;
-                padding: 50px 0px;
+.rooms-bar {
+  border-left: none;
+  @media(min-width: $screen-sm-min) {
+    border-left: 1px solid #dfdfdf;
+  }
+}
 
-                &:after{
-                    width:0px !important;
-                }
+h1 {
+  font-size: 43px;
+  letter-spacing: 0.1em;
+  font-family: "Poiret One";
+  color: $heading;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px 0;
 
-    }
+  &:after {
+    width: 0 !important;
+  }
+}
