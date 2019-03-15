@@ -38,6 +38,9 @@
 		text-align: center;
 		padding: 32% 0;
 		background-size: cover;
+		&.amenities-concierge-content {
+			padding: 18% 0;
+		}
 		.overlay{
 			background-color: rgba(0,0,0,.6);
 			position: absolute;
