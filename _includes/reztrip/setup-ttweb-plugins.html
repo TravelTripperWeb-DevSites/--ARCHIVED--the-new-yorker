@@ -1,0 +1,81 @@
+{% comment %}
+TODO: Update to use V3
+{% endcomment %}
+
+{% if site.data.hotel_settings._hotel_id != nil && site.data.hotel_settings._hotel_id != '' %}
+  <link rel="stylesheet" type="text/css" href="https://plugins.traveltripper.io/{{site.data.hotel_settings._ttweb_plugins_version}}/css/components.css" />
+  <script src="https://plugins.traveltripper.io/{{site.data.hotel_settings._ttweb_plugins_version}}/rt3api.min.js" charset="UTF-8"></script>
+  <script type="text/javascript">
+    
+    var rootPath = '{{site.data.hotel_settings._root_path}}';
+    if (rootPath == '') {
+      rootPath = null;
+    }
+    var defaultLocale = '{{site.data.hotel_settings.default_locale}}';
+    if (defaultLocale == '') {
+      defaultLocale = 'en';
+    }
+    var defaultTimezone = '{{site.data.hotel_settings.default_timezone}}';
+    if (defaultTimezone == '') {
+      defaultTimezone = 'America/New_York';
+    }
+    var defaultCurrency = '{{site.data.hotel_settings.default_currency}}';
+    if (defaultCurrency == '') {
+      defaultCurrency = 'USD';
+    }
+    
+    if (locale == '') {
+      locale = 'en';
+    }
+    
+    var ttwebHotel = new TTWebHotel({
+      hotelId: '{{site.data.hotel_settings._hotel_id}}',
+      portalId: '{{site.data.hotel_settings._portal_id}}',
+      rootPath: rootPath,
+      defaultLocale: $("#siteLang").val() || locale,
+      defaultCurrency: defaultCurrency,
+      defaultTimezone: defaultTimezone,
+      localeOverrides: {
+        "conversion-plus": {
+          sample_rate: "Sample rate for tonight",
+        }
+      }
+    });
+    
+    function getIp(data){
+     sessionStorage.ip_add =  data.ip;
+     ttwebHotel.Config.ipAddress = data.ip
+    }
+    
+    function getCurrencySign() {
+      switch (ttwebHotel.Config.defaultCurrency) {
+        case 'EUR':
+          return '€';
+          break;
+        case 'GBP':
+          return '£';
+          break;
+        case 'USD': 
+          return '$'
+          break;
+        default:
+          return ttwebHotel.Config.defaultCurrency;
+      }
+    }
+    
+    var TTWebGlobals = {}
+    TTWebGlobals.globalSearch = null;
+    TTWebGlobals.bookingWidget = null;
+  
+    TTWebGlobals.openGlobalBookingCalendar = function(event) {
+      TTWebGlobals.bookingWidget.show(event);
+    }
+    
+    
+    
+  </script>
+  <script src="https://api.ipify.org?format=jsonp&callback=getIp"></script>
+
+  {% include reztrip/plugin-scripts-list.html %}
+  
+{% endif %}

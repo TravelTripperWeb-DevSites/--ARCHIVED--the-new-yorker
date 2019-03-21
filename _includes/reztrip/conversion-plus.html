@@ -1,0 +1,74 @@
+<link rel="stylesheet" type="text/css" href="https://plugins.traveltripper.io/{{site.data.hotel_settings._ttweb_plugins_version}}/css/conversion-plus.css" />
+<script type="text/javascript">
+  
+  var fallbackContent = '{{ site.data.conversion_plus.fallback_content }}';
+  if (fallbackContent == '') {
+    fallbackContent = null;
+  }
+  var showOta = {{ site.data.conversion_plus.show_ota }};
+  var showScarcity = {{ site.data.conversion_plus.show_scarcity }};
+  if (showScarcity) {
+    var maxRoomsAvailable = {{ site.data.conversion_plus.max_rooms_available | default: 'null' }};
+    if (maxRoomsAvailable) {
+      showScarcity = { maxRoomsAvailable: maxRoomsAvailable}
+    }
+  }
+  var showActivity = {{ site.data.conversion_plus.show_activity }};
+  if (showActivity) {
+    var recentBookingMin = {{ site.data.conversion_plus.recent_booking_min | default: 'null' }};
+    if (recentBookingMin) {
+      showActivity = { recentBookingMin: recentBookingMin, timeframeMinutes: 60*48}
+    }    
+  }
+  
+  var findLowestRateRange = {{ site.data.conversion_plus.find_lowest_rate_range | default: 'false'}};
+  var minRate = {{ site.data.conversion_plus.min_rate | default: 'null'}};
+  $(document).ready(function() {
+    // Make sure there's a place of conversion plus banner
+    
+    var $banner = $("#conversion-plus-banner");
+    if ($banner.length == 0) {
+      // Add any custom scripts for finding a CP banner placement here.
+      // var $homeSlider = $("#herocarousel");
+      // var $innerNav = []// $(".inner-nav");
+      // var $intro = $(".inner-intro");
+      // var $innerBanner = $(".inner-banner");
+      // if ($homeSlider.length == 1) {
+      //   $banner = $("<div id='conversion-plus-banner'></div>")
+      //   $homeSlider.after($banner);
+      // } else if ($innerNav.length > 0) {
+      //   $banner = $("<div id='conversion-plus-banner'></div>")
+      //   $($innerNav.get(0)).before($banner);
+      // } else if ($intro.length > 0) {
+      //   $banner = $("<div id='conversion-plus-banner'></div>")
+      //   $($intro.get(0)).prepend($banner);
+      // } else if ($innerBanner.length == 1) {
+      //   var $banner = $("<div id='conversion-plus-banner'></div>")
+      //   $innerBanner.after($banner);
+      // }
+    }
+    
+    var banner = $banner.get(0);
+    
+    if (banner) {
+      ttwebHotel.ready(function() {
+        TTRender.renderConversionPlusBanner(ttwebHotel, {
+          findLowestRateRange: findLowestRateRange,
+          minRate: minRate,
+          showOTA: showOta,
+          showScarcity: showScarcity,
+          showActivity: showActivity,
+          fallbackContent: fallbackContent,
+          fallbackOnButtonClick: TTWebGlobals.openGlobalBookingCalendar,
+          selectDatesButtonClick: TTWebGlobals.openGlobalBookingCalendar
+        }, banner)
+      })
+    } else {
+      console.log("no place to put conversion plus on this page")
+      
+    }
+
+    
+  })
+
+</script>

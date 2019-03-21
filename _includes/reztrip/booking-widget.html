@@ -1,0 +1,24 @@
+<link rel="stylesheet" type="text/css" href="https://plugins.traveltripper.io/{{site.data.hotel_settings._ttweb_plugins_version}}/css/booking-widget.css" />
+<script type="text/javascript">
+  $(document).ready(function() {
+    ttwebHotel.ready(function() {
+      TTWebGlobals.globalSearch = ttwebHotel.BookingSearch({}, ttwebHotel.UserData.globalSearchName);
+      TTWebGlobals.bookingWidget = TTRender.renderBookingWidget(ttwebHotel, {
+        search: TTWebGlobals.globalSearch,
+        showOfferCode: true,
+        showRateCalendar: true
+      });
+      var buttons = document.querySelectorAll('[show-booking-widget]')
+      if (buttons.length > 0) {
+        for(var i=0,ii=buttons.length;i<ii;i++) {
+          var button = buttons[i];
+          button.onclick = function(e) {
+            TTWebGlobals.openGlobalBookingCalendar(e)
+          };         
+        }
+      }
+    })
+  })
+
+  
+</script>
