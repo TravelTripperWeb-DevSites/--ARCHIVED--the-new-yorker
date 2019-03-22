@@ -238,8 +238,8 @@
         font-size: 18px;
         font-weight: bold;
         @media (min-width: $screen-sm-min) {
+          margin-bottom: 5px;
           font-size: 20px;
-          margin-bottom: 20px;
         }
       }
       img {
