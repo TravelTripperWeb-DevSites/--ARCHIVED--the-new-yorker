@@ -66,15 +66,16 @@ TODO: Update to use V3
     
     var TTWebGlobals = {}
     TTWebGlobals.globalSearch = null;
+    TTWebGlobals.globalSearch = ttwebHotel.bookingSearch({}, ttwebHotel.UserData.globalSearchName);   
     TTWebGlobals.bookingWidget = null;
   
     TTWebGlobals.openGlobalBookingCalendar = function(event) {
       TTWebGlobals.bookingWidget.show(event);
     }
     
-    ttwebHotel.ready(function() {
-      TTWebGlobals.globalSearch = ttwebHotel.BookingSearch({}, ttwebHotel.UserData.globalSearchName);            
-    })
+    // ttwebHotel.ready(function() {
+    //   TTWebGlobals.globalSearch = ttwebHotel.bookingSearch({}, ttwebHotel.UserData.globalSearchName);
+    // })
     
     
     
