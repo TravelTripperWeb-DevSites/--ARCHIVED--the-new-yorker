@@ -2,7 +2,6 @@
 <script type="text/javascript">
   $(document).ready(function() {
     ttwebHotel.ready(function() {
-      TTWebGlobals.globalSearch = ttwebHotel.BookingSearch({}, ttwebHotel.UserData.globalSearchName);
       TTWebGlobals.bookingWidget = TTRender.renderBookingWidget(ttwebHotel, {
         search: TTWebGlobals.globalSearch,
         showOfferCode: true,

@@ -72,6 +72,10 @@ TODO: Update to use V3
       TTWebGlobals.bookingWidget.show(event);
     }
     
+    ttwebHotel.ready(function() {
+      TTWebGlobals.globalSearch = ttwebHotel.BookingSearch({}, ttwebHotel.UserData.globalSearchName);            
+    })
+    
     
     
   </script>
