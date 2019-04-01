@@ -1,89 +1,78 @@
-.offers-container{
+.offers-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 0;
+  @media(min-width: $screen-sm-min) {
+    padding-top: 43px;
+  }
 
-    max-width:1170px;
-    margin:0 auto;
-    padding-top: 0px;
+  .col-sm-6 {
+    padding: 0;
+  }
 
-    @media(min-width: $screen-sm-min){
-        padding-top: 43px;
+  .offer-wrap {
+    padding: 15px;
+    /*height:630px;*/
+    @media(min-width: $screen-sm-min) {
+      padding: 37px;
+    }
+    @media(max-width: 768px) {
+      height: auto;
     }
 
-    .col-sm-6{
-        padding:0px;
+    .offer-img {
+      height: 342px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
     }
-    .offer-wrap{
 
-        padding:15px;
-		/*height:630px;*/
-        @media(min-width: $screen-sm-min){
+    .offers-description {
+      padding: 15px 0 0;
+      @media(min-width: $screen-sm-min) {
 
-                padding:37px;
+        padding: 43px 23px 0;
+      }
+      &.m-height {
+        min-height: 311px;
+      }
+      h4 {
+        font-family: $main-heading;
+        font-size: 25px;
+        color: $heading;
+        letter-spacing: 0.1em;
+        @media(min-width: $screen-sm-min) {
+          font-size: 30px;
+          min-height: 80px;
         }
-		@media(max-width: 768px){
-			height:auto;
-		}
-        .offer-img{
+      }
 
-            height:342px;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
+      div,
+      p {
+        font-size: 15px;
+        font-family: $main-font-regular;
+        color: $grey-color;
+        padding: 15px 0;
+        @media(min-width: $screen-sm-min) {
+          padding: 10px 0 18px;
+          min-height: 113px;
         }
-        .offers-description{
+      }
 
-            
-                padding: 15px 0px 0px 0px;
-
-                    @media(min-width: $screen-sm-min){
-
-               padding: 43px 23px 0px 23px;
-        }
-
-
-            h4{
-
-            font-family:$main-heading;
-            font-size:25px;
-            color:$heading;
-            letter-spacing: 0.1em;
-
-             @media(min-width: $screen-sm-min){
-
-              font-size: 30px;
-              min-height: 80px;
-            }
-
-
-        }
-        p, div{
-             font-size:15px;
-            font-family:$main-font-regular;
-            color: $grey-color;
-            padding:15px 0px;
-            @media(min-width: $screen-sm-min){
-              padding:10px 0px 18px 0px;
-              min-height: 113px;
-            }
-            
-
-        }
-        .btn-common{
-
-            padding: 14px 36px;
-            margin: 0 20px 5px 0;
-        }
-
-        }
-        
+      .btn-common {
+        padding: 14px 36px;
+        margin: 0 20px 5px 0;
+      }
     }
+  }
 }
-@media only screen and (max-width: 900px) and (min-width: 768px){
-.offers-description{
-        .btn-common{
-            &.btn-book{
-                margin-top: 10px !important;
-                display: block !important;
-            }
-        }
+@media only screen and (max-width: 900px) and (min-width: 768px) {
+  .offers-description {
+    .btn-common {
+      &.btn-book {
+        margin-top: 10px !important;
+        display: block !important;
+      }
     }
+  }
 }
