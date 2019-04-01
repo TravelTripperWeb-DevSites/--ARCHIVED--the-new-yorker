@@ -345,7 +345,7 @@ $(document).ready(function() {
 
   setTimeout(function() {
 
-    var allDescDiv = $('.offerDesc');
+    var allDescDiv = $('.offerDesc,offerName');
     var biggestHeight = 0;
     var ht
 
