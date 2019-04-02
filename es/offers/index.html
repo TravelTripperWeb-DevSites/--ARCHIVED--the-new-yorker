@@ -234,7 +234,7 @@
         <div class="offer-wrap">
           <div class="offer-img" style="background-image:url([[offer.lead_photo_url.yankee_large]]);" > </div>
           <div class="offers-description m-height adjustHeight">
-            <h4 class="offerName" ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h4>
+            <h4 class="offerName offerName-height" ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h4>
             <div class="offerDesc"><span ng-bind-html="offer.short_description | limitTo: 120  | renderHTMLCorrectly "></span><span>[[offer.short_description.length > 120 ? '...' : '']]</span></div>
             <a ng-href="/es/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="btn-common btn-book"> Ver oferta </a> <a ng-href="[[offer.promo_url]]" class="btn-common btn-book" target="_blank">Reservar ahora</a>
             </div>
