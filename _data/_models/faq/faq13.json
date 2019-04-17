@@ -1,5 +1,5 @@
 {
-  "answer": "<p>We accept packages on behalf of our guests, which will be stored in our mail room. This is a complimentary service. We ask that any packages sent to the hotel include the full name on the reservation and are delivered no more than 6 weeks prior to your check-in date.</p>",
+  "answer": "<p>We accept packages on behalf of our guests, which will be stored in our mail room for an additional fee. We ask that any packages sent to the hotel include the full name on the reservation.</p><p><strong>Package charges are as follows:</strong></p><p>$2.00 for envelope</p><p>$5.00 for small package (9lbs or less)</p><p>$10.00 for package of 10lbs or more</p><p>*Prices are subject to change. Additional charges will be applied if envelope/package is held at the hotel for greater than 7 days prior to arrival.</p>",
   "question": "Can I have a package sent to the hotel?",
   "category": "HOTEL AMENITIES",
   "order": 19
