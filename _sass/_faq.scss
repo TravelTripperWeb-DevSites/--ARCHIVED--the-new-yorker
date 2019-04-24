@@ -71,6 +71,15 @@
     .panel-body {
       padding-left: 50px;
       border-top: 0 !important;
+
+      ul {
+        margin: 10px auto;
+        padding-left: 30px;
+
+        li {
+          font-size: 18px;
+        }
+      }
     }
   }
 
