@@ -1,11 +1,5 @@
 {% if page.url contains 'location' %}
   {% assign map = true %}
-{% elsif page.url contains 'hotels-near-me' %}
-  {% assign map = true %}
-{% elsif page.url contains 'last-minute-nyc-deals' %}
-  {% assign map = true %}
-{% elsif page.url == '/' %}
-  {% assign map = true %}
 {% endif %}
 
 {% if map == true %}
