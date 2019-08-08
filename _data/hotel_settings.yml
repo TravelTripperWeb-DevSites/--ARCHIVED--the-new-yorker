@@ -1,9 +1,9 @@
 ---
 _hotel_id: NYCNYR #SNBOX #KEY24N #HODE
 _portal_id: newyorkerhotel #sandbox #demo
-_root_path: https://rt3api-prd.ttaws.com
-_ttweb_plugins_version: "v3.3.0"
 
-
+default_currency: USD
+default_timezone: America/New_York
+default_num_adults: 1
 
 __EDITABLE_FIELDS__: []

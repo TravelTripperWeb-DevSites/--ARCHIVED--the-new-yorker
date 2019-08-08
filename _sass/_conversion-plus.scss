@@ -2,12 +2,17 @@
   .ttweb-banner {
     background: black;
     &__ad-text {
-      font-family: "Poiret One";
+      font-family: "BrandonGrotesqueWeb-Bold";
+      font-weight: bold;
+    }
+    .ttweb-cross-out-rate__actual {
+      font-size: 1.5em;
     }
     &__book-now-button {
       padding: 12px 16px 8px 16px;
       line-height: 1em;
       margin: 0;
+      height: auto;
     }
   }
 }
