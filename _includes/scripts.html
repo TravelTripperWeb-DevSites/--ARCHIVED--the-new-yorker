@@ -30,9 +30,8 @@
 <script src="/js/rt3-directives.js"></script>
 <script src="/js/rt3-filters.js"></script>
 <!-- <script src="http://localhost:3000/rt3api.min.js"></script>//-->
-<script src="https://plugins.traveltripper.io/v3/rt3api.min.js"></script>
-<script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
 <script src="/js/js.cookie-2.2.0.min.js"></script>
+
 
 <script>
 
@@ -45,102 +44,10 @@
       locale = l;
     }
   }
-  //TTWeb.Analytics.trackEvent("")
-
-  TTWeb.Config.configure({
-    hotelId: 'NYCNYR', // or whatever your values are,
-    portalId: 'newyorkerhotel',
-    defaultTimezone: 'America/New_York', // timezone of site
-    ipAddress: sessionStorage.ip_add,
-    defaultCurrency: 'USD',
-    locale: locale
-    //rootPath: 'https://rt3api-prd-ase.ttaws.com' // include this line only if site is on asian server i.e elite and cristalhospitality
-  });
-
-  $("[show-booking-widget]").bookingWidget({
-    showRateCalendar: true,
-    showOfferCode: true
-  });
-
-  function setUpHc() {
-    $(".special-banner-bar .content").show();
-  }
-
-  if (locale !== 'en') {
-    setUpHc();
-  } else {
-    var bookingWidget = new TTWeb.Booking({
-      showRateCalendar: true,
-      showOfferCode: true
-    });
-
-    function showBookingWidget() {
-      bookingWidget.showWidget();
-    }
-
-    // Launch CP
-    // 1. set up content
-    var formatter = new Intl.NumberFormat('en-US', {
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0
-    })
-    var liveRate = new TTWeb.LiveRate();
-
-
-
-    var resumeSearchHTML = new TTWeb.ResumeSearch();
-    //if (UserData.)
-
-    var bookingSearch = new TTWeb.BookingSearch(TTWeb.UserData.globalSearch);
-
-    var rateCompare = new TTWeb.RateCompare();
-    var otaTablePromise = rateCompare.getOTATable();
-    var resumeSearchPromise = resumeSearchHTML.getSearchRatesHtml();
-    var liveRatePromise = liveRate.getCrossOutRate(bookingSearch.reztripParams);
-
-
-    Promise.all([otaTablePromise, resumeSearchPromise, liveRatePromise]).then(function(vals) {
-
-      var lrResp = vals[2];
-      var ratesHtml = "";
-      var lowestRateRoom = lrResp.lowestRateRoom;
-      var lowestRateRoom = lrResp.lowestRateRoom;
-
-      if (lowestRateRoom && lowestRateRoom.rateFound) {
-        ratesHtml = "<span class=\"ttweb-resume-search-widget__lowestcost__crossout\">" + TTWeb.Config.defaultCurrencySymbol + formatter.format( lowestRateRoom.originalRate) + "</span>" + "<span class=\"ttweb-resume-search-widget__lowestcost__actual\">" + TTWeb.Config.defaultCurrencySymbol + formatter.format(lowestRateRoom.discountedRate) + "</span>";
-      }
-
-      var header = "<div class='cp-top'><div class='cp-lowestrate'>"+ratesHtml+"</div><div class='cp-header'>Lowest Price, Guaranteed</div><div class='cp-subheader'>Sample rate for tonight</div></div>";
-
-
-      var button ='<a class="button" href="'+bookingSearch.reztripBookingUrl+'">Book Now</a>';
-      var widgetButton = '<a class="button" onClick="showBookingWidget()">Book Now</a>';
-      if (TTWeb.UserData.globalSearchEmpty) {
-        button = widgetButton;
-      }
-
-      var otaTable = vals[0];
-      var showCP = true;
-      if (otaTable == '') {
-        showCP = false;
-      }
-
-
-      if (showCP) {
-        $(".special-banner-bar").html("<div class='special-banner-bar__brg'>"+header + otaTable + widgetButton + "</div>");
-        $(".caption-price").show();
-        TTWeb.Analytics.trackEvent("CPInteraction", "BRGResponse", "available");
-
-      } else {
-        $(".special-banner-bar .content").show();
-        TTWeb.Analytics.trackEvent("CPInteraction", "BRGResponse", "notAvailable");
-      }
-
-    });
-  }
-
-
 </script>
+  
+{% include reztrip/setup-ttweb-plugins.html %}
+  
 
 
 {% if page.url == '/cyberweekend/' or page.url == '/pre-cyber-monday/' or page.url == '/' %}
