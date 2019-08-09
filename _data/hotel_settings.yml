@@ -1,0 +1,9 @@
+---
+_hotel_id: NYCNYR #SNBOX #KEY24N #HODE
+_portal_id: newyorkerhotel #sandbox #demo
+
+default_currency: USD
+default_timezone: America/New_York
+default_num_adults: 1
+
+__EDITABLE_FIELDS__: []

@@ -28,7 +28,11 @@
         <option value="/de/" {% if page.url contains '/de/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-de"></span> DE'></option>
         <option value="/zh/" {% if page.url contains '/zh/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-zh"></span> ZH'></option>
       </select></div>
-    <a href="javascript:void(0);" show-booking-widget><span class="cal"><img src="/images/calendar.svg" alt=""/></span>Book Now</a>
+      <span class="book-now-section" ttweb-component="BookingWidgetButton"><a class="book-now-btn" href="https://{{site.data.hotel_settings._portal_id}}.reztrip.com/search" tabindex="0" title="Book Now"><span class="cal"><img src="/images/calendar.svg" alt=""/></span>Book Now</a> </span>
+      
+    
+    
     </div>
   </div>
 </nav>
+{% include components/booking-widget %}
