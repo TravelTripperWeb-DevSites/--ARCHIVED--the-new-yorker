@@ -191,17 +191,21 @@ a:hover,a:focus {
 	width: 232px;
 	position: relative;
     z-index: 1;
-	@media (max-width: 1150px){
+	@media (max-width: 1123px){
 		width: 160px;
 		left:40%;
 	}
 	@media (max-width: 767px){
 		width: 110px;
-		left: 40%;
+		left: 30%;
 	}
 	@media (max-width: 480px){
 		width: 100px;
-		left:40%;
+		left:26%;
+	}
+	@media (max-width: 396px){
+		width: 100px;
+		left:13%;
 	}
 	@media (max-width: 374px){
 		width: 80px;
@@ -370,7 +374,7 @@ a:hover,a:focus {
 	position:relative;
 	cursor: pointer;
 	position: absolute;
-	
+
 	width: 32px;
 	height: 22px;
 	top: 28px;
@@ -381,7 +385,7 @@ a:hover,a:focus {
 	}
 	@media (max-width: 767px){
 		top:13px;
-		
+
 	}
 }
 .menu-btn:after{
@@ -521,7 +525,7 @@ h1{
 	.content {
 		display: none;
 	}
-	
+
 	a,
 	h3 {
 		display: inline-block;
