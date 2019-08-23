@@ -103,27 +103,8 @@
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
 {% endif %}
 
-{% if site.data.social.og_image %}
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "url": {{ seo_url | jsonify }},
-      "logo": {{ site.data.social.og_image | absolute_url | jsonify }}
-    }
-  </script>
-{% endif %}
-
-{% if site.social %}
-  <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
-      "name" : "{{ site.social.name | default: site.name }}",
-      "url" : {{ seo_url | jsonify }},
-      "sameAs" : {{ site.social.links | jsonify }}
-    }
-  </script>
+{% if page.url == "/" %}
+{% include schema/hotel.html %}
 {% endif %}
 
 <meta http-equiv="Content-Language" content="{{ active_lang }}">
@@ -180,63 +161,4 @@
    <meta name="robots" content="{{ page.meta_tags.robots }}">
  {%endif%}
 {% endif %}
-<script type='application/ld+json'>
-{
-  "@context": "http://www.schema.org",
-  "@type": "Organization",
-  "name": "The New Yorker Hotel",
-  "url": "https://www.newyorkerhotel.com/",
-  "logo": "https://www.newyorkerhotel.com/images/the-new-yorker-logo.svg",
-  "description": "Experience The New Yorker Hotel, an Iconic hotel in Midtown Manhattan. Book your stay at our Art Deco Masterpiece Hotel and start your New York City getaway today, with Free WiFi and breakfast for just $1!  We’re located just half a mile from the Empire State Building and lots more in central Manhattan.",
-     "sameAs": [
-    "https://www.facebook.com/newyorkerhotel/"
-
-  ]
-  }
-}
-</script>
-<script type='application/ld+json'>
-{
-  "@context": "http://schema.org",
-  "@type": "Hotel",
-  "image": "https://cdn.traveltripper.io/site-assets/426_558_15305/media/2018-05-07-075809/large_thenewyorker.jpg",
-"starRating" : { "@type" : "Rating",
-                       "ratingValue" : "4"},
-"priceRange" : "from $150",
-"address": {
-    "@type": "PostalAddress",
-    "streetAddress": "481 8th Avenue & 34th Street",
-    "addressLocality": "New York",
-    "addressRegion": "New York",
-    "postalCode": "NY 10001",
-    "addressCountry": "United States"
-    },
-  "description": "Experience The New Yorker Hotel, an Iconic hotel in Midtown Manhattan. Book your stay at our Art Deco Masterpiece Hotel and start your New York City getaway today, with Free WiFi and breakfast for just $1!  We’re located just half a mile from the Empire State Building and lots more in central Manhattan.",
-  "name": "The New Yorker Hotel",
-  "alternateName":"The Wyndham New Yorker Hotel",
-  "telephone": "(212)-971-0101",
-  "email": "reservations@nyhotel.com",
-  "url": "https://www.newyorkerhotel.com/",
-   "sameAs" : ["https://www.facebook.com/NewYorkerHotel/","https://twitter.com/WyndhamNYH/","https://www.instagram.com/newyorkerhotel/","https://www.youtube.com/channel/UCXDFDBPGBkC07HOxL7ISQLQ/","https://www.tripadvisor.com/Hotel_Review-g60763-d122005-Reviews-The_New_Yorker_a_Wyndham_Hotel-New_York_City_New_York.html","https://www.booking.com/hotel/us/new-yorker-ramada-plaza.en-gb.html"]
-    },
-   "hasMap": "https://www.google.com/maps/place/The+New+Yorker,+A+Wyndham+Hotel/@40.752726,-73.9957939,17z/data=!3m1!4b1!4m7!3m6!1s0x89c259ade9128e5f:0x2276df1fe19f85bc!5m1!1s2018-11-20!8m2!3d40.752722!4d-73.9936052"
- },
-
-  "potentialAction":{
-   "@type":"ReserveAction",
-   "target":{
-   "@type":"EntryPoint",
-   "urlTemplate":"https://newyorkerhotel.reztrip.com/classic/en/searches/5bdff1f5b14ee04443a88a85/hotels/NYCNYR/rooms/":[
-   "http://schema.org/DesktopWebPlatform",
-   "http://schema.org/IOSPlatform",
-    "http://schema.org/AndroidPlatform"
-]
-},
-   "result":{
-   "@type":"LodgingReservation",
-   "name":"Book Now"
-  }
- }
-}
-</script>
 <!-- end SEO -->
