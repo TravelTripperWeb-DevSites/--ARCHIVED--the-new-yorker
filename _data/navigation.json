@@ -20,6 +20,16 @@
           "title": "Amenities",
           "name": "Amenities",
           "url": "/amenities/"
+        },
+        {
+          "title": "Connect",
+          "name": "connect",
+          "url": "/contact/"
+        },
+        {
+          "title": "Blog",
+          "name": "blog",
+          "url": "/blog/"
         }
       ]
     },
@@ -70,18 +80,6 @@
         "url": "/manhattan-center/"
       }]
     },
-    {
-      "title": "Blog",
-      "name": "blog",
-      "url": "/blog/",
-      "submenu": "false"
-    },
-    {
-      "title": "Connect",
-      "name": "connect",
-      "url": "/contact/",
-      "submenu": "false"
-    }, 
     {
       "title": "faq",
       "name": "faq",
