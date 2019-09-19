@@ -4,7 +4,10 @@
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
   background-image: url(//cdn.traveltripper.io/site-assets/426_558_9658/media/2017-11-30-013515/2-3-nights-offer.jpg);
-  height: 887px !important;
+  height: 85vh !important;
+  @media (max-width: 1400px) {
+    height: 70vh !important;
+  }
 	.overlay{
 		position: absolute;
 		top: 0;
