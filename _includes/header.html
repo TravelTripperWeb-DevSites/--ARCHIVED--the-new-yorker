@@ -6,8 +6,12 @@
     <div class="main-menu">
       <ul class="nav">
       {% for items in site.data.navigation.mainnav %}
-     	<li  class="nav-item {% if items.submenu == "true" %} dropdown {% endif %}" ><a href="{{ items.url }}" {% if items.name == page.pagename %} class="active" {% endif %} {% if items.submenu == "true" %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}>{{ items.title }}{% if items.submenu == "true" %}
-      <i class="fa fa-caret-down" aria-hidden="true"></i>{% endif %}</a>
+     	<li  class="nav-item {% if items.submenu == "true" %} dropdown {% endif %}" >
+        {% if items.submenu == "true" %}
+          <a href="JavaScript:Void(0);" {% if items.name == page.pagename %} class="active" {% endif %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ items.title }}</a>
+        {% else %}
+          <a href="{{ items.url }}" {% if items.name == page.pagename %} class="active" {% endif %} {% if items.submenu == "true" %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}>{{ items.title }}</a>
+        {% endif %}
         {% if items.submenu == "true" %}
         <ul class="dropdown-menu">
             {% for dropdown in items.subitems %}

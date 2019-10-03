@@ -4,7 +4,6 @@
     {
       "title": "About",
       "name": "about",
-      "url": "/about/",
       "submenu": "true",
       "subitems": [{
           "title": "Overview",
@@ -48,9 +47,13 @@
     {
       "title": "Location",
       "name": "location",
-      "url": "/location/",
       "submenu": "true",
       "subitems": [{
+        "title": "Neighborhood",
+        "name": "location",
+        "url": "/location/"
+      },
+      {
         "title": "Attractions",
         "name": "attractions",
         "url": "/attractions/"
@@ -72,9 +75,13 @@
     {
       "title": "Events",
       "name": "events",
-      "url": "/events/",
       "submenu": "true",
       "subitems": [{
+        "title": "Meetings & Events",
+        "name": "Meetings & Events",
+        "url": "/events/"
+      },
+      {
         "title": "Manhattan Center",
         "name": "Manhattan Center",
         "url": "/manhattan-center/"
