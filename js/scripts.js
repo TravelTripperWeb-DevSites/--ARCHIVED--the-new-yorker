@@ -97,21 +97,22 @@ $(document).ready(function() {
   });
 });
 
-$(window).load(function() {
-  if ($(window).width() > 768) {
-
-    jQuery('ul.nav li.dropdown a').attr('data-toggle', 'disable');
-    //Add Hover effect to menus
-    jQuery('ul.nav li.dropdown').hover(function() {
-      jQuery(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn();
-    }, function() {
-      jQuery(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut();
-    });
-  } else {
-    //jQuery('ul.nav li.dropdown a.dropdown-toggle').removeAttr('data-toggle');
-  }
-
-});
+// Removed ref:00107488 salesforce
+// $(window).load(function() {
+//   if ($(window).width() > 768) {
+//
+//     jQuery('ul.nav li.dropdown a').attr('data-toggle', 'disable');
+//     //Add Hover effect to menus
+//     jQuery('ul.nav li.dropdown').click(function() {
+//       jQuery(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn();
+//     }, function() {
+//       jQuery(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut();
+//     });
+//   } else {
+//     //jQuery('ul.nav li.dropdown a.dropdown-toggle').removeAttr('data-toggle');
+//   }
+//
+// });
 
 // get instagram feed
 $(window).on("load", function(e) {
