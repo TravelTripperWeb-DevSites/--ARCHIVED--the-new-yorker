@@ -4,7 +4,6 @@
     {
       "title": "About",
       "name": "about",
-      "url": "/about/",
       "submenu": "true",
       "subitems": [{
           "title": "Overview",
@@ -20,6 +19,16 @@
           "title": "Amenities",
           "name": "Amenities",
           "url": "/amenities/"
+        },
+        {
+          "title": "Connect",
+          "name": "connect",
+          "url": "/contact/"
+        },
+        {
+          "title": "Blog",
+          "name": "blog",
+          "url": "/blog/"
         }
       ]
     },
@@ -38,9 +47,13 @@
     {
       "title": "Location",
       "name": "location",
-      "url": "/location/",
       "submenu": "true",
       "subitems": [{
+        "title": "Neighborhood",
+        "name": "location",
+        "url": "/location/"
+      },
+      {
         "title": "Attractions",
         "name": "attractions",
         "url": "/attractions/"
@@ -62,26 +75,18 @@
     {
       "title": "Events",
       "name": "events",
-      "url": "/events/",
       "submenu": "true",
       "subitems": [{
+        "title": "Meetings & Events",
+        "name": "Meetings & Events",
+        "url": "/events/"
+      },
+      {
         "title": "Manhattan Center",
         "name": "Manhattan Center",
         "url": "/manhattan-center/"
       }]
     },
-    {
-      "title": "Blog",
-      "name": "blog",
-      "url": "/blog/",
-      "submenu": "false"
-    },
-    {
-      "title": "Connect",
-      "name": "connect",
-      "url": "/contact/",
-      "submenu": "false"
-    }, 
     {
       "title": "faq",
       "name": "faq",
