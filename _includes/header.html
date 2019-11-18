@@ -6,7 +6,12 @@
     <div class="main-menu">
       <ul class="nav">
       {% for items in site.data.navigation.mainnav %}
-     	<li  class="nav-item {% if items.submenu == "true" %} dropdown {% endif %}" ><a href="{{ items.url }}" {% if items.name == page.pagename %} class="active" {% endif %} {% if items.submenu == "true" %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}>{{ items.title }}</a>
+     	<li  class="nav-item {% if items.submenu == "true" %} dropdown {% endif %}" >
+        {% if items.submenu == "true" %}
+          <a href="JavaScript:Void(0);" {% if items.name == page.pagename %} class="active" {% endif %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ items.title }}</a>
+        {% else %}
+          <a href="{{ items.url }}" {% if items.name == page.pagename %} class="active" {% endif %} {% if items.submenu == "true" %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}>{{ items.title }}</a>
+        {% endif %}
         {% if items.submenu == "true" %}
         <ul class="dropdown-menu">
             {% for dropdown in items.subitems %}
@@ -29,9 +34,9 @@
         <option value="/zh/" {% if page.url contains '/zh/'%} selected="selected"{% endif %} data-content='<span class="flag-icon flag-icon-zh"></span> ZH'></option>
       </select></div>
       <span class="book-now-section" ttweb-component="BookingWidgetButton"><a class="book-now-btn" href="https://{{site.data.hotel_settings._portal_id}}.reztrip.com/search" tabindex="0" title="Book Now"><span class="cal"><img src="/images/calendar.svg" alt=""/></span>Book Now</a> </span>
-      
-    
-    
+
+
+
     </div>
   </div>
 </nav>
